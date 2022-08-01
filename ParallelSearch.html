@@ -157,7 +157,40 @@
         function getHtmlElement(pId = ""){
             return (pId ?? "" != "") ? objResult = document.getElementById(pId) : null;
         }
+        // Cookieの値を取得（https://ja.javascript.info/cookie）
+        function getCookie(name) {
+            let matches = document.cookie.match(new RegExp(
+                          "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+            ));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
+        // Cookieを設定（https://ja.javascript.info/cookie）
+        function setCookie(name, value, options = {}) {
+            options = {
+            path: '/',
+            // add other defaults here if necessary
+           ...options
+            };
+            if (options.expires.toUTCString) {
+                options.expires = options.expires.toUTCString();
+            }
 
+            let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+            for (let optionKey in options) {
+                updatedCookie += "; " + optionKey;
+                let optionValue = options[optionKey];
+                if (optionValue !== true) {
+                    updatedCookie += "=" + optionValue;
+                }
+            }
+              document.cookie = updatedCookie;
+        }
+        // Cookieの削除（https://ja.javascript.info/cookie）
+        function deleteCookie(name) {
+            setCookie(name, "", {
+            'max-age': -1
+            })
+        }
         /* ★ファンクション★ */
         // ★HTMLElement aタグを作成する
         function createATag(pId="", pname = "", pText = "", pTarget = "", pRel = ""){
@@ -294,6 +327,6 @@
     <section>
         <table id="tblSearchList"></table>
     </section>
-    <footer>Version.2022.07.27 Created By Oxmilch</footer>
+    <footer>Version.2022.08.01 (C)2022 Oxmilch</footer>
 </body>
 </html>
