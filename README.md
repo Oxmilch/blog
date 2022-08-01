@@ -28,7 +28,7 @@
 | Google | O | O | O | ジャンル別検索 |
 | Bing | O | O | O | なし |
 | Yahoo! | O | O | O | なし |
-| Twitter | O | O | O | なし |
+| Twitter | O | O | O | ジャンル別検索 |
 | Youtube | O | O | O | なし |
 | ニコニコ動画 | O | X | X | なし |
 | Qiita | O | O | O | なし |
@@ -37,6 +37,11 @@
 | Wikipedia | O | O | O | なし |
 
 ## 更新履歴
+- v20220801u2  
+  - Twitterのジャンル別検索の追加
+- v20220801u1  
+  - 初期表示時にAND検索項目にフォーカスするように修正
+  - googleのジャンル別検索の追加
 - v20220801  
   - READMEの更新  
   - Cookie操作のコードを追加  

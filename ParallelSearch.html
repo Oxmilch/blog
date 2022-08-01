@@ -43,7 +43,7 @@
                             ,Google       :[true, "https://www.google.co.jp/search?q={param}", [null, "+", null], ["+OR+", "+OR+", null], ["+-", "+-", null], {すべて:"", ニュース:"&tbm=nws", ショッピング:"&tbm=shop", 画像:"&tbm=isch", 動画:"&tbm=vid", 書籍:"&tbm=bks"}, null, null]
                             ,Bing         :[true, "https://www.bing.com/search?q={param}", [null, "+", null], ["+OR+", "+OR+", null], ["+-", "+-", null], null, null, null]
                             ,Yahoo        :[true, "https://search.yahoo.co.jp/search?p={param}", [null, "+", null], ["+OR+", "+OR+", null], ["+-", "+-", null], null, null, null]
-                            ,Twitter      :[true, "https://twitter.com/search?q={param}&src=typed_query", [null, " ", null], ["(", " ", ")"], [" -", " -", null], null, null, null]
+                            ,Twitter      :[true, "https://twitter.com/search?q={param}&src=typed_query", [null, " ", null], ["(", " ", ")"], [" -", " -", null], {話題のツイート:"", 最新:"&f=live", アカウント:"&f=user", 画像:"&f=image", 動画:"&f=video"}, null, null]
                             ,Instagram    :[false, "", [null, null, null], [null, null, null], [null, null, null], null, null, null]
                             ,YouTube      :[true, "https://www.youtube.com/results?search_query={param}", [null, "+", null], ["+OR+", "+OR+", null],["+-", "+-", null], null, null, null]
                             ,ニコニコ動画  :[true, "https://www.nicovideo.jp/search/{param}?ref=nicotop_search", [null, " ", null], [null, null, null],[null, null, null], null, null, null]
@@ -327,6 +327,6 @@
     <section>
         <table id="tblSearchList"></table>
     </section>
-    <footer>Version.2022.08.01u1 &copy;2022 Oxmilch</footer>
+    <footer>Version.2022.08.01u2 &copy;2022 Oxmilch</footer>
 </body>
 </html>
