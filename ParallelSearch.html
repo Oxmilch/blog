@@ -47,6 +47,7 @@
                             ,Instagram    :[false, "", [null, null, null], [null, null, null], [null, null, null], null, null, null]
                             ,YouTube      :[true, "https://www.youtube.com/results?search_query={param}", [null, "+", null], ["+OR+", "+OR+", null],["+-", "+-", null], null, null, null]
                             ,ニコニコ動画  :[true, "https://www.nicovideo.jp/search/{param}?ref=nicotop_search", [null, " ", null], [null, null, null],[null, null, null], null, null, null]
+                            ,Github       :[true, "https://github.com/search?q={param}", [null, "+", null], [null, null, null], [null, null, null], {Repositories:"&type=repositories", Code:"&type=code", Commits:"&type=commits", Issues:"&type=issues", Discussions:"&type=discussions", Packages:"&type=registrypackages", Marketplace:"&type=marketplace", Topics:"&type=topics", Wikis:"&type=wikis", Users:"&type=users"}, null, null]
                             ,Qiita        :[true, "https://qiita.com/search?q={param}", [null, "+", null], ["+OR+", "+OR+", null], ["+-", "+-", null], {関連順:"&sort=rel", 新着順:"&sort=created", ストック数順:"&sort=stock", LGTM数順:"&sort=like"}, null, null]
                             ,Zenn         :[true, "https://zenn.dev/search?q={param}", [null, " ", null], [null, null, null], [null, null, null], {Articles_Trending:"&order=daily&source=articles", Articles_Alltime:"&order=alltime&source=articles", Articles_Leatest:"&order=latest&source=articles", Books_Trending:"&order=daily&source=books", Books_Alltime:"&order=alltime&source=books", Books_Leatest:"&order=latest&source=books", Scraps_Trending:"&order=daily&source=scraps", Scraps_Alltime:"&order=alltime&source=scraps", Scraps_Leatest:"&order=latest&source=scraps"}, null, null]
                             ,slideshare   :[true, "https://www.slideshare.net/search/slideshow?searchfrom=header&q={param}&ud=any&ft=all&lang=ja", [null, "+", null], [null, null, null], [null, null, null], null, null, null]
@@ -327,6 +328,6 @@
     <section>
         <table id="tblSearchList"></table>
     </section>
-    <footer>Version.2022.08.01u2 &copy;2022 Oxmilch</footer>
+    <footer>Version.2022.08.01u4 &copy;2022 Oxmilch</footer>
 </body>
 </html>
