@@ -40,7 +40,7 @@
                             ,楽天ラクマ    :[true, "https://fril.jp/s?query={param}&transaction=selling", [null, "+", null], [null, null, null], ["&excluded_query=", "+", null], {すべて:"", レディース:"&category_id=10001", メンズ:"&category_id=10005", コスメと美容:"&category_id=10004", キッズとベビーとマタニティ:"&category_id=10003", エンタメとホビー:"&category_id=10007", 楽器:"&category_id=10013", チケット:"&category_id=10008", インテリアと住まいと日用品:"&category_id=10009", スマホと家電とカメラ:"&category_id=10006", ハンドメイド:"&category_id=10010", 食品と飲料と酒:"&category_id=10012", スポーツとアウトドア:"&category_id=10014", 自動車とバイク:"&category_id=10011", その他:"&category_id=10002"}, null, null]
                             ,ヤフオク      :[true, "https://auctions.yahoo.co.jp/search/search?{param}&ngrm=2&l0=0&abatch=0&istatus=0&slider=0&ei=UTF-8&f_adv=1&fr=auc_adv&f=0x4", ["va=", "+", null], ["&vo=", "+", null], ["&ve=", "+", null], {すべてのカテゴリ:"&auccat=0", コンピュータ:"&auccat=23336", 家電とAVとカメラ:"&auccat=23632", 音楽:"&auccat=22152", 本と雑誌:"&auccat=21600", 映画とビデオ:"&auccat=21964", 映画とビデオ:"&auccat=21964", おもちゃとゲーム:"&auccat=25464", ホビーとカルチャー:"&auccat=24242", アンティークとコレクション:"&auccat=20000", スポーツとレジャー:"&auccat=24698", 自動車とオートバイ:"&auccat=26318", ファッション:"&auccat=23000", アクセサリーと時計:"&auccat=23140", ビューティーとヘルスケア:"&auccat=42177", 食品と飲料:"&auccat=23976", 住まいとインテリア:"&auccat=24198", ペットと生き物:"&auccat=2084055844", 事務と店舗用品:"&auccat=22896", 花と園芸:"&auccat=26086", チケットと金券と宿泊予約:"&auccat=2084043920", ベビー用品:"&auccat=24202", タレントグッズ:"&auccat=2084032594", コミックとアニメグッズ:"&auccat=20060", 不動産:"&auccat=2084060731", チャリティー:"&auccat=2084217893", その他:"&auccat=26084"}, ["&", "&", ""], {未使用:"istatus=1", 送料無料:"pstagefree=1", 新着:"new=1", 匿名配送:"privacy_delivery=1"}]
                             ,価格ドットコム:[true, "https://kakaku.com/search_results/{param}", [null, " ", "/"], [null, null, null], [null, null, null], {すべてのカテゴリ:"", パソコン:"?category=0001", 家電:"?category=0002", カメラ:"?category=0003", 自動車とバイク:"?category=0008", スマートフォンと携帯電話:"?category=0005", モバイルデータ通信:"?category=0031", スポーツ:"?category=0009", アウトドア:"?category=0050", 腕時計とアクセサリー:"?category=0027", ファッション:"?category=0015", 靴とシューズ:"?category=0035", 住宅設備とリフォーム:"?category=0049", DIYと工具:"?category=0029", インテリアと家具:"?category=0017", キッチン用品:"?category=0030", 生活雑貨:"?category=0025", コンタクトレンズ:"?category=0043", ビューティーとヘルス:"?category=0018", ベビーとキッズ:"?category=0013", ゲーム:"?category=0006", ホビー:"?category=0024", ドリンク:"?category=0016", 食品:"?category=0028", ペット:"?category=0014", 本とCDとDVD:"?category=0010"}, null, null]
-                            ,Google       :[true, "https://www.google.co.jp/search?q={param}", [null, "+", null], ["+OR+", "+OR+", null], ["+-", "+-", null], null, null, null]
+                            ,Google       :[true, "https://www.google.co.jp/search?q={param}", [null, "+", null], ["+OR+", "+OR+", null], ["+-", "+-", null], {すべて:"", ニュース:"&tbm=nws", ショッピング:"&tbm=shop", 画像:"&tbm=isch", 動画:"&tbm=vid", 書籍:"&tbm=bks"}, null, null]
                             ,Bing         :[true, "https://www.bing.com/search?q={param}", [null, "+", null], ["+OR+", "+OR+", null], ["+-", "+-", null], null, null, null]
                             ,Yahoo        :[true, "https://search.yahoo.co.jp/search?p={param}", [null, "+", null], ["+OR+", "+OR+", null], ["+-", "+-", null], null, null, null]
                             ,Twitter      :[true, "https://twitter.com/search?q={param}&src=typed_query", [null, " ", null], ["(", " ", ")"], [" -", " -", null], null, null, null]
@@ -312,7 +312,7 @@
         <table id="tblSearchText">
             <tr>
                 <td style="text-align:right;"><label name="lblSearchTxt">AND検索ワード</label></td>
-                <td><input type="text" id="txtSearchAnd" name="styleSerachText" oninput="searchExec();"></td>
+                <td><input type="text" id="txtSearchAnd" name="styleSerachText" oninput="searchExec();" autofocus></td>
             </tr>
             <tr>
                 <td style="text-align:right;"><label name="lblSearchTxt">OR検索ワード</label></td>
@@ -327,6 +327,6 @@
     <section>
         <table id="tblSearchList"></table>
     </section>
-    <footer>Version.2022.08.01 (C)2022 Oxmilch</footer>
+    <footer>Version.2022.08.01u1 &copy;2022 Oxmilch</footer>
 </body>
 </html>
