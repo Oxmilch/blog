@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+header, footer {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+footer {
+  border-bottom: none;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}

@@ -1,0 +1,10 @@
+title: My Blog
+email: user@example.com
+description: >-
+  Welcome to my Jekyll blog!
+baseurl: ""
+url: ""
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
