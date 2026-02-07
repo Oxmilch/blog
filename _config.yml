@@ -1,10 +1,9 @@
-title: My Blog
-email: user@example.com
-description: >-
-  Welcome to my Jekyll blog!
-baseurl: ""
+theme: jekyll-theme-cayman
+lang: ja-JP
+title: Oxmilch's Blog
+description: ""
+baseurl: /blog
 url: ""
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
