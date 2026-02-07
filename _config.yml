@@ -2,7 +2,7 @@ theme: jekyll-theme-cayman
 lang: ja-JP
 title: Oxmilch's Blog
 description: ""
-baseurl: /blog
+baseurl: "/blog"
 url: ""
 plugins:
   - jekyll-feed

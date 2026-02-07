@@ -1,8 +1,4 @@
 ---
 layout: default
-title: Home
+title: ミルクせんせーのブログ
 ---
-
-# Welcome to my blog
-
-Hello world! This is my new Jekyll site.
