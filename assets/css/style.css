@@ -1,16 +1,83 @@
+@charset "UTF-8";
+
+:root{
+    /* 4320B blanc ivoire */
+    --color-profile-light: #eae4d7;
+    /* 4320E noir d'ivoire */
+    --color-profile-dark: #3a3b3b;
+    /* 32024 outremer gris */
+    --color-engineer-light: #d9e1dd;
+    /*4320T bleu outremer foncé */
+    --color-engineer-dark: #313d6b;
+    /* 32091 rose pâle */
+    --color-design-light: #e6cdbf;
+    /* 32100 rouge carmin */
+    --color-design-dark: #8f3a43;
+    /* 32013 gris clair 31 */
+    --color-contact-light: #bcbbb6;
+    /* 4320R ombre naturelle 59 */
+    --color-contact-dark: #45423e;
+
+    --font-weight-extralight: 200;
+    --font-weight-Regular: 400;
+    --font-weight-bold: 700;
+
+    --cell-column-quantity: 6;
+    --cell-row-quantity: 8;
+    --cell-width-min: 128px;
+    --cell-width-max: 256px;
+    --cell-height-min: 72px;
+    --cell-height-max: 144px;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
 body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+    font-family: "M PLUS 1 Code", monospace;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: var(--font-weight-Regular);
+    color: var(--color-profile-dark);
+    background-color: var(--color-profile-light);
+    width: 100vw;
+    height: auto;
 }
-header, footer {
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
+
+.container {
+    width: 96%;
+    max-width: 1440px;
 }
+
+header {
+    color: var(--color-profile-light);
+    background-color: var(--color-profile-dark);
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container img {
+    width: auto;
+    height: 64px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
 footer {
-  border-bottom: none;
-  border-top: 1px solid #eee;
-  margin-top: 40px;
+    text-align: center;
 }
