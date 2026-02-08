@@ -1,6 +1,5 @@
-theme: jekyll-theme-cayman
-lang: ja-JP
-title: Oxmilch's Blog
+theme: null
+title: "Oxmilch's Blog"
 description: ""
 baseurl: "/blog"
 url: ""
