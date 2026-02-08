@@ -53,11 +53,13 @@
         <h1>{{ page.title }}</h1>
       {% endif %}
       <div id="article_header">
-        {% if page.last_modified_at %}
-          <span>登録日：</span><time>{{ page.date | date:"%Y-%m-%d" }}</time><br>
-          <span>更新日：</span><time datetime="{{ page.last_modified_at }}">{{ page.last_modified_at | date: "%Y-%m-%d %H:%M" }}</time>
-        {% else %}
-          <span>登録日：</span><time datetime="{{ page.date }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+        {% if page.date %}
+          {% if page.last_modified_at %}
+            <span>登録日：</span><time>{{ page.date | date:"%Y-%m-%d" }}</time><br>
+            <span>更新日：</span><time datetime="{{ page.last_modified_at }}">{{ page.last_modified_at | date: "%Y-%m-%d %H:%M" }}</time>
+          {% else %}
+            <span>登録日：</span><time datetime="{{ page.date }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+          {% endif %}
         {% endif %}
       </div>
       {{ content }}
