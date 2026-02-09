@@ -1,32 +1,31 @@
 ---
 layout: page
 title: "macOS Ventura で GitHub Pages の Jekyll の環境を整えた話"
-description: ""
-tags: [macOS(Intel), Ruby, Jekyll]
+description: "macOS Ventura で GitHub Pages の Jekyll の環境を整えた話"
+tags: [macOS(Intel), Ruby, Jekyll, GitHub Pages]
 date: 2026-02-10
 ---
 
 ## はじめに　 
 今回、ブログを始めるにあたって、ローカルでも見た目を整えながら作りたいよなぁと思い、ローカル環境を作ることに。  
-最初は、Zorin OS 18上で簡単に作れたため、macOSでも楽にできるだろうと思ってたところ、想像以上に手こずったのでやったこととかを残します。  
+最初は Zorin OS 18上で簡単に作れたので、macOSでも楽にできるだろうと思ってたところ、想像以上に手こずったのでやったこととかを残します。  
 
 ## 当環境　 
-- MacBook Pro 13 2017 (Core i5, ThunderBolt 3 x 2port, メモリ 8GB)
+- MacBook Pro 13 2017 (Intel Core i5, ThunderBolt 3 x 2port, メモリ 8GB)
 - macOS Ventura 13.7.8
 
 ## 手こずったところ
-公式だと、ruby v2.5.0以上であれば良いよ！って書いてあるけれど、  
-v4.0以上入れると動作しなかった・・(おま環？)
+公式だと、ruby v2.5.0以上であれば良いよ！って書いてあるけれど、v4.0以上入れると動作しなかった・・(おま環？)  
 インストールする ruby のバージョンは、3.4.8 にしたら動いた
 
-## 最終的な環境
+## 環境導入手順
+### インストール後のバージョン
 - Homebrew v5.0.13
 - rbenv v1.3.2
 - ruby v3.4.8
 - gem v3.6.9
 - bundle v4.0.6
 
-## 手順
 ### 注意書き
 途中、めちゃくちゃ詰まったタイミングがあったので、もしかしたら要らない手順、足りなない手順があるかもしれません。
 
@@ -83,7 +82,13 @@ ruby -v
 ### 3:Jekyllの環境を用意しよう
 
 ### 4:GitHub Pages用の設定をしよう
+
 ### 5:ローカル環境で確認しよう
+
+## 終わりに 
+OSサポートが25年秋で切れちゃってるので、まぁ使えなくても仕方ないかなと思いつつも、使っていきたいよねという気持ちが強い。  
+Linuxは別のPCで導入済みなので、LinuxOSをインストールするのもなぁ・・と悩みどころ。  
+Windows11, macOS Tahoe端末には環境整えていないので、また記事上げるかも。
 
 ## 参考記事 
 ### 開発環境構築 
@@ -96,8 +101,3 @@ ruby -v
 - [GitHubドキュメント - GitHub Pagesのクイックスタート](https://docs.github.com/ja/pages/quickstart)
 - [GitHubドキュメント - Jekyll を使用して GitHub Pages サイトをローカルでテストする](https://docs.github.com/ja/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
 - [Qiita - GitHub Pagesの落とし穴と便利なTips](https://qiita.com/smallriv/items/997c9c19bef031460b0e)
-
-## 終わりに 
-OSサポートが25年秋で切れちゃってるので、まぁ使えなくても仕方ないかなと思いつつも、使っていきたいよねという気持ちが強い。  
-Linuxは別のPCで導入済みなので、LinuxOSをインストールするのもなぁ・・と悩みどころ。  
-Windows11, macOS Tahoe端末には環境整えていないので、また記事上げるかも。
