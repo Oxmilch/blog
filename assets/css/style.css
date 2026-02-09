@@ -19,12 +19,15 @@
     /* 4320R ombre naturelle 59 */
     --color-contact-dark: #45423e;
 
+    --font-family-sans: "M PLUS 1p", sans-serif;
+    --font-family-mono: "M PLUS 1 Code", monospace;
     --font-size-xl: 2rem;
-    --font-size-l: 1.75rem;
-    --font-size-m: 1.5rem;
-    --font-size-s: 1.25rem;
-    --font-size-xs: 1rem;
+    --font-size-l: 1.8rem;
+    --font-size-m: 1.35rem;
+    --font-size-s: 1.1rem;
+    --font-size-xs: 0.91rem;
 
+    --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
@@ -42,7 +45,7 @@ img{
 }
 
 body{
-    font-family: "M PLUS 1 Code", monospace;
+    font-family: var(--font-family-sans);
     font-size: var(--font-size-s);
     font-style: normal;
     font-weight: var(--font-weight-regular);
@@ -59,15 +62,15 @@ h1, h2, h3, h4, h5{
 }
 h1{
     padding-top: 32px;
-    font-size: 2rem;
+    font-size: var(--font-size-xl);
 }
 h2{
     padding-top: 28px;
-    font-size: 1.75rem;
+    font-size: var(--font-size-l);
 }
 h3{
     padding-top: 24px;
-    font-size: 1.5rem;
+    font-size: var(--font-size-m);
 }
 h4,
 h5{
@@ -77,6 +80,35 @@ h5{
 ul, ol{
     list-style-position: inside;
     padding-left: 8px;
+}
+
+[class^="language"]{
+    font-family: var(--font-family-mono);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-profile-light);
+    background-color: var(--color-profile-dark);
+    overflow-wrap: break-word;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: var(--color-profile-light);
+    line-height: 1.3;
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em 0;
+}
+[class^="language-"]::-webkit-scrollbar{
+  display: block;
+  width: 0.3em;
+  height: 0.3em;
+}
+[class^="language-"]::-webkit-scrollbar-track{
+  background: var(--color-design-light);
+  border-bottom: 1px solid var(--color-design-dark);
+}
+[class^="language-"]::-webkit-scrollbar-thumb{
+  background: var(--color-design-dark);
+  border: 1px solid var(--color-design-light);
+  border-radius: 0.3em;
 }
 
 .container {
@@ -142,15 +174,14 @@ header ul a{
 main{
     display: flex;
     justify-content: space-between;
-    padding-bottom: calc(24px + (1.25rem * 1.5) * 3 + 12px);
 }
 
 
 /* article */
 article{
-    min-width: 67%;
-    width: 67%;
-    max-width: 67%;
+    min-width: 75%;
+    width: 75%;
+    max-width: 75%;
 }
 
 #article_header{
@@ -162,9 +193,9 @@ article{
 
 /* aside */
 aside{
-    min-width: 33%;
-    width: 33%;
-    max-width: 33%;
+    min-width: 25%;
+    width: 25%;
+    max-width: 25%;
 }
 
 aside dt{
@@ -177,7 +208,7 @@ aside dl{
 }
 
 aside dl img{
-    width: 256px;
+    width: 180px;
     border-radius: 50%;
 }
 
@@ -188,13 +219,12 @@ aside dd{
 
 /* footer */
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     color: var(--color-profile-light);
     background-color: var(--color-profile-dark);
     text-align: center;
-    padding: 24px 0 12px; 
+    padding: 24px 0 12px;
+    margin-top: 18px;
 }
 
 footer a {
