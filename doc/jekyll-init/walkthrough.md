@@ -30,6 +30,34 @@ sudo apt install ruby-full build-essential zlib1g-dev
 sudo gem install jekyll bundler
 ```
 
+macの場合
+[Jekyll on macOS](https://jekyllrb-ja.github.io/docs/installation/macos/)
+[MacのターミナルでRubyをバージョンアップする方法](https://qiita.com/Ficus/items/bdef5c2b504d7a4008fb)
+```bash
+brew update
+brew install rbenv
+brew install ruby-build
+rbenv install --list
+rbenv install 4.0.1
+rbenv global 4.0.1
+ruby --version
+```
+バージョンが変わっていない場合
+```bash
+which ruby
+touch ~/.bash_profile
+vi ~/.bash_profile
+```
+次の入力し保存
+```vim
+eval "$(rbenv init -)"
+```
+指定したバージョンになっていればOK
+```bash
+ruby --version
+gem install --user-install bundler jekyll
+```
+
 ### 2. 依存関係のインストール
 
 プロジェクトのルートディレクトリで以下を実行してください。
