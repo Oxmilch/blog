@@ -1,9 +1,14 @@
 theme: null
-title: "Oxmilch's Blog"
-description: ""
+title: "ミルクせんせーのブログ"
+title-saffix: "Oxmilch's Blog by GitHub Pages"
+css-update: 20260210
 baseurl: "/blog"
-url: ""
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-last-modified-at
+  - jekyll-pages-gem
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  
