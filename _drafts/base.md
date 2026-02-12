@@ -2,9 +2,16 @@
 layout: page
 nocrawler: enable
 title: "書きたいことリスト・タグ全種・メモ"
-tags: [Programming, Gadget, Game, Graphic Design, Video Editing
-       Windows(x64), Windows(arm), macOS(M Series), macOS(Intel), Linux(Debian), Linux(Red Hat),
-       VSCode, Antigravity, Visual Studio, Eclipse,
+tags: [Windows11(x64),
+       Mac(Apple Siricon), Mac(Intel),
+       macOS Ventura, macOS Tahoe,
+       Linux(Debian), Zorin OS,
+       Linux(Red Hat), Fedora,
+       Game,
+       Gaget,
+       Graphic, Photoshop, Illustrater,
+       Vide Editing, Premiere Pro, After Effects,
+       Programming, VSCode, Antigravity, Visual Studio, Eclipse,
        VB.NET, C#.NET, ASP.NET, HTML/CSS, JavaScript, TypeScript, Ruby,
        Jekyll,
        liquid]
@@ -12,6 +19,7 @@ tags: [Programming, Gadget, Game, Graphic Design, Video Editing
 
 ## デバッグコマンドメモ
 ```bash
+bundle install
 bundle exec jekyll serve
 ```
 
