@@ -3,6 +3,7 @@ title: "ミルクせんせーのブログ"
 title-saffix: "Oxmilch's Blog by GitHub Pages"
 css-update: 20260213
 baseurl: "/blog"
+timezone: "Asia/Tokyo"
 plugins:
   - jekyll-last-modified-at
   - jekyll-pages-gem
@@ -10,4 +11,3 @@ plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
-  
