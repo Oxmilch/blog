@@ -1,8 +1,18 @@
 {% comment %} ▼変数定義 ここから▼ {% endcomment %}
-  {% comment %} 説明文 {% endcomment %}
-  {% assign description = site.title %}
+  {% comment %} タイトル {% endcomment %}
+  {% assign title = site.title | append: "(" | append: site.title-saffix | append: ")" %}
   {% if page.description %}
-    {% assign description = page.title %}
+    {% assign title = page.title | append: " | " | append: title %}
+  {% endif %}
+
+  {% comment %} 説明文 {% endcomment %}
+  {% assign description = title %}
+
+  {% comment %} URL {% endcomment %}
+  {% if page.description %}
+    {% assign og-url = "https://oxmilch.github.io/blog" | append: page.url %}
+  {% else %}
+    {% assign og-url = "https://oxmilch.github.io/blog/" %}
   {% endif %}
 
   {% comment %} 日付 {% endcomment %}
@@ -33,25 +43,28 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>{{ site.title }} - {{ site.title-saffix }}</title>
-  <meta name="description" content="{{ description }} - {{ site.title-saffix }}">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% if page.crawler %}
+  {% if page.nocrawler %}
     <meta name="robots" content="none, nosnippet, noimageindex">
     <meta name="googlebot" content="nosnippet">
     <meta name="googlebot-news" content="nosnippet">
   {% endif %}
-  <meta property="og:title" content="Oxmlich's Portfolio">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://oxmilch.github.io/blog/">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="{{ description }} - {{ site.title-saffix }}">
   <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ og-url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:site_name" content="{{ site.title }}({{ site.title-saffix }})">
+  <meta property="og:description" content="{{ description }}">
+  {% if page.image %}
+    <meta property="og:image" content="{{ page.image | relative_url }}">
+  {% endif %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@oxmilch">
   <meta name="twitter:creator" content="@oxmilch">
-  <meta name="twitter:title" content="Oxmilch's Portfolio">
-  <meta name="twitter:description" content="{{ description }} - {{ site.title-saffix }}">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
