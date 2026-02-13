@@ -83,9 +83,14 @@
 <body id="top">
   <header>
     <div class="container">
-      <h1><a href="/blog/index.html">ミルクせんせーのブログ</a></h1>
+      <h1><a href="/blog/index.html" tabindex="1">ミルクせんせーのブログ</a></h1>
       <nav>
-        <ul>
+        <input type="checkbox" id="header-mobile-menu-check" hidden>
+        <label id="header-mobile-menu-icon" for="header-mobile-menu-check">
+            <span></span><span></span><span></span>
+        </label>
+        <div class="overlay"></div>
+        <ul id="menu">
           <li><a href="https://x.com/oxmilch">X</a></li>
           <li><a href="https://github.com/Oxmilch/">GitHub Top</a></li>
           {% comment %} <li><a>Portfolio</a></li> {% endcomment %}
@@ -113,26 +118,24 @@
       {{ content }}
     </article>
     <aside>
-      <div class="container">
-        <h2>プロフィール</h2>
-        <dl>
-          <img src="/blog/assets/images/profile.webp" alt="プロフィール画像">
-          <dt>ミルクせんせー<br>(@oxmilch)</dt>
-          <dd>
-            <p>バックエンドエンジニアとして8年間働き、リスキリングでデザイン関連を学んでいます。</p>
-            <p>パソコン、スマホ、ゲームやガジェットが好きで、プログラムやネットワーク構築などもプライベートでも嗜んでいます。</p>
-          </dd>
-        </dl>
-        <h2>最近の投稿</h2>
-        {{ asset_url }}
-        <ul>
-          {% for post in site.posts limit:15 %}
-            <li>
-              <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+      <h2>プロフィール</h2>
+      <dl>
+        <img src="/blog/assets/images/profile.webp" alt="プロフィール画像">
+        <dt>ミルクせんせー<br>(@oxmilch)</dt>
+        <dd>
+          <p>バックエンドエンジニアとして8年間働き、リスキリングでデザイン関連を学んでいます。</p>
+          <p>パソコン、スマホ、ゲームやガジェットが好きで、プログラムやネットワーク構築などもプライベートでも嗜んでいます。</p>
+        </dd>
+      </dl>
+      <h2>最近の投稿</h2>
+      {{ asset_url }}
+      <ul>
+        {% for post in site.posts limit:15 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+          </li>
+        {% endfor %}
+      </ul>
     </aside>
   </main>
   <footer>
