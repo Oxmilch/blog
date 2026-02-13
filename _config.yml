@@ -5,7 +5,6 @@ css-update: 20260213
 baseurl: "/blog"
 timezone: "Asia/Tokyo"
 plugins:
-  - jekyll-last-modified-at
   - jekyll-pages-gem
   - jekyll-paginate
   - jekyll-relative-links

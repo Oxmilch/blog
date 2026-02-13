@@ -1,7 +1,8 @@
 ---
 layout: page
 title: "トップページ"
-date: "2026-02-08"
+date: 2026-02-08
+update: 2026-02-14
 ---
 
 ## Welcom to My Blog! 

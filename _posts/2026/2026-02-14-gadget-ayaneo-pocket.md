@@ -4,7 +4,8 @@ title: "Ayaneo Pocket Microを１年使ってみて"
 description: "Ayaneo Pocket Micro を１年使ってみて"
 tags: [Gadget, AYANEO, AYANEO POCKET MICRO, Android]
 date: 2026-02-14
-image: "/assets/images/2026/2026-02-14-gadget-ayaneo-pocket.webp"
+update: 2026-02-14
+image: "2026/2026-02-14-gadget-ayaneo-pocket.webp"
 ---
 
 ## AYANEO Pocket Micro とは

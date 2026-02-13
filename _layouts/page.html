@@ -1,4 +1,7 @@
 {% comment %} ▼変数定義 ここから▼ {% endcomment %}
+  {% comment %} 本番URL {% endcomment %}
+  {% assign pages-url = "https://oxmilch.github.io/blog" %}
+ 
   {% comment %} タイトル {% endcomment %}
   {% assign title = site.title | append: "(" | append: site.title-saffix | append: ")" %}
   {% if page.description %}
@@ -10,21 +13,25 @@
 
   {% comment %} URL {% endcomment %}
   {% if page.description %}
-    {% assign og-url = "https://oxmilch.github.io/blog" | append: page.url %}
+    {% assign og-url = pages-url | append: page.url %}
   {% else %}
-    {% assign og-url = "https://oxmilch.github.io/blog/" %}
+    {% assign og-url = pages-url | append: "/" %}
   {% endif %}
 
+  {% comment %} OGP Image {% endcomment %}
+  {% if page.image %}
+    {% assign og-image = pages-url | append: "/assets/images/" | append: page.image %}
+  {% endif %}
   {% comment %} 日付 {% endcomment %}
   {% assign date_register_ymd = page.date | date:"%Y-%m-%d" %}
   {% assign date_updated_ymd = date_register_ymd %}
-  {% if page.last_modified_at %}
-    {% assign date_updated_ymd = page.last_modified_at | date:"%Y-%m-%d" %}
+  {% if page.update %}
+    {% assign date_updated_ymd = page.update | date:"%Y-%m-%d" %}
   {% endif %}
 
   {% comment %} 更新フラグ {% endcomment %}
   {% assign last_modify = false %}
-  {% if date_register_ymd == date_updated_ymd %}
+  {% if date_register_ymd != date_updated_ymd %}
     {% assign last_modify = true %}
   {% endif %}
 
@@ -34,8 +41,8 @@
   {% assign last_date_text = page.date | date:"%Y/%m/%d" %}
   {% if last_modify %}
     {% assign last_date_title = '更新日' %}
-    {% assign last_date = page.last_modified_at %}
-    {% assign last_date_text = page.last_modified_at | date:"%Y/%m/%d %H:%M" %}
+    {% assign last_date = page.update %}
+    {% assign last_date_text = page.update | date:"%Y/%m/%d" %}
   {% endif %}
 {% comment %} ▲変数定義 ここまで▲ {% endcomment %}
 
@@ -58,7 +65,7 @@
   <meta property="og:site_name" content="{{ site.title }}({{ site.title-saffix }})">
   <meta property="og:description" content="{{ description }}">
   {% if page.image %}
-    <meta property="og:image" content="{{ page.image | relative_url }}">
+    <meta property="og:image" content="{{ og-image }}">
   {% endif %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@oxmilch">
@@ -108,15 +115,16 @@
     <aside>
       <div class="container">
         <h2>プロフィール</h2>
-        <dL>
+        <dl>
           <img src="/blog/assets/images/profile.webp" alt="プロフィール画像">
           <dt>ミルクせんせー<br>(@oxmilch)</dt>
           <dd>
             <p>バックエンドエンジニアとして8年間働き、リスキリングでデザイン関連を学んでいます。</p>
             <p>パソコン、スマホ、ゲームやガジェットが好きで、プログラムやネットワーク構築などもプライベートでも嗜んでいます。</p>
           </dd>
-        </dL>
+        </dl>
         <h2>最近の投稿</h2>
+        {{ asset_url }}
         <ul>
           {% for post in site.posts limit:15 %}
             <li>
