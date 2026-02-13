@@ -85,7 +85,12 @@
     <div class="container">
       <h1><a href="/blog/index.html" tabindex="1">ミルクせんせーのブログ</a></h1>
       <nav>
-        <ul>
+        <input type="checkbox" id="header-mobile-menu-check" hidden>
+        <label id="header-mobile-menu-icon" for="header-mobile-menu-check">
+            <span></span><span></span><span></span>
+        </label>
+        <div class="overlay"></div>
+        <ul id="menu">
           <li><a href="https://x.com/oxmilch">X</a></li>
           <li><a href="https://github.com/Oxmilch/">GitHub Top</a></li>
           {% comment %} <li><a>Portfolio</a></li> {% endcomment %}
