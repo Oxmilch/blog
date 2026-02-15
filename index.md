@@ -2,17 +2,26 @@
 layout: page
 title: "トップページ"
 date: 2026-02-08
-update: 2026-02-14
+update: 2026-02-15
+new-post: disable
 ---
 
 ## Welcom to My Blog! 
 GitHub Pagesでブログをはじめてみました。
 
+### 最新の投稿 
+<ul>
+{% for post in site.posts limit:5 %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+  </li>
+{% endfor %}
+</ul>
+
 ### 作るきっかけ 
 2025年11月からWebとデザインの学び直しで学校に通い始めたのがきっかけです。  
 
 ### これから作るもの
-- スマートフォンレイアウト（レスポンシブ未対応）
 - タグ別記事リスト
 - 年月別記事リスト
 - 記事検索機能
@@ -66,11 +75,12 @@ GitHub Pagesでブログをはじめてみました。
 - MacBook Pro 13 2017 (macOS Ventura, i5-7267U, RAM 8GB, ROM 512GB)
 
 #### iPad 
-- iPad mini 5 (iOS18, Apple A12, RAM 3GB, ROM 256GB)
+- iPad mini 5 (iOS26.3, Apple A12, RAM 3GB, ROM 256GB)
 
 #### iPhone 
-- iPhone SE 2nd Gen. (iOS26, Apple A13, RAM 3GB, ROM 256GB)
-- iPhone 13 mini (iOS26, Apple A15, RAM 4GB, ROM 512GB)
+- iPhone SE 2nd Gen. (iOS26.3, Apple A13, RAM 3GB, ROM 256GB)
+- iPhone 13 mini (iOS26.3, Apple A15, RAM 4GB, ROM 512GB)
+- iPhone 5s (iOS12.5.8, Apple A7, RAM 1GB, ROM 32GB)
 
 #### Android
 - Nothing CMF Phone(1) (NothingOS4, Dimensity7300, RAM 8GB, ROM 256GB)

@@ -16,6 +16,9 @@ tags: [Windows11(x64),
        VB.NET, C#.NET, ASP.NET, HTML/CSS, JavaScript, TypeScript, Ruby,
        Jekyll,
        liquid]
+date: 2006-02-07
+update: 2026-02-15
+new-post: disable
 ---
 
 ## デバッグコマンドメモ
