@@ -127,15 +127,16 @@
           <p>パソコン、スマホ、ゲームやガジェットが好きで、プログラムやネットワーク構築などもプライベートでも嗜んでいます。</p>
         </dd>
       </dl>
-      <h2>最近の投稿</h2>
-      {{ asset_url }}
-      <ul>
-        {% for post in site.posts limit:15 %}
-          <li>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
-          </li>
-        {% endfor %}
-      </ul>
+      {% if page.new-post != "disable" %}
+        <h2>最近の投稿</h2>
+        <ul>
+          {% for post in site.posts limit:15 %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </aside>
   </main>
   <footer>
