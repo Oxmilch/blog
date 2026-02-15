@@ -1,7 +1,7 @@
 ---
 layout: page
-nocrawler: enable
 title: "書きたいことリスト・タグ全種・メモ"
+description: "書きたいことリスト・タグ全種・メモ"
 tags: [Windows11(x64),
        Mac(Apple Siricon), Mac(Intel),
        macOS Ventura, macOS Tahoe,
@@ -16,9 +16,11 @@ tags: [Windows11(x64),
        VB.NET, C#.NET, ASP.NET, HTML/CSS, JavaScript, TypeScript, Ruby,
        Jekyll,
        liquid]
-date: 2006-02-07
+date: 2026-02-07
 update: 2026-02-15
-new-post: disable
+is-crawler: false
+is-profile: false
+is-post-list: false
 ---
 
 ## デバッグコマンドメモ

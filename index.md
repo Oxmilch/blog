@@ -3,7 +3,7 @@ layout: page
 title: "トップページ"
 date: 2026-02-08
 update: 2026-02-15
-new-post: disable
+is-post-list: false
 ---
 
 ## Welcom to My Blog! 
