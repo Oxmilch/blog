@@ -9,8 +9,29 @@ date: 2026-02-16
 ## 所持デバイスの性能を比較してみる
 所持しているデバイスの性能の目安がすごく気になったので、環境に関わらず測定できる [HTML5ベンチマーク](https://s3-ap-northeast-1.amazonaws.com/mrfujita/web-bench/web-bench.html) で確認してみた。
 
+## 所持デバイスの性能詳細 
+### 所感 
+CPU性能はブレが少なく、割と正確に測定できていると思うが、  
+GPU性能については、最大30%程度の測定のブレが発生するため、GPU性能（Rectangle, Text, Circle BitBit）については参考程度で考えるの方が良さそう。
 
-## 所持デバイスの性能詳細
+### 各性能比較 
+
+| デバイス | OS | ALU | MLU |
+| - | :-: | :-: | :-: |
+| Mac Mini | macOS26.3 | -万 | -万 |
+| Desktop PC | Win11 Pro | -万 | -万 |
+| AYANEO Pro 2021 Retro Power | Win11 | 90万 | 253万 |
+| Let's note SV7 | Win11 Pro | -万 | -万 |
+| Let's note SZ6 | ZORIN OS 18 | 24万 | 93万 |
+| Xperia 5 III | Android13 | 47万 | 156万 |
+| iPhone 13 mini | iOS26.3 | 43万 | 222万 |
+| CMFPhone(1) | NothingOS4 | 41万 | 138万 |
+| AYANEO Pocket Micro | Android13 | -万 | -万 |
+| iPhone SE 2 | iOS26.3 | 33万 | 160万 |
+| iPad mini 5 | iPadOS26.3 | 28万 | 134万 |
+| MacBookPro13 2017 | macOS13.7.8 | 14万 | 85万 |
+| iPhone 5s | iOS12.5.8 | 5万 | 26万 |
+
 ### Android OS
 #### AYANEO - AYANEO POCKET MICRO
 - OS：Android
