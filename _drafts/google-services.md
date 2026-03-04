@@ -38,9 +38,9 @@ AI Pro、AI Ultra になると GDP関連のサービスも使えたりと、よ�
 | | Canvas(スライド) | 生成数 | 20件/日 | 20件/日 | 20件/日 | 20件/日 |
 | | | 予約アクション | - | 
 | | NotebookLM | ソース数 | 50 |
-| Labs | AI Credit | | 0 | 0 | 1,000 | 25,000 |
-| | Flow | 動画生成 | - | - | 利用可能 | 利用可能 |
-| | Whisk | | - | - | 利用可能 | 利用可能 |
+| Labs | AI Credit | | 100 | 200 | 1,000 | 25,000 |
+| | Flow |  | 利用可能 | 利用可能 | 利用可能 | 利用可能 |
+| | Whisk | | ？ | 利用可能 | 利用可能 | 利用可能 |
 | 開発関連 | GDP| プラン | Standard | Standard | Premium | Premium |
 | | Google AI Studio |
 | | Antigravity | プラン | Individual | Individual | Developer | Developer |
