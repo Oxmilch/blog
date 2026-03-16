@@ -13,4 +13,4 @@ is-crawler: false
 
 ## ポートフォリオ
 - [エンジニア ポートフォリオ＆スキルセット](/blog/2016/01/01/portfolio-engineer.html)
-- [デザイン ポートフォリオ](/blog/2025/11/21/portfolio-design.html)
+- [デザイン(職業訓練校) ポートフォリオ](/blog/2025/11/21/portfolio-design.html)

@@ -7,7 +7,7 @@ update: 2026-03-16
 is-crawler: false
 is-post-list: false
 ---
-- [デザインのポートフォリオへ](/blog/2025/11/21/portfolio-design.html)
+- [デザイン(職業訓練校)のポートフォリオへ](/blog/2025/11/21/portfolio-design.html)
 
 ## 職歴の要約
 - 業務委託のエンジニアとしてこれまでに10社に出向し業務に携わってきました。
