@@ -53,7 +53,7 @@
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% if page.nocrawler %}
+  {% if page.is-crawler == false %}
     <meta name="robots" content="none, nosnippet, noimageindex">
     <meta name="googlebot" content="nosnippet">
     <meta name="googlebot-news" content="nosnippet">
@@ -91,6 +91,7 @@
         </label>
         <div class="overlay"></div>
         <ul id="menu">
+          <li><a href="/blog/about.html">About</a></li>
           <li><a href="https://x.com/oxmilch">X</a></li>
           <li><a href="https://github.com/Oxmilch/">GitHub Top</a></li>
           {% comment %} <li><a>Portfolio</a></li> {% endcomment %}
@@ -102,10 +103,12 @@
     <article>
       <h1>{{ page.title }}</h1>
       <div id="article_header">
-        {% if last_modify %}
-          <span>登録日：</span><time>{{ page.date | date:"%Y/%m/%d" }}</time><br>
+        {% if page.date %}  
+          {% if last_modify %}
+            <span>登録日：</span><time>{{ page.date | date:"%Y/%m/%d" }}</time><br>
+          {% endif %}
+          <span>{{ last_date_title }}：</span><time datetime="{{ last_date }}">{{ last_date_text }}</time>
         {% endif %}
-        <span>{{ last_date_title }}：</span><time datetime="{{ last_date }}">{{ last_date_text }}</time>
         {% if page.tags %}
           <br>
           <div id="article_tags">
@@ -118,16 +121,18 @@
       {{ content }}
     </article>
     <aside>
-      <h2>プロフィール</h2>
-      <dl>
-        <img src="/blog/assets/images/profile.webp" alt="プロフィール画像">
-        <dt>ミルクせんせー<br>(@oxmilch)</dt>
-        <dd>
-          <p>バックエンドエンジニアとして8年間働き、リスキリングでデザイン関連を学んでいます。</p>
-          <p>パソコン、スマホ、ゲームやガジェットが好きで、プログラムやネットワーク構築などもプライベートでも嗜んでいます。</p>
-        </dd>
-      </dl>
-      {% if page.new-post != "disable" %}
+      {% if page.is-profile != false %}
+        <h2>プロフィール</h2>
+        <dl>
+          <img src="/blog/assets/images/profile.webp" alt="プロフィール画像">
+          <dt>ミルクせんせー<br>(@oxmilch)</dt>
+          <dd>
+            <p>バックエンドエンジニアとして8年間働き、リスキリングでデザイン関連を学んでいます。</p>
+            <p>パソコン、スマホ、ゲームやガジェットが好きで、プログラムやネットワーク構築などもプライベートでも嗜んでいます。</p>
+          </dd>
+        </dl>
+      {% endif %}
+      {% if page.is-post-list != false %}
         <h2>最近の投稿</h2>
         <ul>
           {% for post in site.posts limit:15 %}
