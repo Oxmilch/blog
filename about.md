@@ -12,5 +12,5 @@ is-crawler: false
 - 2016年 1月 - SESの零細企業に非正規雇用として就職
 
 ## ポートフォリオ
-- [エンジニア](/blog/2016/01/01/portfolio-engineer.html)
-- [デザイン](/blog/2025/11/21/portfolio-design.html)
+- [エンジニア ポートフォリオ＆スキルセット](/blog/2016/01/01/portfolio-engineer.html)
+- [デザイン ポートフォリオ](/blog/2025/11/21/portfolio-design.html)
