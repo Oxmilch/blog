@@ -2,7 +2,7 @@
 layout: page
 title: "トップページ"
 date: 2026-02-08
-update: 2026-02-15
+update: 2026-03-16
 is-post-list: false
 ---
 
@@ -27,36 +27,6 @@ GitHub Pagesでブログをはじめてみました。
 - 記事検索機能
 - ページネーション機能
 
-### スキルセット
-#### 言語
-- HTML4, 5, Living Standard
-- CSS2, 3
-- JavaScript
-- VB.NET
-- C#.NET
-- ASP.NET
-- Python3
-- SQL
-- PL/SQL
-- Shell
-
-#### データベース
-- Oracle 11g, 12c, 19c
-- SQLServer 2012
-
-#### ソフトウェア
-- IDE
-    - Visual Studio 2008, 2012, 2013, 2015
-    - Eclipse Pleiades 2018
-    - VSCode
-- Versioning
-    - git
-    - subversion
-- Adobe
-    - Photoshop 2024, 2025
-    - Illustrator 2025
-    - Premiere Pro 2025
-
 ### 所有端末 
 #### Network Attached Storage
 - Synology DS419Slim (4.5TB (SHR 1TB,2TBx3))
@@ -75,11 +45,11 @@ GitHub Pagesでブログをはじめてみました。
 - MacBook Pro 13 2017 (macOS Ventura, i5-7267U, RAM 8GB, ROM 512GB)
 
 #### iPad 
-- iPad mini 5 (iOS26.3, Apple A12, RAM 3GB, ROM 256GB)
+- iPad mini 5 (iOS26.3.1, Apple A12, RAM 3GB, ROM 256GB)
 
 #### iPhone 
-- iPhone SE 2nd Gen. (iOS26.3, Apple A13, RAM 3GB, ROM 256GB)
-- iPhone 13 mini (iOS26.3, Apple A15, RAM 4GB, ROM 512GB)
+- iPhone SE 2nd Gen. (iOS26.3.1, Apple A13, RAM 3GB, ROM 256GB)
+- iPhone 13 mini (iOS26.3.1, Apple A15, RAM 4GB, ROM 512GB)
 - iPhone 5s (iOS12.5.8, Apple A7, RAM 1GB, ROM 32GB)
 
 #### Android
