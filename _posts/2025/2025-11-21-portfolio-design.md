@@ -28,10 +28,11 @@ is-post-list: false
 ### 2026年2月18~25日授業課題 ジム宣伝広告動画作成
 - **横動画（自社サイト向け）**
   - **フレームサイズ**：1920 x 1080px
-    - ※軽量化のため、下記動画は 720 x 480px で再出力したものを掲載しています。
   - **フレームレート**：30fps
   - **動画尺**：45~60秒
-  - **書き出し**：MP4(H.264 / AAC)
+  - **書き出し**：MP4(H.264 / AAC)  
+
+※軽量化のため、下記動画は 960 x 540px で再出力したものを掲載しています。(動画サイズは2MB)
 <video
   src="/blog/assets/videos/2025-11-21-portfolio-design-assignment-260218-gym.mp4"
   poster="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260218-gym.webp"
@@ -39,15 +40,16 @@ is-post-list: false
   preload="metadata"
   controls controlslist="nodownload" muted
   alt="2026年2月18日作成ジム宣伝横動画"
-  style="height:auto; width:100%; max-width:864px; margin:1rem 0;">
+  style="height:auto; width:100%; max-width:960px; margin:1rem 0;">
 </video>
 
 - **縦動画（インスタグラム向け）**
   - **フレームサイズ**：1080 x 1920px
-    - ※軽量化のため、下記動画は 540 x 960px で再出力したものを掲載しています。
   - **フレームレート**：30fps
   - **動画尺**：30秒以内
-  - **書き出し**：MP4(H.264 / AAC)
+  - **書き出し**：MP4(H.264 / AAC)  
+
+※軽量化のため、下記動画は 540 x 960px で再出力したものを掲載しています。(動画サイズは2MB)
 <video
   src="/blog/assets/videos/2025-11-21-portfolio-design-assignment-260218-gym-insta.mp4"
   poster="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260218-gym-insta.webp"
@@ -102,7 +104,9 @@ is-post-list: false
   - **フレームサイズ**：600 x 600px
   - **フレームレート**：30fps
   - **動画尺**：10~20秒
-  - **書き出し**：MP4(H.264 / AAC)
+  - **書き出し**：MP4(H.264 / AAC)  
+
+※課題で提出した動画をそのまま掲載しています。音声はありません。(動画サイズは1.3MB)
 <video
   src="/blog/assets/videos/2025-11-21-portfolio-design-assignment-260216_bunner.mp4"
   poster="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260216_bunner.webp"
