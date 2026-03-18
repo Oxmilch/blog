@@ -3,7 +3,7 @@ layout: page
 title: "デザイン(職業訓練校) - ポートフォリオ"
 description: "デザイン(職業訓練校) - ポートフォリオ"
 date: 2025-11-21
-update: 2026-03-16
+update: 2026-03-18
 is-crawler: false
 is-post-list: false
 ---
@@ -26,6 +26,40 @@ is-post-list: false
 
 ## 2026年
 ### 2026年2月18~25日授業課題 ジム宣伝広告動画作成
+- **横動画（自社サイト向け）**
+  - **フレームサイズ**：1920 x 1080px
+  - **フレームレート**：30fps
+  - **動画尺**：45~60秒
+  - **書き出し**：MP4(H.264 / AAC)  
+
+※軽量化のため、下記動画は 960 x 540px で再出力したものを掲載しています。(動画サイズは2MB)
+<video
+  src="/blog/assets/videos/2025-11-21-portfolio-design-assignment-260218-gym.mp4"
+  poster="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260218-gym.webp"
+  type="video/mp4"
+  preload="metadata"
+  controls controlslist="nodownload" muted
+  alt="2026年2月18日作成ジム宣伝横動画"
+  style="height:auto; width:100%; max-width:960px; margin:1rem 0;">
+</video>
+
+- **縦動画（インスタグラム向け）**
+  - **フレームサイズ**：1080 x 1920px
+  - **フレームレート**：30fps
+  - **動画尺**：30秒以内
+  - **書き出し**：MP4(H.264 / AAC)  
+
+※軽量化のため、下記動画は 540 x 960px で再出力したものを掲載しています。(動画サイズは2MB)
+<video
+  src="/blog/assets/videos/2025-11-21-portfolio-design-assignment-260218-gym-insta.mp4"
+  poster="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260218-gym-insta.webp"
+  type="video/mp4"
+  preload="metadata"
+  controls controlslist="nodownload" muted
+  alt="2026年2月18日作成ジム宣伝縦動画"
+  style="height:auto; width:100%; max-width:540px; margin:1rem 0;">
+</video>
+
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
   - Adobe Photoshop 2024 (macOS)
@@ -64,39 +98,25 @@ is-post-list: false
     - 健康と美容、ファッションへの意識が高く、ランニング環境もあり、勤務地にも近い大濠公園に近いマンションに住んでいる。
     - 5年前に管理職になってからデスクワークも増え、3年前から姿勢や骨格の歪みに気になり始めた。
     - 現在、ジムに通ってるが、パーソナルトレーナーによる指導だけでは物足りなく感じ、カイロプラクティックもできる施設を探している。
-- **横動画（自社サイト向け）**
-  - **フレームサイズ**：1920 x 1080px
-    - ※軽量化のため、下記動画は 720 x 480px で再出力したものを掲載しています。
-  - **フレームレート**：30fps
-  - **動画尺**：45~60秒
-  - **書き出し**：MP4(H.264 / AAC)
-
-<video
-  src="/blog/assets/videos/20260218_gym.mp4"
-  type="video/mp4"
-  preload="metadata"
-  controls controlslist="nodownload" muted
-  alt="2026年2月18日作成ジム宣伝横動画"
-  style="height:auto; width:auto; aspect-ratio:16/9; margin:1rem 0;">
-</video>
-
-- **縦動画（インスタグラム向け）**
-  - **フレームサイズ**：1080 x 1920px
-    - ※軽量化のため、下記動画は 540 x 960px で再出力したものを掲載しています。
-  - **フレームレート**：30fps
-  - **動画尺**：30秒以内
-  - **書き出し**：MP4(H.264 / AAC)
-
-<video
-  src="/blog/assets/videos/20260218_gym_insta.mp4"
-  type="video/mp4"
-  preload="metadata"
-  controls controlslist="nodownload" muted
-  alt="2026年2月18日作成ジム宣伝縦動画"
-  style="height:minmax(auto, 720px); width:auto; aspect-ratio:9/16; margin:1rem 0;">
-</video>
 
 ### 2026年2月16日授業課題 バナー動画作成
+- **動画**
+  - **フレームサイズ**：600 x 600px
+  - **フレームレート**：30fps
+  - **動画尺**：10~20秒
+  - **書き出し**：MP4(H.264 / AAC)  
+
+※課題で提出した動画をそのまま掲載しています。音声はありません。(動画サイズは1.3MB)
+<video
+  src="/blog/assets/videos/2025-11-21-portfolio-design-assignment-260216_bunner.mp4"
+  poster="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260216_bunner.webp"
+  type="video/mp4"
+  preload="metadata"
+  controls controlslist="nodownload" muted
+  alt="2026年2月16日作成バナー動画"
+  style="height:auto; width:100%; max-width:600px; margin:1rem 0;">
+</video>
+
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
   - Adobe Photoshop 2024 (macOS)
@@ -110,23 +130,14 @@ is-post-list: false
     - バナーをクリックしてもらって、イベントLPにて詳しい内容を見てもらいたい。
   - **ターゲット**
     - (2)福岡近郊のファミリー層（GWのお出かけ先探し）
-- **動画**
-  - **フレームサイズ**：600 x 600px
-  - **フレームレート**：30fps
-  - **動画尺**：10~20秒
-  - **書き出し**：MP4(H.264 / AAC)
-
-<video
-  src="/blog/assets/videos/20260216_bunner.mp4"
-  type="video/mp4"
-  preload="metadata"
-  controls controlslist="nodownload" muted
-  alt="2026年2月16日作成バナー動画"
-  style="height:minmax(384px, auto); width:minmax(auto, 80%); aspect-ratio:1/1; margin:1rem 0;">
-</video>
 
 ## 2025年
 ### 2025年12月19日授業課題 A4チラシ作成2回目
+<img
+  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251219-poster.webp"
+  alt="2025年12月19日作成A4チラシ"
+  style="height:minmax(384px, auto); width:minmax(auto, 80%); text-align:center; margin:1rem 0;">
+
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
   - Adobe Photoshop 2024 (macOS)
@@ -143,28 +154,28 @@ is-post-list: false
 - **ターゲット**：和風に寄り過ぎず高級感がほしい
 - **コンセプト**：夜の月明かりと桜の花ビラの反射の光と、お茶を立てた時の波紋を、最低限の表現で伝えられるようにしました。
 
-<img
-  src="/blog/assets/images/2025/assignment-20251219-poster-outline.webp"
-  alt="2025年12月19日作成A4チラシ"
-  style="height:minmax(384px, auto); width:minmax(auto, 80%); text-align:center; margin:1rem 0;">
-
 ### 2025年12月18日授業課題 バナー広告作成
+<img
+  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251218-bunner1.webp"
+  alt="2025年12月18日作成バナー1つ目"
+  style="height:auto; min-width:300px; width:auto; max-width:48%; margin-top:1rem;">
+<img
+  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251218-bunner2.webp"
+  alt="2025年12月18日作成バナー2つ目"
+  style="height:auto; min-width:300px; width:auto; max-width:48%; margin-top:1rem;">
+
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
 - **制作時間**：3時間
 - **課題内容**：目を引くバナー広告を作成する。指定された文言は必ず入れること。
 - **コンセプト**：イラストも含め、イラストレーターだけで全て作成しました。
 
-<img
-  src="/blog/assets/images/2025/assignment-20251218-bunner1-outline.webp"
-  alt="2025年12月18日作成バナー1つ目"
-  style="height:minmax(320px, auto); width:minmax(auto, 80%); margin:1rem 0;">  
-<img
-  src="/blog/assets/images/2025/assignment-20251218-bunner2-outline.webp"
-  alt="2025年12月18日作成バナー2つ目"
-  style="height:minmax(320px, auto); width:minmax(auto, 80%); text-align:center; margin:1rem 0;">
-
 ### 2025年12月17~18日授業課題 A4チラシ作成1回目
+<img
+  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251217-poster.webp"
+  alt="2025年12月17日作成A4チラシ"
+  style="height:minmax(384px, auto); width:minmax(auto, 80%); text-align:center; margin-top:1rem;">
+
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
   - Adobe Photoshop 2024 (macOS)
@@ -175,27 +186,22 @@ is-post-list: false
 - **ターゲット**：未婚または既婚子無しの30~40代男女
 - **コンセプト**：街頭で配ったり、店頭で掲載しても遠目から分かるようにロゴをベースとしたチラシにしました。
 
-<img
-  src="/blog/assets/images/2025/assignment-20251217-poster-outline.webp"
-  alt="2025年12月17日作成A4チラシ"
-  style="height:minmax(384px, auto); width:minmax(auto, 80%); text-align:center; margin:1rem 0;">
-
 ### 2025年12月15日授業課題 バナーのトレース
+<img
+  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251215-trace1.webp"
+  alt="2025年12月15日作成バナー1つ目"
+  style="height:auto; min-width:300px; width:auto; max-width:48%; margin-top:1rem;">
+<img
+  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251215-trace2.webp"
+  alt="2025年12月15日作成バナー2つ目"
+  style="height:auto; min-width:300px; width:auto; max-width:48%; margin-top:1rem;">
+<img
+  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251215-trace3.webp"
+  alt="2025年12月15日作成バナー3つ目"
+  style="height:auto; min-width:300px; width:auto; max-width:48%; margin-top:1rem;">
+
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
   - Adobe Photoshop 2024 (macOS)
 - **制作時間**：4時間
 - **課題内容**：トレース画像を目視で真似て新規作成する
-
-<img
-  src="/blog/assets/images/2025/assignment-20251215-trace1-outline.webp"
-  alt="2025年12月15日作成バナー1つ目"
-  style="height:minmax(320px, auto); width:minmax(auto, 80%); margin:1rem 0;">  
-<img
-  src="/blog/assets/images/2025/assignment-20251215-trace2-outline.webp"
-  alt="2025年12月15日作成バナー2つ目"
-  style="height:minmax(320px, auto); width:minmax(auto, 80%); margin:1rem 0;">  
-<img
-  src="/blog/assets/images/2025/assignment-20251215-trace3-outline.webp"
-  alt="2025年12月15日作成バナー3つ目"
-  style="height:minmax(320px, auto); width:minmax(auto, 80%); margin:1rem 0;">
