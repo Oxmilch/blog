@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* 印刷用 */
+@media print{
+    /* Base */
+    body{
+        color: var(--color-print-dark);
+        background-color: var(--color-print-light);
+    }
+
+    video{
+        display: none;
+    }
+
+    .no-print{
+        display: none;
+    }
+
+    /* Code */
+    [class^="language"]{
+        color: var(--color-base-dark);
+        background-color: transparent;
+        overflow-x: auto;
+        border: solid 1px var(--color-base-dark);
+    }
+
+    /* Header */
+    header{
+        display: none;
+    }
+
+    /* Main */
+    main{
+        padding-top:0;
+    }
+
+    .next_page{
+        break-after: page;
+    }
+
+    /* Aside */
+    aside {
+        display: none;
+    }
+
+    /* Footer */
+}
+
+@media screen{
+    /* Base */
+    .no-display{
+        display: none;
+    }
+
+    .next_page{
+        display: none;
+    }
+}
