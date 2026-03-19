@@ -39,6 +39,7 @@
     --nav-justify: end;
 }
 
+/* Mobile Layout */
 @media(max-width:767px){
     :root{
         /* Font */
@@ -167,12 +168,6 @@ body{
     width: 100%;
     height: auto;
 }
-@media print{
-    body {
-        color: var(--color-print-dark);
-        background-color: var(--color-print-light);
-    }
-}
 
 h1, h2, h3, h4, h5{
     color: var(--color-accent-dark);
@@ -276,12 +271,6 @@ header{
     height: var(--header-height);
     padding: 1px;
     z-index: 100;
-}
-
-@media print{
-    header {
-        display: none;
-    }
 }
 
 header .container{
