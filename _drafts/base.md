@@ -21,6 +21,7 @@ update: 2026-02-15
 is-crawler: false
 is-profile: false
 is-post-list: false
+post-limit: 15
 ---
 
 ## デバッグコマンドメモ
