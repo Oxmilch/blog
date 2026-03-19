@@ -29,7 +29,7 @@
         display: none;
     }
 
-    /* main */
+    /* Main */
     main{
         padding-top:0;
     }
@@ -37,9 +37,17 @@
     .next_page{
         break-after: page;
     }
+
+    /* Aside */
+    aside {
+        display: none;
+    }
+
+    /* Footer */
 }
 
 @media screen{
+    /* Base */
     .no-display{
         display: none;
     }

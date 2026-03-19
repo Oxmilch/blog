@@ -152,8 +152,41 @@ html{
     scroll-behavior: smooth;
 }
 
-img{
+img,
+video{
     width: var(--image-width);
+}
+
+.img-portrait-small,
+.img-portrait,
+.img-landscape,
+.img-square,
+.img-square-2col
+{
+    height: auto;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.img-portrait-small{
+    max-width: 360px;
+}
+
+.img-portrait{
+    max-width: 540px;
+}
+
+.img-landscape{
+    max-width: 960px;
+}
+
+.img-square{
+    max-width: 600px;
+}
+
+.img-square-2col{
+    width: 48%;
+    max-width: 600px;
 }
 
 body{
@@ -390,12 +423,6 @@ aside dd{
 aside ul li{
     margin-top: 0.5rem;
     line-height: 1.3;
-}
-
-@media print{
-    aside {
-        display: none;
-    }
 }
 
 /* footer */

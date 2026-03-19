@@ -47,13 +47,13 @@ is-post-list: false
   preload="metadata"
   controls controlslist="nodownload" muted
   alt="2026年2月18日作成ジム宣伝横動画"
-  style="height:auto; width:100%; max-width:960px; margin-top:1rem;">
+  class="img-landscape">
 </video>
 <div class="no-display">
   <img
     src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260218-gym.webp"
     alt="2026年2月18日作成ジム宣伝横動画印刷用サムネイル"
-    style="height:auto; width:100%; max-width:960px; margin-top:1rem;">
+    class="img-landscape">
 </div>
 
 - **縦動画（インスタグラム向け）**
@@ -70,16 +70,14 @@ is-post-list: false
   preload="metadata"
   controls controlslist="nodownload" muted
   alt="2026年2月18日作成ジム宣伝縦動画"
-  style="height:auto; width:100%; max-width:540px; margin-top:1rem;">
+  class ="img-portrait">
 </video>
 <div class="no-display">
   <img
     src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260218-gym-insta.webp"
     alt="2026年2月18日作成ジム宣伝縦動画印刷用サムネイル"
-    style="height:auto; width:100%; max-width:540px; margin-top:1rem;">
+    class ="img-portrait-small">
 </div>
-
-<div class="next_page"></div>
 
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
@@ -137,13 +135,13 @@ is-post-list: false
   preload="metadata"
   controls controlslist="nodownload" muted
   alt="2026年2月16日作成バナー動画"
-  style="height:auto; width:100%; max-width:600px; margin-top:1rem;">
+  class="img-square">
 </video>
 <div class="no-display">
   <img
     src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260216_bunner.webp"
     alt="2026年2月16日作成バナー動画印刷用サムネイル"
-    style="height:auto; width:100%; max-width:600px; margin-top:1rem;">
+    class="img-square">
 </div>
 
 - **使用ソフト**
@@ -167,7 +165,7 @@ is-post-list: false
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251219-poster.webp"
   alt="2025年12月19日作成A4チラシ"
-  style="height:minmax(384px, auto); width:minmax(auto, 80%); text-align:center; margin-top:1rem;">
+  class="img-portrait">
 
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
@@ -191,11 +189,11 @@ is-post-list: false
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251218-bunner1.webp"
   alt="2025年12月18日作成バナー1つ目"
-  style="height:auto; min-width:300px; width:auto; max-width:48%; margin-top:1rem;">
+  class="img-square-2col">
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251218-bunner2.webp"
   alt="2025年12月18日作成バナー2つ目"
-  style="height:auto; min-width:300px; width:auto; max-width:48%; margin-top:1rem;">
+  class="img-square-2col">
 
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
@@ -209,7 +207,7 @@ is-post-list: false
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251217-poster.webp"
   alt="2025年12月17日作成A4チラシ"
-  style="height:minmax(384px, auto); width:minmax(auto, 80%); text-align:center; margin-top:1rem;">
+  class="img-landscape">
 
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
@@ -227,15 +225,15 @@ is-post-list: false
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251215-trace1.webp"
   alt="2025年12月15日作成バナー1つ目"
-  style="height:auto; min-width:300px; width:auto; max-width:48%; margin-top:1rem;">
+  class="img-square-2col">
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251215-trace2.webp"
   alt="2025年12月15日作成バナー2つ目"
-  style="height:auto; min-width:300px; width:auto; max-width:48%; margin-top:1rem;">
+  class="img-square-2col">
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251215-trace3.webp"
   alt="2025年12月15日作成バナー3つ目"
-  style="height:auto; min-width:300px; width:auto; max-width:48%; margin-top:1rem;">
+  class="img-square-2col">
 
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS)
