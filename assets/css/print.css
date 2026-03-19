@@ -2,6 +2,12 @@
 
 /* 印刷用 */
 @media print{
+    :root{
+        /* Lauout*/
+        --main-split-center: 100%;
+        --main-split-right: 100%;
+    }
+
     /* Base */
     body{
         color: var(--color-print-dark);
