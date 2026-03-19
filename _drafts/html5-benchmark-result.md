@@ -2,8 +2,8 @@
 layout: page
 title: "HTML5ベンチマーク"
 description: "HTML5ベンチマーク"
-tags: [Gadget, AYANEO, AYANEO POCKET MICRO, Android]
-date: 2026-02-16
+tags: [Gadget, Android, iOS, macOS, Windows, Zorin OS]
+date: 2026-03-19
 ---
 
 ## 所持デバイスの性能を比較してみる
@@ -11,22 +11,22 @@ date: 2026-02-16
 
 ## 所持デバイスの性能詳細 
 ### 所感 
-CPU性能はブレが少なく、割と正確に測定できていると思うが、  
-GPU性能については、最大30%程度の測定のブレが発生するため、GPU性能（Rectangle, Text, Circle BitBit）については参考程度で考えるの方が良さそう。
+CPU性能はブレが少なく、割と正確に測定できていると思うけれど、  
+GPU性能については、最大30%程度の測定のブレが発生するため、GPU性能（Rectangle, Text, Circle BitBit）については参考程度で考えるの方が良さそう。  
 
 ### 各性能比較 
 
 | デバイス | OS | ALU | MLU |
 | - | :-: | :-: | :-: |
-| Mac Mini | macOS26.3 | -万 | -万 |
-| Desktop PC | Win11 Pro | -万 | -万 |
+| Mac Mini | macOS26.3 |
+| Desktop PC | Win11 Pro |
 | AYANEO Pro 2021 Retro Power | Win11 | 90万 | 253万 |
-| Let's note SV7 | Win11 Pro | -万 | -万 |
+| Let's note SV7 | Win11 Pro | 48万 | 137万 |
 | Let's note SZ6 | ZORIN OS 18 | 24万 | 93万 |
 | Xperia 5 III | Android13 | 47万 | 156万 |
 | iPhone 13 mini | iOS26.3 | 43万 | 222万 |
 | CMFPhone(1) | NothingOS4 | 41万 | 138万 |
-| AYANEO Pocket Micro | Android13 | -万 | -万 |
+| AYANEO Pocket Micro | Android13 |
 | iPhone SE 2 | iOS26.3 | 33万 | 160万 |
 | iPad mini 5 | iPadOS26.3 | 28万 | 134万 |
 | MacBookPro13 2017 | macOS13.7.8 | 14万 | 85万 |
@@ -40,12 +40,12 @@ GPU性能については、最大30%程度の測定のブレが発生するた�
 
 | 項目 | ターボ | ゲーム | セーブ |
 | - | :-: | :-: | :-: |
-| ALU | -万 | -万 | -万 |
-| MLU | -万 | -万 | -万 |
-| Rectangle | -万 | -万 | -万 |
-| Text | -万 | -万 | -万 
-| Circle | -万 | -万 | -万 |
-| BitBit | -万 | -万 | -万 |
+| ALU |
+| MLU |
+| Rectangle |
+| Text |
+| Circle |
+| BitBit |
 
 #### Nothing - CMFPhone(1)
 - OS：Nothing OS 4
@@ -115,7 +115,7 @@ GPU性能については、最大30%程度の測定のブレが発生するた�
 - GPU：Intel UHD Graphics 620
 - ブラウザ：Brave v1.87.188
 
-| 項目 | AC最適な<br>パフォーマンス | ACバランス | AC最適な<br>省電力 | 最適な<br>パフォーマンス | バランス | 最適な<bn>省電力 |
+| 項目 | AC電源<br>最適な<br>パフォーマンス | AC電源<br>バランス | AC電源<br>最適な<br>省電力 | 最適な<br>パフォーマンス | バランス | 最適な<bn>省電力 |
 | - | :-: | :-: | :-: | :-: | :-: | :-: |
 | ALU | 45万 | 48万 | 47万 | 50万 | 47万 | 34万 |
 | MLU | 125万 | 137万 | 131万 | 110万 | 102万 | 66万 |
@@ -203,7 +203,7 @@ GPU性能については、最大30%程度の測定のブレが発生するた�
 - ブラウザ：Brave v1.86.148
 - バッテリー最大容量：92%
 
-| 項目 | AC通常 | AC低電力 | 通常 | 低電力 |
+| 項目 | AC電源<br>通常 | AC電源<br>低電力 | 通常 | 低電力 |
 | - | :-: | :-: | :-: | :-: | 
 | ALU | 14万 | 13万 | 14万 | 9万 |
 | MLU | 85万 | 65万 | 65万 | 50万 |
@@ -215,13 +215,13 @@ GPU性能については、最大30%程度の測定のブレが発生するた�
 #### Apple - Mac Mini
 - OS：macOS 26
 - CPU：Apple M4
-- ブラウザ：Brave v1.86.148
+- ブラウザ：
 
-| 項目 | AC通常 | AC低電力 |
+| 項目 | AC電源<br>通常 | AC電源<br>低電力 |
 | - | :-: | :-: | 
-| ALU | 14万 | 13万 |
-| MLU | 85万 | 65万 |
-| Rectangle | 18万 |
-| Text | 18万 |
-| Circle | 18万 |
-| BitBit | 18万 |
+| ALU |
+| MLU |
+| Rectangle |
+| Text |
+| Circle |
+| BitBit |
