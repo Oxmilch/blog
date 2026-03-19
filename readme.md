@@ -2,12 +2,11 @@
 layout: page
 title: "トップページ"
 date: 2026-02-08
-update: 2026-03-16
+update: 2026-03-19
 is-post-list: false
 ---
-
 ## Welcom to My Blog! 
-GitHub Pagesでブログをはじめてみました。
+[GitHub Pages](https://oxmilch.github.io/blog/) でブログをはじめてみました。
 
 ### 最新の投稿 
 <ul>
