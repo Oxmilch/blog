@@ -223,6 +223,8 @@ is-post-list: false
   - title、descriptionの記述は採点基準に含みませんが、可能であれば各自考え記述してください。
   - PCファースト、SPファーストどちらで記述しても問題ありません。
 
+<div class="next_page"></div>
+
 ### 2026年1月16日授業課題 ハンバーガーショップのページ作成
 <h4><a href="/blog/pages/assignment260116/index.html" target="_blank">制作したページへ</a></h4>
 <h4>レイアウト</h4>
@@ -236,6 +238,8 @@ is-post-list: false
   - VSCode
 - **制作時間**：1.5時間
 
+<div class="next_page"></div>
+
 
 ## コンテンツ制作学習
 - **期間**
@@ -245,6 +249,8 @@ is-post-list: false
   - Adobe Photoshop 2024 (macOS Ventura)
 - **教材**
   - [世界一わかりやすいIllustrator & Photoshop 操作とデザインの教科書 改定4版 (技術評論社)](https://gihyo.jp/book/2025/978-4-297-14628-3)
+
+<div class="next_page"></div>
 
 ### 2025年12月19日授業課題 A4チラシ作成2回目
 <img
