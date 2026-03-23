@@ -109,7 +109,7 @@
         top: calc(var(--font-size-xl) * 0.4);
     }
     #header-mobile-menu-check:checked + #header-mobile-menu-icon span{
-        width: 0;
+        background: transparent;
     }
     #header-mobile-menu-check:checked + #header-mobile-menu-icon span::before{
         transform: translateY(calc(var(--font-size-xl) * 0.4)) rotate(45deg);
