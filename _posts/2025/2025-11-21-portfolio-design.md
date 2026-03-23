@@ -98,9 +98,9 @@ is-post-list: false
 </div>
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
-  - Adobe Photoshop 2024 (macOS)
-  - Adobe Premiere Pro 2025 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
+  - Adobe Premiere Pro 2025 (macOS Ventura)
   - Adobe Firefly
   - Google Vids
   - Google Youtube Studio
@@ -111,9 +111,9 @@ is-post-list: false
     - WEB用の横型動画と誘導用の縦動画の2つを作成
     - 自社WebサイトのTOPページへの掲載と、SNS(Instagram)のショート動画でPRを予定
   - **構成**
-    - (1) 導入 / ・視聴者の興味を引く・悩みの提示
-    - (2) 本編 / ・サービスの内容や魅力を紹介 (複数シーンでも良い)
-    - (3) 締め / ・印象的な一言・ロゴの提示など
+    - (1) 導入 ・視聴者の興味を引く・悩みの提示
+    - (2) 本編 ・サービスの内容や魅力を紹介 (複数シーンでも良い)
+    - (3) 締め ・印象的な一言・ロゴの提示など
   - **クライアントからの要望**
     - 情報を分かりやすく伝えてほしい。
     - 動画なので文字情報は少なくして欲しい。
@@ -163,9 +163,9 @@ is-post-list: false
 </div>
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
-  - Adobe Photoshop 2024 (macOS)
-  - Adobe Premiere Pro 2025 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
+  - Adobe Premiere Pro 2025 (macOS Ventura)
 - **制作時間**：3時間
 - **課題内容**
   - **目的**
@@ -226,7 +226,7 @@ is-post-list: false
     - フォントや、カラーコード、余白等はデザインカンプに従い実装してください。
   - **リンク設定**
     - リンクについては、期待される遷移先を考え、記述してください。
-    - リンク先は必要であれば仮のパスでも構いません  （例：”#” や “example.html”）。
+    - リンク先は必要であれば仮のパスでも構いません（例：”#” や “example.html”）。
   - **コード整理**
     - コードは適切にインデントを揃え、読みやすさを意識し記述してください。
     - 可読性を高め、エラーを見つけやすく、後からのメンテナンスがしやすい状態を保つよう記述してください。
@@ -276,12 +276,11 @@ is-post-list: false
   class="img-portrait">
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
-  - Adobe Photoshop 2024 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
 - **制作時間**：6時間
 - **課題内容**
-  - 一般向けではなく限られた方に向けたお知らせのポスターです。
-貼る場所も教室や各会館などに限定されます。
+  - 一般向けではなく限られた方に向けたお知らせのポスターです。貼る場所も教室や各会館などに限定されます。
   - 会員様すでに雰囲気はお分かりなので茶会のイメージ写真などは不要です。
   - ポスターには記載しませんが、流派によってドレスコードがあります（着物の格）
   - バックは黒に近いような濃色で、和風により過ぎないテイストが希望です。
@@ -304,7 +303,7 @@ is-post-list: false
   class="img-square-2col">
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
 - **制作時間**：3時間
 - **課題内容**：目を引くバナー広告を作成する。指定された文言は必ず入れること。
 - **コンセプト**：イラストも含め、イラストレーターだけで全て作成しました。
@@ -318,8 +317,8 @@ is-post-list: false
   class="img-landscape">
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
-  - Adobe Photoshop 2024 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
 - **制作時間**：9時間
 - **課題内容**
   - ターゲット層を設定してチラシを作成する
@@ -344,7 +343,7 @@ is-post-list: false
   class="img-square-2col">
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
-  - Adobe Photoshop 2024 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
 - **制作時間**：4時間
 - **課題内容**：トレース画像を目視で真似て新規作成する
