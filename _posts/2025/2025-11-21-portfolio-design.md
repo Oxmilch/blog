@@ -3,7 +3,7 @@ layout: page
 title: "デザイン(職業訓練校) - ポートフォリオ"
 description: "デザイン(職業訓練校) - ポートフォリオ"
 date: 2025-11-21
-update: 2026-03-19
+update: 2026-03-23
 is-crawler: false
 is-post-list: false
 ---
@@ -14,24 +14,40 @@ is-post-list: false
   </ul>
 </div>
 
+
 ## 目次
-- [2026年](#2026年)
-  - 3月13日 Adobe Premiere Pro 2025 学習終了
-  - [2月18日 授業課題 ジム宣伝広告動画作成](#2026年2月1825日授業課題-ジム宣伝広告動画作成)
-  - [2月16日 授業課題 バナー動画作成](#2026年2月16日授業課題-バナー動画作成)
-  - 2月2日 Adobe Premiere Pro 2025 学習開始
-- [2025年](#2025年)
-  - 12月24日 Adobe Illustrator, Photoshop 学習終了
-  - [12月19日 授業課題 A4チラシ作成2回目](#2025年12月19日授業課題-a4チラシ作成2回目)
-  - [12月18日 授業課題 バナー広告作成](#2025年12月18日授業課題-バナー広告作成)
-  - [12月17日 授業課題 A4チラシ作成1回目](#2025年12月1718日授業課題-a4チラシ作成1回目)
-  - [12月15日 授業課題 バナーのトレース](#2025年12月15日授業課題-バナーのトレース)
-  - 12月9日 Adobe Photoshop 2024 学習開始
-  - 12月2日 Adobe Illustrator 2025 学習開始
+- [**動画制作学習 2026年2月2日~3月13日 (22日間)**](#動画制作学習)
+  - 教材：Premiere Pro よくばり入門 改訂３版（できるよくばり入門） (インプレス)
+    - 2月18日 [ジム宣伝広告動画作成](#2026年2月1825日授業課題-ジム宣伝広告動画作成)
+    - 2月16日 [バナー動画作成](#2026年2月16日授業課題-バナー動画作成)
+
+<br>
+
+- [**Web制作学習 2025年12月26日~2026年1月27日 (15日間)**](#web制作学習)
+  - 教材：1冊ですべて身につくHTML & CSSとWebデザイン入門講座 第2版 (SBCreative)
+    - 1月27日 [ハンバーガーショップのレスポンシブ対応ページ作成](#2026年1月27日授業課題-ハンバーガーショップのレスポンシブ対応ページ作成)
+    - 1月16日 [ハンバーガーショップのページ作成](#2026年1月16日授業課題-ハンバーガーショップのページ作成)
+
+<br>
+
+- [**コンテンツ制作学習 2025年12月2日~12月25日 (16日間)**](#コンテンツ制作学習)
+  - 教材：世界一わかりやすいIllustrator & Photoshop 操作とデザインの教科書 改定4版 (技術評論社)
+    - 12月19日 [A4チラシ作成2回目](#2025年12月19日授業課題-a4チラシ作成2回目)
+    - 12月18日 [バナー広告作成](#2025年12月18日授業課題-バナー広告作成)
+    - 12月17日 [A4チラシ作成1回目](#2025年12月1718日授業課題-a4チラシ作成1回目)
+    - 12月15日 [バナーのトレース](#2025年12月15日授業課題-バナーのトレース)
 
 <div class="next_page"></div>
 
-## 2026年
+
+## 動画制作学習
+- **期間**
+  - 2026年2月2日 ~ 3月13日 (22日間)
+- **ソフトウェア**
+  - Adobe Premiere Pro 2025 (macOS Ventura)
+- **教材**
+  - [Premiere Pro よくばり入門 改訂３版（できるよくばり入門） (インプレス)](https://book.impress.co.jp/books/1125101035)
+
 ### 2026年2月18~25日授業課題 ジム宣伝広告動画作成
 - **横動画（自社サイト向け）**
   - **フレームサイズ**：1920 x 1080px
@@ -55,6 +71,8 @@ is-post-list: false
     alt="2026年2月18日作成ジム宣伝横動画印刷用サムネイル"
     class="img-landscape">
 </div>
+
+<div class="next_page"></div>
 
 - **縦動画（インスタグラム向け）**
   - **フレームサイズ**：1080 x 1920px
@@ -80,9 +98,9 @@ is-post-list: false
 </div>
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
-  - Adobe Photoshop 2024 (macOS)
-  - Adobe Premiere Pro 2025 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
+  - Adobe Premiere Pro 2025 (macOS Ventura)
   - Adobe Firefly
   - Google Vids
   - Google Youtube Studio
@@ -93,9 +111,9 @@ is-post-list: false
     - WEB用の横型動画と誘導用の縦動画の2つを作成
     - 自社WebサイトのTOPページへの掲載と、SNS(Instagram)のショート動画でPRを予定
   - **構成**
-    - (1) 導入 / ・視聴者の興味を引く・悩みの提示
-    - (2) 本編 / ・サービスの内容や魅力を紹介 (複数シーンでも良い)
-    - (3) 締め / ・印象的な一言・ロゴの提示など
+    - (1) 導入 ・視聴者の興味を引く・悩みの提示
+    - (2) 本編 ・サービスの内容や魅力を紹介 (複数シーンでも良い)
+    - (3) 締め ・印象的な一言・ロゴの提示など
   - **クライアントからの要望**
     - 情報を分かりやすく伝えてほしい。
     - 動画なので文字情報は少なくして欲しい。
@@ -145,9 +163,9 @@ is-post-list: false
 </div>
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
-  - Adobe Photoshop 2024 (macOS)
-  - Adobe Premiere Pro 2025 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
+  - Adobe Premiere Pro 2025 (macOS Ventura)
 - **制作時間**：3時間
 - **課題内容**
   - **目的**
@@ -160,7 +178,97 @@ is-post-list: false
 
 <div class="next_page"></div>
 
-## 2025年
+
+## Web制作学習
+- **期間**
+  - 2025年12月25日 ~ 2026年1月27日（15日間）
+- **ソフトウェア**
+  - VSCode (macOS Ventura)
+  - figma
+- **教材**
+  - [1冊ですべて身につくHTML & CSSとWebデザイン入門講座 第2版 (SBCreative)](https://www.sbcr.jp/product/4815618469/)
+
+### 2026年1月27日授業課題 ハンバーガーショップのレスポンシブ対応ページ作成
+<div class="no-print">
+  <h4><a href="/blog/pages/assignment260127/index.html" target="_blank">制作したページへ</a></h4>
+</div>
+
+<h4>PCレイアウト</h4>
+<img
+  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260127-sitetop.webp"
+  alt="2026年1月27日作成PCレイアウトトップページ"
+  class="img-landscape">
+
+<div class="next_page"></div>
+
+<h4>モバイルレイアウト</h4>
+<img
+  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260127-sitetop-mobile.webp"
+  alt="2026年1月27日作成モバイルレイアウトトップページ"
+  class="img-portrait-small">
+
+<div class="no-print">
+  <h4><a href="/blog/pages/assignment260127/index.html" target="_blank">制作したページへ</a></h4><br>
+</div>
+
+- **使用ソフト**
+  - VSCode
+  - figma
+- **制作時間**：4.5時間
+- **課題概要**
+  - 配布されたデザインカンプをもとに、HTMLとCSSを用いてレスポンシブ対応のWebページを作成してください。
+- **要件**
+  - **命名規則**
+    - フォルダ名や、ファイル名、CSSクラス名等は命名規則に則り定義してください。
+  - **HTML構造**
+    - 適切なタグを使用し、セマンティックなHTMLを記述してください。
+  - **CSSスタイル**
+    - フォントや、カラーコード、余白等はデザインカンプに従い実装してください。
+  - **リンク設定**
+    - リンクについては、期待される遷移先を考え、記述してください。
+    - リンク先は必要であれば仮のパスでも構いません（例：”#” や “example.html”）。
+  - **コード整理**
+    - コードは適切にインデントを揃え、読みやすさを意識し記述してください。
+    - 可読性を高め、エラーを見つけやすく、後からのメンテナンスがしやすい状態を保つよう記述してください。
+- **注意点**
+  - title、descriptionの記述は採点基準に含みませんが、可能であれば各自考え記述してください。
+  - PCファースト、SPファーストどちらで記述しても問題ありません。
+
+<div class="next_page"></div>
+
+### 2026年1月16日授業課題 ハンバーガーショップのページ作成
+<div class="no-print">
+  <h4><a href="/blog/pages/assignment260116/index.html" target="_blank">制作したページへ</a></h4>
+</div>
+
+<h4>レイアウト</h4>
+<img
+  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260116-site.webp"
+  alt="2026年1月16日作成トップページ"
+  class="img-landscape">
+
+<div class="no-print">
+  <h4><a href="/blog/pages/assignment260116/index.html" target="_blank">制作したページへ</a></h4><br>
+</div>
+
+- **使用ソフト**
+  - VSCode
+- **制作時間**：1.5時間
+
+<div class="next_page"></div>
+
+
+## コンテンツ制作学習
+- **期間**
+  - 2025年12月2日 ~ 12月25日（16日間）
+- **ソフトウェア**
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
+- **教材**
+  - [世界一わかりやすいIllustrator & Photoshop 操作とデザインの教科書 改定4版 (技術評論社)](https://gihyo.jp/book/2025/978-4-297-14628-3)
+
+<div class="next_page"></div>
+
 ### 2025年12月19日授業課題 A4チラシ作成2回目
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251219-poster.webp"
@@ -168,12 +276,11 @@ is-post-list: false
   class="img-portrait">
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
-  - Adobe Photoshop 2024 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
 - **制作時間**：6時間
 - **課題内容**
-  - 一般向けではなく限られた方に向けたお知らせのポスターです。
-貼る場所も教室や各会館などに限定されます。
+  - 一般向けではなく限られた方に向けたお知らせのポスターです。貼る場所も教室や各会館などに限定されます。
   - 会員様すでに雰囲気はお分かりなので茶会のイメージ写真などは不要です。
   - ポスターには記載しませんが、流派によってドレスコードがあります（着物の格）
   - バックは黒に近いような濃色で、和風により過ぎないテイストが希望です。
@@ -196,7 +303,7 @@ is-post-list: false
   class="img-square-2col">
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
 - **制作時間**：3時間
 - **課題内容**：目を引くバナー広告を作成する。指定された文言は必ず入れること。
 - **コンセプト**：イラストも含め、イラストレーターだけで全て作成しました。
@@ -210,8 +317,8 @@ is-post-list: false
   class="img-landscape">
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
-  - Adobe Photoshop 2024 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
 - **制作時間**：9時間
 - **課題内容**
   - ターゲット層を設定してチラシを作成する
@@ -236,7 +343,7 @@ is-post-list: false
   class="img-square-2col">
 
 - **使用ソフト**
-  - Adobe Illustrator 2025 (macOS)
-  - Adobe Photoshop 2024 (macOS)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
 - **制作時間**：4時間
 - **課題内容**：トレース画像を目視で真似て新規作成する
