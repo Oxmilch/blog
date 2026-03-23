@@ -4,6 +4,11 @@ title-saffix: "Oxmilch's Blog by GitHub Pages"
 css-update: 20260323
 baseurl: "/blog"
 timezone: "Asia/Tokyo"
+profile:
+  "
+  バックエンドエンジニアとして8年間働き、リスキリングでデザイン関連を学んでいます。[br]
+  パソコン、スマホ、ゲームやガジェットが好きで、プログラムやネットワーク構築などもプライベートでも嗜んでいます。
+  "
 plugins:
   - jekyll-pages-gem
   - jekyll-paginate
