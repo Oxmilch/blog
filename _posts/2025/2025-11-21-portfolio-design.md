@@ -9,8 +9,7 @@ is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/2016/01/01/portfolio-engineer.html">エンジニアのポートフォリオへ</a>
-    </li>
+    <li><a href="/blog/2016/01/01/portfolio-engineer.html">エンジニアのポートフォリオへ</a></li>
   </ul>
 </div>
 
@@ -45,6 +44,8 @@ is-post-list: false
   - 2026年2月2日 ~ 3月13日 (22日間)
 - **ソフトウェア**
   - Adobe Premiere Pro 2025 (macOS Ventura)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
 - **教材**
   - [Premiere Pro よくばり入門 改訂３版（できるよくばり入門） (インプレス)](https://book.impress.co.jp/books/1125101035)
 
@@ -99,8 +100,8 @@ is-post-list: false
 
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS Ventura)
-  - Adobe Photoshop 2024 (macOS Ventura)
   - Adobe Premiere Pro 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
   - Adobe Firefly
   - Google Vids
   - Google Youtube Studio
@@ -163,9 +164,9 @@ is-post-list: false
 </div>
 
 - **使用ソフト**
+  - Adobe Premiere Pro 2025 (macOS Ventura)
   - Adobe Illustrator 2025 (macOS Ventura)
   - Adobe Photoshop 2024 (macOS Ventura)
-  - Adobe Premiere Pro 2025 (macOS Ventura)
 - **制作時間**：3時間
 - **課題内容**
   - **目的**
@@ -183,7 +184,7 @@ is-post-list: false
 - **期間**
   - 2025年12月25日 ~ 2026年1月27日（15日間）
 - **ソフトウェア**
-  - VSCode (macOS Ventura)
+  - VSCode
   - figma
 - **教材**
   - [1冊ですべて身につくHTML & CSSとWebデザイン入門講座 第2版 (SBCreative)](https://www.sbcr.jp/product/4815618469/)
@@ -251,8 +252,7 @@ is-post-list: false
   <h4><a href="/blog/pages/assignment260116/index.html" target="_blank">制作したページへ</a></h4><br>
 </div>
 
-- **使用ソフト**
-  - VSCode
+- **使用ソフト**：VSCode
 - **制作時間**：1.5時間
 
 <div class="next_page"></div>
