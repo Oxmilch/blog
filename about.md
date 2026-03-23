@@ -1,7 +1,8 @@
 ---
 layout: page
-title: "About"
+title: "ミルクせんせーについて"
 date: 2026-03-16
+update: 2026-03-23
 is-crawler: false
 ---
 ## 経歴
