@@ -72,6 +72,8 @@ is-post-list: false
     class="img-landscape">
 </div>
 
+<div class="next_page"></div>
+
 - **縦動画（インスタグラム向け）**
   - **フレームサイズ**：1080 x 1920px
   - **フレームレート**：30fps
@@ -187,18 +189,27 @@ is-post-list: false
   - [1冊ですべて身につくHTML & CSSとWebデザイン入門講座 第2版 (SBCreative)](https://www.sbcr.jp/product/4815618469/)
 
 ### 2026年1月27日授業課題 ハンバーガーショップのレスポンシブ対応ページ作成
-<h4><a href="/blog/pages/assignment260127/index.html" target="_blank">制作したページへ</a></h4>
+<div class="no-print">
+  <h4><a href="/blog/pages/assignment260127/index.html" target="_blank">制作したページへ</a></h4>
+</div>
+
 <h4>PCレイアウト</h4>
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260127-sitetop.webp"
   alt="2026年1月27日作成PCレイアウトトップページ"
   class="img-landscape">
+
+<div class="next_page"></div>
+
 <h4>モバイルレイアウト</h4>
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260127-sitetop-mobile.webp"
   alt="2026年1月27日作成モバイルレイアウトトップページ"
-  class="img-portrait">
-<h4><a href="/blog/pages/assignment260127/index.html" target="_blank">制作したページへ</a></h4><br>
+  class="img-portrait-small">
+
+<div class="no-print">
+  <h4><a href="/blog/pages/assignment260127/index.html" target="_blank">制作したページへ</a></h4><br>
+</div>
 
 - **使用ソフト**
   - VSCode
@@ -226,13 +237,19 @@ is-post-list: false
 <div class="next_page"></div>
 
 ### 2026年1月16日授業課題 ハンバーガーショップのページ作成
-<h4><a href="/blog/pages/assignment260116/index.html" target="_blank">制作したページへ</a></h4>
+<div class="no-print">
+  <h4><a href="/blog/pages/assignment260116/index.html" target="_blank">制作したページへ</a></h4>
+</div>
+
 <h4>レイアウト</h4>
 <img
   src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260116-site.webp"
   alt="2026年1月16日作成トップページ"
   class="img-landscape">
-<h4><a href="/blog/pages/assignment260116/index.html" target="_blank">制作したページへ</a></h4><br>
+
+<div class="no-print">
+  <h4><a href="/blog/pages/assignment260116/index.html" target="_blank">制作したページへ</a></h4><br>
+</div>
 
 - **使用ソフト**
   - VSCode
