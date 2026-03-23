@@ -6,12 +6,24 @@
         /* Lauout*/
         --main-split-center: 100%;
         --main-split-right: 100%;
+
+        /* Font */
+        --font-size-xl: 24px;
+        --font-size-l: 20px;
+        --font-size-m: 16px;
+        --font-size-s: 14px;
+        --font-size-xs: 12px;
     }
 
     /* Base */
     body{
         color: var(--color-print-dark);
         background-color: var(--color-print-light);
+    }
+
+    a{
+        color: var(--color-print-dark);
+        text-decoration: none;
     }
 
     video{
