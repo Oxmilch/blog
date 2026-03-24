@@ -34,6 +34,8 @@
 
     /* Image */
     --image-width: 67%;
+    --image-width-portfolio: 32%;
+    --image-brightness-portfolio: 85%;
 
     /* Navigation */
     --nav-justify: end;
@@ -59,6 +61,8 @@
 
         /* Image */
         --image-width: 100%;
+        --image-width-portfolio: 49%;
+        --image-brightness-portfolio: 100%;
 
         /* Navigation */
         --nav-justify: start;
@@ -205,6 +209,22 @@ video{
 .img-square-2col{
     width: 48%;
     max-width: 600px;
+}
+
+.img-square-portfolio-link{
+    display: block;
+    max-width: var(--image-width-portfolio);
+    border-radius: 10px;
+}
+.img-square-portfolio{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    filter: brightness(var(--image-brightness-portfolio));
+    transition: 0.4s;
+}
+.img-square-portfolio:hover{
+    filter: brightness(100%);
 }
 
 body{
@@ -411,7 +431,11 @@ article li{
     line-height: 1.3;
 }
 
-
+#portfolio_grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
 /* aside */
 aside{
     min-width: var(--main-split-right);
