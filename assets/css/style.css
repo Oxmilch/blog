@@ -73,6 +73,7 @@
     header nav{
         flex-basis: 75%;
     }
+    /* Hamburger Menu*/
     header nav label{
         display: inline-block;
         position: fixed;
@@ -83,22 +84,38 @@
         cursor: pointer;
         z-index: 103;
     }
-    header nav span{
+    header nav span,
+    header nav span::before,
+    header nav span::after{
         display: block;
         height: 0.2rem;
-        margin: 0.4rem 0;
-        background: var(--color-accent-light);
+        width: 2rem;
+        background: var(--color-base-light);
         border-radius: 2px;
         transition: 0.4s;
     }
-    #header-mobile-menu-check:checked + #header-mobile-menu-icon span:nth-child(1) {
-        transform: translateY(10px) rotate(45deg);
+    header nav span{
+        position: relative;
+        margin: calc(var(--font-size-xl) * 0.4 + 0.5rem) 0;
     }
-    #header-mobile-menu-check:checked + #header-mobile-menu-icon span:nth-child(2) {
-        opacity: 0;
+    header nav span::before{
+        position: absolute;
+        content: "";
+        bottom: calc(var(--font-size-xl) * 0.4);
     }
-    #header-mobile-menu-check:checked + #header-mobile-menu-icon span:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
+    header nav span::after{
+        position: absolute;
+        content: "";
+        top: calc(var(--font-size-xl) * 0.4);
+    }
+    #header-mobile-menu-check:checked + #header-mobile-menu-icon span{
+        background: transparent;
+    }
+    #header-mobile-menu-check:checked + #header-mobile-menu-icon span::before{
+        transform: translateY(calc(var(--font-size-xl) * 0.4)) rotate(45deg);
+    }
+    #header-mobile-menu-check:checked + #header-mobile-menu-icon span::after{
+        transform: translateY(calc(var(--font-size-xl) * -0.4)) rotate(-45deg);
     }
     .overlay {
         position: fixed;
@@ -118,6 +135,7 @@
         pointer-events: auto;
     }
 
+    /* Header Menu Mobile Layout */
     #menu{
         position: fixed;
         flex-direction: column;

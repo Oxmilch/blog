@@ -1,16 +1,16 @@
 ---
+sitemap: false
 layout: page
 title: "エンジニア - ポートフォリオ"
 description: "エンジニア - ポートフォリオ"
 date: 2016-01-01
-update: 2026-03-19
+update: 2026-03-24
 is-crawler: false
 is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/2025/11/21/portfolio-design.html">デザイン(職業訓練校)のポートフォリオへ</a>
-    </li>
+    <li><a href="/blog/portfolio/2025-11-21-school-design.html">デザイン(職業訓練校)のポートフォリオへ</a></li>
   </ul>
 </div>
 
@@ -94,11 +94,3 @@ is-post-list: false
 | | WSL2 | | 1年7カ月 | 可能 | 可能 |
 | | Docker | | 1年7カ月 | 可能 | 可能 |
 | | Shell | | 1年7カ月 | 可能 | 可能 |
-
-### 自学習・学校での学習など（業務外）
-
-| 区分 | 言語等 | フレームワーク<br>ライブラリ等 | 読み | 書き |
-| - | - | - | :-: | :-: |
-| フロントエンド | HTML5/LS | | 可能 | 可能 |
-| | CSS3 | | 可能 | 可能 |
-| | TypeScript | | 可能 | 可能 |

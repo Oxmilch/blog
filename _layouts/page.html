@@ -22,6 +22,10 @@
   {% if page.image %}
     {% assign og-image = pages-url | append: "/assets/images/" | append: page.image %}
   {% endif %}
+
+  {% comment %} プロフィールテキスト {% endcomment %}
+  {% assign profiles = site.profile | split:"[br]" %}
+
   {% comment %} 日付 {% endcomment %}
   {% assign date_register_ymd = page.date | date:"%Y-%m-%d" %}
   {% assign date_updated_ymd = date_register_ymd %}
@@ -90,17 +94,17 @@
 <body id="top">
   <header>
     <div class="container">
-      <h1><a href="/blog/index.html" tabindex="1">ミルクせんせーのブログ</a></h1>
+      <h1><a href="/blog/index.html" tabindex="1">{{ site.title }}</a></h1>
       <nav>
         <input type="checkbox" id="header-mobile-menu-check" hidden>
         <label id="header-mobile-menu-icon" for="header-mobile-menu-check">
-            <span></span><span></span><span></span>
+          <span></span>
         </label>
         <div class="overlay"></div>
         <ul id="menu">
           <li><a href="/blog/about.html">About</a></li>
-          <li><a href="https://x.com/oxmilch">X</a></li>
-          <li><a href="https://github.com/Oxmilch/">GitHub</a></li>
+          <li><a href="https://x.com/oxmilch" target="_blank">X</a></li>
+          <li><a href="https://github.com/Oxmilch/" target="_blank">GitHub</a></li>
         </ul>
       </nav>
     </div>
@@ -109,7 +113,7 @@
     <article>
       <h1>{{ page.title }}</h1>
       <div id="article_header">
-        {% if page.date %}  
+        {% if page.date %}
           {% if last_modify %}
             <span>登録日：</span><time>{{ page.date | date:"%Y/%m/%d" }}</time><br>
           {% endif %}
@@ -133,8 +137,9 @@
           <img src="/blog/assets/images/profile.webp" alt="プロフィール画像">
           <dt>ミルクせんせー<br>(@oxmilch)</dt>
           <dd>
-            <p>バックエンドエンジニアとして8年間働き、リスキリングでデザイン関連を学んでいます。</p>
-            <p>パソコン、スマホ、ゲームやガジェットが好きで、プログラムやネットワーク構築などもプライベートでも嗜んでいます。</p>
+            {% for line in profiles %}
+              <p>{{ line }}</p>
+            {% endfor %}
           </dd>
         </dl>
       {% endif %}

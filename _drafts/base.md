@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: page
 title: "書きたいことリスト・タグ全種・メモ"
 description: "書きたいことリスト・タグ全種・メモ"
