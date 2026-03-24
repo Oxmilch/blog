@@ -8,7 +8,7 @@ update: 2026-03-24
 is-crawler: false
 is-post-list: false
 ---
-- [デザイン(職業訓練校)のポートフォリオへ](/blog/portfolio/2025-11-21-school-design.html)
+- [デザイン(職業訓練校)のポートフォリオへ](/blog/portfolio/vacational-school-2025-design.html)
 
 ## 学校情報
 ### ホームページ

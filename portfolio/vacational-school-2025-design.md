@@ -10,8 +10,8 @@ is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/portfolio/2016-01-01-work-engineer.html">エンジニアのポートフォリオへ</a></li>
-    <li><a href="/blog/portfolio/2025-11-20-school-detail.html">職業訓練校情報詳細へ</a></li>
+    <li><a href="/blog/portfolio/work-engineer.html">エンジニアのポートフォリオへ</a></li>
+    <li><a href="/blog/portfolio/vacational-school-2025-detail.html">職業訓練校情報詳細へ</a></li>
   </ul>
 </div>
 
