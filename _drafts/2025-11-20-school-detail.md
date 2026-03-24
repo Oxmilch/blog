@@ -7,8 +7,7 @@ update: 2026-03-23
 is-crawler: false
 is-post-list: false
 ---
-- [エンジニアのポートフォリオへ](/blog/2016/01/01/portfolio-engineer.html)
-- [デザイン(職業訓練校)のポートフォリオへ](/blog/2016/01/01/portfolio-engineer.html)
+- [デザイン(職業訓練校)のポートフォリオへ](/blog/2025/11/21/portfolio-design.html)
 
 ## 学校情報
 ### ホームページ

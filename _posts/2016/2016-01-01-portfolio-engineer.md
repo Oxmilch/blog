@@ -9,8 +9,7 @@ is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/2025/11/21/portfolio-design.html">デザイン(職業訓練校)のポートフォリオへ</a>
-    </li>
+    <li><a href="/blog/2025/11/21/portfolio-design.html">デザイン(職業訓練校)のポートフォリオへ</a></li>
   </ul>
 </div>
 
