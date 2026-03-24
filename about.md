@@ -6,12 +6,12 @@ update: 2026-03-24
 is-crawler: false
 ---
 ## 経歴
-- 現在 - [職業訓練校](/blog/pages/portfolio/2025-11-20-school-detail.html)でデザイン等学習中
+- 現在 - [職業訓練校](/blog/portfolio/2025-11-20-school-detail.html)でデザイン等学習中
 - 2025年11月 - デザインの学習のため職業訓練校に入校
 - 2025年 3月 - SES会社倒産による失職
 - 2016年 9月 - SESの零細企業に正社員として就職
 - 2016年 1月 - SESの零細企業に非正規雇用として就職
 
 ## ポートフォリオ
-- [エンジニア ポートフォリオ＆スキルセット](/blog/pages/portfolio/2016-01-01-work-engineer.html)
-- [デザイン(職業訓練校) ポートフォリオ](/blog/pages/portfolio/2025-11-21-school-design.html)
+- [エンジニア ポートフォリオ＆スキルセット](/blog/portfolio/2016-01-01-work-engineer.html)
+- [デザイン(職業訓練校) ポートフォリオ](/blog/portfolio/2025-11-21-school-design.html)

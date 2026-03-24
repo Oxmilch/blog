@@ -8,7 +8,7 @@ update: 2026-03-24
 is-crawler: false
 is-post-list: false
 ---
-- [デザイン(職業訓練校)のポートフォリオへ](/blog/pages/portfolio/2025-11-21-school-design.html)
+- [デザイン(職業訓練校)のポートフォリオへ](/blog/portfolio/2025-11-21-school-design.html)
 
 ## 学校情報
 ### ホームページ
@@ -38,7 +38,6 @@ is-post-list: false
 ### 訓練期間
 期間：2025年11月21日 ～ 2026年5月20日  
 時間：540時間
-
 
 ### 訓練概要
 動画の編集スキルを習得し、かつSNSやYoutubeの活用方法も学び、それらの知識・技術をもって訴求効果の高いホームページの企画・提案・デザイン・メンテナンス等の業務ができる実践的な人材を育成する。
