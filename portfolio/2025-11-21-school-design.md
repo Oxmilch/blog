@@ -1,16 +1,17 @@
 ---
+sitemap: false
 layout: page
 title: "デザイン(職業訓練校) - ポートフォリオ"
 description: "デザイン(職業訓練校) - ポートフォリオ"
 date: 2025-11-21
-update: 2026-03-23
+update: 2026-03-24
 is-crawler: false
 is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/2016/01/01/portfolio-engineer.html">エンジニアのポートフォリオへ</a>
-    </li>
+    <li><a href="/blog/portfolio/2016-01-01-work-engineer.html">エンジニアのポートフォリオへ</a></li>
+    <li><a href="/blog/portfolio/2025-11-20-school-detail.html">職業訓練校情報詳細へ</a></li>
   </ul>
 </div>
 
@@ -45,6 +46,8 @@ is-post-list: false
   - 2026年2月2日 ~ 3月13日 (22日間)
 - **ソフトウェア**
   - Adobe Premiere Pro 2025 (macOS Ventura)
+  - Adobe Illustrator 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
 - **教材**
   - [Premiere Pro よくばり入門 改訂３版（できるよくばり入門） (インプレス)](https://book.impress.co.jp/books/1125101035)
 
@@ -58,7 +61,7 @@ is-post-list: false
 ※軽量化のため、下記動画は 960 x 540px で再出力したものを掲載しています。(動画サイズは2MB)
 <video
   src="/blog/assets/videos/2025-11-21-portfolio-design-assignment-260218-gym.mp4"
-  poster="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260218-gym.webp"
+  poster="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260218-gym.webp"
   type="video/mp4"
   preload="metadata"
   controls controlslist="nodownload" muted
@@ -67,7 +70,7 @@ is-post-list: false
 </video>
 <div class="no-display">
   <img
-    src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260218-gym.webp"
+    src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260218-gym.webp"
     alt="2026年2月18日作成ジム宣伝横動画印刷用サムネイル"
     class="img-landscape">
 </div>
@@ -83,7 +86,7 @@ is-post-list: false
 ※軽量化のため、下記動画は 540 x 960px で再出力したものを掲載しています。(動画サイズは2MB)
 <video
   src="/blog/assets/videos/2025-11-21-portfolio-design-assignment-260218-gym-insta.mp4"
-  poster="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260218-gym-insta.webp"
+  poster="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260218-gym-insta.webp"
   type="video/mp4"
   preload="metadata"
   controls controlslist="nodownload" muted
@@ -92,15 +95,15 @@ is-post-list: false
 </video>
 <div class="no-display">
   <img
-    src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260218-gym-insta.webp"
+    src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260218-gym-insta.webp"
     alt="2026年2月18日作成ジム宣伝縦動画印刷用サムネイル"
     class ="img-portrait-small">
 </div>
 
 - **使用ソフト**
   - Adobe Illustrator 2025 (macOS Ventura)
-  - Adobe Photoshop 2024 (macOS Ventura)
   - Adobe Premiere Pro 2025 (macOS Ventura)
+  - Adobe Photoshop 2024 (macOS Ventura)
   - Adobe Firefly
   - Google Vids
   - Google Youtube Studio
@@ -148,7 +151,7 @@ is-post-list: false
 ※課題で提出した動画をそのまま掲載しています。音声はありません。(動画サイズは1.3MB)
 <video
   src="/blog/assets/videos/2025-11-21-portfolio-design-assignment-260216_bunner.mp4"
-  poster="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260216_bunner.webp"
+  poster="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260216_bunner.webp"
   type="video/mp4"
   preload="metadata"
   controls controlslist="nodownload" muted
@@ -157,15 +160,15 @@ is-post-list: false
 </video>
 <div class="no-display">
   <img
-    src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260216_bunner.webp"
+    src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260216_bunner.webp"
     alt="2026年2月16日作成バナー動画印刷用サムネイル"
     class="img-square">
 </div>
 
 - **使用ソフト**
+  - Adobe Premiere Pro 2025 (macOS Ventura)
   - Adobe Illustrator 2025 (macOS Ventura)
   - Adobe Photoshop 2024 (macOS Ventura)
-  - Adobe Premiere Pro 2025 (macOS Ventura)
 - **制作時間**：3時間
 - **課題内容**
   - **目的**
@@ -183,19 +186,19 @@ is-post-list: false
 - **期間**
   - 2025年12月25日 ~ 2026年1月27日（15日間）
 - **ソフトウェア**
-  - VSCode (macOS Ventura)
+  - VSCode
   - figma
 - **教材**
   - [1冊ですべて身につくHTML & CSSとWebデザイン入門講座 第2版 (SBCreative)](https://www.sbcr.jp/product/4815618469/)
 
 ### 2026年1月27日授業課題 ハンバーガーショップのレスポンシブ対応ページ作成
 <div class="no-print">
-  <h4><a href="/blog/pages/assignment260127/index.html" target="_blank">制作したページへ</a></h4>
+  <h4><a href="/blog/portfolio/assignment260127/index.html" target="_blank">制作したページへ</a></h4>
 </div>
 
 <h4>PCレイアウト</h4>
 <img
-  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260127-sitetop.webp"
+  src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260127-sitetop.webp"
   alt="2026年1月27日作成PCレイアウトトップページ"
   class="img-landscape">
 
@@ -203,12 +206,12 @@ is-post-list: false
 
 <h4>モバイルレイアウト</h4>
 <img
-  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260127-sitetop-mobile.webp"
+  src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260127-sitetop-mobile.webp"
   alt="2026年1月27日作成モバイルレイアウトトップページ"
   class="img-portrait-small">
 
 <div class="no-print">
-  <h4><a href="/blog/pages/assignment260127/index.html" target="_blank">制作したページへ</a></h4><br>
+  <h4><a href="/blog/portfolio/assignment260127/index.html" target="_blank">制作したページへ</a></h4><br>
 </div>
 
 - **使用ソフト**
@@ -238,21 +241,20 @@ is-post-list: false
 
 ### 2026年1月16日授業課題 ハンバーガーショップのページ作成
 <div class="no-print">
-  <h4><a href="/blog/pages/assignment260116/index.html" target="_blank">制作したページへ</a></h4>
+  <h4><a href="/blog/portfolio/assignment260116/index.html" target="_blank">制作したページへ</a></h4>
 </div>
 
 <h4>レイアウト</h4>
 <img
-  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-260116-site.webp"
+  src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260116-site.webp"
   alt="2026年1月16日作成トップページ"
   class="img-landscape">
 
 <div class="no-print">
-  <h4><a href="/blog/pages/assignment260116/index.html" target="_blank">制作したページへ</a></h4><br>
+  <h4><a href="/blog/portfolio/assignment260116/index.html" target="_blank">制作したページへ</a></h4><br>
 </div>
 
-- **使用ソフト**
-  - VSCode
+- **使用ソフト**：VSCode
 - **制作時間**：1.5時間
 
 <div class="next_page"></div>
@@ -271,7 +273,7 @@ is-post-list: false
 
 ### 2025年12月19日授業課題 A4チラシ作成2回目
 <img
-  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251219-poster.webp"
+  src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-251219-poster.webp"
   alt="2025年12月19日作成A4チラシ"
   class="img-portrait">
 
@@ -294,11 +296,11 @@ is-post-list: false
 
 ### 2025年12月18日授業課題 バナー広告作成
 <img
-  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251218-bunner1.webp"
+  src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-251218-bunner1.webp"
   alt="2025年12月18日作成バナー1つ目"
   class="img-square-2col">
 <img
-  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251218-bunner2.webp"
+  src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-251218-bunner2.webp"
   alt="2025年12月18日作成バナー2つ目"
   class="img-square-2col">
 
@@ -312,7 +314,7 @@ is-post-list: false
 
 ### 2025年12月17~18日授業課題 A4チラシ作成1回目
 <img
-  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251217-poster.webp"
+  src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-251217-poster.webp"
   alt="2025年12月17日作成A4チラシ"
   class="img-landscape">
 
@@ -330,15 +332,15 @@ is-post-list: false
 
 ### 2025年12月15日授業課題 バナーのトレース
 <img
-  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251215-trace1.webp"
+  src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-251215-trace1.webp"
   alt="2025年12月15日作成バナー1つ目"
   class="img-square-2col">
 <img
-  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251215-trace2.webp"
+  src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-251215-trace2.webp"
   alt="2025年12月15日作成バナー2つ目"
   class="img-square-2col">
 <img
-  src="/blog/assets/images/2025/2025-11-21-portfolio-design-assignment-251215-trace3.webp"
+  src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-251215-trace3.webp"
   alt="2025年12月15日作成バナー3つ目"
   class="img-square-2col">
 
