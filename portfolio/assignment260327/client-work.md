@@ -6,10 +6,8 @@ date: 2026-03-24
 is-crawler: false
 is-post-list: false
 ---
-
-ペアを組み、お互いに依頼と制作を行う。
-
-- [発注側の内容へ](./request-work.html)
+- [デザイン(職業訓練校) - ポートフォリオ に戻る](../2025-11-21-school-design.html)
+- [発注側の内容へ](./request-work.html)  
 
 ## 相手から自身に依頼
 
