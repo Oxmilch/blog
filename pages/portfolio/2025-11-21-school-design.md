@@ -1,16 +1,17 @@
 ---
+sitemap: false
 layout: page
 title: "デザイン(職業訓練校) - ポートフォリオ"
 description: "デザイン(職業訓練校) - ポートフォリオ"
 date: 2025-11-21
-update: 2026-03-23
+update: 2026-03-24
 is-crawler: false
 is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/2016/01/01/portfolio-engineer.html">エンジニアのポートフォリオへ</a></li>
-    <li><a href="/blog/2025/11/20/school-detail.html">職業訓練校情報詳細へ</a></li>
+    <li><a href="/blog/pages/portfolio/2016-01-01-work-engineer.html">エンジニアのポートフォリオへ</a></li>
+    <li><a href="/blog/pages/portfolio/2025-11-20-school-detail.html">職業訓練校情報詳細へ</a></li>
   </ul>
 </div>
 

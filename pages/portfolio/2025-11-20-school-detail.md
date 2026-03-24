@@ -1,13 +1,14 @@
 ---
+sitemap: false
 layout: page
 title: "2025年11月開講 これから始める！Ｗｅｂ・ＳＮＳ動画編集＆ホームページデザイン科 - 職業訓練校：創造社リカレントスクール福岡校(クリエート・デザイン分野)"
 description: "2025年11月開講 これから始める！Ｗｅｂ・ＳＮＳ動画編集＆ホームページデザイン科 - 職業訓練校：創造社リカレントスクール福岡校(クリエート・デザイン分野)"
 date: 2025-11-20
-update: 2026-03-23
+update: 2026-03-24
 is-crawler: false
 is-post-list: false
 ---
-- [デザイン(職業訓練校)のポートフォリオへ](/blog/2025/11/21/portfolio-design.html)
+- [デザイン(職業訓練校)のポートフォリオへ](/blog/pages/portfolio/2025-11-21-school-design.html)
 
 ## 学校情報
 ### ホームページ
@@ -18,7 +19,7 @@ is-post-list: false
 
 ### 所在地
 
-<div style="width:96%; min-height:240px; height:56.25vw; max-height:480px; margin: 0 auto;">
+<div style="width:96%; min-height:240px; height:56.25vw; max-height:480px; margin: 0 auto 1rem;">
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4700.022361191785!2d130.3899793061524!3d33.59446556409951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541913a138f36f9%3A0xfc9028c55a16960f!2z5Ym16YCg56S-44Oq44Kr44Os44Oz44OI44K544Kv44O844OrIOemj-WyoeagoQ!5e0!3m2!1sja!2sjp!4v1774255138873!5m2!1sja!2sjp"
     width="100%"
@@ -40,7 +41,7 @@ is-post-list: false
 
 
 ### 訓練概要
-- 動画の編集スキルを習得し、かつSNSやYoutubeの活用方法も学び、それらの知識・技術をもって訴求効果の高いホームページの企画・提案・デザイン・メンテナンス等の業務ができる実践的な人材を育成する。
+動画の編集スキルを習得し、かつSNSやYoutubeの活用方法も学び、それらの知識・技術をもって訴求効果の高いホームページの企画・提案・デザイン・メンテナンス等の業務ができる実践的な人材を育成する。
 
 ### カリキュラム
 
