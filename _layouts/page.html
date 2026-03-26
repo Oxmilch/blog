@@ -59,7 +59,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  {% if page.is-crawler != false %}
+  {% if page.sitemap != false %}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHTKY3VJ0J"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -72,7 +72,7 @@
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% if page.is-crawler == false %}
+  {% if page.sitemap == false %}
     <meta name="robots" content="none, nosnippet, noimageindex">
     <meta name="googlebot" content="nosnippet">
     <meta name="googlebot-news" content="nosnippet">
@@ -143,7 +143,7 @@
       {% if page.is-profile != false %}
         <h2>プロフィール</h2>
         <dl>
-          <img src="/blog/assets/images/profile.webp" alt="プロフィール画像">
+          <img src="/blog/assets/images/profile.webp" alt="プロフィール画像" fetchpriority="high">
           <dt>ミルクせんせー<br>(@oxmilch)</dt>
           <dd>
             {% for line in profiles %}
