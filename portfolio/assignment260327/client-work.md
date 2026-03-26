@@ -1,9 +1,9 @@
 ---
 sitemap: false
 layout: page
-title: "2026年 3月27日ホームページ制作グループワーク：受注側"
+title: "2026年 3月24日ホームページ制作グループワーク：受注側"
 date: 2026-03-24
-is-crawler: false
+update: 2026-03-26
 is-post-list: false
 ---
 - [デザイン(職業訓練校) - ポートフォリオ に戻る](../2025-11-21-school-design.html)
