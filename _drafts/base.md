@@ -19,7 +19,6 @@ tags: [Windows11(x64),
        liquid]
 date: 2026-02-07
 update: 2026-02-15
-is-crawler: false
 is-profile: false
 is-post-list: false
 post-limit: 15
