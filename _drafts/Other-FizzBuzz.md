@@ -1,4 +1,11 @@
-# 色んな言語でFizzBuzz
+---
+layout: page
+title: "色んな言語でFizzBuzz"
+description: "色んな言語でFizzBuzz"
+tags: [SQL, PL/SQL]
+date: 2022-09-16
+---
+
 ## Oracle
 ### 普通に書く
 ```sql

@@ -1,6 +1,16 @@
+---
+layout: page
+title: "Pythonメモ"
+description: "Pythonメモ"
+tags: [Python]
+date: 2023-07-31
+update: 2023-08-05
+---
+
 ## 参考サイト
 - [並列・並行処理　concurrent.futures](https://qiita.com/simonritchie/items/1ce3914eb5444d2157ac#concurrentfutures)
-- [共有メモリ　multiprocessing Value, Array](https://qiita.com/t_okkan/items/4127a87177ed2b2db148)
+- [共有メモリ　multiprocessing Value, Array](https://qiita.com/t_okkan/items/4127a87177ed2b2db148)  
+
 ```python
 import concurrent.futures
 # マルチスレッド（並列処理）

@@ -1,29 +1,37 @@
-# 目次
-- [環境設定](#環境設定)  
-- [初期設定](#初期設定)  
-- [dockerコマンド](#dockerコマンド)  
+---
+layout: page
+title: "dockerメモ"
+description: "dockerメモ"
+tags: [docker]
+date: 2022-04-10
+update: 2022-04-12
+---
 
-# 環境設定
-## Windows10(HomeEdition)
-### １. WSL2のインストールと有効化  
-[VM-WSL2.md](/VM-WSL2.md)  
+## 目次
+- [環境設定](#環境設定)
+- [初期設定](#初期設定)
+- [dockerコマンド](#dockerコマンド)
 
-### ２. Docker Desktop for Windows のインストール  
-[Docker - Docker Desktop](https://www.docker.com/products/docker-desktop/)
+## 環境設定
+### Windows10(HomeEdition)
+#### １. WSL2のインストールと有効化
+- [VM-WSL2.md](/VM-WSL2.md)
 
-## macOS(Intel)
-### １. Docker Desktop for Mac のインストール  
-[Docker - Docker Desktop](https://www.docker.com/products/docker-desktop/)  
+#### ２. Docker Desktop for Windows のインストール
+- [Docker - Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-[qiita - MacでDockerをインストールした後に必要な作業](https://qiita.com/butada/items/4044c5efd03341c8afef)  
+### macOS(Intel)
+#### １. Docker Desktop for Mac のインストール  
+- [Docker - Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [qiita - MacでDockerをインストールした後に必要な作業](https://qiita.com/butada/items/4044c5efd03341c8afef)
 
+## 初期設定  
+### DockerHubログイン  
 
-# 初期設定  
-## DockerHubログイン  
 ```bash
 docker login
 Username: "DockerHubのログインユーザーID名"
 Password: "DockerHubのログインパスワード"
 ```
 
-# dockerコマンド
+## dockerコマンド

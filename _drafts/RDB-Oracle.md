@@ -1,4 +1,13 @@
-# 目次
+---
+layout: page
+title: "Oracleメモ"
+description: "Oracleメモ"
+tags: [Oracle, SQL, PL/SQL]
+date: 2022-04-05
+update: 2022-04-13
+---
+
+## 目次
 - [型変換・フォーマット](#型変換・フォーマット)  
 　・[TO_CHAR()](#tochar)  
 　　- [数値型からの変換](#数値型からの変換tochar)  
@@ -15,9 +24,9 @@
 　・[トラブルシュート](#トラブルシュート)  
 　　- [Oracleの実行履歴](#oracleの実行履歴)  
 
-# 型変換・フォーマット
-## TO_CHAR()
-### 数値型からの変換(TO_CHAR())
+## 型変換・フォーマット
+### TO_CHAR()
+#### 数値型からの変換(TO_CHAR())
 ・フォーマット指定より桁数がオーバーフローすると###表記になる。  
 ・フォーマット指定より小数点以下がある場合は四捨五入される。  
 ```sql
@@ -29,24 +38,26 @@ TO_CHAR(数値, '999,999.99') -- 数値=1030.5 -> '  1,030.5 '
 TO_CHAR(数値, '000,009.00') -- 数値=1030.5 -> '001,030.50'
 ```
 
-# 目的別テクニック
-## 階層問合せ
-### カンマ区切りの値を列に変換する
+## 目的別テクニック
+### 階層問合せ
+#### カンマ区切りの値を列に変換する
 **SQL** 
 ```sql
     SELECT TRIM(REGEXP_SUBSTR(値, '[^,]+', 1, LEVEL)) AS "戻り値"
       FROM DUAL
 CONNECT BY REGEXP_SUBSTR(値, '[^,]+', 1, LEVEL) IS NOT NULL
 ```
-**結果例**
-・値 ＝ 'A,B,C'  
-| 行 | 戻り値 | 
-| - | - | 
-| 1 | A | 
-| 2 | B | 
-| 3 | C | 
 
-### カンマ区切りの連想配列風の値を行列に変換する
+- **結果例**
+  - 値 ＝ 'A,B,C'
+
+| 行 | 戻り値 |
+| - | - |
+| 1 | A |
+| 2 | B |
+| 3 | C |
+
+#### カンマ区切りの連想配列風の値を行列に変換する
 **SQL** 
 ```sql
 SELECT TRIM(SUBSTR(TEST.戻り値, 1, INSTR(TEST.戻り値, ':', 1, 1) -1)) AS "戻り値１"
@@ -57,15 +68,16 @@ SELECT TRIM(SUBSTR(TEST.戻り値, 1, INSTR(TEST.戻り値, ':', 1, 1) -1)) AS "
       )TEST
 ```
 **結果例**  
-・値 ＝ 'A:111,B:222,C:333'  
+- 値 ＝ 'A:111,B:222,C:333'
+
 | 行 | 戻り値１ | 戻り値２ |
 | - | - | - | 
 | 1 | A | 111 | 
 | 2 | B | 222 | 
 | 3 | C | 333 | 
 
-## 和集合
-### SQL上でバインド変数の値別に条件を変える
+### 和集合
+#### SQL上でバインド変数の値別に条件を変える
 ```sql
 AND EXISTS(SELECT 1  FROM DUAL WHERE '0' = NVL(:値, '0')
         UNION ALL
@@ -76,20 +88,20 @@ AND EXISTS(SELECT 1  FROM DUAL WHERE '0' = NVL(:値, '0')
 ```
 AND条件にそれぞれのバインド変数の条件と、かつUNION ALLでまとめることで、バインド変数の値が異なる毎に一致する条件を変えることができる。
 
-# その他
-## システム関連
-### Oracleのバージョン
+## その他
+### システム関連
+#### Oracleのバージョン
 ```sql
 SELECT * FROM V$VERSION
 ```
-### Oracleの文字コード
+#### Oracleの文字コード
 ```sql
 SELECT VALUE
   FROM NLS_DATABASE_PARAMETERS
  WHERE PARAMETER = 'NLS_CHARACTERSET'
 ```
-## トラブルシュート
-### Oracleの実行履歴
+### トラブルシュート
+#### Oracleの実行履歴
 ```sql
 --SQLSTATS
   SELECT LAST_ACTIVE_TIME                     AS "問合せ最終時刻"

@@ -1,4 +1,12 @@
-# 目次
+---
+layout: page
+title: "WSLメモ"
+description: "WSLメモ"
+tags: [Windows, WSL]
+date: 2024-04-28
+---
+
+## 目次
 - [WSL2のインストールと有効化](#wsl2のインストールと有効化)   
 　[1. Linux用 Windowsサブシステムを有効にする](#１-linux用-windowsサブシステムを有効にする)  
 　[2. 仮想マシンの機能を有効にする](#２-仮想マシンの機能を有効にする)  
@@ -12,39 +20,45 @@
 - [WSLコマンド](#wslコマンド)  
 - [WSL2のアンインストールと無効化](#wsl2のアンインストールと無効化)
 
-# 基本情報
-[Microsoft Learn - Windows Subsystem for Linux に関するドキュメント](https://learn.microsoft.com/ja-jp/windows/wsl/)
+## 基本情報
+- [Microsoft Learn - Windows Subsystem for Linux に関するドキュメント](https://learn.microsoft.com/ja-jp/windows/wsl/)
 
-# WSL2のインストールと有効化
+## WSL2のインストールと有効化
 - [Microsoft Docs - WSLの手動インストール手順 Win10 v2004以降, win11](https://learn.microsoft.com/ja-jp/windows/wsl/install)  
 - [Microsoft Docs - WSLの手動インストール手順 旧バージョン](https://docs.microsoft.com/ja-jp/windows/wsl/install-manual)  
 > ※PowerShellを管理者で実行すること
 
 Windows 10 v2004以降、またはWindows 11 の場合は、手順 5から実施でOK。
 
-## １. Linux用 Windowsサブシステムを有効にする  
+### １. Linux用 Windowsサブシステムを有効にする
+
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-## ２. 仮想マシンの機能を有効にする  
+### ２. 仮想マシンの機能を有効にする
+
 ```powershell
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-## ３. Linuxカーネル更新プログラムパッケージをインストールする  
-[Microsoft Docs - x64マシン用WSL2Linux カーネル更新プログラム（wsl_update_x64.msi）](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)  
+### ３. Linuxカーネル更新プログラムパッケージをインストールする
+- [Microsoft Docs - x64マシン用WSL2Linux カーネル更新プログラム（wsl_update_x64.msi）](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)  
 
-## ４. WSL2を既定のバージョンとして設定する  
+### ４. WSL2を既定のバージョンとして設定する
+
 ```powershell
 wsl --set-default-version 2
 ```
 
 ## 5. インストール可能な一覧
+
 ```powershell
 wsl --list --online
 ```
+
 ※ 2024年 3月現在
+
 | NAME | FRENDLY NAME |
 |-|-|
 |Ubuntu|Ubuntu|
@@ -61,7 +75,7 @@ wsl --list --online
 |SUSE-Linux-Enterprise-15-SP5|SUSE Linux Enterprise 15 SP5|
 |openSUSE-Tumbleweed|openSUSE Tumbleweed|
 
-## 6. Linuxのインストール(Debianの場合)  
+## 6. Linuxのインストール(Debianの場合)
 １～４までの手順を飛ばした場合は、こちらのコマンドから実行する
 ```powershell
 wsl --install
@@ -76,7 +90,9 @@ wsl --install -d Debian
 
 WSL2 で実行されているインストール済みディストリビューション全体で設定をグローバルに構成する場合は、.wslconfig ファイルを %USERPROFILE% に作成し、各パラメータを記述する。  
 > ファイルパス：%USERPROFILE%.wslconfig  
+
 ### wslconfigパラメータ説明
+
 | 設定 | 規定値| 説明 |
 | - | :-: | - |
 | memory | Windowsの物理メモリの50%or8GBで少ない方 | WSL2に割り当てるメモリ量。MB,GBで指定。 |
@@ -92,6 +108,7 @@ WSL2 で実行されているインストール済みディストリビューシ
 | vmIdleTimeout | 60000 | Windows11のみ。WSL2ががアイドル状態になってからシャットダウンされるまでのミリ秒数。 |
 
 ### wslconfigパラメータ内容
+
 ```bash
 [wsl2]
 # memory=4GB
@@ -109,10 +126,10 @@ WSL2 で実行されているインストール済みディストリビューシ
 # vmIdleTimeout=60000
 ```
 
-# WSLコマンド
-[Microsoft Docs - WSLの基本的なコマンド](https://docs.microsoft.com/ja-jp/windows/wsl/basic-commands)  
+## WSLコマンド
+- [Microsoft Docs - WSLの基本的なコマンド](https://docs.microsoft.com/ja-jp/windows/wsl/basic-commands)  
 
-# WSL2のアンインストールと無効化
+## WSL2のアンインストールと無効化
 正常にインストールできない場合は次の手順を踏んでアンインストールする。
 - 削除するアプリケーション
   - Windowsの設定 -> アプリ -> インストールされているアプリ
@@ -124,13 +141,14 @@ WSL2 で実行されているインストール済みディストリビューシ
     - Linux用Windowsサブシステム
     - 仮想マシンプラットフォーム
 
-# WSL2でsystemctlを有効化する
-[Qiita - WSL2でsystemctlを使う方法](https://qiita.com/curacao/items/fb9adaf1c097b1acd6a8)  
+## WSL2でsystemctlを有効化する
+- [Qiita - WSL2でsystemctlを使う方法](https://qiita.com/curacao/items/fb9adaf1c097b1acd6a8)  
 標準でsystemdがPID=1で起動されないため、WSL起動時にPID=1になるように設定する  
 以下ファイルを開く
 ```bash
 sudo vi /etc/wsl.conf
 ```
+
 wsl.confの内容は以下の通りにする
 ```bash
 [boot]

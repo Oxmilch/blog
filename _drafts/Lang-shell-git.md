@@ -1,3 +1,11 @@
+---
+layout: page
+title: "gitメモ"
+description: "gitメモ"
+tags: [git, github]
+date: 2022-04-05
+update: 2024-03-28
+---
 
 ## **ファイル操作** 
 ### ファイル名を変更する 
