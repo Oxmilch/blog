@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* HTML Tag */
+select {
+  background:floralwhite;
+}
+
+/* 検索入力欄 */
+input[name="styleSelSearch"]{
+  font-size:small;
+  color:darkblue;
+}
+
+input[name="styleSerachText"]{
+  background-color:floralwhite;
+  border: 1px solid darkblue;
+  border-radius:0.6rem;
+  padding:0.3rem 0.5rem;
+  min-width:5rem;
+  width:50vw;
+  max-width:40rem;
+  box-sizing:border-box;
+  transition: all 0.4s;
+}
+input[name="styleSerachText"]:disabled{
+  background-color:silver;
+  border-color:dimgray;
+}
+input[name="styleSerachText"]:focus{
+  background-color:antiquewhite;
+  border-color:royalblue;
+}
+
+label[name="lblSearchTxt"]{
+  font-size:medium;
+  color:darkblue;
+  margin:0 1rem 0 0;
+  white-space:nowrap;
+}
+
+/* URLコピーボタン */
+a[name="styleURLCopyOff"]{
+  display:flex;
+  font-size:small;
+  color:dimgray;
+  background-color:silver;
+  border: 1px solid dimgray;
+  border-radius:50%;
+  justify-content:center;
+  align-items:center;
+  margin:0;
+  height:3rem;
+  width:3rem;
+  box-sizing: border-box;
+  text-decoration:none;
+  white-space:nowrap;
+  transition: all 0.4s;
+}
+a[name="styleURLCopy"]{
+  display:flex;
+  font-size:small;
+  color:darkblue;
+  background-color:floralwhite;
+  border: 1px solid darkblue;
+  border-radius:50%;
+  justify-content:center;
+  align-items:center;
+  margin:0;
+  height:3rem;
+  width:3rem;
+  box-sizing: border-box;
+  text-decoration:none;
+  white-space:nowrap;
+  transition: all 0.4s;
+}
+a[name="styleURLCopy"]:hover{
+  color:floralwhite;
+  background-color:royalblue;
+}
+
+/* 検索ボタン */
+a[name="styleSearchOff"]{
+  display:inline-block;
+  font-size:medium;
+  color:dimgray;
+  background-color:silver;
+  border: 1px solid dimgray;
+  border-radius:0.7rem;
+  justify-content:center;
+  align-items:center;
+  margin:0 0.1rem 0;
+  padding:0.4rem 0.7rem;
+  text-decoration:none;
+  transition: all 0.4s;
+}
+a[name="styleSearch"]{
+  display:inline-block;
+  font-size:medium;
+  color:floralwhite;
+  background-color:royalblue;
+  border: 1px solid darkblue;
+  border-radius:0.7rem;
+  justify-content:center;
+  align-items:center;
+  margin:0 0.1rem 0;
+  padding:0.4rem 0.7rem;
+  text-decoration:none;
+  transition: all 0.4s;
+}
+a[name="styleSearch"]:hover{
+  color:darkblue;
+  background-color:antiquewhite;
+}
+a[name="styleSearch"]:focus{
+  color:darkblue;
+  background-color:antiquewhite;
+}
+
+/* 対応検索モード */
+a[name="styleCol3OK"]{
+  display:inline-block;
+  font-size:small;
+  color:darkblue;
+  background-color:floralwhite;
+  border: 1px solid darkblue;
+  border-radius:0.3rem;
+  justify-content:center;
+  align-items:center;
+  margin:0rem 0.2rem;
+  padding:0.3rem 0.4rem;
+  text-decoration:none;
+}
+a[name="styleCol3NG"]{
+  display:inline-block;
+  font-size:small;
+  color:dimgray;
+  background-color:silver;
+  border: 1px solid dimgray;
+  border-radius:0.3rem;
+  justify-content:center;
+  align-items:center;
+  margin:0rem 0.2rem;
+  padding:0.3rem 0.4rem;
+  text-decoration:none;
+}
+
+a[name="styleURL"]{
+  font-size:small;
+  display: none;
+}

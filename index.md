@@ -2,11 +2,12 @@
 layout: page
 title: "トップページ"
 date: 2026-02-08
-update: 2026-03-19
-is-post-list: false
+update: 2026-03-30
+post-limit: 30
 ---
 ## Welcom to My Blog! 
-[GitHub Pages](https://oxmilch.github.io/blog/) でブログをはじめてみました。
+- [GitHub Pages](https://oxmilch.github.io/blog/) でブログをはじめてみました。
+- [ミルクせんせーについて](./about.html) 
 
 ### 最新の投稿 
 <ul>
@@ -19,12 +20,6 @@ is-post-list: false
 
 ### 作るきっかけ 
 2025年11月からWebとデザインの学び直しで学校に通い始めたのがきっかけです。  
-
-### これから作るもの
-- タグ別記事リスト
-- 年月別記事リスト
-- 記事検索機能
-- ページネーション機能
 
 ### 所有端末 
 #### Network Attached Storage
