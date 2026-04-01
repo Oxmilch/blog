@@ -2,7 +2,7 @@
 layout: page
 title: "ミルクせんせーについて"
 date: 2026-03-16
-update: 2026-03-24
+update: 2026-04-01
 is-crawler: false
 ---
 ## 経歴
@@ -12,29 +12,14 @@ is-crawler: false
 - 2016年 9月 - SES会社にエンジニアの正社員として就職
 - 2016年 1月 - SES会社にエンジニアの非正規雇用として就職
 
-<br>
+## Webツール
+- [Parallel Search - 色んなサイトで同じ検索ワードで検索するもの](/blog/parallel-search)
 
-## ポートフォリオ - エンジニア
-[**エンジニア ポートフォリオ＆スキルセット一覧**](/blog/portfolio/work-engineer.html)
+## ポートフォリオ
+- [エンジニア（業務） - ポートフォリオ＆スキルセット一覧](/blog/portfolio/work-engineer.html)
+- [デザイン（職業訓練校） - ポートフォリオ一覧](/blog/portfolio/vacational-school-2025-design.html)
 
-<br>
-
-## ポートフォリオ - デザイン
-[**デザイン(職業訓練校) ポートフォリオ一覧**](/blog/portfolio/vacational-school-2025-design.html)
-
-<br>
-
-### 動画（職業訓練校在学時制作）
-<section class="portfolio_grid">
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2026年2月18日2月25日授業課題-ジム宣伝広告動画作成" target="_blank">
-    <img src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260218-gym-insta.webp">
-  </a>
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2026年2月16日授業課題-バナー動画作成" target="_blank">
-    <img src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260216_bunner.webp">
-  </a>
-</section>
-
-### Webページ（職業訓練校在学時制作）
+### Webページ（職業訓練校制作課題）
 <section class="portfolio_grid">
   <a href="/blog/portfolio/vacational-school-2025-design.html#2026年1月27日授業課題-ハンバーガーショップのレスポンシブ対応ページ作成" target="_blank">
     <img src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260127-sitetop-mobile.webp">
@@ -44,7 +29,17 @@ is-crawler: false
   </a>
 </section>
 
-### バナー（職業訓練校在学時制作）
+### 動画（職業訓練校制作課題）
+<section class="portfolio_grid">
+  <a href="/blog/portfolio/vacational-school-2025-design.html#2026年2月18日2月25日授業課題-ジム宣伝広告動画作成" target="_blank">
+    <img src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260218-gym-insta.webp">
+  </a>
+  <a href="/blog/portfolio/vacational-school-2025-design.html#2026年2月16日授業課題-バナー動画作成" target="_blank">
+    <img src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260216_bunner.webp">
+  </a>
+</section>
+
+### バナー（職業訓練校制作課題）
 <section class="portfolio_grid">
   <a href="/blog/portfolio/vacational-school-2025-design.html#2025年12月18日授業課題-バナー広告作成" target="_blank">
     <img src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-251218-bunner1.webp">
@@ -63,7 +58,7 @@ is-crawler: false
   </a>
 </section>
 
-### 印刷物（職業訓練校在学時制作）
+### 印刷物（職業訓練校制作課題）
 <section class="portfolio_grid">
   <a href="/blog/portfolio/vacational-school-2025-design.html#2025年12月19日授業課題-a4チラシ作成2回目" target="_blank">
     <img src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-251219-poster.webp">
