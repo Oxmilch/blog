@@ -275,9 +275,9 @@ const paramSearch = {
     null,
     null,
     null],
-  Twitter : [
+  X : [
     true,
-    "https://twitter.com/search?q={param}&src=typed_query",
+    "https://x.com/search?q={param}&src=typed_query",
     [null, " ", null],
     ["(", " ", ")"],
     [" -", " -", null],
@@ -424,6 +424,7 @@ window.onload = function(){
         let selSearch = document.createElement("select");
         selSearch.id = "selSearch" + hashKey;
         selSearch.name = "styleSelSearch";
+        selSearch.style.width = "14rem";
         selSearch.setAttribute("onChange" , "searchExec()");
         for (let selHashKey in paramSearch[hashKey][paramIdx.excludeParam]){
           let optRow = document.createElement("option");
