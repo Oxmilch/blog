@@ -300,13 +300,20 @@ nav{
   border-radius: 16px;
 }
 
+/* PRODUCT */
+#product ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
 
 /* フッター */
 footer{
   color: var(--font-color-light);
   background-color: var(--color-main);
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 0 1rem;
+  text-align: center;
 }
 
 small{
