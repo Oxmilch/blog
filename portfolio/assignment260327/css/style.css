@@ -3,8 +3,9 @@
 /* 共通設定値 */
 :root{
   --color-base: #fefefe;
-  --color-main: #197BCC;
-  --color-main-opacity: #197BCCCC;
+  --color-base-opacity: #fefefecc;
+  --color-main: #197bcc;
+  --color-main-opacity: #197bcccc;
   --font-color-dark: #111;
   --font-color-light: #fefefe;
 
@@ -38,6 +39,21 @@ section:nth-child(even){
   color: var(--font-color-light);
   text-shadow: 1px 1px 2px var(--font-color-dark);
   background-color: var(--color-main-opacity);
+}
+
+table{
+  border-collapse: separate;
+  border-spacing: 2em 1em;
+  padding-top: 2rem;
+}
+
+table tr td:nth-child(1){
+  width: 30%;
+  text-align: right;
+}
+table tr td:nth-child(2){
+  width: 60%;
+  text-align: left;
 }
 
 img{
@@ -85,6 +101,42 @@ dd{
   margin: 0 auto;
 }
 
+.button_more_blue,
+.button_more_white{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: calc(var(--font-size-m) * 2.5);
+  border: 1px solid transparent;
+  border-radius: 20px;
+  text-shadow: none;
+  margin: 2rem auto 0;
+  transition: all 0.4s;
+}
+
+.button_more_blue{
+  color: var(--font-color-light);
+  background-color: var(--color-main);
+}
+.button_more_blue:hover{
+  color: var(--font-color-dark);
+  background-color: var(--color-base);
+  border-color: var(--color-main);
+  transform: scale(0.95);
+}
+
+.button_more_white{
+  color: var(--font-color-dark);
+  background-color: var(--color-base);
+  border-color: var(--color-main);
+}
+.button_more_white:hover{
+  color: var(--font-color-light);
+  background-color: var(--color-main);
+  border-color: var(--color-base);
+  transform: scale(0.95);
+}
 
 /* ヘッダー */
 header{
@@ -100,11 +152,13 @@ header{
 header .header_backgroundcolor{
   background-color: var(--color-main);
   height: 100%;
-  transition: all 0.2s;
+  transition: all 0.4s;
   @container scroll-state(stuck: top){
     background-color: var(--color-main-opacity);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    border-radius: 20px;
+    transform: scale(0.96) translateY(calc(var(--header-height) * 0.04 / 2));
   }
 }
 
@@ -215,7 +269,7 @@ nav{
 #main_visual_2::after{
   position: absolute;
   top: 35%;
-  left: 40%;
+  right: 25%;
   white-space: pre;
   content:"まだ見ぬスターは、\A　　君かもしれない。";
   color: var(--font-color-light);
@@ -280,6 +334,8 @@ nav{
   aspect-ratio: 1;
   border: 1px none transparent;
   border-radius: 16px;
+  background-size: cover;
+  overflow: hidden;
 }
 .about_item picture::after {
   position: absolute;
@@ -292,19 +348,205 @@ nav{
   border: 1px none transparent;
   border-radius: 12px;
 }
-.about_item img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 16px;
+
+
+#picture_about1{
+  background-image: url(../img/about1.webp);
+  background-position: 100% 0;
 }
+
+#picture_about2{
+  background-image: url(../img/about2.webp);
+  background-position: 50% 0;
+}
+
+#picture_about3{
+  background-image: url(../img/about3.webp);
+  background-position: 100% 0;
+}
+
 
 /* PRODUCT */
 #product ul{
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: var(--font-size-l);
+  padding-top: 1rem;
+}
+
+#product li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  aspect-ratio: 1;
+  background-color: var(--color-base);
+  border-radius: 16px;
+  transition: all 0.4s;
+}
+#product li:hover{
+  transform: scale(0.95);
+}
+
+#product a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#product picture{
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px none transparent;
+  border-radius: 16px;
+  background-size: cover;
+  overflow: hidden;
+}
+#product picture::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: inset 0 0 12px 12px var(--color-base);
+  border: 1px none transparent;
+  border-radius: 12px;
+}
+
+#product_bat::before{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  content:"Bat";
+  font-size: 4vw;
+  color: var(--font-color-dark);
+  z-index:1;
+}
+#product_bat{
+  position:relative;
+  background-image: url(../img/product_bat.webp);
+  background-position: center;
+  background-size: contain;
+}
+
+#product_grab::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content:"Grab";
+  font-size: 4vw;
+  color: var(--font-color-dark);
+  z-index:1;
+}
+#product_grab{
+  /* background-image: url(../img/product_grab.webp); */
+  background-position: center;
+}
+
+#product_ball::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content:"Ball";
+  font-size: 4vw;
+  color: var(--font-color-light);
+  z-index:1;
+}
+#product_ball{
+  background-image: url(../img/product_ball.webp);
+  background-position: center;
+}
+
+#product_wear::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content:"Wear";
+  font-size: 4vw;
+  color: var(--font-color-dark);
+  z-index:1;
+}
+#product_wear{
+  /* background-image: url(../img/product_wear.webp); */
+  background-position: center;
+}
+
+#product_shoes::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content:"Shoes";
+  font-size: 4vw;
+  color: var(--font-color-dark);
+  z-index:1;
+}
+#product_shoes{
+  /* background-image: url(../img/product_shoes.webp); */
+  background-position: center;
+}
+
+#product_accessory::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content:"Accessory";
+  font-size: 4vw;
+  color: var(--font-color-dark);
+  z-index:1;
+}
+#product_accessory{
+  /* background-image: url(../img/product_accessory.webp); */
+  background-position: center;
+}
+
+
+/* NEWS */
+#news table a{
+  position: relative;
+}
+
+#news table a::after{
+  position: absolute;
+  content:"";
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--font-color-dark);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.4s ease-in-out;
+}
+#news table a:hover::after{
+  transform: scaleX(1);
+}
+/* INFOMATION */
+#infomation table a{
+  position:relative;
+  color:var(--font-color-light);
+}
+#infomation table a::after{
+  position: absolute;
+  content:"";
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--font-color-light);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.4s ease-in-out;
+}
+#infomation table a:hover::after{
+  transform: scaleX(1);
 }
 
 /* フッター */
@@ -314,6 +556,32 @@ footer{
   width: 100%;
   padding: 2rem 0 1rem;
   text-align: center;
+}
+
+footer li{
+  padding-top: 0.5em;
+}
+
+footer a{
+  position: relative;
+  display: inline-block;
+  color: var(--font-color-light);
+  transition: all 0.4s;
+}
+footer a::after{
+  position: absolute;
+  content:"";
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--font-color-light);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+}
+footer a:hover::after{
+  transform: scaleX(1);
 }
 
 small{

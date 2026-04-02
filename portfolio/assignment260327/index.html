@@ -50,11 +50,9 @@ update: 2026-04-02
     <div class="container">
       <h2>ABOUT</h2>
       <p>NEXT STARについて</p>
-      <dl>
+      <dl class="container">
         <div class="about_item">
-          <picture>
-            <img src="./img/about1.webp" alt="なぜネクストスターを選ぶのか">
-          </picture>
+          <picture id="picture_about1"></picture>
           <div>
             <dt>なぜネクストスターを選ぶのか</dt>
             <dd>
@@ -64,9 +62,7 @@ update: 2026-04-02
           </div>
         </div>
         <div class="about_item">
-          <picture>
-            <img src="./img/about2.webp" alt="私たちが大切にしていること">
-          </picture>
+          <picture id="picture_about2"></picture>
           <div>
             <dt>私たちが大切にしていること</dt>
             <dd>
@@ -77,9 +73,7 @@ update: 2026-04-02
           </div>
         </div>
         <div class="about_item">
-          <picture>
-            <img src="./img/about3.webp" alt="私たちが成したいこと">
-          </picture>
+          <picture id="picture_about3"></picture>
           <div>
             <dt>私たちが成したいこと</dt>
             <dd>
@@ -89,19 +83,20 @@ update: 2026-04-02
           </div>
         </div>
       </dl>
+      <a class="button_more_blue" href="#about">詳しく見る</a>
     </div>
   </section>
   <section id="product">
     <div class="container">
       <h2>PRODUCT</h2>
       <p>商品</p>
-      <ul>
-        <li><a><picture><img src="./img/product_bat.webp"></picture></a></li>
-        <li><a><picture><img src="./img/product_grab.webp"></picture></a></li>
-        <li><a><picture><img src="./img/product_ball.webp"></picture></a></li>
-        <li><a><picture><img src="./img/product_waer.webp"></picture></a></li>
-        <li><a><picture><img src="./img/product_shoes.webp"></picture></a></li>
-        <li><a><picture><img src="./img/product_accessory.webp"></picture></a></li>
+      <ul class="container">
+        <li><a href="#"><picture id="product_bat"></picture></a></li>
+        <li><a href="#"><picture id="product_grab"></picture></a></li>
+        <li><a href="#"><picture id="product_ball"></picture></a></li>
+        <li><a href="#"><picture id="product_wear"></picture></a></li>
+        <li><a href="#"><picture id="product_shoes"></picture></a></li>
+        <li><a href="#"><picture id="product_accessory"></picture></a></li>
       </ul>
     </div>
   </section>
@@ -110,8 +105,10 @@ update: 2026-04-02
       <h2>NEWS</h2>
       <p>新着情報</p>
       <table class="container">
-        <tr><td>2026.04.01</td><td>次世代のスター候補へ！2026年春、中高生向け・最新ギア合同試用会開催！</td></tr>
+        <thead style="display: none;"><th>日付</th><th>新着情報</th></thead>
+        <tr><td>2026.04.01</td><td><a href="#news">次世代のスター候補へ！2026年春、中高生向け・最新ギア合同試用会開催！</a></td></tr>
       </table>
+      <a class="button_more_blue" href="#news">詳しく見る</a>
     </div>
   </section>
   <section id="infomation">
@@ -119,21 +116,22 @@ update: 2026-04-02
       <h2>INFOMATION</h2>
       <p>お知らせ</p>
       <table class="container">
-        <tr><td>2026.04.03</td><td></td></tr>
-        <tr><td>2026.04.02</td><td>商品の取扱店舗拡大いたします。</td></tr>
-        <tr><td>2026.04.01</td><td>ホームページ新規開設しました。</td></tr>
+        <thead style="display: none;"><th>日付</th><th>お知らせ</th></thead>
+        <tr><td>2026.04.02</td><td><a href="#infomation">商品の取扱店舗拡大いたします。</a></td></tr>
+        <tr><td>2026.04.01</td><td><a href="#infomation">ホームページ新規開設しました。</a></td></tr>
       </table>
+      <a class="button_more_white" href="#infomation">詳しく見る</a>
     </div>
   </section>
   <footer>
     <ul class="container">
-      <li>お問合せ</li>
-      <li>HOME</li>
-      <li>NEWS</li>
-      <li>INFOMATION</li>
-      <li>COMPANY</li>
-      <li>ABOUT</li>
-      <li>PRODUCT</li>
+      <li><a href="#">お問合せ</a></li>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#news">NEWS</a></li>
+      <li><a href="#infomation">INFOMATION</a></li>
+      <li><a href="#">COMPANY</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#product">PRODUCT</a></li>
     </ul>
     <small>2026 &copy;NEXT STAR</small>
   </footer>
