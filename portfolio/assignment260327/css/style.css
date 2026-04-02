@@ -2,8 +2,10 @@
 
 /* 共通設定値 */
 :root{
-  --color-base: #fefefe;
-  --color-base-opacity: #fefefecc;
+  --color-base-light: #fefefe;
+  --color-base-light-opacity: #fefefecc;
+  --color-base-dark: #111;
+  --color-base-dark-opacity: #111c;
   --color-main: #197bcc;
   --color-main-opacity: #197bcccc;
   --font-color-dark: #111;
@@ -28,7 +30,8 @@ body{
   font-weight: 400;
   font-style: normal;
   color: var(--font-color-dark);
-  background-color: var(--color-base);
+  background-color: var(--color-base-light);
+  scroll-behavior: smooth;
 }
 
 section{
@@ -121,20 +124,20 @@ dd{
 }
 .button_more_blue:hover{
   color: var(--font-color-dark);
-  background-color: var(--color-base);
+  background-color: var(--color-base-light);
   border-color: var(--color-main);
   transform: scale(0.95);
 }
 
 .button_more_white{
   color: var(--font-color-dark);
-  background-color: var(--color-base);
+  background-color: var(--color-base-light);
   border-color: var(--color-main);
 }
 .button_more_white:hover{
   color: var(--font-color-light);
   background-color: var(--color-main);
-  border-color: var(--color-base);
+  border-color: var(--color-base-light);
   transform: scale(0.95);
 }
 
@@ -172,7 +175,7 @@ header .container{
 header h1 a{
   display: block;
   background-image: url("../img/logo.svg");
-  background-color: var(--color-base);
+  background-color: var(--color-base-light);
   width: 78px;
   aspect-ratio: 1;
   background-size: 150%;
@@ -216,7 +219,7 @@ nav{
 }
 #menu a:hover{
     color:var(--color-main);
-    background-color:var(--color-base);
+    background-color:var(--color-base-light);
 }
 
 
@@ -242,7 +245,7 @@ nav{
   transition-delay: 0s;
 }
 
-/* 1枚目 */
+/* メインビジュアル1枚目 */
 #main_visual_1::after{
   position: absolute;
   top: 20%;
@@ -265,7 +268,7 @@ nav{
   100% {opacity: 1;}
 }
 
-/* 2枚目 */
+/* メインビジュアル2枚目 */
 #main_visual_2::after{
   position: absolute;
   top: 35%;
@@ -289,13 +292,14 @@ nav{
   100% {opacity: 0;}
 }
 
-/* 3枚目 */
+/* メインビジュアル3枚目 */
 #main_visual_3::after{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  content:"限界は、道具で超えられる。";
+  white-space: pre;
+  content:"限界は、\A道具で超えられる。";
   color: var(--font-color-light);
   font-size: var(--font-size-copy);
   text-shadow: 1px 1px 2px var(--font-color-dark);
@@ -314,7 +318,7 @@ nav{
 }
 
 
-/* ABOUT */
+/* NEXT STARについて */
 #about dl{
   padding-top: 1rem;
 }
@@ -344,7 +348,7 @@ nav{
   bottom: 0;
   left: 0;
   right: 0;
-  box-shadow: inset 0 0 12px 12px var(--color-base);
+  box-shadow: inset 0 0 12px 12px var(--color-base-light);
   border: 1px none transparent;
   border-radius: 12px;
 }
@@ -366,7 +370,7 @@ nav{
 }
 
 
-/* PRODUCT */
+/* 商品 */
 #product ul{
   display: flex;
   justify-content: space-between;
@@ -381,7 +385,7 @@ nav{
   align-items: center;
   width: 30%;
   aspect-ratio: 1;
-  background-color: var(--color-base);
+  background-color: var(--color-base-light);
   border-radius: 16px;
   transition: all 0.4s;
 }
@@ -411,7 +415,7 @@ nav{
   bottom: 0;
   left: 0;
   right: 0;
-  box-shadow: inset 0 0 12px 12px var(--color-base);
+  box-shadow: inset 0 0 12px 12px var(--color-base-light);
   border: 1px none transparent;
   border-radius: 12px;
 }
@@ -508,7 +512,7 @@ nav{
 }
 
 
-/* NEWS */
+/* 新着情報 */
 #news table a{
   position: relative;
 }
@@ -568,6 +572,11 @@ footer a{
   color: var(--font-color-light);
   transition: all 0.4s;
 }
+
+footer ul{
+  padding-bottom: 1rem;
+}
+
 footer a::after{
   position: absolute;
   content:"";
@@ -587,4 +596,154 @@ footer a:hover::after{
 small{
   width: 100%;
   text-align: center;
+}
+
+
+
+/* モバイルレイアウト */
+@media(max-width:768px){
+  :root{
+    --font-size-main-visual: 3rem;
+    --font-size-copy: 2rem;
+    --font-size-xl: 1.75rem;
+    --font-size-l: 1.25rem;
+    --font-size-m: 0.875rem;
+    --font-size-s: 0.75rem;
+  }
+
+  /* モバイル：ヘッダー */
+  header{
+    position: fixed;
+  }
+  header .header_backgroundcolor{
+    background-color: var(--color-main-opacity);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  /* モバイル：ヘッダー（ハンバーガーメニュー） */
+  header nav label{
+    display: inline-block;
+    position: fixed;
+    top: calc(var(--header-height) * 0.3);
+    right: calc(var(--header-height) * 0.2);
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    z-index: 103;
+  }
+  header nav span,
+  header nav span::before,
+  header nav span::after{
+    display: block;
+    height: 0.2rem;
+    width: 10vw;
+    background: var(--font-color-light);
+    border-radius: 2px;
+    transition: 0.4s;
+  }
+  header nav span{
+    position: relative;
+    margin: calc(var(--font-size-xl) * 0.4 + 0.5rem) 0;
+  }
+  header nav span::before{
+    position: absolute;
+    content: "";
+    bottom: calc(var(--font-size-xl) * 0.4);
+  }
+  header nav span::after{
+    position: absolute;
+    content: "";
+    top: calc(var(--font-size-xl) * 0.4);
+  }
+  #header-mobile-menu-check:checked + #header-mobile-menu-icon span{
+    background: transparent;
+  }
+  #header-mobile-menu-check:checked + #header-mobile-menu-icon span::before{
+    transform: translateY(calc(var(--font-size-xl) * 0.4)) rotate(45deg);
+  }
+  #header-mobile-menu-check:checked + #header-mobile-menu-icon span::after{
+    transform: translateY(calc(var(--font-size-xl) * -0.4)) rotate(-45deg);
+  }
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--color-base-dark-opacity);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+    z-index: 101;
+  }
+  #header-mobile-menu-check:checked ~ .overlay {
+    opacity: 0.5;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    pointer-events: auto;
+  }
+
+  /* モバイル：ヘッダー（ハンバーガーメニュー内容） */
+  #menu{
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: -50vw;
+    width: 40vw;
+    height: 100vh;
+    background: var(--color-base-dark-opacity);
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    transition: right 0.3s ease;
+    z-index: 102;
+  }
+  #header-mobile-menu-check:checked ~ #menu{
+    right: 0px;
+  }
+  #menu li:nth-child(1){
+    margin: 4em 1rem 0.25rem;
+  }
+  #menu li{
+    margin: 0.25rem 1rem;
+  }
+  #menu a{
+    color: var(--color-base-light);
+    font-size: calc(50vw * 0.1);
+    transition: color 0.3s;
+  }
+
+  /* モバイル：メインビジュアル */
+  #main_visual{
+    height: 100vh;
+  }
+
+  /* モバイル：メインビジュアル1枚目 */
+  #main_visual_1::after{
+    top: 30%;
+    left: 10%;
+  }
+
+  /* モバイル：メインビジュアル2枚目 */
+  #main_visual_2{
+    background-position: 65% 60%;
+  }
+  #main_visual_2::after{
+    top: 35%;
+    right: 5%;
+  }
+
+  /* モバイル：メインビジュアル3枚目 */
+  #main_visual_3{
+    background-position: 50% 0;
+    background-size: cover;
+    overflow: auto;
+  }
+
+  /* モバイル：商品 */
+  #product ul{
+    flex-direction: column;
+  }
+  #product li{
+    width: 100%;
+    height: 56.25%;
+  }
 }
