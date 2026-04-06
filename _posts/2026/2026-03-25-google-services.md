@@ -4,6 +4,7 @@ title: "Googleのサービスたち"
 description: "Googleのサービス一覧"
 tags: [Google]
 date: 2026-03-25
+update: 2026-04-06
 ---
 
 ## Googleのサブスクリプションに含まれるサービス全てが把握できない
@@ -23,7 +24,7 @@ AI Pro、AI Ultra になると GDP関連のサービスも使えたりと、よ�
 
 | サービス | 詳細 | 通常 | AI Plus | AI Pro | AI Ultra |
 | - | - | - | - | - | - |
-| Drive | 容量 | 15GB | 200GB | 2TB | 30TB |
+| Drive | 容量 | 15GB | 200GB | ~~2TB~~  5TB | 30TB |
 | Calender |
 | Meet | 会議時間 | 上限1h | 上限なし | 上限なし | 上限なし |
 | | 録画機能 | - | - | あり | あり |
@@ -87,3 +88,7 @@ AI Pro、AI Ultra になると GDP関連のサービスも使えたりと、よ�
 - [窓の杜 - 「Google AI Pro/Ultra」がさらにお得に、開発者向けプログラム「GDP」の有料特典を統合](https://forest.watch.impress.co.jp/docs/news/2082025.html)
 - [Google for Developers](https://developers.google.com/?hl=ja)
 - [Google Antigravity - Choose the perfect plan for your journey](https://antigravity.google/pricing)
+
+## 加筆・修正
+- 2026/04/06 Google AI Pro の クラウドストレージ容量を2TBから5TBに変更
+  - 情報元：[「Google AI Pro」の容量が2TBから5TBに増量　価格据え置きで - ITMedia News](https://www.itmedia.co.jp/news/articles/2604/02/news083.html)
