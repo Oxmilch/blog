@@ -2,7 +2,7 @@
 layout: page
 title: "Parallel Search について"
 date: 2022-07-23
-update: 2026-04-01
+update: 2026-04-06
 ---
 [← Parallel Search に戻る](./index.html)
 
@@ -27,7 +27,7 @@ update: 2026-04-01
 
 | サイト | AND検索 | OR検索 | 除外検索 | 特別な検索 |
 | - | - | - | - | - |
-| Amazon | O | O | o | ジャンル別検索 |
+| Amazon | O | O | o | ジャンル別検索 | AI除外検索 |
 | 楽天市場 | O | X | O | ジャンル別検索、SuperDEAL対象検索、送料無料・送料無料ライン検索 |
 | メルカリ | O | X | O | ジャンル別検索 |
 | 楽天ラクマ | O | X | O | ジャンル別検索 |
@@ -46,6 +46,9 @@ update: 2026-04-01
 | Wikipedia | O | O | O | なし |
 
 ## 更新履歴
+- **v20260406**
+  - 検索先の順番の変更
+  - Google検索に AI除外検索を追加
 - **v20260401**
   - Twitter の URL を X に変更
   - ツールのリンクを公開
