@@ -114,7 +114,7 @@ dd{
   border: 1px solid transparent;
   border-radius: 20px;
   text-shadow: none;
-  margin: 2rem auto 0;
+  margin: 2rem auto 1rem;
   transition: all 0.4s;
 }
 
@@ -738,12 +738,49 @@ small{
     overflow: auto;
   }
 
+
+  /* モバイル：NEXT STARについて */
+  .about_item,
+  .about_item:nth-child(even){
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .about_item picture{
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+  .about_item dt,
+  .about_item dd{
+    text-align:center;
+  }
+
+
   /* モバイル：商品 */
   #product ul{
     flex-direction: column;
   }
-  #product li{
+  #product li,
+  #product picture{
     width: 100%;
-    height: 56.25%;
+    aspect-ratio: 16/9;
+  }
+
+  #product_bat::before{
+    top: 10%;
+    left: 8%;
+    font-size: 8vw;
+  }
+
+  #product_grab::before,
+  #product_ball::before,
+  #product_wear::before,
+  #product_shoes::before,
+  #product_accessory::before{
+    font-size: 8vw;
   }
 }
