@@ -2,8 +2,9 @@
 sitemap: false
 layout: page
 title: "2026年 3月24日ホームページ制作グループワーク：発注側"
+tags: [Adobe Illustrator, Gemini, ChatGPT, Claude]
 date: 2026-03-24
-update: 2026-03-26
+update: 2026-04-06
 is-post-list: false
 ---
 - [デザイン(職業訓練校) - ポートフォリオ に戻る](../2025-11-21-school-design.html)
