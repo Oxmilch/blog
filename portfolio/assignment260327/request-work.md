@@ -40,3 +40,7 @@ is-post-list: false
 - **ロゴ**：作成時間 1h  
 <img src="../../assets/images/portfolio/2025-11-21-portfolio-design-assignment-260327-groupwork_logo.svg" alt="作成ロゴ文字あり" class="img-square-2col">
 <img src="../../assets/images/portfolio/2025-11-21-portfolio-design-assignment-260327-groupwork_logo2.svg" alt="作成ロゴ文字なし" class="img-square-2col">
+
+### AIの利用箇所
+- 旧サイトの元画像
+- 企業情報の **会社名、事業内容を除く** 内容
