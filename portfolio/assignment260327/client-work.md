@@ -4,7 +4,7 @@ layout: page
 title: "2026年 3月24日ホームページ制作グループワーク：受注側"
 tags: [VSCode, figma, HTML, CSS, Gemini, ChatGPT, Claude]
 date: 2026-03-24
-update: 2026-04-06
+update: 2026-04-10
 is-post-list: false
 ---
 - [デザイン(職業訓練校) - ポートフォリオ に戻る](../2025-11-21-school-design.html)
@@ -12,7 +12,7 @@ is-post-list: false
 
 ## 相手から自身に依頼
 ### 作成したWebページ
-- **作業時間**：10h
+- **作業時間**：15h
   - <a href="./index.html" target="_blank">制作したページへ</a>
 
 ### 架空の会社情報
@@ -54,6 +54,20 @@ is-post-list: false
 ### AIの利用箇所
 - サイト内のキャッチコピーや文章
 
+### 画像素材について
+- 全て <a href="https://stock.adobe.com/jp/" target="_blank" rel="noopener noreferrer">Adobe Stock</a> の 無料素材
+
+### 利用ソフトウェア
+- コーディング
+  - VSCode
+- ソース管理
+  - GitHub
+- ワイヤーフレーム制作
+  - figma
+- 画像処理（トリミング・切り抜き・色調調整・webp変換等）
+  - Adobe Photoshop 2025
+  - Affinity3
+
 ### ワイヤーフレーム（PC）
 - **作業時間**：4h
 
@@ -69,5 +83,5 @@ is-post-list: false
 #### 全体
 
 ### 作成したWebページ
-- **作業時間**：10h
+- **作業時間**：15h
   - <a href="./index.html" target="_blank">制作したページへ</a>

@@ -426,7 +426,7 @@ nav{
   left: 15%;
   content:"Bat";
   font-size: 4vw;
-  color: var(--font-color-dark);
+  color: var(--font-color-light);
   z-index:1;
 }
 #product_bat{
@@ -440,14 +440,14 @@ nav{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   content:"Grab";
   font-size: 4vw;
-  color: var(--font-color-dark);
+  color: var(--font-color-light);
   z-index:1;
 }
 #product_grab{
-  /* background-image: url(../img/product_grab.webp); */
+  background-image: url(../img/product_grab.webp);
   background-position: center;
 }
 
@@ -468,46 +468,46 @@ nav{
 
 #product_wear::before{
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   content:"Wear";
   font-size: 4vw;
-  color: var(--font-color-dark);
+  color: var(--font-color-light);
   z-index:1;
 }
 #product_wear{
-  /* background-image: url(../img/product_wear.webp); */
+  background-image: url(../img/product_wear.webp);
   background-position: center;
 }
 
 #product_shoes::before{
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   content:"Shoes";
   font-size: 4vw;
-  color: var(--font-color-dark);
+  color: var(--font-color-light);
   z-index:1;
 }
 #product_shoes{
-  /* background-image: url(../img/product_shoes.webp); */
+  background-image: url(../img/product_shoe.webp);
   background-position: center;
 }
 
 #product_accessory::before{
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   content:"Accessory";
   font-size: 4vw;
-  color: var(--font-color-dark);
+  color: var(--font-color-light);
   z-index:1;
 }
 #product_accessory{
-  /* background-image: url(../img/product_accessory.webp); */
+  background-image: url(../img/product_accessory.webp);
   background-position: center;
 }
 
@@ -773,7 +773,7 @@ small{
   #product_bat::before{
     top: 10%;
     left: 8%;
-    font-size: 8vw;
+    font-size: 15vw;
   }
 
   #product_grab::before,
@@ -781,6 +781,6 @@ small{
   #product_wear::before,
   #product_shoes::before,
   #product_accessory::before{
-    font-size: 8vw;
+    font-size: 15vw;
   }
 }
