@@ -2,7 +2,7 @@
 sitemap: false
 layout: page
 title: "2026年 3月24日ホームページ制作グループワーク：受注側"
-tags: [VSCode, figma, Photoshop, HTML, CSS, Gemini, ChatGPT, Claude]
+tags: [VSCode, figma, Photoshop, Affinity3, HTML, CSS, Gemini, ChatGPT, Claude]
 date: 2026-03-24
 update: 2026-04-10
 is-post-list: false

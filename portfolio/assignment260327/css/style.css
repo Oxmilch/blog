@@ -2,20 +2,20 @@
 
 /* 共通設定値 */
 :root{
-  --color-base-light: #fefefe;
-  --color-base-light-opacity: #fefefecc;
+  --color-base-light: #fdfdfd;
+  --color-base-light-opacity: #fdfdfdcc;
   --color-base-dark: #111;
   --color-base-dark-opacity: #111c;
   --color-main: #197bcc;
   --color-main-opacity: #197bcccc;
   --font-color-dark: #111;
-  --font-color-light: #fefefe;
+  --font-color-light: #fdfdfd;
 
   --font-size-main-visual: 4.25rem;
   --font-size-copy: 3rem;
   --font-size-xl: 2rem;
   --font-size-l: 1.5rem;
-  --font-size-m: 1rem;
+  --font-size-m: 1.125rem;
   --font-size-s: 0.75rem;
 
   --header-height: 96px;
@@ -72,6 +72,11 @@ h2{
   font-size: var(--font-size-xl);
 }
 
+h3{
+  font-size: var(--font-size-m);
+  padding-top: 1rem;
+}
+
 li{
   list-style-type: none;
 }
@@ -93,14 +98,9 @@ dd{
   padding: 1em 0 0;
 }
 
-/* 共通クラス */
-.zen-antique-soft-regular {
-  font-family: "Zen Antique Soft", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.container {
+/* 共通クラス */
+.container{
   width: 96%;
   max-width: var(--container-width-max);
   margin: 0 auto;
@@ -142,6 +142,7 @@ dd{
   border-color: var(--color-base-light);
   transform: scale(0.95);
 }
+
 
 /* ヘッダー */
 header{
@@ -335,9 +336,7 @@ nav{
 .about_item{
   display: flex;
   column-gap: calc(320px / 8);
-}
-.about_item:nth-child(even){
-  flex-direction: row-reverse;
+  margin-top: 1rem;
 }
 
 .about_item picture{
@@ -383,17 +382,21 @@ nav{
 }
 
 .about_item dd{
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 
 /* 商品 */
+#product{
+  padding-bottom: 3rem;
+}
+
 #product ul{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: var(--font-size-l);
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 #product li{
@@ -415,6 +418,17 @@ nav{
   width: 100%;
   height: 100%;
 }
+
+#product picture::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(var(--font-size-m), 4vw, calc(var(--container-width-max) * 0.04));
+  color: var(--font-color-light);
+  text-shadow: 0 0 24px black;
+  z-index: 1;
+}
 #product picture{
   display: block;
   position: relative;
@@ -423,6 +437,7 @@ nav{
   border: 1px none transparent;
   border-radius: 16px;
   background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 #product picture::after{
@@ -437,95 +452,47 @@ nav{
   border-radius: 12px;
 }
 
+
 #product_bat::before{
-  position: absolute;
-  top: 15%;
-  left: 15%;
   content:"Bat";
-  font-size: 4vw;
-  color: var(--font-color-light);
-  z-index:1;
 }
 #product_bat{
-  position:relative;
   background-image: url(../img/product_bat.webp);
-  background-position: center;
-  background-size: contain;
 }
 
 #product_grab::before{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-  content:"Grab";
-  font-size: 4vw;
-  color: var(--font-color-light);
-  z-index:1;
+  content: "Grab";
 }
 #product_grab{
   background-image: url(../img/product_grab.webp);
-  background-position: center;
 }
 
 #product_ball::before{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   content:"Ball";
-  font-size: 4vw;
-  color: var(--font-color-light);
-  z-index:1;
 }
 #product_ball{
   background-image: url(../img/product_ball.webp);
-  background-position: center;
 }
 
 #product_wear::before{
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%);
-  content:"Wear";
-  font-size: 4vw;
-  color: var(--font-color-light);
-  z-index:1;
+  content: "Wear";
 }
 #product_wear{
   background-image: url(../img/product_wear.webp);
-  background-position: center;
 }
 
 #product_shoes::before{
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%);
   content:"Shoes";
-  font-size: 4vw;
-  color: var(--font-color-light);
-  z-index:1;
 }
 #product_shoes{
   background-image: url(../img/product_shoe.webp);
-  background-position: center;
 }
 
 #product_accessory::before{
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%);
-  content:"Accessory";
-  font-size: 4vw;
-  color: var(--font-color-light);
-  z-index:1;
+  content: "Accessory";
 }
 #product_accessory{
   background-image: url(../img/product_accessory.webp);
-  background-position: center;
 }
 
 
@@ -704,6 +671,7 @@ small{
   #menu{
     position: fixed;
     flex-direction: column;
+    justify-content: flex-start;
     top: 0;
     right: -50vw;
     width: 40vw;
@@ -721,11 +689,12 @@ small{
   }
   #menu li{
     margin: 0.25rem 1rem;
+    width: 100%;
+    height: 15%;
   }
   #menu a{
     color: var(--color-base-light);
     font-size: calc(50vw * 0.1);
-    transition: color 0.3s;
   }
 
   /* モバイル：メインビジュアル */
@@ -790,17 +759,7 @@ small{
     aspect-ratio: 16/9;
   }
 
-  #product_bat::before{
-    top: 10%;
-    left: 8%;
-    font-size: 15vw;
-  }
-
-  #product_grab::before,
-  #product_ball::before,
-  #product_wear::before,
-  #product_shoes::before,
-  #product_accessory::before{
-    font-size: 15vw;
+  #product picture::before{
+    font-size: clamp(var(--font-size-m), 10vw, calc(768px * 0.1));
   }
 }
