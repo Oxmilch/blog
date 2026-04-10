@@ -20,6 +20,8 @@
 
   --header-height: 96px;
 
+  --container-width-max: 1440px;
+
   --main-visual-animation-total: 24s;
 }
 
@@ -100,7 +102,7 @@ dd{
 
 .container {
   width: 96%;
-  max-width: 1440px;
+  max-width: var(--container-width-max);
   margin: 0 auto;
 }
 
@@ -155,13 +157,15 @@ header{
 header .header_backgroundcolor{
   background-color: var(--color-main);
   height: 100%;
-  transition: all 0.4s;
+  width: 100%;
+  transition: all 0.6s;
   @container scroll-state(stuck: top){
     background-color: var(--color-main-opacity);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 20px;
-    transform: scale(0.96) translateY(calc(var(--header-height) * 0.04 / 2));
+    transform: scale(0.90) translateY(calc(var(--header-height) * 0.1 / 2));
+    transform-origin: center;
   }
 }
 
@@ -226,9 +230,9 @@ nav{
 /* メインビジュアル */
 #main_visual{
   position: relative;
-  top: 0;
+  top: calc(var(--header-height) * -1);
   width: 100%;
-  height: calc(100vh - var(--header-height));
+  height: 100vh;
   overflow: hidden;
 }
 #main_visual_1,
@@ -319,6 +323,11 @@ nav{
 
 
 /* NEXT STARについて */
+#about{
+  position: relative;
+  margin-top: calc(var(--header-height) * -1);
+}
+
 #about dl{
   padding-top: 1rem;
 }
@@ -354,19 +363,27 @@ nav{
 }
 
 
-#picture_about1{
-  background-image: url(../img/about1.webp);
-  background-position: 100% 0;
-}
-
-#picture_about2{
-  background-image: url(../img/about2.webp);
+#picture_about_mission{
+  background-image: url(../img/about_mission.webp);
   background-position: 50% 0;
 }
 
-#picture_about3{
-  background-image: url(../img/about3.webp);
+#picture_about_vision{
+  background-image: url(../img/about_vision.webp);
   background-position: 100% 0;
+}
+
+#picture_about_value{
+  background-image: url(../img/about_value.webp);
+  background-position: 100% 0;
+}
+
+.about_item p{
+  text-align: left;
+}
+
+.about_item dd{
+  margin-top: 2rem;
 }
 
 
@@ -713,7 +730,7 @@ small{
 
   /* モバイル：メインビジュアル */
   #main_visual{
-    height: 100vh;
+    top: 0;
   }
 
   /* モバイル：メインビジュアル1枚目 */
@@ -740,6 +757,9 @@ small{
 
 
   /* モバイル：NEXT STARについて */
+  #about{
+    margin-top: 0;
+  }
   .about_item,
   .about_item:nth-child(even){
     justify-content: center;
@@ -755,10 +775,10 @@ small{
   }
 
   .about_item dt,
+  .about_item p,
   .about_item dd{
     text-align:center;
   }
-
 
   /* モバイル：商品 */
   #product ul{
