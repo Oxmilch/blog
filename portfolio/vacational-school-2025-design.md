@@ -3,15 +3,21 @@ sitemap: false
 layout: page
 title: "デザイン(職業訓練校) - ポートフォリオ"
 description: "デザイン(職業訓練校) - ポートフォリオ"
-tags: [Adobe Illustrator, Adobe Photoshop, Adobe PremierePro, VSCode, figma]
+tags: [Adobe Illustrator, Adobe Photoshop, Adobe PremierePro, figma, VSCode]
 date: 2025-11-21
 update: 2026-04-13
 is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/portfolio/work-engineer.html">エンジニアのポートフォリオへ</a></li>
-    <li><a href="/blog/portfolio/vacational-school-2025-detail.html">職業訓練校情報詳細へ</a></li>
+    <li><a href="/blog/about.html">ミルクせんせーについて（ポートフォリオトップページ）へ</a></li>
+      <ul>
+        <li><a href="/blog/portfolio/work-engineer.html">エンジニアのポートフォリオへ</a></li>
+        <li>デザイン(職業訓練校)のポートフォリオへ</li>
+        <ul>
+          <li><a href="/blog/portfolio/vacational-school-2025-detail.html">職業訓練校情報詳細へ</a></li>
+        </ul>
+      </ul>
   </ul>
 </div>
 
