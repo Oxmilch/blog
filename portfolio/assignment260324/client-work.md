@@ -2,7 +2,7 @@
 sitemap: false
 layout: page
 title: "2026年 3月24日ホームページ制作グループワーク：受注側（ロール：デザイナー）"
-tags: [VSCode, figma, Photoshop, Affinity3, HTML, CSS, Gemini, ChatGPT, Claude]
+tags: [Adobe Photoshop, Affinity3, figma, VSCode, HTML, CSS, Gemini, ChatGPT, Claude]
 date: 2026-03-24
 update: 2026-04-13
 is-post-list: false
@@ -17,7 +17,8 @@ is-post-list: false
   - ヒアリング：2h
   - カンプ制作：6h
   - 認識すり合わせ：1h
-  - Web制作：15h
+  - 画像レタッチ：3h
+  - Web制作：12h
 
 ### 架空の会社情報
 - **会社名**
