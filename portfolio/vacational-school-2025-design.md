@@ -10,14 +10,14 @@ is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/about.html">ミルクせんせーについて（ポートフォリオトップページ）へ</a></li>
+    <li><a href="/blog/portfolio/">ポートフォリオのトップページへ</a></li>
+    <ul>
+      <li><a href="/blog/portfolio/work-engineer.html">エンジニアのポートフォリオへ</a></li>
+      <li>デザイン(職業訓練校)のポートフォリオへ</li>
       <ul>
-        <li><a href="/blog/portfolio/work-engineer.html">エンジニアのポートフォリオへ</a></li>
-        <li>デザイン(職業訓練校)のポートフォリオへ</li>
-        <ul>
-          <li><a href="/blog/portfolio/vacational-school-2025-detail.html">職業訓練校情報詳細へ</a></li>
-        </ul>
+        <li><a href="/blog/portfolio/vacational-school-2025-detail.html">職業訓練校情報詳細へ</a></li>
       </ul>
+    </ul>
   </ul>
 </div>
 
@@ -48,14 +48,14 @@ is-post-list: false
 
 ## Web制作総合
 #### 期間
-  - 2026年3月18日～4月13日 (11日間)
+- 2026年3月18日～4月13日 (11日間)
 
 #### ソフトウェア
-  - VSCode
-  - Adobe Illustrator 2025 (macOS Ventura)
-  - Adobe Photoshop 2024 (macOS Ventura)
-  - Adobe Stock
-  - figma
+- VSCode
+- Adobe Illustrator 2025 (macOS Ventura)
+- Adobe Photoshop 2024 (macOS Ventura)
+- Adobe Stock
+- figma
 
 ### 2026年3月24日～4月13日授業課題 ホームページ制作
 #### 課題内容
@@ -244,7 +244,7 @@ is-post-list: false
 
 ### 2026年1月27日授業課題 ハンバーガーショップのレスポンシブ対応ページ作成
 <div class="no-print">
-  <h4><a href="/blog/portfolio/assignment260127/index.html" target="_blank">制作したページへ</a></h4>
+  <h4><a href="/blog/portfolio/assignment260127/" target="_blank">制作したページへ</a></h4>
 </div>
 
 #### PCレイアウト
@@ -265,7 +265,7 @@ is-post-list: false
   loading="lazy">
 
 <div class="no-print">
-  <h4><a href="/blog/portfolio/assignment260127/index.html" target="_blank">制作したページへ</a></h4><br>
+  <h4><a href="/blog/portfolio/assignment260127/" target="_blank">制作したページへ</a></h4><br>
 </div>
 
 #### 使用ソフト
@@ -301,7 +301,7 @@ is-post-list: false
 
 ### 2026年1月16日授業課題 ハンバーガーショップのページ作成
 <div class="no-print">
-  <h4><a href="/blog/portfolio/assignment260116/index.html" target="_blank">制作したページへ</a></h4>
+  <h4><a href="/blog/portfolio/assignment260116/" target="_blank">制作したページへ</a></h4>
 </div>
 
 <h4>レイアウト</h4>
@@ -312,7 +312,7 @@ is-post-list: false
   loading="lazy">
 
 <div class="no-print">
-  <h4><a href="/blog/portfolio/assignment260116/index.html" target="_blank">制作したページへ</a></h4><br>
+  <h4><a href="/blog/portfolio/assignment260116/" target="_blank">制作したページへ</a></h4><br>
 </div>
 
 #### 使用ソフト

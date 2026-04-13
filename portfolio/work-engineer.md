@@ -10,7 +10,7 @@ is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/about.html">ミルクせんせーについて（ポートフォリオトップページ）へ</a></li>
+    <li><a href="/blog/portfolio/">ポートフォリオのトップページへ</a></li>
     <ul>
       <li>エンジニアのポートフォリオ</li>
       <li><a href="/blog/portfolio/vacational-school-2025-design.html">デザイン(職業訓練校)のポートフォリオへ</a></li>
