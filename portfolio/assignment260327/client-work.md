@@ -1,19 +1,23 @@
 ---
 sitemap: false
 layout: page
-title: "2026年 3月24日ホームページ制作グループワーク：受注側"
+title: "2026年 3月24日ホームページ制作グループワーク：受注側（ロール：デザイナー）"
 tags: [VSCode, figma, Photoshop, Affinity3, HTML, CSS, Gemini, ChatGPT, Claude]
 date: 2026-03-24
-update: 2026-04-10
+update: 2026-04-13
 is-post-list: false
 ---
-- [デザイン(職業訓練校) - ポートフォリオ に戻る](../2025-11-21-school-design.html)
-- [発注側の内容へ](./request-work.html)  
-
-## 相手から自身に依頼
-### 作成したWebページ
-- **作業時間**：15h
+- [デザイン(職業訓練校) - ポートフォリオ に戻る](../vacational-school-2025-design.html)
+- [発注側の内容へ（ロール：クライアント）](./request-work.html)
+- 受注側の内容（ロール：デザイナー）
   - <a href="./index.html" target="_blank">制作したページへ</a>
+
+## 相手から受注された内容
+- 合計作業時間：24h
+  - ヒアリング：2h
+  - カンプ制作：6h
+  - 認識すり合わせ：1h
+  - Web制作：15h
 
 ### 架空の会社情報
 - **会社名**
@@ -70,18 +74,22 @@ is-post-list: false
 
 ### ワイヤーフレーム（PC）
 - **作業時間**：4h
+  - <a href="/blog/assets/images/portfolio/2025-portfolio-design-assignment-260327-groupwork-clientwork-desktop-comp.webp" target="_blank">制作したＰＣレイアウトのワイヤーフレーム</a>
 
-#### トップページイメージ
-
-#### 全体
+#### トップページイメージ（PC）
+<img
+  src="/blog/assets/images/portfolio/2025-portfolio-design-assignment-260327-groupwork-clientwork-desktop-image.webp"
+  alt="2026年3月24日作成PCレイアウトイメージ"
+  class="img-landscape"
+  loading="lazy">
 
 ### ワイヤーフレーム（Mobile）
 - **作業時間**：2h
+  - <a href="/blog/assets/images/portfolio/2025-portfolio-design-assignment-260327-groupwork-clientwork-mobile-comp.webp" target="_blank">制作したモバイルレイアウトのワイヤーフレーム</a>
 
-#### トップページイメージ
-
-#### 全体
-
-### 作成したWebページ
-- **作業時間**：15h
-  - <a href="./index.html" target="_blank">制作したページへ</a>
+#### トップページイメージ（Mobile）
+<img
+  src="/blog/assets/images/portfolio/2025-portfolio-design-assignment-260327-groupwork-clientwork-mobile-image.webp"
+  alt="2026年3月24日作成モバイルレイアウトイメージ"
+  class="img-portrait-small"
+  loading="lazy">

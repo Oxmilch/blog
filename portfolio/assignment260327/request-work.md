@@ -1,16 +1,18 @@
 ---
 sitemap: false
 layout: page
-title: "2026年 3月24日ホームページ制作グループワーク：発注側"
+title: "2026年 3月24日ホームページ制作グループワーク：発注側（ロール：クライアント）"
 tags: [Adobe Illustrator, Gemini, ChatGPT, Claude]
 date: 2026-03-24
-update: 2026-04-06
+update: 2026-04-13
 is-post-list: false
 ---
-- [デザイン(職業訓練校) - ポートフォリオ に戻る](../2025-11-21-school-design.html)
-- [受注側の内容へ](./client-work.html)
+- [デザイン(職業訓練校) - ポートフォリオ に戻る](../vacational-school-2025-design.html)
+- 発注側の内容（ロール：クライアント）
+- [受注側の内容へ（ロール：デザイナー）](./client-work.html)
+  - <a href="./index.html" target="_blank">制作したページへ</a>
 
-## 自身からの相手に依頼
+## 自身から発注した内容
 ### 架空の会社情報
 - **会社名**
   - リカレントクリエイトサービス有限会社

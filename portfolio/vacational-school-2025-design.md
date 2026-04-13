@@ -3,8 +3,9 @@ sitemap: false
 layout: page
 title: "デザイン(職業訓練校) - ポートフォリオ"
 description: "デザイン(職業訓練校) - ポートフォリオ"
+tags: [Adobe Illustrator, Adobe Photoshop, Adobe PremierePro, VSCode, figma]
 date: 2025-11-21
-update: 2026-03-26
+update: 2026-04-13
 is-post-list: false
 ---
 <div class="no-print">
@@ -47,13 +48,25 @@ is-post-list: false
   - VSCode
   - Adobe Illustrator 2025 (macOS Ventura)
   - Adobe Photoshop 2024 (macOS Ventura)
+  - Adobe Stock
+  - figma
 
 ### 2026年3月24日～4月13日授業課題 ホームページ制作
-[**発注側詳細へ**](/blog/portfolio/assignment260327/request-work.html)  
-[**受注側詳細へ**](/blog/portfolio/assignment260327/client-work.html)
-
 #### 課題内容
-ペアを組み、お互いに依頼と制作を行う。
+- ヒアリングからウェブサイト制作までを模擬的に行う。
+- ペアを組み、お互いに依頼と制作を行う。
+
+#### 制作物
+- [**発注詳細へ（ロール：クライアント）**](/blog/portfolio/assignment260327/request-work.html)
+- [**受注詳細へ（ロール：デザイナー）**](/blog/portfolio/assignment260327/client-work.html)
+  - <a href="/blog/portfolio/assignment260327/index.html" target="_blank">制作したページへ</a>
+
+<img
+  src="/blog/assets/images/portfolio/2025-portfolio-design-assignment-260327-groupwork-clientwork-desktop.webp"
+  alt="2026年3月24日作成PCレイアウトトップページ"
+  class="img-landscape"
+  loading="lazy">
+
 
 <div class="next_page"></div>
 
