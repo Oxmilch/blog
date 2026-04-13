@@ -10,14 +10,14 @@ is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/about.html">ミルクせんせーについて（ポートフォリオトップページ）へ</a></li>
+    <li><a href="/blog/portfolio/">ポートフォリオのトップページへ</a></li>
+    <ul>
+      <li><a href="/blog/portfolio/work-engineer.html">エンジニアのポートフォリオへ</a></li>
+      <li>デザイン(職業訓練校)のポートフォリオへ</li>
       <ul>
-        <li><a href="/blog/portfolio/work-engineer.html">エンジニアのポートフォリオへ</a></li>
-        <li>デザイン(職業訓練校)のポートフォリオへ</li>
-        <ul>
-          <li><a href="/blog/portfolio/vacational-school-2025-detail.html">職業訓練校情報詳細へ</a></li>
-        </ul>
+        <li><a href="/blog/portfolio/vacational-school-2025-detail.html">職業訓練校情報詳細へ</a></li>
       </ul>
+    </ul>
   </ul>
 </div>
 
@@ -48,14 +48,14 @@ is-post-list: false
 
 ## Web制作総合
 #### 期間
-  - 2026年3月18日～4月13日 (11日間)
+- 2026年3月18日～4月13日 (11日間)
 
 #### ソフトウェア
-  - VSCode
-  - Adobe Illustrator 2025 (macOS Ventura)
-  - Adobe Photoshop 2024 (macOS Ventura)
-  - Adobe Stock
-  - figma
+- VSCode
+- Adobe Illustrator 2025 (macOS Ventura)
+- Adobe Photoshop 2024 (macOS Ventura)
+- Adobe Stock
+- figma
 
 ### 2026年3月24日～4月13日授業課題 ホームページ制作
 #### 課題内容
