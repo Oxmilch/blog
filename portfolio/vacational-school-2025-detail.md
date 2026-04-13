@@ -10,7 +10,7 @@ is-post-list: false
 ---
 - [ポートフォリオのトップページへ](/blog/portfolio/)
   - [エンジニアのポートフォリオへ](/blog/portfolio/work-engineer.html)
-  - [デザイン(職業訓練校)のポートフォリオへ](/blog/portfolio/vacational-school-2025-design.html)
+  - [デザイン（職業訓練校）のポートフォリオへ](/blog/portfolio/vacational-school-2025-design.html)
     - 職業訓練校情報詳細へ
 
 ## 学校情報

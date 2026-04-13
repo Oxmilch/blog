@@ -1,8 +1,8 @@
 ---
 sitemap: false
 layout: page
-title: "デザイン(職業訓練校) - ポートフォリオ"
-description: "デザイン(職業訓練校) - ポートフォリオ"
+title: "デザイン（職業訓練校） - ポートフォリオ"
+description: "デザイン（職業訓練校） - ポートフォリオ"
 tags: [Adobe Illustrator, Adobe Photoshop, Adobe PremierePro, figma, VSCode]
 date: 2025-11-21
 update: 2026-04-13
@@ -50,17 +50,20 @@ is-post-list: false
 #### 期間
 - 2026年3月18日～4月13日 (11日間)
 
-#### ソフトウェア
-- VSCode
-- Adobe Illustrator 2025 (macOS Ventura)
-- Adobe Photoshop 2024 (macOS Ventura)
-- Adobe Stock
-- figma
-
 ### 2026年3月24日～4月13日授業課題 ホームページ制作
 #### 課題内容
 - ヒアリングからウェブサイト制作までを模擬的に行う。
 - ペアを組み、お互いに依頼と制作を行う。
+
+#### 使用ソフトウェア
+- Adobe Illustrator 2025 (macOS Ventura)
+- Adobe Photoshop 2024 (macOS Ventura)
+- Adobe Stock
+- figma
+- VSCode
+
+#### 制作時間
+- 24時間
 
 #### 制作物
 - [**発注詳細へ（ロール：クライアント）**](/blog/portfolio/assignment260324/request-work.html)
@@ -80,11 +83,6 @@ is-post-list: false
 ## 動画制作学習
 #### 期間
 - 2026年2月2日～3月13日 (22日間)
-
-#### ソフトウェア
-- Adobe Premiere Pro 2025 (macOS Ventura)
-- Adobe Illustrator 2025 (macOS Ventura)
-- Adobe Photoshop 2024 (macOS Ventura)
 
 #### 教材
 - [Premiere Pro よくばり入門 改訂３版（できるよくばり入門） (インプレス)](https://book.impress.co.jp/books/1125101035)
@@ -141,7 +139,7 @@ is-post-list: false
     loading="lazy">
 </div>
 
-#### 使用ソフト
+#### 使用ソフトウェア
 - Adobe Illustrator 2025 (macOS Ventura)
 - Adobe Premiere Pro 2025 (macOS Ventura)
 - Adobe Photoshop 2024 (macOS Ventura)
@@ -212,7 +210,7 @@ is-post-list: false
     loading="lazy">
 </div>
 
-#### 使用ソフト
+#### 使用ソフトウェア
 - Adobe Premiere Pro 2025 (macOS Ventura)
 - Adobe Illustrator 2025 (macOS Ventura)
 - Adobe Photoshop 2024 (macOS Ventura)
@@ -236,9 +234,6 @@ is-post-list: false
 #### 期間
 - 2025年12月25日～2026年1月27日（15日間）
 
-#### ソフトウェア
-- VSCode
-- figma
 #### 教材
 - [1冊ですべて身につくHTML & CSSとWebデザイン入門講座 第2版 (SBCreative)](https://www.sbcr.jp/product/4815618469/)
 
@@ -268,7 +263,7 @@ is-post-list: false
   <h4><a href="/blog/portfolio/assignment260127/" target="_blank">制作したページへ</a></h4><br>
 </div>
 
-#### 使用ソフト
+#### 使用ソフトウェア
 - VSCode
 - figma
 
@@ -315,7 +310,7 @@ is-post-list: false
   <h4><a href="/blog/portfolio/assignment260116/" target="_blank">制作したページへ</a></h4><br>
 </div>
 
-#### 使用ソフト
+#### 使用ソフトウェア
 - VSCode
 
 #### 制作時間
@@ -327,10 +322,6 @@ is-post-list: false
 ## コンテンツ制作学習
 #### 期間
 - 2025年12月2日～12月25日（16日間）
-
-#### ソフトウェア
-- Adobe Illustrator 2025 (macOS Ventura)
-- Adobe Photoshop 2024 (macOS Ventura)
 
 #### 教材
 - [世界一わかりやすいIllustrator & Photoshop 操作とデザインの教科書 改定4版 (技術評論社)](https://gihyo.jp/book/2025/978-4-297-14628-3)
@@ -345,7 +336,7 @@ is-post-list: false
   class="img-portrait"
   loading="lazy">
 
-#### 使用ソフト
+#### 使用ソフトウェア
 - Adobe Illustrator 2025 (macOS Ventura)
 - Adobe Photoshop 2024 (macOS Ventura)
 
@@ -384,12 +375,15 @@ is-post-list: false
   class="img-square-2col"
   loading="lazy">
 
-#### 使用ソフト
+#### 使用ソフトウェア
 - Adobe Illustrator 2025 (macOS Ventura)
+
 #### 制作時間
 - 3時間
+
 #### 課題内容
 - 目を引くバナー広告を作成する。指定された文言は必ず入れること。
+
 #### コンセプト
 - イラストも含め、イラストレーターだけで全て作成しました。
 
@@ -403,7 +397,7 @@ is-post-list: false
   class="img-landscape"
   loading="lazy">
 
-#### 使用ソフト
+#### 使用ソフトウェア
   - Adobe Illustrator 2025 (macOS Ventura)
   - Adobe Photoshop 2024 (macOS Ventura)
 
@@ -442,7 +436,7 @@ is-post-list: false
   class="img-square-2col"
   loading="lazy">
 
-#### 使用ソフト
+#### 使用ソフトウェア
 - Adobe Illustrator 2025 (macOS Ventura)
 - Adobe Photoshop 2024 (macOS Ventura)
 
