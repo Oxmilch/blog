@@ -2,12 +2,11 @@
 layout: page
 title: "ミルクせんせーについて"
 date: 2026-03-16
-update: 2026-04-01
-is-crawler: false
+update: 2026-04-13
 ---
 ## 経歴
 - 現在 - [職業訓練校](/blog/portfolio/vacational-school-2025-detail.html)でデザイン等学習中
-- 2025年11月 - デザインの学習のため[職業訓練校](/blog/portfolio/vacational-school-2025-detail.html)に入校
+- 2025年11月 - デザインの学習のため職業訓練校に入校
 - 2025年 3月 - SES会社倒産による失職
 - 2016年 9月 - SES会社にエンジニアの正社員として就職
 - 2016年 1月 - SES会社にエンジニアの非正規雇用として就職
@@ -21,6 +20,9 @@ is-crawler: false
 
 ### Webページ（職業訓練校制作課題）
 <section class="portfolio_grid">
+  <a href="/blog/portfolio/vacational-school-2025-design.html#2026年3月24日4月13日授業課題-ホームページ制作" target="_blank">
+    <img src="/blog/assets/images/portfolio/2025-portfolio-design-assignment-260327-groupwork-clientwork-desktop.webp">
+  </a>
   <a href="/blog/portfolio/vacational-school-2025-design.html#2026年1月27日授業課題-ハンバーガーショップのレスポンシブ対応ページ作成" target="_blank">
     <img src="/blog/assets/images/portfolio/2025-11-21-portfolio-design-assignment-260127-sitetop-mobile.webp">
   </a>

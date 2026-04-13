@@ -2,12 +2,11 @@
 layout: page
 title: "トップページ"
 date: 2026-02-08
-update: 2026-03-30
+update: 2026-04-13
 post-limit: 30
 ---
 ## Welcom to My Blog! 
 - [GitHub Pages](https://oxmilch.github.io/blog/) でブログをはじめてみました。
-- [ミルクせんせーについて](./about.html) 
 
 ### 最新の投稿 
 <ul>
@@ -23,8 +22,8 @@ post-limit: 30
 
 ### 所有端末 
 #### Network Attached Storage
-- Synology DS419Slim (4.5TB (SHR 1TB,2TBx3))
 - Synology DS223j (8TB (SHR 8TBx2))
+- Synology DS419Slim (4.5TB (SHR 1TB,2TBx3))
 
 #### Windows 
 - Desktop PC (Win11Pro, i5-12400F, RAM 32GB, RX6700XT(12GB), ROM 256GB + 2TB)
@@ -42,8 +41,8 @@ post-limit: 30
 - iPad mini 5 (iPadOS26, Apple A12, RAM 3GB, ROM 256GB)
 
 #### iPhone 
-- iPhone SE 2nd Gen. (iOS26, Apple A13, RAM 3GB, ROM 256GB)
 - iPhone 13 mini (iOS26, Apple A15, RAM 4GB, ROM 512GB)
+- iPhone SE 2nd Gen. (iOS26, Apple A13, RAM 3GB, ROM 256GB)
 - iPhone 5s (iOS12, Apple A7, RAM 1GB, ROM 32GB)
 
 #### Android
@@ -54,5 +53,5 @@ post-limit: 30
 #### Game Console (Active)
 - Nintendo Switch2
 - Nintendo Switch Lite
-- Play Station 3
-- Play Station 2
+- Play Station 3 (CECH-3000A)
+- Play Station 2 (SCPH-70000)
