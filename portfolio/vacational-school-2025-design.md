@@ -244,7 +244,7 @@ is-post-list: false
 
 ### 2026年1月27日授業課題 ハンバーガーショップのレスポンシブ対応ページ作成
 <div class="no-print">
-  <h4><a href="/blog/portfolio/assignment260127/index.html" target="_blank">制作したページへ</a></h4>
+  <h4><a href="/blog/portfolio/assignment260127/" target="_blank">制作したページへ</a></h4>
 </div>
 
 #### PCレイアウト
@@ -265,7 +265,7 @@ is-post-list: false
   loading="lazy">
 
 <div class="no-print">
-  <h4><a href="/blog/portfolio/assignment260127/index.html" target="_blank">制作したページへ</a></h4><br>
+  <h4><a href="/blog/portfolio/assignment260127/" target="_blank">制作したページへ</a></h4><br>
 </div>
 
 #### 使用ソフト
@@ -301,7 +301,7 @@ is-post-list: false
 
 ### 2026年1月16日授業課題 ハンバーガーショップのページ作成
 <div class="no-print">
-  <h4><a href="/blog/portfolio/assignment260116/index.html" target="_blank">制作したページへ</a></h4>
+  <h4><a href="/blog/portfolio/assignment260116/" target="_blank">制作したページへ</a></h4>
 </div>
 
 <h4>レイアウト</h4>
@@ -312,7 +312,7 @@ is-post-list: false
   loading="lazy">
 
 <div class="no-print">
-  <h4><a href="/blog/portfolio/assignment260116/index.html" target="_blank">制作したページへ</a></h4><br>
+  <h4><a href="/blog/portfolio/assignment260116/" target="_blank">制作したページへ</a></h4><br>
 </div>
 
 #### 使用ソフト

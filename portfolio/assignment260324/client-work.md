@@ -10,7 +10,7 @@ is-post-list: false
 - [デザイン(職業訓練校) - ポートフォリオ に戻る](../vacational-school-2025-design.html)
 - [発注側の内容へ（ロール：クライアント）](./request-work.html)
 - 受注側の内容（ロール：デザイナー）
-  - <a href="./index.html" target="_blank">制作したページへ</a>
+  - <a href="./" target="_blank">制作したページへ</a>
 
 ## 相手から受注された内容
 - 合計作業時間：24h

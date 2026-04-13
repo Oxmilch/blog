@@ -10,7 +10,7 @@ is-post-list: false
 - [デザイン(職業訓練校) - ポートフォリオ に戻る](../vacational-school-2025-design.html)
 - 発注側の内容（ロール：クライアント）
 - [受注側の内容へ（ロール：デザイナー）](./client-work.html)
-  - <a href="./index.html" target="_blank">制作したページへ</a>
+  - <a href="./" target="_blank">制作したページへ</a>
 
 ## 自身から発注した内容
 ### 架空の会社情報
