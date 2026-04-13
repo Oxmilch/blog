@@ -124,12 +124,11 @@
       <div id="article_header">
         {% if page.date %}
           {% if last_modify %}
-            <span>登録日：</span><time>{{ page.date | date:"%Y/%m/%d" }}</time><br>
+            <span class="date-style">登録日：</span><time>{{ page.date | date:"%Y/%m/%d" }}</time>
           {% endif %}
-          <span>{{ last_date_title }}：</span><time datetime="{{ last_date }}">{{ last_date_text }}</time>
+          <span class="date-style">{{ last_date_title }}：</span><time datetime="{{ last_date }}">{{ last_date_text }}</time>
         {% endif %}
         {% if page.tags %}
-          <br>
           <div id="article_tags">
             {% for tag in page.tags %}
               <span>{{ tag }}</span>

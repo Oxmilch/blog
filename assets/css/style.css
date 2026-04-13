@@ -391,11 +391,16 @@ article{
     font-weight: var(--font-weight-regular);
 }
 
+.date-style{
+  padding-left:0.5em;
+}
+
 #article_tags{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem 0.5rem;
-    padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 #article_tags span{
