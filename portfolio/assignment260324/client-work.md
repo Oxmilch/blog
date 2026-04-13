@@ -74,22 +74,22 @@ is-post-list: false
 
 ### ワイヤーフレーム（PC）
 - **作業時間**：4h
-  - <a href="/blog/assets/images/2025/portfolio/design-260327-groupwork-clientwork-desktop-comp.webp" target="_blank">制作したＰＣレイアウトのワイヤーフレーム</a>
+  - <a href="/blog/assets/images/2025/portfolio/design-260324-groupwork-clientwork-desktop-comp.webp" target="_blank">制作したＰＣレイアウトのワイヤーフレーム</a>
 
 #### トップページイメージ（PC）
 <img
-  src="/blog/assets/images/2025/portfolio/design-260327-groupwork-clientwork-desktop-image.webp"
+  src="/blog/assets/images/2025/portfolio/design-260324-groupwork-clientwork-desktop-image.webp"
   alt="2026年3月24日作成PCレイアウトイメージ"
   class="img-landscape"
   loading="lazy">
 
 ### ワイヤーフレーム（Mobile）
 - **作業時間**：2h
-  - <a href="/blog/assets/images/2025/portfolio/design-260327-groupwork-clientwork-mobile-comp.webp" target="_blank">制作したモバイルレイアウトのワイヤーフレーム</a>
+  - <a href="/blog/assets/images/2025/portfolio/design-260324-groupwork-clientwork-mobile-comp.webp" target="_blank">制作したモバイルレイアウトのワイヤーフレーム</a>
 
 #### トップページイメージ（Mobile）
 <img
-  src="/blog/assets/images/2025/portfolio/design-260327-groupwork-clientwork-mobile-image.webp"
+  src="/blog/assets/images/2025/portfolio/design-260324-groupwork-clientwork-mobile-image.webp"
   alt="2026年3月24日作成モバイルレイアウトイメージ"
   class="img-portrait-small"
   loading="lazy">

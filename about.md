@@ -21,7 +21,7 @@ update: 2026-04-13
 ### Webページ（職業訓練校制作課題）
 <section class="portfolio_grid">
   <a href="/blog/portfolio/vacational-school-2025-design.html#2026年3月24日4月13日授業課題-ホームページ制作" target="_blank">
-    <img src="/blog/assets/images/2025/portfolio/design-260327-groupwork-clientwork-desktop.webp">
+    <img src="/blog/assets/images/2025/portfolio/design-260324-groupwork-clientwork-desktop.webp">
   </a>
   <a href="/blog/portfolio/vacational-school-2025-design.html#2026年1月27日授業課題-ハンバーガーショップのレスポンシブ対応ページ作成" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-260127-sitetop-mobile.webp">

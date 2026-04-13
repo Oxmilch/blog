@@ -57,12 +57,12 @@ is-post-list: false
 - ペアを組み、お互いに依頼と制作を行う。
 
 #### 制作物
-- [**発注詳細へ（ロール：クライアント）**](/blog/portfolio/assignment260327/request-work.html)
-- [**受注詳細へ（ロール：デザイナー）**](/blog/portfolio/assignment260327/client-work.html)
-  - <a href="/blog/portfolio/assignment260327/index.html" target="_blank">制作したページへ</a>
+- [**発注詳細へ（ロール：クライアント）**](/blog/portfolio/assignment260324/request-work.html)
+- [**受注詳細へ（ロール：デザイナー）**](/blog/portfolio/assignment260324/client-work.html)
+  - <a href="/blog/portfolio/assignment260324/" target="_blank">制作したページへ</a>
 
 <img
-  src="/blog/assets/images/2025/portfolio/design-260327-groupwork-clientwork-desktop.webp"
+  src="/blog/assets/images/2025/portfolio/design-260324-groupwork-clientwork-desktop.webp"
   alt="2026年3月24日作成PCレイアウトトップページ"
   class="img-landscape"
   loading="lazy">
