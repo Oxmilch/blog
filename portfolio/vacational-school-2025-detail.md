@@ -3,11 +3,15 @@ sitemap: false
 layout: page
 title: "2025年11月開講 これから始める！Ｗｅｂ・ＳＮＳ動画編集＆ホームページデザイン科 - 職業訓練校：創造社リカレントスクール福岡校(クリエート・デザイン分野)"
 description: "2025年11月開講 これから始める！Ｗｅｂ・ＳＮＳ動画編集＆ホームページデザイン科 - 職業訓練校：創造社リカレントスクール福岡校(クリエート・デザイン分野)"
+tags: [macOS, Adobe Illustrator, Adobe Photoshop, Adobe PremierePro, VSCode]
 date: 2025-11-20
-update: 2026-03-26
+update: 2026-04-13
 is-post-list: false
 ---
-- [デザイン(職業訓練校)のポートフォリオへ](/blog/portfolio/vacational-school-2025-design.html)
+- [ミルクせんせーについて（ポートフォリオトップページ）へ](/blog/about.html)
+  - [エンジニアのポートフォリオへ](/blog/portfolio/work-engineer.html)
+  - [デザイン(職業訓練校)のポートフォリオへ](/blog/portfolio/vacational-school-2025-design.html)
+    - 職業訓練校情報詳細へ
 
 ## 学校情報
 ### ホームページ

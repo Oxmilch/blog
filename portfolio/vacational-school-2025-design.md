@@ -10,8 +10,14 @@ is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/portfolio/work-engineer.html">エンジニアのポートフォリオへ</a></li>
-    <li><a href="/blog/portfolio/vacational-school-2025-detail.html">職業訓練校情報詳細へ</a></li>
+    <li><a href="/blog/about.html">ミルクせんせーについて（ポートフォリオトップページ）へ</a></li>
+      <ul>
+        <li><a href="/blog/portfolio/work-engineer.html">エンジニアのポートフォリオへ</a></li>
+        <li>デザイン(職業訓練校)のポートフォリオへ</li>
+        <ul>
+          <li><a href="/blog/portfolio/vacational-school-2025-detail.html">職業訓練校情報詳細へ</a></li>
+        </ul>
+      </ul>
   </ul>
 </div>
 

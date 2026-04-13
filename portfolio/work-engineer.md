@@ -3,13 +3,21 @@ sitemap: false
 layout: page
 title: "エンジニア - ポートフォリオ"
 description: "エンジニア - ポートフォリオ"
+tags: [Windows, Visual Studio, VSCode, Eclipse]
 date: 2016-01-01
-update: 2026-03-26
+update: 2026-04-13
 is-post-list: false
 ---
 <div class="no-print">
   <ul>
-    <li><a href="/blog/portfolio/vacational-school-2025-design.html">デザイン(職業訓練校)のポートフォリオへ</a></li>
+    <li><a href="/blog/about.html">ミルクせんせーについて（ポートフォリオトップページ）へ</a></li>
+    <ul>
+      <li>エンジニアのポートフォリオ</li>
+      <li><a href="/blog/portfolio/vacational-school-2025-design.html">デザイン(職業訓練校)のポートフォリオへ</a></li>
+      <ul>
+        <li><a href="/blog/portfolio/vacational-school-2025-detail.html">職業訓練校情報詳細へ</a></li>
+      </ul>
+    </ul>
   </ul>
 </div>
 
