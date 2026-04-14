@@ -3,8 +3,10 @@ layout: page
 title: "トップ - ポートフォリオ"
 description: "トップ - ポートフォリオ"
 date: 2026-03-16
-update: 2026-04-13
+update: 2026-04-14
 ---
+<link rel="stylesheet" href="../assets/css/portfolio.css">
+
 ## 経歴
 - 現在 - [職業訓練校](/blog/portfolio/vacational-school-2025-detail.html)でデザイン等学習中
 - 2025年11月 - デザインの学習のため職業訓練校に入校
@@ -21,36 +23,36 @@ update: 2026-04-13
 
 ### Webページ（職業訓練校制作課題）
 <section class="portfolio_grid">
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2026年3月24日4月13日授業課題-ホームページ制作" target="_blank">
+  <a id="web260324" href="/blog/portfolio/vacational-school-2025-design.html#2026年3月24日4月13日授業課題-ホームページ制作" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-260324-groupwork-clientwork-desktop.webp">
   </a>
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2026年1月27日授業課題-ハンバーガーショップのレスポンシブ対応ページ作成" target="_blank">
+  <a id="web260127" href="/blog/portfolio/vacational-school-2025-design.html#2026年1月27日授業課題-ハンバーガーショップのレスポンシブ対応ページ作成" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-260127-sitetop-mobile.webp">
   </a>
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2026年1月16日授業課題-ハンバーガーショップのページ作成" target="_blank">
+  <a id="web260116" href="/blog/portfolio/vacational-school-2025-design.html#2026年1月16日授業課題-ハンバーガーショップのページ作成" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-260116-site.webp">
   </a>
 </section>
 
 ### 動画（職業訓練校制作課題）
 <section class="portfolio_grid">
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2026年2月18日2月25日授業課題-ジム宣伝広告動画作成" target="_blank">
+  <a id="video260218" href="/blog/portfolio/vacational-school-2025-design.html#2026年2月18日2月25日授業課題-ジム宣伝広告動画作成" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-260218-gym-insta.webp">
   </a>
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2026年2月16日授業課題-バナー動画作成" target="_blank">
+  <a id="video260216" href="/blog/portfolio/vacational-school-2025-design.html#2026年2月16日授業課題-バナー動画作成" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-260216_bunner.webp">
   </a>
 </section>
 
 ### バナー（職業訓練校制作課題）
 <section class="portfolio_grid">
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2025年12月18日授業課題-バナー広告作成" target="_blank">
+  <a id="bunner251218" href="/blog/portfolio/vacational-school-2025-design.html#2025年12月18日授業課題-バナー広告作成" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-251218-bunner1.webp">
   </a>
   <a href="/blog/portfolio/vacational-school-2025-design.html#2025年12月18日授業課題-バナー広告作成" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-251218-bunner2.webp">
   </a>
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2025年12月15日授業課題-バナーのトレース" target="_blank">
+  <a id="bunner251215" href="/blog/portfolio/vacational-school-2025-design.html#2025年12月15日授業課題-バナーのトレース" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-251215-trace1.webp">
   </a>
   <a href="/blog/portfolio/vacational-school-2025-design.html#2025年12月15日授業課題-バナーのトレース" target="_blank">
@@ -63,10 +65,10 @@ update: 2026-04-13
 
 ### 印刷物（職業訓練校制作課題）
 <section class="portfolio_grid">
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2025年12月19日授業課題-a4チラシ作成2回目" target="_blank">
+  <a id="print251219" href="/blog/portfolio/vacational-school-2025-design.html#2025年12月19日授業課題-a4チラシ作成2回目" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-251219-poster.webp">
   </a>
-  <a href="/blog/portfolio/vacational-school-2025-design.html#2025年12月17日12月18日授業課題-a4チラシ作成1回目" target="_blank">
+  <a id="print251217" href="/blog/portfolio/vacational-school-2025-design.html#2025年12月17日12月18日授業課題-a4チラシ作成1回目" target="_blank">
     <img src="/blog/assets/images/2025/portfolio/design-251217-poster.webp">
   </a>
 </section>
