@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+.portfolio_grid a{
+  position:relative;
+}
+
+.portfolio_grid a::after{
+  position:absolute;
+  bottom:5%;
+  left:50%;
+  transform: translateX(-50%);
+  width:90%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-base-light);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-regular);
+  border-radius: 1em;
+  background-color: var(--color-accent-dark-trans);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding-left: 1em;
+  padding-right: 1em;
+  z-index:1;
+}
+
+/* Mobile Layout */
+@media(max-width:767px){
+  .portfolio_grid a::after{
+    font-size: var(--font-size-xs);
+  }
+}
+
+#web260324::after{
+  content:"制作時間 24h";
+}
+
+#web260127::after{
+  content:"制作時間 4.5h";
+}
+
+#web260116::after{
+  content:"制作時間 1.5h";
+}
+
+#video260218::after{
+  content:"制作時間 30h";
+}
+
+#video260216::after{
+  content:"制作時間 3h";
+}
+
+#bunner251218::after{
+  content:"制作時間 3h";
+}
+
+#bunner251215::after{
+  content:"制作時間 4h";
+}
+
+#print251219::after{
+  content:"制作時間 6h";
+}
+
+#print251217::after{
+  content:"制作時間 9h";
+}
