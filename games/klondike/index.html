@@ -1,0 +1,52 @@
+---
+sitemap: false
+layout: null
+date: 2026-04-14
+---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クロンダイク - Solitaire Klondike</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Klondike Solitaire</h1>
+    </header>
+
+    <div id="game-container">
+        <div class="board-top">
+            <div class="deck-piles">
+                <div id="stock-pile" class="pile"></div>
+                <div id="waste-pile" class="pile"></div>
+            </div>
+            <div class="foundation-piles">
+                <div id="foundation-0" class="pile foundation" data-suit="hearts"></div>
+                <div id="foundation-1" class="pile foundation" data-suit="diamonds"></div>
+                <div id="foundation-2" class="pile foundation" data-suit="clubs"></div>
+                <div id="foundation-3" class="pile foundation" data-suit="spades"></div>
+            </div>
+        </div>
+
+        <div class="tableau-piles">
+            <div id="tableau-0" class="tableau-column pile" data-index="0"></div>
+            <div id="tableau-1" class="tableau-column pile" data-index="1"></div>
+            <div id="tableau-2" class="tableau-column pile" data-index="2"></div>
+            <div id="tableau-3" class="tableau-column pile" data-index="3"></div>
+            <div id="tableau-4" class="tableau-column pile" data-index="4"></div>
+            <div id="tableau-5" class="tableau-column pile" data-index="5"></div>
+            <div id="tableau-6" class="tableau-column pile" data-index="6"></div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="new-game">New Game</button>
+        <button id="undo-btn" disabled>Undo</button>
+    </div>
+    <div id="status"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
