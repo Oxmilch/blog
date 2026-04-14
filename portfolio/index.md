@@ -14,6 +14,7 @@ update: 2026-04-13
 
 ## Webツール
 - [Parallel Search - 色んなサイトで同じ検索ワードで検索するもの](/blog/parallel-search)
+- [Webゲーム](/blog/games/)
 
 ## ポートフォリオ
 - [エンジニア（業務） - ポートフォリオ＆スキルセット一覧](/blog/portfolio/work-engineer.html)
