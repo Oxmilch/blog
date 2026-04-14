@@ -55,6 +55,12 @@
         break-after: page;
     }
 
+    /* Article */
+    #article_tags span{
+      color: var(--color-accent-dark);
+      border-color: var(--color-accent-dark);
+    }
+
     /* Aside */
     aside {
         display: none;
