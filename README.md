@@ -1,6 +1,14 @@
+## 制作スケジュールと担当
+- 原本がソースコード管理します。
+- 当日の６限目に進捗状態を共有フォルダに入れてください。
+- 翌日、全員のコードを組み合わせたものを同じフォルダに入れておきますので、そこからフォルダごと、自分のMacにコピーし作業の続きを行なってください。
+- 作業中のコードを消しちゃったけど、やっぱりあの日に作ったコードを復元したいときは、原本に声をかけてください。お渡しします。
+- コードについてわからないこと、やりたいけど方法がわからないこと、技術的なことは原本に尋ねてOKです。
+
 ## 利用フォント
 - [Google Fonts - Hammersmith One](https://fonts.google.com/specimen/Hammersmith+One?preview.script=Latn)
-- [Google Fonts - Kosugi Maru](https://fonts.google.com/specimen/Kosugi+Maru?preview.script=Latn)
+- [Google Fonts - M PLUS Rounded 1c](https://fonts.google.com/specimen/M+PLUS+Rounded+1c)
+- [Google Fonts - Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP)
 
 ## フォントのサブセット化に使用したツール
 - [武蔵システム - サブセットフォントメーカー](https://opentype.jp/subsetfontmk.htm)

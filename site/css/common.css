@@ -1,25 +1,42 @@
 @charset "UTF-8";
-@font-face{ font-family: "Hammersmith One"; src: url(../assets/fonts/HammersmithOne-Regular.woff2) format(woff2), url(../assets/fonts/HammersmithOne-Regular.woff) format(woff); }
-@font-face{ font-family: "Kosugi Maru"; src: url(../assets/fonts/KosugiMaru-Regular.woff2) format(woff2), url(../assets/fonts/KosugiMaru-Regular.woff) format(woff); }
-@font-face{ font-family: "Kosugi Maru Subset"; src: url(../assets/fonts/KosugiMaru-Subset.woff2) format(woff2), url(../assets/fonts/KosugiMaru-Subset.woff) format(woff); }
+/* フォントフルセット */
+@font-face{ font-family: "Hammersmith One"; src: url(../assets/fonts/fullset/HammersmithOne-Regular.woff2) format(woff2), url(../assets/fonts/fullset/HammersmithOne-Regular.woff) format(woff); }
+@font-face{ font-family: "M PLUS Rounded 1c Black"; src: url(../assets/fonts/fullset/MPLUSRounded1c-Black.woff2) format(woff2), url(../assets/fonts/fullset/MPLUSRounded1c-Black.woff) format(woff); }
+@font-face{ font-family: "M PLUS Rounded 1c ExtraBold"; src: url(../assets/fonts/fullset/MPLUSRounded1c-ExtraBold.woff2) format(woff2), url(../assets/fonts/fullset/MPLUSRounded1c-ExtraBold.woff) format(woff); }
+@font-face{ font-family: "Noto Sans JP Bold"; src: url(../assets/fonts/fullset/NotoSansJP-Bold.woff2) format(woff2), url(../assets/fonts/fullset/NotoSansJP-Bold.woff) format(woff); }
+@font-face{ font-family: "Noto Sans JP"; src: url(../assets/fonts/fullset/NotoSansJP-Regular.woff2) format(woff2), url(../assets/fonts/fullset/NotoSansJP-Regular.woff) format(woff); }
+/* フォントサブセット 使用文字のみ */
+@font-face{ font-family: "Hammersmith One Min"; src: url(../assets/fonts/subset/HammersmithOne-Regular-Min.woff2) format(woff2), url(../assets/fonts/subset/HammersmithOne-Regular-Min.woff) format(woff); }
+/* フォントサブセット 平仮名・片仮名・日本語常用漢字・数字・記号 */
+@font-face{ font-family: "M PLUS Rounded 1c Black Min Jp"; src: url(../assets/fonts/subset/MPLUSRounded1c-Black-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/MPLUSRounded1c-Black-Min-JP.woff) format(woff); }
+@font-face{ font-family: "M PLUS Rounded 1c ExtraBold Min Jp"; src: url(../assets/fonts/subset/MPLUSRounded1c-ExtraBold-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/MPLUSRounded1c-ExtraBold-Min-JP.woff) format(woff); }
+@font-face{ font-family: "Noto Sans JP Bold Min Jp"; src: url(../assets/fonts/subset/NotoSansJP-Bold-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/NotoSansJP-Bold-Min-JP.woff) format(woff); }
+@font-face{ font-family: "Noto Sans JP Min Jp"; src: url(../assets/fonts/subset/NotoSansJP-Regular-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/NotoSansJP-Regular-Min-JP.woff) format(woff); }
 
 
 :root{
     /* Color */
     --color-base:#FFF;
     --color-yellow:#FFD700;
-    --color-green:#32CD32;
+    --color-green:#224322;
     --color-blue:#1F4E8C;
     --color-blue-dark:#12335E;
     --color-red:#ED1818;
     --color-black:#333;
 
-    /* Fonts */
-    --font-family: "Kosugi Maru", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "BIZ UDPGothic", sans-serif;
-    --font-family-min: "Kosugi Maru Subset", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "BIZ UDPGothic", sans-serif;
+    /* フォントフルセット(文字が表示されない場合は一時的にこちらを使う) */
     --font-family-date: "Hammersmith One", "Helvetica Neue", Arial, sans-serif;
+    --font-family-title-black: "M PLUS Rounded 1c Black", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-title-exbold: "M PLUS Rounded 1c ExtraBold", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-text-bold: "Noto Sans JP Bold", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-text: "Noto Sans JP Reguler", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
 
-    --font-weight: 400;
+    /* フォントサブセット(使用文字のみ) */
+    --font-family-date-min: "Hammersmith One Min", "Helvetica Neue", Arial, sans-serif;
+    --font-family-title-black-min: "M PLUS Rounded 1c Black Min Jp", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-title-exbold-min: "M PLUS Rounded 1c ExtraBold Min Jp", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-text-bold-min: "Noto Sans JP Bold Min Jp", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-text-min: "Noto Sans JP Min Jp", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
 
     --font-style: normal;
 
@@ -32,11 +49,48 @@
 
 }
 
+/* 日付用フォント */
+.font-date{
+    font-family: var(--font-family-date-min);
+    font-style: var(--font-style);
+}
+
+/* 見出し用フォント（weight:900） */
+.font-title-black{
+    font-family: var(--font-family-title-black-min);
+    font-style: var(--font-style);
+}
+
+/* 見出し用フォント（weight:800） */
+.font-title-exbold{
+    font-family: var(--font-family-title-exbold-min);
+    font-style: var(--font-style);
+}
+
+/* テキスト用フォント（weight:700） */
+.font-text-bold{
+    font-family: var(--font-family-text-bold-min);
+    font-style: var(--font-style);
+}
+
+/* テキスト用フォント（weight:400） */
+.font-text{
+    font-family: var(--font-family-text-min);
+    font-style: var(--font-style);
+}
+
 html{
     scroll-behavior: smooth;
     background-color: var(--color-base);
-    font-family: var(--font-family-min);
-    font-weight: var(--font-weight);
+    font-family: var(--font-family-text);
     font-style: var(--font-style);
     font-size: var(--font-size);
+}
+
+h1,h2,h3,h4,h5{
+    font-family: var(--font-family-title-black-min);
+}
+
+a{
+    text-decoration: none;
 }
