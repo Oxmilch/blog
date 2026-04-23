@@ -14,8 +14,9 @@
 @font-face{ font-family: "Noto Sans JP Min Jp"; src: url(../assets/fonts/subset/NotoSansJP-Regular-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/NotoSansJP-Regular-Min-JP.woff) format(woff); }
 
 
+/* ■■■ 共通テーマ ■■■*/
 :root{
-    /* Color */
+    /* 色 */
     --color-base:#FFF;
     --color-yellow:#FFD700;
     --color-green:#224322;
@@ -40,45 +41,118 @@
 
     --font-style: normal;
 
-    --font-size-ss: 0.75rem; /* 12px */
-    --font-size-s: 0.875rem; /* 14px */
-    --font-size: 1rem;       /* 16px(基準) */
-    --font-size-l: 1.25rem;  /* 20px */
-    --font-size-ll: 1.5rem;  /* 24px */
+    /* フォントサイズ */
     --font-size-lll: 2rem;   /* 32px */
-
+    --font-size-ll: 1.5rem;  /* 24px */
+    --font-size-l: 1.25rem;  /* 20px */
+    --font-size: 1rem;       /* 16px(基準) */
+    --font-size-s: 0.875rem; /* 14px */
+    --font-size-ss: 0.75rem; /* 12px */
 }
 
-/* 日付用フォント */
-.font-date{
+/* ■■■ 共通クラス：フォントファミリー ■■■ */
+/* 日付用フォント：共通 */
+.font-date-lll,
+.font-date-ll,
+.font-date-l,
+.font-date,
+.font-date-s,
+.font-date-ss{
     font-family: var(--font-family-date-min);
     font-style: var(--font-style);
 }
 
 /* 見出し用フォント（weight:900） */
-.font-title-black{
+.font-title-black-lll,
+.font-title-black-ll,
+.font-title-black-l,
+.font-title-black,
+.font-title-black-s,
+.font-title-black-ss{
     font-family: var(--font-family-title-black-min);
     font-style: var(--font-style);
 }
 
 /* 見出し用フォント（weight:800） */
-.font-title-exbold{
+.font-title-exbold-lll,
+.font-title-exbold-ll,
+.font-title-exbold-l
+.font-title-exbold,
+.font-title-exbold-s,
+.font-title-exbold-ss{
     font-family: var(--font-family-title-exbold-min);
     font-style: var(--font-style);
 }
 
 /* テキスト用フォント（weight:700） */
-.font-text-bold{
+.font-text-bold-lll,
+.font-text-bold-ll,
+.font-text-bold-l
+.font-text-bold,
+.font-text-bold-s,
+.font-text-bold-ss{
     font-family: var(--font-family-text-bold-min);
     font-style: var(--font-style);
 }
 
 /* テキスト用フォント（weight:400） */
-.font-text{
+.font-text-lll,
+.font-text-ll,
+.font-text-l,
+.font-text,
+.font-text-s,
+.font-text-ss{
     font-family: var(--font-family-text-min);
     font-style: var(--font-style);
 }
 
+
+/* ■■■ 共通クラス：フォントサイズ ■■■ */
+.font-date-lll,
+.font-title-black-lll,
+.font-title-exbold-lll,
+.font-text-bold-lll,
+.font-text-lll{
+    font-size: var(--font-size-lll);
+}
+.font-date-ll,
+.font-title-black-ll,
+.font-title-exbold-ll,
+.font-text-bold-ll,
+.font-text-ll{
+    font-size: var(--font-size-ll);
+}
+.font-date-l,
+.font-title-black-l,
+.font-title-exbold-l,
+.font-text-bold-l,
+.font-text-l{
+    font-size: var(--font-size-l);
+}
+.font-date,
+.font-title-black,
+.font-title-exbold,
+.font-text-bold,
+.font-text{
+    font-size: var(--font-size);
+}
+.font-date-s,
+.font-title-black-s,
+.font-title-exbold-s,
+.font-text-bold-s,
+.font-text-s{
+    font-size: var(--font-size-s);
+}
+.font-date-ss,
+.font-title-black-ss,
+.font-title-exbold-ss,
+.font-text-bold-ss,
+.font-text-ss{
+    font-size: var(--font-size-ss);
+}
+
+
+/* ■■■ 共通スタイル：タグ ■■■ */
 html{
     scroll-behavior: smooth;
     background-color: var(--color-base);
@@ -93,4 +167,8 @@ h1,h2,h3,h4,h5{
 
 a{
     text-decoration: none;
+}
+
+img{
+    width: 100%;
 }
