@@ -8,10 +8,10 @@
 /* フォントサブセット 使用文字のみ */
 @font-face{ font-family: "Hammersmith One Min"; src: url(../assets/fonts/subset/HammersmithOne-Regular-Min.woff2) format(woff2), url(../assets/fonts/subset/HammersmithOne-Regular-Min.woff) format(woff); }
 /* フォントサブセット 平仮名・片仮名・日本語常用漢字・数字・記号 */
-@font-face{ font-family: "M PLUS Rounded 1c Black Min Jp"; src: url(../assets/fonts/subset/MPLUSRounded1c-Black-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/MPLUSRounded1c-Black-Min-JP.woff) format(woff); }
-@font-face{ font-family: "M PLUS Rounded 1c ExtraBold Min Jp"; src: url(../assets/fonts/subset/MPLUSRounded1c-ExtraBold-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/MPLUSRounded1c-ExtraBold-Min-JP.woff) format(woff); }
-@font-face{ font-family: "Noto Sans JP Bold Min Jp"; src: url(../assets/fonts/subset/NotoSansJP-Bold-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/NotoSansJP-Bold-Min-JP.woff) format(woff); }
-@font-face{ font-family: "Noto Sans JP Min Jp"; src: url(../assets/fonts/subset/NotoSansJP-Regular-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/NotoSansJP-Regular-Min-JP.woff) format(woff); }
+@font-face{ font-family: "M PLUS Rounded 1c Black Min JP"; src: url(../assets/fonts/subset/MPLUSRounded1c-Black-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/MPLUSRounded1c-Black-Min-JP.woff) format(woff); }
+@font-face{ font-family: "M PLUS Rounded 1c ExtraBold Min JP"; src: url(../assets/fonts/subset/MPLUSRounded1c-ExtraBold-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/MPLUSRounded1c-ExtraBold-Min-JP.woff) format(woff); }
+@font-face{ font-family: "Noto Sans JP Bold Min JP"; src: url(../assets/fonts/subset/NotoSansJP-Bold-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/NotoSansJP-Bold-Min-JP.woff) format(woff); }
+@font-face{ font-family: "Noto Sans JP Min JP"; src: url(../assets/fonts/subset/NotoSansJP-Regular-Min-JP.woff2) format(woff2), url(../assets/fonts/subset/NotoSansJP-Regular-Min-JP.woff) format(woff); }
 
 
 /* ■■■ 共通テーマ ■■■*/
@@ -30,14 +30,14 @@
     --font-family-title-black: "M PLUS Rounded 1c Black", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
     --font-family-title-exbold: "M PLUS Rounded 1c ExtraBold", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
     --font-family-text-bold: "Noto Sans JP Bold", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
-    --font-family-text: "Noto Sans JP Reguler", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-text: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
 
     /* フォントサブセット(使用文字のみ) */
     --font-family-date-min: "Hammersmith One Min", "Helvetica Neue", Arial, sans-serif;
-    --font-family-title-black-min: "M PLUS Rounded 1c Black Min Jp", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
-    --font-family-title-exbold-min: "M PLUS Rounded 1c ExtraBold Min Jp", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
-    --font-family-text-bold-min: "Noto Sans JP Bold Min Jp", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
-    --font-family-text-min: "Noto Sans JP Min Jp", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-title-black-min: "M PLUS Rounded 1c Black Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-title-exbold-min: "M PLUS Rounded 1c ExtraBold Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-text-bold-min: "Noto Sans JP Bold Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-text-min: "Noto Sans JP Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
 
     --font-style: normal;
 
@@ -76,7 +76,7 @@
 /* 見出し用フォント（weight:800） */
 .font-title-exbold-lll,
 .font-title-exbold-ll,
-.font-title-exbold-l
+.font-title-exbold-l,
 .font-title-exbold,
 .font-title-exbold-s,
 .font-title-exbold-ss{
@@ -87,7 +87,7 @@
 /* テキスト用フォント（weight:700） */
 .font-text-bold-lll,
 .font-text-bold-ll,
-.font-text-bold-l
+.font-text-bold-l,
 .font-text-bold,
 .font-text-bold-s,
 .font-text-bold-ss{
