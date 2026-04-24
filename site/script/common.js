@@ -1,57 +1,109 @@
-/* ■■■ URL定数 ■■■ */
-/** URL：福岡商工会議所トップ */
-const urlFukuokaCCI = "https://www.fukunet.or.jp/";
-/** URL：福岡商工会議所フェイスブック */
-const urlFukuokaCCIFacebook = "https://www.facebook.com/fukuoka.cci/";
-/** URL：福岡商工会議所インスタグラム */
-const urlFukuokaCCIInstagram = "https://www.instagram.com/fukuoka_cci/";
-/** URL：福岡商工会議所X */
-const urlFukuokaCCIX = "https://x.com/fukuoka_cci/";
-/** URL：福岡市美術館交通案内 */
-const urlFukuokaArtMusiumAccess = "https://www.fukuoka-art-museum.jp/guide/access/";
-/** URL：イベント用インスタグラム */
-const urlEventInstagram = "";
-/** URL：イベント用ティックトック */
-const urlEventTiktok = "";
-/** URL：応募先フォーム */
-const urlPublicRecruitment = "";
+/** ■■■ クラス：リンク先を新規タブで開く ■■■ */
+class NewWindow{
+    /** URL：福岡商工会議所トップ */
+    get urlFukuokaCCI() { return "https://www.fukunet.or.jp/"; }
+    /** URL：福岡商工会議所フェイスブック */
+    get urlFukuokaCCIFacebook() { return "https://www.facebook.com/fukuoka.cci/";}
+    /** URL：福岡商工会議所インスタグラム */
+    get urlFukuokaCCIInstagram() { return "https://www.instagram.com/fukuoka_cci/"};
+    /** URL：福岡商工会議所X */
+    get urlFukuokaCCIX() { return "https://x.com/fukuoka_cci/";}
+    /** URL：福岡市美術館交通案内 */
+    get urlFukuokaArtMusiumAccess() { return "https://www.fukuoka-art-museum.jp/guide/access/";}
+    /** URL：イベント用インスタグラム */
+    get urlEventInstagram() { return "";}
+    /** URL：イベント用ティックトック */
+    get urlEventTiktok() { return "";}
+    /** URL：応募先フォーム */
+    get urlPublicRecruitment() { return "";}
 
 
-/* ■■■ 関数：新規タブを開く ■■■ */
-/** 共通：新規タブを開く
- * @description 指定されたURLを新規タブで開きます。指定されない場合は、自身のページを新規タブで開きます。
- * @param {string | null} url 遷移先のURL
- */
-function NewWindow(url){
-    if(url){
-        window.open(url, "_blank");
+    /** 共通：新規タブを開く
+     * @description 指定されたURLを新規タブで開きます。指定されない場合は、自身のページを新規タブで開きます。
+     * @param {string | null} url 遷移先のURL
+     */
+    static open(url){
+        if(url){
+            window.open(url, "_blank");
+        }
+        else{
+            window.open(window.location.href, "_blank");
+        }
     }
-    else{
-        window.open(window.location.href, "_blank");
-    }
+
+    /** 新規タブ：商工会議所トップ */
+    static gotoFukuokaCCI(){ NewWindow(urlFukuokaArtMusiumAccess); }
+
+    /** 新規タブ：商工会議所フェイスブック */
+    static GotoFukuokaCCIFacebook(){ NewWindow(urlFukuokaCCIFacebook); }
+
+    /** 新規タブ：商工会議所インスタグラム */
+    static GotoFukuokaCCIInstagram(){ NewWindow(urlFukuokaCCIInstagram); }
+
+    /** 新規タブ：商工会議所X */
+    static GotoFukuokaCCIX(){ NewWindow(urlFukuokaCCIX); }
+
+    /** 新規タブ：福岡市美術館交通案内に遷移 */
+    static GotoFukuokaArtMusiumAccess(){ NewWindow(urlFukuokaArtMusiumAccess); }
+
+    /** 新規タブ：イベント用インスタグラムへ遷移 */
+    static GotoEventInstagram(){ NewWindow(urlEventInstagram); }
+
+    /** 新規タブ：イベント用ティックトックに遷移 */
+    static GotoEventTiktok(){ NewWindow(urlEventTiktok); }
+
+    /** 新規タブ：応募先フォームに遷移 */
+    static GotoPublicRecruitment(){ NewWindow(urlPublicRecruitment); }
 }
 
-/** 新規タブ：商工会議所トップ */
-function GotoFukuokaCCI(){ NewWindow(urlFukuokaArtMusiumAccess); }
 
-/** 新規タブ：商工会議所フェイスブック */
-function GotoFukuokaCCIFacebook(){ NewWindow(urlFukuokaCCIFacebook); }
+/** ■■■ クラス：テキストを動かす ■■■ */
+class MarqueeTexts{
+    /** 動かす要素のIDやクラス名 */
+    _targets;
+    /** 動かす要素 */
+    _marqueeElements;
 
-/** 新規タブ：商工会議所インスタグラム */
-function GotoFukuokaCCIInstagram(){ NewWindow(urlFukuokaCCIInstagram); }
+    /** 初期化
+     * @param {string} targets 動かしたい要素
+     */
+    constructor(targets){
+        this._targets = targets;
+    }
 
-/** 新規タブ：商工会議所X */
-function GotoFukuokaCCIX(){ NewWindow(urlFukuokaCCIX); }
+    /** 設定反映
+     * @param {string} startPosition 開始位置
+     * @param {string} endPosition 終了位置
+     * @param {number} duration 再生時間(ミリ秒)
+     * @param {number} delay アニメーションの開始を遅らせる時間(ミリ秒)
+     * @param {string} easing イージング(初期値:linear=一定, ease=最初と終了の時は緩やか、ease-in, ease-out, ease-in-out)
+     * @param {number} iterations 繰り返し回数(初期値:Infinity)
+     * @param {string} direction 実行する方向(初期値:noraml=通常, reverse=逆方向, alternate=通常方向のアニメーション終了後、逆方向にアニメーションをする、 alternate-reverse)
+     */
+    setting(startPosition, endPosition, duration, delay=0, easing="linear", iterations=Infinity, direction="normal"){
+        this._marqueeElements = document.querySelectorAll(this._targets);
+        this._marqueeElements.forEach((mqrqueeElement) => {
+            mqrqueeElement.animate(
+                [
+                    {
+                       translate: [startPosition, endPosition]
+                    }
+                ],
+                {
+                    duration: duration,
+                    delay: delay,
+                    easing: easing,
+                    iterations: iterations,
+                    direction: direction
+                }
+            );
+        });
+        this.stop();
+    }
 
-/** 新規タブ：福岡市美術館交通案内に遷移 */
-function GotoFukuokaArtMusiumAccess(){ NewWindow(urlFukuokaArtMusiumAccess); }
+    /** アニメーション開始 */
+    start(){ this._marqueeElements.forEach((mqrqueeObject) => { mqrqueeObject.play();}); }
 
-/** 新規タブ：イベント用インスタグラムへ遷移 */
-function GotoEventInstagram(){ NewWindow(urlEventInstagram); }
-
-/** 新規タブ：イベント用ティックトックに遷移 */
-function GotoEventTiktok(){ NewWindow(urlEventTiktok); }
-
-/** 新規タブ：応募先フォームに遷移 */
-function GotoPublicRecruitment(){ NewWindow(urlPublicRecruitment); }
-
+    /** アニメーション停止 */
+    stop(){ this._marqueeElements.forEach((mqrqueeObject) => { mqrqueeObject.pause();}); }
+}

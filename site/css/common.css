@@ -17,13 +17,17 @@
 /* ■■■ 共通テーマ ■■■*/
 :root{
     /* 色 */
-    --color-base:#FFF;
+    --color-base:#FAFAFA;
     --color-yellow:#FFD700;
-    --color-green:#224322;
+    --color-green:#6FB076;
+    --color-green-66:#6FB07642;
     --color-blue:#1F4E8C;
+    --color-blue-59:#1F4E8C3b;
     --color-blue-dark:#12335E;
     --color-red:#ED1818;
+    --color-red-59:#ED18183b;
     --color-black:#333;
+    --color-black-70:#33333346;
 
     /* フォントフルセット(文字が表示されない場合は一時的にこちらを使う) */
     --font-family-date: "Hammersmith One", "Helvetica Neue", Arial, sans-serif;
@@ -39,6 +43,7 @@
     --font-family-text-bold-min: "Noto Sans JP Bold Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
     --font-family-text-min: "Noto Sans JP Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
 
+    /* フォントスタイル */
     --font-style: normal;
 
     /* フォントサイズ */
@@ -48,6 +53,10 @@
     --font-size: 1rem;       /* 16px(基準) */
     --font-size-s: 0.875rem; /* 14px */
     --font-size-ss: 0.75rem; /* 12px */
+
+    /* 共通スタイル */
+    --content-width-min: 320px;
+    --content-width-max: 540px;
 }
 
 /* ■■■ 共通クラス：フォントファミリー ■■■ */
@@ -151,11 +160,23 @@
     font-size: var(--font-size-ss);
 }
 
+/* ■■■ 共通クラス：コンテナ ■■■ */
+.content{
+    min-width: var(--content-width-min);
+    max-width: var(--content-width-max);
+    margin: 0 auto;
+    background-color: var(--color-yellow);
+}
+
+.container{
+    width: 92%;
+    margin: 0 auto;
+}
 
 /* ■■■ 共通スタイル：タグ ■■■ */
 html{
     scroll-behavior: smooth;
-    background-color: var(--color-base);
+    background-color: var(--color-blue);
     font-family: var(--font-family-text);
     font-style: var(--font-style);
     font-size: var(--font-size);
@@ -171,4 +192,22 @@ a{
 
 img{
     width: 100%;
+}
+
+header{
+    position:relative;
+    z-index: 1;
+}
+
+#desktop-layout{
+    position:absolute;
+    z-index: -1;
+}
+
+.marquee{
+  display: flex;
+  white-space: nowrap;
+  overflow:visible;
+  gap: 1rem;
+  font-size: 3rem;
 }
