@@ -16,18 +16,24 @@
 
 /* ■■■ 共通テーマ ■■■*/
 :root{
-    /* 色 */
+    /* 色 ※数字は透明度を表す */
     --color-base:#FAFAFA;
+    --color-base-50:#FAFAFA32;
+    --color-base-75:#FAFAFA4b;
     --color-yellow:#FFD700;
+    --color-yellow-deep: #B89B00;
     --color-green:#6FB076;
-    --color-green-66:#6FB07642;
+    --color-green-34:#6FB07622;
+    --color-green-emerald: #50C850;
+    --color-green-light: #2DB82D;
     --color-blue:#1F4E8C;
-    --color-blue-59:#1F4E8C3b;
-    --color-blue-dark:#12335E;
+    --color-blue-41:#1F4E8C29;
+    --color-blue-cool: #0054A7;
+    --color-blue-deep:#12335E;
     --color-red:#ED1818;
-    --color-red-59:#ED18183b;
+    --color-red-41:#ED181829;
     --color-black:#333;
-    --color-black-70:#33333346;
+    --color-black-30:#3333331e;
 
     /* フォントフルセット(文字が表示されない場合は一時的にこちらを使う) */
     --font-family-date: "Hammersmith One", "Helvetica Neue", Arial, sans-serif;
@@ -60,8 +66,10 @@
     --content-width-max: 540px;
 }
 
+
 /* ■■■ 共通クラス：フォントファミリー ■■■ */
 /* 日付用フォント：共通 */
+.font-date-llll,
 .font-date-lll,
 .font-date-ll,
 .font-date-l,
@@ -73,6 +81,7 @@
 }
 
 /* 見出し用フォント（weight:900） */
+.font-title-black-llll,
 .font-title-black-lll,
 .font-title-black-ll,
 .font-title-black-l,
@@ -96,6 +105,7 @@
 }
 
 /* テキスト用フォント（weight:700） */
+.font-text-bold-llll,
 .font-text-bold-lll,
 .font-text-bold-ll,
 .font-text-bold-l,
@@ -107,6 +117,7 @@
 }
 
 /* テキスト用フォント（weight:400） */
+.font-text-llll,
 .font-text-lll,
 .font-text-ll,
 .font-text-l,
@@ -119,9 +130,14 @@
 
 
 /* ■■■ 共通クラス：フォントサイズ ■■■ */
-.font-title-exbold-llll{
+.font-date-llll,
+.font-title-black-llll,
+.font-title-exbold-llll,
+.font-text-bold-llll,
+.font-text-llll{
     font-size: var(--font-size-llll);
 }
+
 .font-date-lll,
 .font-title-black-lll,
 .font-title-exbold-lll,
@@ -129,6 +145,7 @@
 .font-text-lll{
     font-size: var(--font-size-lll);
 }
+
 .font-date-ll,
 .font-title-black-ll,
 .font-title-exbold-ll,
@@ -136,6 +153,7 @@
 .font-text-ll{
     font-size: var(--font-size-ll);
 }
+
 .font-date-l,
 .font-title-black-l,
 .font-title-exbold-l,
@@ -143,6 +161,7 @@
 .font-text-l{
     font-size: var(--font-size-l);
 }
+
 .font-date,
 .font-title-black,
 .font-title-exbold,
@@ -150,6 +169,7 @@
 .font-text{
     font-size: var(--font-size);
 }
+
 .font-date-s,
 .font-title-black-s,
 .font-title-exbold-s,
@@ -157,6 +177,7 @@
 .font-text-s{
     font-size: var(--font-size-s);
 }
+
 .font-date-ss,
 .font-title-black-ss,
 .font-title-exbold-ss,
@@ -166,29 +187,43 @@
 }
 
 
-/* ■■■ 共通ID：コンテンツ ■■■ */
-#desktop-content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 99vw;
+/* ■■■ 共通ID：コンテンツエリア ■■■ */
+#desktop-area{
+    position: sticky;
+    top: 0px;
+    width: 100vw;
     height: 100vh;
+    background-color: var(--color-blue);
     overflow-x: hidden;
     z-index: -1;
 }
 
-#mobile-content{
-    position:relative;
+#mobile-area{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-base);
+    background-image: url("../assets/img/background.svg");
+    background-repeat: repeat-y;
+    background-position-x: center;
+    background-origin: border-box;
+    background-size: 100%;
+    min-width: var(--content-width-min);
+    width: 100%;
+    max-width: var(--content-width-max);
+    margin: 0 auto;
     z-index: 0;
 }
-
+#mobile-area *{
+    position: relative;
+}
 
 /* ■■■ 共通クラス：コンテナ ■■■ */
 .content{
     min-width: var(--content-width-min);
     max-width: var(--content-width-max);
     margin: 0 auto;
-    background-color: var(--color-yellow);
 }
 
 .container{
