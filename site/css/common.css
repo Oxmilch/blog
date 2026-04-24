@@ -47,6 +47,7 @@
     --font-style: normal;
 
     /* フォントサイズ */
+    --font-size-llll: 4rem;  /* 64px */
     --font-size-lll: 2rem;   /* 32px */
     --font-size-ll: 1.5rem;  /* 24px */
     --font-size-l: 1.25rem;  /* 20px */
@@ -83,6 +84,7 @@
 }
 
 /* 見出し用フォント（weight:800） */
+.font-title-exbold-llll,
 .font-title-exbold-lll,
 .font-title-exbold-ll,
 .font-title-exbold-l,
@@ -117,6 +119,9 @@
 
 
 /* ■■■ 共通クラス：フォントサイズ ■■■ */
+.font-title-exbold-llll{
+    font-size: var(--font-size-llll);
+}
 .font-date-lll,
 .font-title-black-lll,
 .font-title-exbold-lll,
@@ -176,7 +181,7 @@
 /* ■■■ 共通スタイル：タグ ■■■ */
 html{
     scroll-behavior: smooth;
-    background-color: var(--color-blue);
+    background-color: var(--color-base);
     font-family: var(--font-family-text);
     font-style: var(--font-style);
     font-size: var(--font-size);
@@ -195,19 +200,29 @@ img{
 }
 
 header{
-    position:relative;
     z-index: 1;
 }
 
-#desktop-layout{
-    position:absolute;
+#desktop-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    height: 100vh;
+    overflow-x: hidden;
     z-index: -1;
+}
+#mobile-content{
+    position:relative;
+    z-index: 0;
 }
 
 .marquee{
+  position: relative;
   display: flex;
   white-space: nowrap;
-  overflow:visible;
+  overflow: hidden;
+  max-width: 100%;
   gap: 1rem;
   font-size: 3rem;
 }

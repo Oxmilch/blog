@@ -1,4 +1,9 @@
-/** ■■■ クラス：リンク先を新規タブで開く ■■■ */
+/** ■■■ クラス：リンク先を新規タブで開く ■■■
+ * @author 2025116B T.H.
+ * @since 20260424 初期実装
+ * @description
+ * 
+ */
 class NewWindow{
     /** URL：福岡商工会議所トップ */
     get urlFukuokaCCI() { return "https://www.fukunet.or.jp/"; }
@@ -57,12 +62,21 @@ class NewWindow{
 }
 
 
-/** ■■■ クラス：テキストを動かす ■■■ */
+/** ■■■ クラス：テキストを動かす ■■■ 
+ * @author 2025116B T.H.
+ * @since 20260424 初期実装
+ * @description
+ * 
+*/
 class MarqueeTexts{
     /** 動かす要素のIDやクラス名 */
     _targets;
     /** 動かす要素 */
     _marqueeElements;
+    /** アニメーションのキーフレーム設定 */
+    _keyframes;
+    /** アニメーションのオプション */
+    _options;
 
     /** 初期化
      * @param {string} targets 動かしたい要素
@@ -72,38 +86,36 @@ class MarqueeTexts{
     }
 
     /** 設定反映
-     * @param {string} startPosition 開始位置
-     * @param {string} endPosition 終了位置
      * @param {number} duration 再生時間(ミリ秒)
+     * @param {string} startPosition 開始時の位置
+     * @param {string} endPosition 終了時の位置
      * @param {number} delay アニメーションの開始を遅らせる時間(ミリ秒)
      * @param {string} easing イージング(初期値:linear=一定, ease=最初と終了の時は緩やか、ease-in, ease-out, ease-in-out)
      * @param {number} iterations 繰り返し回数(初期値:Infinity)
      * @param {string} direction 実行する方向(初期値:noraml=通常, reverse=逆方向, alternate=通常方向のアニメーション終了後、逆方向にアニメーションをする、 alternate-reverse)
      */
-    setting(startPosition, endPosition, duration, delay=0, easing="linear", iterations=Infinity, direction="normal"){
-        this._marqueeElements = document.querySelectorAll(this._targets);
+    set(duration, startPosition="100%", endPosition="-100%", delay=0, easing="linear", iterations=Infinity, direction="normal"){
+        this._marqueeElements = Array.from(document.querySelectorAll(this._targets));
+        this._keyframes = [{transform: `translateX(${startPosition})`},
+                           {transform: `translateX(${endPosition})`}];
+        this._options = {
+            duration: duration,
+            delay: delay,
+            easing: easing,
+            iterations: iterations,
+            direction: direction
+        };
+        // 要素へアニメーションの設定を行う
         this._marqueeElements.forEach((mqrqueeElement) => {
-            mqrqueeElement.animate(
-                [
-                    {
-                       translate: [startPosition, endPosition]
-                    }
-                ],
-                {
-                    duration: duration,
-                    delay: delay,
-                    easing: easing,
-                    iterations: iterations,
-                    direction: direction
-                }
-            );
+            mqrqueeElement.animate(this._keyframes, this._options);
         });
+        // 設定次第アニメーションが開始されるため、一時停止
         this.stop();
     }
 
     /** アニメーション開始 */
-    start(){ this._marqueeElements.forEach((mqrqueeObject) => { mqrqueeObject.play();}); }
+    start(){ this._marqueeElements.forEach((mqrqueeElement) => { mqrqueeElement.getAnimations()[0].play();}); }
 
     /** アニメーション停止 */
-    stop(){ this._marqueeElements.forEach((mqrqueeObject) => { mqrqueeObject.pause();}); }
+    stop(){ this._marqueeElements.forEach((mqrqueeElement) => { mqrqueeElement.getAnimations()[0].pause();}); }
 }
