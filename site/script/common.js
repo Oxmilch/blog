@@ -1,70 +1,51 @@
-/** ■■■ クラス：リンク先を新規タブで開く ■■■
- * @author 2025116B T.H.
- * @since 20260424 初期実装
+/** ■■■ クラス：リンク先を開く ■■■
+ * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
+ * @since 20260425
  * @description
- * 
+ * 複数あるHTMLファイルに対して、同じURLの設定や変更をしなくとも、JSで一括管理することにより、修正漏れや反映漏れを防ぐための仕組みとして実装しています
  */
-class NewWindow{
-    /** URL：福岡商工会議所トップ */
-    get urlFukuokaCCI() { return "https://www.fukunet.or.jp/"; }
-    /** URL：福岡商工会議所フェイスブック */
-    get urlFukuokaCCIFacebook() { return "https://www.facebook.com/fukuoka.cci/";}
-    /** URL：福岡商工会議所インスタグラム */
-    get urlFukuokaCCIInstagram() { return "https://www.instagram.com/fukuoka_cci/"};
-    /** URL：福岡商工会議所X */
-    get urlFukuokaCCIX() { return "https://x.com/fukuoka_cci/";}
-    /** URL：福岡市美術館交通案内 */
-    get urlFukuokaArtMusiumAccess() { return "https://www.fukuoka-art-museum.jp/guide/access/";}
-    /** URL：イベント用インスタグラム */
-    get urlEventInstagram() { return "";}
-    /** URL：イベント用ティックトック */
-    get urlEventTiktok() { return "";}
-    /** URL：応募先フォーム */
-    get urlPublicRecruitment() { return "";}
+class PageOpen{
+    /** 同じタブで開く：特設サイトトップページ */
+    static eventTop() { window.location.href = "./index.html"; }
 
+    /** 同じタブで開く：特設サイト当日ワークショップページ */
+    static eventWorkShopMain() { window.location.href = "./workshop-main.html"; }
 
-    /** 共通：新規タブを開く
-     * @description 指定されたURLを新規タブで開きます。指定されない場合は、自身のページを新規タブで開きます。
-     * @param {string | null} url 遷移先のURL
-     */
-    static open(url){
-        if(url){
-            window.open(url, "_blank");
-        }
-        else{
-            window.open(window.location.href, "_blank");
-        }
-    }
+    /** 同じタブで開く：特設サイト事前ワークショップページ */
+    static eventWorkShopInAdvance() { window.location.href = "./workshop-in-advance.html"; }
 
-    /** 新規タブ：商工会議所トップ */
-    static gotoFukuokaCCI(){ NewWindow(urlFukuokaArtMusiumAccess); }
+    /** 同じタブで開く：特設サイトTシャツ公募ページ */
+    static eventPublicRecruitment() { window.location.href = "./public-recruitment.html"; }
 
-    /** 新規タブ：商工会議所フェイスブック */
-    static GotoFukuokaCCIFacebook(){ NewWindow(urlFukuokaCCIFacebook); }
+    /** 新規タブで開く：応募先フォームに遷移 */
+    static eventForm(){ window.open("", "_blank", "noopener"); }
 
-    /** 新規タブ：商工会議所インスタグラム */
-    static GotoFukuokaCCIInstagram(){ NewWindow(urlFukuokaCCIInstagram); }
+    /** 新規タブで開く：事業専用インスタグラムへ遷移 */
+    static eventInstagram(){ window.open("", "_blank", "noopener"); }
 
-    /** 新規タブ：商工会議所X */
-    static GotoFukuokaCCIX(){ NewWindow(urlFukuokaCCIX); }
+    /** 新規タブで開く：事業専用ティックトックに遷移 */
+    static eventTiktok(){ window.open("", "_blank", "noopener"); }
 
-    /** 新規タブ：福岡市美術館交通案内に遷移 */
-    static GotoFukuokaArtMusiumAccess(){ NewWindow(urlFukuokaArtMusiumAccess); }
+    /** 新規タブで開く：商工会議所トップ */
+    static fukuokaCCI(){ window.open("https://www.fukunet.or.jp/", "_blank", "noopener"); }
 
-    /** 新規タブ：イベント用インスタグラムへ遷移 */
-    static GotoEventInstagram(){ NewWindow(urlEventInstagram); }
+    /** 新規タブで開く：商工会議所フェイスブック */
+    static fukuokaCCIFacebook(){ window.open("https://www.facebook.com/fukuoka.cci/", "_blank", "noopener"); }
 
-    /** 新規タブ：イベント用ティックトックに遷移 */
-    static GotoEventTiktok(){ NewWindow(urlEventTiktok); }
+    /** 新規タブで開く：商工会議所インスタグラム */
+    static fukuokaCCIInstagram(){ window.open("https://www.instagram.com/fukuoka_cci/", "_blank", "noopener"); }
 
-    /** 新規タブ：応募先フォームに遷移 */
-    static GotoPublicRecruitment(){ NewWindow(urlPublicRecruitment); }
+    /** 新規タブで開く：商工会議所X */
+    static fukuokaCCIX(){ window.open("https://x.com/fukuoka_cci/", "_blank", "noopener"); }
+
+    /** 新規タブで開く：福岡市美術館交通案内に遷移 */
+    static fukuokaArtMusiumAccess(){ window.open("https://www.fukuoka-art-museum.jp/guide/access/", "_blank", "noopener"); }
 }
 
 
 /** ■■■ クラス：テキストを動かす ■■■ 
- * @author 2025116B T.H.
- * @since 20260424 初期実装
+ * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
+ * @since 20260425
  * @description
  * 
 */
@@ -86,18 +67,21 @@ class MarqueeTexts{
     }
 
     /** 設定反映
-     * @param {number} duration 再生時間(ミリ秒)
-     * @param {string} startPosition 開始時の位置
-     * @param {string} endPosition 終了時の位置
-     * @param {number} delay アニメーションの開始を遅らせる時間(ミリ秒)
+     * @param {number} duration 再生時間(ミリ秒)(初期値:10000ミリ秒)
+     * @param {number} delay アニメーションの開始を遅らせる時間(ミリ秒)(初期値:0ミリ秒)
+     * @param {string} startPositionX 開始時の横の位置(初期値:0)
+     * @param {string} endPositionX 終了時の横の位置(初期値:-100%)
+     * @param {string} startPositionY 開始時の横の位置(初期値:0)
+     * @param {string} endPositionY 終了時の横の位置(初期値:0)
      * @param {string} easing イージング(初期値:linear=一定, ease=最初と終了の時は緩やか、ease-in, ease-out, ease-in-out)
      * @param {number} iterations 繰り返し回数(初期値:Infinity)
-     * @param {string} direction 実行する方向(初期値:noraml=通常, reverse=逆方向, alternate=通常方向のアニメーション終了後、逆方向にアニメーションをする、 alternate-reverse)
+     * @param {string} direction 実行する方向(初期値:noraml=通常, reverse=逆方向, alternate=通常方向のアニメーション終了後、逆方向にアニメーションをする、 alternate-reverse=逆方向へのアニメーション後、通常のアニメーションを行う)
      */
-    set(duration, startPosition="100%", endPosition="-100%", delay=0, easing="linear", iterations=Infinity, direction="normal"){
+    set(duration=10000, delay=0, startPositionX="0", endPositionX="-100%", startPositionY="0", endPositionY="0",
+        easing="linear", iterations=Infinity, direction="normal"){
         this._marqueeElements = Array.from(document.querySelectorAll(this._targets));
-        this._keyframes = [{transform: `translateX(${startPosition})`},
-                           {transform: `translateX(${endPosition})`}];
+        this._keyframes = [{transform: `translate(${startPositionX}, ${startPositionY})`},
+                           {transform: `translate(${endPositionX}, ${endPositionY})`}];
         this._options = {
             duration: duration,
             delay: delay,
@@ -119,3 +103,4 @@ class MarqueeTexts{
     /** アニメーション停止 */
     stop(){ this._marqueeElements.forEach((mqrqueeElement) => { mqrqueeElement.getAnimations()[0].pause();}); }
 }
+

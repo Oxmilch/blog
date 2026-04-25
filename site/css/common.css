@@ -268,3 +268,18 @@ img{
 header{
     z-index: 1;
 }
+
+/* ■■■ 共通クラス：画像のリンクボタン */
+.img-btn-top{
+    width: 100%;
+}
+
+.img-btn-sns{
+    width: 50px;
+    height: 50px;
+    padding: 1px;
+    margin: 16px;
+    background-color: var(--color-base);
+    border-radius: 14px;
+}
+

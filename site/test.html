@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>福岡市民がつくる大アート展〜誰もがアーティスト〜</title>
-    <meta name="description" content="">
+    <meta name="description" content="福岡市民がつくる大アート展〜誰もがアーティスト〜（ふくおかしみんが つくる だいあーとてん だれもが あーてぃすと）">
     <meta name="robots" content="">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="article">
@@ -30,7 +30,15 @@
     <div id="mobile-area">
         <header>
             <div class="container">
-                <img src="./assets/img/logo-main1.svg">
+                <button type="button" class="img-btn-top" onclick="PageOpen.top()">
+                    <img src="./assets/img/logo-main1.svg" alt="福岡市民がつくる大アート展 誰もがアーティスト">
+                </button>
+                <button type="button" class="img-btn-sns" onclick="PageOpen.eventInstagram()">
+                    <img src="./assets/img/logo-instagram.webp" alt="Instagramアカウントへ">
+                </button>
+                <button type="button" class="img-btn-sns" onclick="PageOpen.eventTiktok()">
+                    <img src="./assets/img/logo-tiktok.svg" alt="Tiktokアカウントへ">
+                </button>
             </div>
         </header>
         <main>
@@ -93,8 +101,6 @@
         <footer>
             <div class="container">
                 <img src="./assets/img/logo-main2.svg">
-                <img src="./assets/img/logo-instagram.webp">
-                <img src="./assets/img/logo-tiktok.svg">
             </div>
         </footer>
     </div>
