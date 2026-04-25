@@ -274,12 +274,21 @@ header{
     width: 100%;
 }
 
-.img-btn-sns{
+.img-btn-icon,
+.img-btn-instagram,
+.img-btn-tiktok{
     width: 50px;
     height: 50px;
     padding: 1px;
     margin: 16px;
     background-color: var(--color-base);
+}
+
+.img-btn-instagram{
     border-radius: 14px;
 }
 
+.img-btn-icon,
+.img-btn-tiktok{
+    border-radius: 50%;
+}
