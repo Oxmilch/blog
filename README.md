@@ -17,3 +17,9 @@
 
 ## WOFF変換
 - [武蔵システム - WOFFメーカー](https://opentype.jp/woffconv.htm)
+
+## SNSロゴについて
+- [Instagram](https://www.meta.com/ja-jp/brand/resources/instagram/instagram-brand/)
+  - 使用ファイル：01 Gradient Glyph 内の SVGファイルを Photoshop で開き、ラスタライズ 798px, 解像度 72ppiで開き、透明部分をトリミングしwebpで保存
+- [Tiktok](https://tiktokbrandhub.com/downloads)
+  - 使用ファイル：TIKTOK_SOCIAL_ICONS/TIKTOK_SOCIAL_ICONS_CIRCLE/SVG/TIKTOK_SOCIAL_ICON_CIRCLE_WHITE.svg をそのまま利用
