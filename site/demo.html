@@ -19,10 +19,10 @@
     <meta name="twitter:description" content="">
     <link rel="stylesheet" href="./css/ress.min.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/demo.css">
     <link rel="icon" href="./assets/img/icon.svg">
     <script src="./script/common.js" defer></script>
-    <script src="./script/index.js" defer></script>
+    <script src="./script/demo.js" defer></script>
 </head>
 <body>
     <div id="desktop-area" class="marquee">
@@ -34,18 +34,27 @@
     <div id="mobile-area">
         <header>
             <div class="container">
-                <button type="button" class="img-btn-top" onclick="PageOpen.eventTop()">
-                    <img src="./assets/img/logo-main1.svg" alt="福岡市民がつくる大アート展 誰もがアーティスト">
-                </button>
-                <button type="button" class="img-btn-icon" onclick="PageOpen.eventTop()">
-                    <img src="./assets/img/icon.svg" alt="福岡市民がつくる大アート店トップページへ">
-                </button>
-                <button type="button" class="img-btn-instagram" onclick="PageOpen.eventInstagram()">
-                    <img src="./assets/img/logo-instagram.webp" alt="Instagramアカウントへ">
-                </button>
-                <button type="button" class="img-btn-tiktok" onclick="PageOpen.eventTiktok()">
-                    <img src="./assets/img/logo-tiktok.svg" alt="Tiktokアカウントへ">
-                </button>
+                <div id="header-mini">
+                    <button type="button" class="img-btn-icon" onclick="PageOpen.eventTop()">
+                        <img src="./assets/img/icon.svg" alt="福岡市民がつくる大アート店トップページへ">
+                    </button>
+                    <button type="button" class="img-btn-icon" onclick="HamburgerMenu.toggle()">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="256" cy="256" r="256" fill="none" stroke="blue" stroke-width="16"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="header-main">
+                    <button type="button" class="img-btn-top" onclick="PageOpen.eventTop()">
+                        <img src="./assets/img/logo-main1.svg" alt="福岡市民がつくる大アート展 誰もがアーティスト">
+                    </button>
+                    <button type="button" class="img-btn-instagram" onclick="PageOpen.eventInstagram()">
+                        <img src="./assets/img/logo-instagram.webp" alt="Instagramアカウントへ">
+                    </button>
+                    <button type="button" class="img-btn-tiktok" onclick="PageOpen.eventTiktok()">
+                        <img src="./assets/img/logo-tiktok.svg" alt="Tiktokアカウントへ">
+                    </button>
+                </div>
             </div>
         </header>
         <main>

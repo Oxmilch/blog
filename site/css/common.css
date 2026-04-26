@@ -76,7 +76,7 @@
 .font-date,
 .font-date-s,
 .font-date-ss{
-    font-family: var(--font-family-date-min);
+    font-family: var(--font-family-date);
     font-style: var(--font-style);
 }
 
@@ -189,7 +189,7 @@
 
 /* ■■■ 共通ID：コンテンツエリア ■■■ */
 #desktop-area{
-    position: sticky;
+    position: fixed;
     top: 0px;
     width: 100vw;
     height: 100vh;
@@ -266,8 +266,20 @@ img{
 }
 
 header{
+    position: sticky;
+    container-type: scroll-state;
     z-index: 1;
 }
+
+
+/* */
+#header-mini{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.6s;
+}
+
+
 
 /* ■■■ 共通クラス：画像のリンクボタン */
 .img-btn-top{

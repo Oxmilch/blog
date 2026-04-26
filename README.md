@@ -23,3 +23,6 @@
   - 使用ファイル：01 Gradient Glyph 内の SVGファイルを Photoshop で開き、ラスタライズ 798px, 解像度 72ppiで開き、透明部分をトリミングしwebpで保存
 - [Tiktok](https://tiktokbrandhub.com/downloads)
   - 使用ファイル：TIKTOK_SOCIAL_ICONS/TIKTOK_SOCIAL_ICONS_CIRCLE/SVG/TIKTOK_SOCIAL_ICON_CIRCLE_WHITE.svg をそのまま利用
+
+## アクセシビリティ
+- とりあえず、フォーカス制御だけ実装する予定・・
