@@ -193,7 +193,7 @@
     top: 0px;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-blue);
+    background-color: var(--color-base);
     overflow-x: hidden;
     z-index: -1;
 }
