@@ -266,8 +266,6 @@ img{
 }
 
 header{
-    position: sticky;
-    container-type: scroll-state;
     z-index: 1;
 }
 
