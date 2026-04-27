@@ -1,1 +1,89 @@
 @charset "UTF-8";
+
+#first-view{
+    padding-top: 24px;
+}
+
+#first-view-period::before{
+    position:absolute;
+    top: -2em;
+    left: -2em;
+    width: 4em;
+    height: 4em;
+    content:"";
+    font-size: var(--font-size-l);
+    background-color: var(--color-green-emerald);
+    border-radius: 50%;
+    z-index: 1;
+}
+#first-view-period{
+    position:relative;
+    width: 90%;
+    text-align: right;
+    background-color: var(--color-base);
+    margin: 0 0 0 auto;
+    border: solid 5px var(--color-green-emerald);
+    border-right: none;
+    border-bottom: solid 10px var(--color-green-emerald);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+#first-view-period::after{
+    position: absolute;
+    top: -1.5em;
+    left: -1em;
+    white-space: pre;
+    content:"参加\A無料";
+    color: var(--color-base);
+    font-family: var(--font-family-text-bold-min);
+    font-size: var(--font-size-l);
+    z-index: 2;
+}
+
+#first-view-period{
+    margin-top: 1rem;
+}
+
+#first-view-period div{
+    margin: 8px 8px 0;
+    line-height: 1.5;
+}
+
+#first-view-period div p:nth-child(3){
+    width: fit-content;
+    margin: 0 0 0 auto;
+    border-top: solid 2px var(--color-green-emerald);
+}
+
+#first-view-button{
+    display: grid;
+    gap: 16px;
+    grid-template-areas:
+        "main     main"
+        "workshop public";
+    grid-template-rows: 7.5rem 7.5rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+}
+
+#first-view-button button{
+    padding: 16px 8px;
+    border-radius: 8px;
+}
+
+#first-view-button-main{
+    grid-area: main;
+    color: var(--color-base);
+    background-color: var(--color-red);
+}
+
+#first-view-button-advance{
+    grid-area: workshop;
+    color: var(--color-base);
+    background-color: var(--color-green-emerald);
+}
+
+#first-view-button-public{
+    grid-area: public;
+    background-color: var(--color-yellow);
+}

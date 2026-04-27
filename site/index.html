@@ -3,32 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ワークショップ | 福岡市民がつくる大アート展〜誰もがアーティスト〜</title>
+    <title>福岡市民がつくる大アート展〜誰もがアーティスト〜</title>
     <meta name="description" content="">
     <meta name="robots" content="">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="article">
     <meta property="og:url" content="">
-    <meta property="og:title" content="ワークショップ | 福岡市民がつくる大アート展〜誰もがアーティスト〜">
+    <meta property="og:title" content="福岡市民がつくる大アート展〜誰もがアーティスト〜">
     <meta property="og:site_name" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="ワークショップ | 福岡市民がつくる大アート展〜誰もがアーティスト〜">
+    <meta name="twitter:title" content="福岡市民がつくる大アート展〜誰もがアーティスト〜">
     <meta name="twitter:description" content="">
     <link rel="stylesheet" href="./css/ress.min.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/workshop-main.css">
-    <link rel="icon" href="./assets/img/logo.svg">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./assets/img/icon.svg">
     <script src="./script/common.js" defer></script>
-    <script src="./script/workshop-main.js" defer></script>
+    <script src="./script/index.js" defer></script>
 </head>
 <body>
-    <div id="mobile-content" class="content">
-        <header></header>
+    <div id="desktop-area">
+
+    </div>
+    <div id="mobile-area" class="content">
+        <header>
+            
+        </header>
         <main>
             <section id="first-view">
-                <h2>福岡市民が作る大アート展 誰もがアーティスト</h2>
+                <h1 class="container">
+                    <button type="button" onclick="PageOpen.eventTop()">
+                        <img src="./assets/img/logo-main1.svg" alt="福岡市民が作る大アート展 誰もがアーティスト">
+                    </button>
+                </h1>
+                <div id="first-view-period">
+                    <div>
+                        <p>福岡市美術館 ギャラリースペースA〜F</p>
+                        <p class="font-date-ll">2026.8.25(Thu)~8.30(Sun)</p>
+                        <p>あさ10時<span>から</span>夕方17時まで</p>
+                    </div>
+                </div>
+                <div id="first-view-button" class="container">
+                     <button type="button" id="first-view-button-main" class="font-text-bold" onclick="PageOpen.eventWorkShopMain()">
+                         <p>みんなでつくる<br>大アート展</p>
+                     </button>
+                     <button type="button" id="first-view-button-advance"  class="font-text-bold" onclick="PageOpen.eventWorkShopInAdvance()">
+                        <p>ワークショップ<br>にチャレンジ</p>
+                     </button>
+                     <button type="button" id="first-view-button-public"  class="font-text-bold" onclick="PageOpen.eventPublicRecruitment()">
+                        <p>Tシャツデザイン<br>にチャレンジ</p>
+                     </button>
+                </div>
             </section>
             <section id="main-content">
                 <h2>誰もがアーティスト</h2>
@@ -43,8 +70,9 @@
                 <h2>アクセス</h2>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+
+        </footer>
     </div>
-    <div id="desktop-content" class="marquee"></div>
 </body>
 </html>

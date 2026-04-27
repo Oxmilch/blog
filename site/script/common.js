@@ -26,9 +26,6 @@ class PageOpen{
     /** 新規タブで開く：事業専用インスタグラム */
     static eventInstagram(){ window.open("", "_blank", "noopener"); }
 
-    /** 新規タブで開く：事業専用ティックトック */
-    static eventTiktok(){ window.open("", "_blank", "noopener"); }
-
 
     /* 協力アーティスト情報 */
     /** 新規タブで開く：7/25 協力アーティストインタグラム */
@@ -70,12 +67,18 @@ class PageOpen{
     static fukuokaJCYoutube(){ window.open("https://www.youtube.com/channel/UCGsBcrSScCYV5_IvHejBXoA/", "_blank", "noopener"); }
 
 
-    /* 施設情報 */
+    /* 会場情報 */
     /** 新規タブで開く：福岡市美術館 */
-    static fukuokaArtMusium(){ window.open("https://www.fukuoka-art-museum.jp/", "_blank", "noopener"); }
+    static venueFukuokaArtMusium(){ window.open("https://www.fukuoka-art-museum.jp/", "_blank", "noopener"); }
 
     /** 新規タブで開く：福岡市美術館交通案内 */
-    static fukuokaArtMusiumAccess(){ window.open("https://www.fukuoka-art-museum.jp/guide/access/", "_blank", "noopener"); }
+    static venueFukuokaArtMusiumAccess(){ window.open("https://www.fukuoka-art-museum.jp/guide/access/", "_blank", "noopener"); }
+
+    /** 新規タブで開く：学校 */
+    static venueSchool1() { window.open("", "_blank", "noopener"); }
+
+    /** 新規タブで開く：学校 */
+    static venueSchool2() { window.open("", "_blank", "noopener"); }
 }
 
 

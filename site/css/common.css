@@ -62,6 +62,7 @@
     --font-size-ss: 0.75rem; /* 12px */
 
     /* 共通スタイル */
+    --container-width: 92%;
     --content-width-min: 320px;
     --content-width-max: 540px;
 }
@@ -193,7 +194,7 @@
     top: 0px;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-base);
+    background-color: var(--color-blue-deep);
     overflow-x: hidden;
     z-index: -1;
 }
@@ -227,7 +228,7 @@
 }
 
 .container{
-    width: 92%;
+    width: var(--container-width);
     margin: 0 auto;
 }
 
@@ -269,6 +270,40 @@ header{
     z-index: 1;
 }
 
+button{
+    width: 100%;
+}
+
+details{
+    position: relative;
+    background-color: var(--color-yellow);
+    text-align: center;
+    width: var(--container-width);
+    margin: 0 auto;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: 1s;
+}
+details::after{
+    position: absolute;
+    content:"∨";
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+details[open]::after{
+    content:"∧";
+    top: auto;
+    bottom: -1rem;
+}
+
+summary{
+    font-family: var(--font-family-title-black-min);
+    font-size: var(--font-size-ll);
+    list-style-type: none;
+}
 
 /* */
 #header-mini{
