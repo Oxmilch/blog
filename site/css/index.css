@@ -5,11 +5,11 @@
 }
 
 #first-view-period::before{
-    position:absolute;
-    top: -2em;
-    left: -2em;
-    width: 4em;
-    height: 4em;
+    position: absolute;
+    top: -1.75em;
+    left: -1.75em;
+    width: 3.5em;
+    height: 3.5em;
     content:"";
     font-size: var(--font-size-l);
     background-color: var(--color-green-emerald);
@@ -41,7 +41,7 @@
 }
 
 #first-view-period{
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 
 #first-view-period div{
@@ -57,13 +57,13 @@
 
 #first-view-button{
     display: grid;
-    gap: 16px;
+    gap: 24px 16px;
     grid-template-areas:
         "main     main"
         "workshop public";
     grid-template-rows: 7.5rem 7.5rem;
     grid-template-columns: 1fr 1fr;
-    margin-top: 1rem;
+    margin-top: 24px;
 }
 
 #first-view-button button{
