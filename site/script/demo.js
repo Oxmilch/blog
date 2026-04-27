@@ -5,6 +5,7 @@ const desktopMarqueeText4 = new MarqueeTexts(".test-marquee4");
 
 /** ■■■ HTMLロード時実行処理 ■■■  */
 document.addEventListener("DOMContentLoaded", function(){
+    /*
     desktopMarqueeText1.set(12000, 0, "100vw", "-100vw", "10vh", "10vh");
     desktopMarqueeText2.set(12000, 0, "100vw", "-200vw", "35vh", "35vh");
     desktopMarqueeText3.set(12000, 0, "100vw", "-300vw", "60vh", "60vh");
@@ -13,4 +14,5 @@ document.addEventListener("DOMContentLoaded", function(){
     desktopMarqueeText2.start();
     desktopMarqueeText3.start();
     desktopMarqueeText4.start();
+    */
 });
