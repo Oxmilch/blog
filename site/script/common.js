@@ -1,6 +1,6 @@
 /** ■■■ クラス：リンク先を開く ■■■
  * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
- * @since 20260426
+ * @since 20260430
  * @description
  * (1) 複数あるHTMLファイルに対して、同じURLの設定や変更をしなくとも、JSで一括管理することにより、修正漏れや反映漏れを防ぐための仕組みとして実装しています
  * (2) 今後変更がされない(Fix)前提であれば、こちらを使用せずにJS利用不可の場合でも動く、アンカーリンクタグによる実装の方が望ましいです。
@@ -53,6 +53,9 @@ class PageOpen{
     /* 主催情報 */
     /** 新規タブで開く：福岡青年会議所トップ */
     static fukuokaJC(){ window.open("https://www.fukuoka-jc.or.jp/", "_blank", "noopener"); }
+
+    /** 新規タブで開く：福岡青年会議所トップ */
+    static fukuokaJCPrivacyPolicy(){ window.open("https://www.fukuoka-jc.or.jp/pp", "_blank", "noopener"); }
 
     /** 新規タブで開く：福岡青年会議所フェイスブック */
     static fukuokaJCFacebook(){ window.open("https://www.facebook.com/jci.fukuoka/", "_blank", "noopener"); }

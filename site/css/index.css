@@ -20,7 +20,7 @@
     position:relative;
     width: 90%;
     text-align: right;
-    background-color: var(--color-base);
+    background-color: var(--color-white);
     margin: 0 0 0 auto;
     border: solid 5px var(--color-green-emerald);
     border-right: none;
@@ -34,7 +34,7 @@
     left: -1em;
     white-space: pre;
     content:"参加\A無料";
-    color: var(--color-base);
+    color: var(--color-white);
     font-family: var(--font-family-text-bold-min);
     font-size: var(--font-size-l);
     z-index: 2;
@@ -73,17 +73,72 @@
 
 #first-view-button-main{
     grid-area: main;
-    color: var(--color-base);
+    color: var(--color-white);
     background-color: var(--color-red);
 }
 
 #first-view-button-advance{
     grid-area: workshop;
-    color: var(--color-base);
+    color: var(--color-white);
     background-color: var(--color-green-emerald);
 }
 
 #first-view-button-public{
     grid-area: public;
     background-color: var(--color-yellow);
+}
+
+/* メインコンテンツ */
+#main-content-haeding::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--color-yellow);
+    z-index: 1;
+}
+#main-content-haeding{
+    position: relative;
+    text-align: center;
+    background-color: var(--color-white);
+    border: solid 2px var(--color-black);
+    border-radius: 16px;
+    z-index: 2;
+}
+
+#main-content-haeding h2{
+    color: var(--color-white);
+    -webkit-text-stroke: 1px var(--color-black-rich);
+    text-shadow: 4px 2px 0px var(--color-black-rich);
+}
+
+#main-content-main{
+    margin-top: 16px;
+    color: var(--color-white);
+    text-align: center;
+    background-color: var(--color-red);
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 16px 20%;
+}
+
+#main-content-advance{
+    margin-top: 16px;
+    color: var(--color-white);
+    text-align: center;
+    background-color: var(--color-green-light);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 32px 20%;
+}
+
+#main-content-public{
+    margin-top: 16px;
+    text-align: center;
+    background-color: var(--color-yellow);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 32px 20%;
 }
