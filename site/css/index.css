@@ -1,93 +1,127 @@
 @charset "UTF-8";
 
+/* ■■■ ファーストビュー ■■■ */
+/* ファーストビューの基本スタイル */
 #first-view{
-    padding-top: 24px;
+    padding-top: 16px;
 }
 
-#first-view-period::before{
-    position: absolute;
-    top: -1.75em;
-    left: -1.75em;
-    width: 3.5em;
-    height: 3.5em;
-    content:"";
-    font-size: var(--font-size-l);
-    background-color: var(--color-green-emerald);
-    border-radius: 50%;
-    z-index: 1;
-}
 #first-view-period{
-    position:relative;
-    width: 90%;
+    position: relative;
+    width: 100%;
     text-align: right;
-    background-color: var(--color-white);
+    color: var(--color-font-white);
+    background-color: var(--color-blue);
+    border: solid 3px var(--color-black);
+    border-radius: 24px;
+    line-height: 1.2;
+    padding: 16px 16px 8px;
+    margin-top: 1em;
+}
+
+#first-view-period p:nth-child(2){
     margin: 0 0 0 auto;
-    border: solid 5px var(--color-green-emerald);
-    border-right: none;
-    border-bottom: solid 10px var(--color-green-emerald);
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-}
-#first-view-period::after{
-    position: absolute;
-    top: -1.5em;
-    left: -1em;
-    white-space: pre;
-    content:"参加\A無料";
-    color: var(--color-white);
-    font-family: var(--font-family-text-bold-min);
-    font-size: var(--font-size-l);
-    z-index: 2;
-}
-
-#first-view-period{
-    margin-top: 16px;
-}
-
-#first-view-period div{
-    margin: 8px 8px 0;
-    line-height: 1.5;
-}
-
-#first-view-period div p:nth-child(3){
     width: fit-content;
-    margin: 0 0 0 auto;
-    border-top: solid 2px var(--color-green-emerald);
+    border-bottom: 3px solid var(--color-white);
 }
 
 #first-view-button{
     display: grid;
-    gap: 24px 16px;
+    gap: 2em 1em;
     grid-template-areas:
         "main     main"
         "workshop public";
     grid-template-rows: 7.5rem 7.5rem;
     grid-template-columns: 1fr 1fr;
-    margin-top: 24px;
+    margin-top: 2em;
 }
 
 #first-view-button button{
+    position: relative;
     padding: 16px 8px;
-    border-radius: 8px;
+    border: solid 3px var(--color-black);
+    border-radius: 24px;
+    line-height: 1.2;
+    padding: 16px 16px 8px;
 }
 
 #first-view-button-main{
     grid-area: main;
-    color: var(--color-white);
+    color: var(--color-font-white);
     background-color: var(--color-red);
 }
 
 #first-view-button-advance{
     grid-area: workshop;
-    color: var(--color-white);
-    background-color: var(--color-green-emerald);
+    color: var(--color-font-white);
+    background-color: var(--color-green);
 }
 
 #first-view-button-public{
     grid-area: public;
+    color: var(--color-font);
     background-color: var(--color-yellow);
 }
 
+/* ファーストビューの左上の装飾文字 */
+#first-view-period::before,
+#first-view-button-main::before,
+#first-view-button-advance::before,
+#first-view-button-public::before{
+    position: absolute;
+    top: calc(var(--font-size) * -1);
+    left: 6px;
+    font-family: var(--font-family-title-black);
+    width: fit-content;
+    background-color: var(--color-white);
+    border: solid 2px var(--color-black);
+    border-radius: 2em;
+    padding: 1px 1em;
+    z-index: 1;
+}
+#first-view-period::before{
+    content:"参加無料";
+    font-size: var(--font-size-20);
+    color: var(--color-font-blue);
+}
+#first-view-button-main::before{
+    content:"8.30";
+    font-size: var(--font-size-20);
+    color: var(--color-font-red);
+}
+#first-view-button-advance::before{
+    content:" 7.25~　";
+    font-size: var(--font-size);
+    color: var(--color-font-green);
+}
+#first-view-button-public::before{
+    content:"6.5~8.21";
+    font-size: var(--font-size);
+    color: var(--color-font);
+}
+
+/* ファーストビューのボタンの右下のボタン */
+#first-view-button-main::after,
+#first-view-button-advance::after,
+#first-view-button-public::after{
+    position: absolute;
+    bottom: var(--font-size-12);
+    right: var(--font-size-12);
+    content:"";
+    background-image: url("../assets/img/button.svg");
+    background-size: contain;
+    width: var(--font-size);
+    height: var(--font-size);
+    z-index: 1;
+}
+
+#first-view-button-main::after{
+    width: var(--font-size-30);
+    height: var(--font-size-30);
+}
+
+
+/* ■■■ メインコンテンツ ■■■ */
 /* メインコンテンツ */
 #main-content-haeding::before{
     position: absolute;

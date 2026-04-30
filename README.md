@@ -18,6 +18,9 @@
 ## WOFF変換
 - [武蔵システム - WOFFメーカー](https://opentype.jp/woffconv.htm)
 
+## CSS計算
+- [Clamp関数生成ツール](https://free.page-craft.jp/clamp)
+
 ## SNSロゴについて
 - [Instagram](https://www.meta.com/ja-jp/brand/resources/instagram/instagram-brand/)
   - 使用ファイル：01 Gradient Glyph 内の SVGファイルを Photoshop で開き、ラスタライズ 798px, 解像度 72ppiで開き、透明部分をトリミングしwebpで保存
