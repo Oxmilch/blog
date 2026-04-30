@@ -47,6 +47,7 @@
     --font-size-12: clamp(0.75rem, 0.392rem + 1.527vw, 0.907rem);
 
     /* 共通スタイル */
+    --header-height: 96px;
     --container-width: 92%;
     --content-width-min: 320px;
     --content-width-max: 540px;
@@ -200,13 +201,31 @@
     z-index: -100;
 }
 
+#menu-area{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-white);
+    background-image: url("../assets/img/background-a2.svg");
+    background-repeat: repeat-y;
+    background-position-x: center;
+    background-origin: border-box;
+    background-size: 100%;
+    min-width: var(--content-width-min);
+    width: 100%;
+    max-width: var(--content-width-max);
+    height: 100vh;
+    z-index: 100;
+}
+
 #mobile-area{
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--color-white);
-    background-image: url("../assets/img/background-b1.svg");
+    background-image: url("../assets/img/background-a1.svg");
     background-repeat: repeat-y;
     background-position-x: center;
     background-origin: border-box;
@@ -219,6 +238,21 @@
 }
 #mobile-area *{
     position: relative;
+}
+
+
+/* ■■■ 共通クラス：ハンバーガーメニュー ■■■ */
+dialog{
+    border: none;
+}
+dialog section{
+    margin-top: 0;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
 }
 
 
@@ -281,10 +315,6 @@ section{
     margin-top: 24px;
 }
 
-header{
-    z-index: 100;
-}
-
 main{
     margin-top: 8px;
 }
@@ -343,13 +373,19 @@ footer{
 }
 
 
-
 /* ■■■ 共通クラス：画像のリンクボタン */
 .img-btn-top{
     width: 100%;
 }
 
-.img-btn-icon,
+.img-btn-icon{
+    width: 66px;
+    height: 66px;
+    padding: 1px;
+    margin: 16px;
+    background-color: var(--color-white);
+}
+
 .img-btn-instagram,
 .img-btn-tiktok{
     width: 50px;

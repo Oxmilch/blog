@@ -1,3 +1,14 @@
+/** ■■■ クラス：ページ内リンクへ移動する ■■■
+ * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
+ * @since 20260430
+ * @description
+ */
+class PageMove{
+    /* トップページ */
+    
+}
+
+
 /** ■■■ クラス：リンク先を開く ■■■
  * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
  * @since 20260430
@@ -155,22 +166,19 @@ class MarqueeTexts{
 
 /** ■■■ クラス：ハンバーガーメニュー ■■■
  * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
- * @since 20260426
+ * @since 20260430
  * @description
 */
 class HamburgerMenu{
-    /** 開閉操作 */
-    static toggle(){
-
-    }
-
     /** 開く */
     static open(){
-
+        const menu = document.getElementById("menu-area");
+        menu.showModal();
     }
 
     /** 閉じる */
     static close(){
-
+        const menu = document.getElementById("menu-area");
+        menu.close();
     }
 }

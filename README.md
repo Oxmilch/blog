@@ -28,7 +28,7 @@
   - 使用ファイル：TIKTOK_SOCIAL_ICONS/TIKTOK_SOCIAL_ICONS_CIRCLE/SVG/TIKTOK_SOCIAL_ICON_CIRCLE_WHITE.svg をそのまま利用
 
 ## アクセシビリティ
-- とりあえず、フォーカス制御だけ実装する予定・・
+- [Zenn - アクセシブルなハンバーガーメニュー](https://zenn.dev/m0r1m1ch1/articles/58f8c4f062fafc)
 
 
 ## フィードバック
