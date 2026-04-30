@@ -195,7 +195,7 @@
     top: 0px;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-blue-deep);
+    background-color: var(--color-blue);
     overflow-x: hidden;
     z-index: -100;
 }
@@ -258,6 +258,15 @@ html{
 
 h1,h2,h3,h4,h5{
     font-family: var(--font-family-title-black);
+}
+h1{
+    font-size: var(--font-size-30);
+}
+h2{
+    font-size: var(--font-size-24);
+}
+h3{
+    font-size: var(--font-size-20);
 }
 
 a{
