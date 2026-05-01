@@ -2,7 +2,7 @@
 <mask id="mask0_57_524" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="375" height="667">
 <rect width="375" height="667" fill="#D9D9D9"/>
 </mask>
-<g mask="url(#mask0_57_524)">
+<g mask="url(#mask0_57_524)" opacity="0.3">
 <rect x="264" y="615.219" width="138.517" height="11.8115" rx="5.90574" transform="rotate(-41.1896 264 615.219)" fill="#FFD700"/>
 <rect x="82" y="90.2205" width="138.517" height="11.8115" rx="5.90574" transform="rotate(-41.1896 82 90.2205)" fill="#FFD700"/>
 <rect x="191" y="652.219" width="138.517" height="11.8115" rx="5.90574" transform="rotate(-41.1896 191 652.219)" fill="#ED1818"/>

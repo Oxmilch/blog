@@ -1,21 +1,19 @@
 /** ■■■ クラス：ページ内リンクへ移動する ■■■
- * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
+ * @author Sozosha Recurrent School Fukuoka 2025.11~2026.05 Class 6B Team A - T.H.
  * @since 20260501
  * @description
  */
 class PageMove{
     /** パラメータとハッシュを除く */
-    static removeHashLocation() {
-        return window.location.href.replace(window.location.hash, "");
-    }
+    static removeHashLocation(){ return window.location.href.replace(window.location.hash, ""); }
 
     /** トップページに戻る */
-    static top() { return PageMove.removeHashLocation() + "#top"; }
+    static top(){ return PageMove.removeHashLocation() + "#top"; }
 }
 
 
 /** ■■■ クラス：リンク先を開く ■■■
- * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
+ * @author Sozosha Recurrent School Fukuoka 2025.11~2026.05 Class 6B Team A - T.H.
  * @since 20260430
  * @description
  * (1) 複数あるHTMLファイルに対して、同じURLの設定や変更をしなくとも、JSで一括管理することにより、修正漏れや反映漏れを防ぐための仕組みとして実装しています
@@ -25,16 +23,16 @@ class PageMove{
 class PageOpen{
     /* 特設サイト */
     /** 同じタブで開く：特設サイトトップページ */
-    static eventTop() { window.location.href = "./index.html"; }
+    static eventTop(){ window.location.href = "./index.html"; }
 
     /** 同じタブで開く：特設サイト当日ワークショップページ */
-    static eventWorkShopMain() { window.location.href = "./workshop-main.html"; }
+    static eventWorkShopMain(){ window.location.href = "./workshop-main.html"; }
 
     /** 同じタブで開く：特設サイト事前ワークショップページ */
-    static eventWorkShopInAdvance() { window.location.href = "./workshop-in-advance.html"; }
+    static eventWorkShopInAdvance(){ window.location.href = "./workshop-in-advance.html"; }
 
     /** 同じタブで開く：特設サイトTシャツ公募ページ */
-    static eventPublicRecruitment() { window.location.href = "./public-recruitment.html"; }
+    static eventPublicRecruitment(){ window.location.href = "./public-recruitment.html"; }
 
     /** 新規タブで開く：応募先フォーム */
     static eventForm(){ window.open("", "_blank", "noopener"); }
@@ -45,25 +43,25 @@ class PageOpen{
 
     /* 協力アーティスト情報 */
     /** 新規タブで開く：7/25 協力アーティストインタグラム */
-    static eventCollaborator0725Instagram() { window.open("https://www.instagram.com/qp0123whyte/", "_blank", "noopener"); };
+    static eventCollaborator0725Instagram(){ window.open("https://www.instagram.com/qp0123whyte/", "_blank", "noopener"); };
 
     /** 新規タブで開く：7/26 協力アーティストインタグラム */
-    static eventCollaborator0726Instagram() { window.open("https://www.instagram.com/colorhythmrisa/", "_blank", "noopener"); };
+    static eventCollaborator0726Instagram(){ window.open("https://www.instagram.com/colorhythmrisa/", "_blank", "noopener"); };
 
     /** 新規タブで開く：8/1 協力アーティストインタグラム */
-    static eventCollaborator0801Instagram() { window.open("https://www.instagram.com/yuriyoshinagaart/", "_blank", "noopener"); };
+    static eventCollaborator0801Instagram(){ window.open("https://www.instagram.com/yuriyoshinagaart/", "_blank", "noopener"); };
 
     /** 新規タブで開く：8/15 協力アーティストインタグラム */
-    static eventCollaborator0815Instagram() { window.open("https://www.instagram.com/chihiro_miyata/", "_blank", "noopener"); };
+    static eventCollaborator0815Instagram(){ window.open("https://www.instagram.com/chihiro_miyata/", "_blank", "noopener"); };
 
     /** 新規タブで開く：8/16 協力アーティストインタグラム */
-    static eventCollaborator0816Instagram() { PageOpen.eventCollaborator0725Instagram(); };
+    static eventCollaborator0816Instagram(){ PageOpen.eventCollaborator0725Instagram(); };
 
     /** 新規タブで開く：8/22 協力アーティストインタグラム */
-    static eventCollaborator0822Instagram() { window.open("https://www.instagram.com/fuguriddim/", "_blank", "noopener"); };
+    static eventCollaborator0822Instagram(){ window.open("https://www.instagram.com/fuguriddim/", "_blank", "noopener"); };
 
     /** 新規タブで開く：8/30 協力アーティストインタグラム */
-    static eventCollaborator0830Instagram() { window.open("https://www.instagram.com/yutarokumabe/", "_blank", "noopener"); };
+    static eventCollaborator0830Instagram(){ window.open("https://www.instagram.com/yutarokumabe/", "_blank", "noopener"); };
 
 
     /* 主催情報 */
@@ -97,31 +95,24 @@ class PageOpen{
     static venueFukuokaArtMusiumGMap(){ window.open("https://maps.app.goo.gl/UhTmdb4mkmkTnJt88", "_blank", "noopener"); }
 
     /** 新規タブで開く：福岡市立城西中学校 */
-    static venueFukuokaJyoseiJHSAccess() { window.open("https://sites.google.com/fuku-c.ed.jp/jhjyosei/%E5%AD%A6%E6%A0%A1%E6%A6%82%E8%A6%81/%E6%89%80%E5%9C%A8%E5%9C%B0", "_blank", "noopener"); }
+    static venueFukuokaJyoseiJHSAccess(){ window.open("https://sites.google.com/fuku-c.ed.jp/jhjyosei/%E5%AD%A6%E6%A0%A1%E6%A6%82%E8%A6%81/%E6%89%80%E5%9C%A8%E5%9C%B0", "_blank", "noopener"); }
 
     /** 新規タブで開く：福岡市立城西中学校(GoogleMaps) */
-    static venueFukuokaJyoseiJHSGMap() { window.open("https://maps.app.goo.gl/X8M8cR6w1UiL71rC9", "_blank", "noopener"); }
+    static venueFukuokaJyoseiJHSGMap(){ window.open("https://maps.app.goo.gl/X8M8cR6w1UiL71rC9", "_blank", "noopener"); }
 
     /** 新規タブで開く：学校 */
-    static venueSchool2() { window.open("", "_blank", "noopener"); }
+    static venueSchool2(){ window.open("", "_blank", "noopener"); }
 }
 
 
 /** ■■■ クラス：ハンバーガーメニュー ■■■
- * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
- * @since 20260430
- * @description
+ * @author Sozosha Recurrent School Fukuoka 2025.11~2026.05 Class 6B Team A - T.H.
+ * @since 20260501
 */
 class HamburgerMenu{
     /** 開く */
-    static open(){
-        const menu = document.getElementById("menu-area");
-        menu.showModal();
-    }
+    static open(){ document.getElementById("area-menu").showModal(); }
 
     /** 閉じる */
-    static close(){
-        const menu = document.getElementById("menu-area");
-        menu.close();
-    }
+    static close(){ document.getElementById("area-menu").close(); }
 }

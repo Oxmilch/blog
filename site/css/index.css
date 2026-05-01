@@ -2,15 +2,11 @@
 
 /* ■■■ ■■■ */
 #area-mobile{
-    background-image: url("../assets/img/background-a1.svg");
+    background-image: url("../assets/img/background-b1.svg");
 }
 
 /* ■■■ ファーストビュー ■■■ */
 /* ファーストビューの基本スタイル */
-#first-view{
-    padding-top: 16px;
-}
-
 #first-view-period{
     position: relative;
     width: 100%;

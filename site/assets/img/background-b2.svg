@@ -2,7 +2,7 @@
 <mask id="mask0_57_523" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="375" height="667">
 <rect width="375" height="667" fill="#D9D9D9"/>
 </mask>
-<g mask="url(#mask0_57_523)">
+<g mask="url(#mask0_57_523)" opacity="0.3">
 <path d="M27.4546 272L40.8386 295.808H14.0705L27.4546 272Z" fill="#32CD32"/>
 <path d="M47.7277 636.447L36.4854 661.339L20.6192 639.779L47.7277 636.447Z" fill="#32CD32"/>
 <path d="M344.623 559.409L370.303 567.83L350.17 585.858L344.623 559.409Z" fill="#1F4E8C"/>
