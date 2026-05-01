@@ -58,6 +58,47 @@
 }
 
 
+/* ■■■ 共通スタイル ■■■ */
+h1,h2,h3,h4,h5{
+    font-family: var(--font-family-title-black);
+    margin: 0 auto;
+    text-align: center;
+}
+h1{
+    font-size: var(--font-size-30);
+}
+h2{
+    font-size: var(--font-size-24);
+}
+h3{
+    font-size: var(--font-size-20);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    margin-top: 24px;
+}
+
+main{
+    margin-top: 8px;
+}
+
+button{
+    width: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+
 /* ■■■ アクセシビリティ ■■■ */
 /* 視覚的非表示 */
 .visually-hidden{
@@ -273,6 +314,11 @@ html{
 
 
 /* ■■■ ヘッダーとハンバーガーメニュー ■■■ */
+header{
+    position:sticky;
+    top: 0;
+}
+
 .header-menu-button{
     display: flex;
     justify-content: center;
@@ -362,9 +408,18 @@ dialog .header-menu-button span{
 /* ■■■ フッター ■■■ */
 footer{
     margin-top: 24px;
+    padding-bottom: 8px;
     color: var(--color-white);
     background-color: var(--color-blue);
     text-align: center;
+}
+
+footer li{
+    margin: 0.5em auto;
+}
+
+footer li button{
+    color: var(--color-white);
 }
 
 
@@ -426,45 +481,4 @@ summary{
 .img-btn-icon,
 .img-btn-tiktok{
     border-radius: 50%;
-}
-
-
-/* ■■■ その他の共通スタイル ■■■ */
-h1,h2,h3,h4,h5{
-    font-family: var(--font-family-title-black);
-    margin: 0 auto;
-    text-align: center;
-}
-h1{
-    font-size: var(--font-size-30);
-}
-h2{
-    font-size: var(--font-size-24);
-}
-h3{
-    font-size: var(--font-size-20);
-}
-
-a{
-    text-decoration: none;
-}
-
-img{
-    width: 100%;
-}
-
-section{
-    margin-top: 24px;
-}
-
-main{
-    margin-top: 8px;
-}
-
-button{
-    width: 100%;
-}
-
-li{
-    list-style-type: none;
 }
