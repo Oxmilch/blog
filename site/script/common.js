@@ -1,11 +1,16 @@
 /** ■■■ クラス：ページ内リンクへ移動する ■■■
  * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
- * @since 20260430
+ * @since 20260501
  * @description
  */
 class PageMove{
-    /* トップページ */
-    
+    /** パラメータとハッシュを除く */
+    static removeHashLocation() {
+        return window.location.href.replace(window.location.hash, "");
+    }
+
+    /** トップページに戻る */
+    static top() { return PageMove.removeHashLocation() + "#top"; }
 }
 
 
@@ -93,74 +98,6 @@ class PageOpen{
 
     /** 新規タブで開く：学校 */
     static venueSchool2() { window.open("", "_blank", "noopener"); }
-}
-
-
-/** ■■■ クラス：テキストを動かす ■■■
- * @author Sozosha Recurrent School Fukuoka 2025116B T.H.
- * @since 20260425
- * @description
- * (1) 親要素のクラスが marquee の場合に動作します。
- * (2) 厳密に言えばテキストだけではなく、要素自体をアニメーションさせているため、画像なども動かせます。
- * (3) XとYの設定次第で、斜めや縦方向へのアニメーションも可能です。
- * (4) 複雑なアニメーションはさせず、開始と終了の２点のキーフレームを結ぶ簡単なアニメーションのみ作成できます。
- * @todo
- * ・ウィンドウサイズによって、途中で途切れたりするため要対応
- * ・実際に使ってみたが、動作が想定しづらいため、パラメータ設定簡単にするのと、画面外から画面外に移動後インターバルの時間も読みづらい
-*/
-class MarqueeTexts{
-    /** 動かす要素のIDやクラス名 */
-    _targets;
-    /** 動かす要素 */
-    _marqueeElements;
-    /** アニメーションのキーフレーム設定 */
-    _keyframes;
-    /** アニメーションのオプション */
-    _options;
-
-    /** 初期化
-     * @param {string} targets 動かしたい要素
-     */
-    constructor(targets){
-        this._targets = targets;
-    }
-
-    /** 設定反映
-     * @param {number} duration 再生時間(ミリ秒)(初期値:10000ミリ秒)
-     * @param {number} delay アニメーションの開始を遅らせる時間(ミリ秒)(初期値:0ミリ秒)
-     * @param {string} startPositionX 開始時の横の位置(初期値:0)
-     * @param {string} endPositionX 終了時の横の位置(初期値:-100%)
-     * @param {string} startPositionY 開始時の横の位置(初期値:0)
-     * @param {string} endPositionY 終了時の横の位置(初期値:0)
-     * @param {string} easing イージング(初期値:linear=一定, ease=最初と終了の時は緩やか、ease-in, ease-out, ease-in-out)
-     * @param {number} iterations 繰り返し回数(初期値:Infinity)
-     * @param {string} direction 実行する方向(初期値:noraml=通常, reverse=逆方向, alternate=通常方向のアニメーション終了後、逆方向にアニメーションをする、 alternate-reverse=逆方向へのアニメーション後、通常のアニメーションを行う)
-     */
-    set(duration=10000, delay=0, startPositionX="0", endPositionX="-100%", startPositionY="0", endPositionY="0",
-        easing="linear", iterations=Infinity, direction="normal"){
-        this._marqueeElements = Array.from(document.querySelectorAll(this._targets));
-        this._keyframes = [{transform: `translate(${startPositionX}, ${startPositionY})`},
-                           {transform: `translate(${endPositionX}, ${endPositionY})`}];
-        this._options = {
-            duration: duration,
-            delay: delay,
-            easing: easing,
-            iterations: iterations,
-            direction: direction
-        };
-        // 要素へアニメーションの設定を行う
-        this._marqueeElements.forEach((mqrqueeElement) => {
-            mqrqueeElement.animate(this._keyframes, this._options);
-        });
-        // 設定次第アニメーションが開始されるため、一時停止
-        this.stop();
-    }
-
-    /** アニメーション開始 */
-    start(){ this._marqueeElements.forEach((mqrqueeElement) => { mqrqueeElement.getAnimations()[0].play();}); }
-
-    /** アニメーション停止 */
-    stop(){ this._marqueeElements.forEach((mqrqueeElement) => { mqrqueeElement.getAnimations()[0].pause();}); }
 }
 
 

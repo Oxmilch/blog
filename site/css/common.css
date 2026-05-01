@@ -177,19 +177,6 @@
 }
 
 
-/* ■■■ 共通クラス：背景 */
-.plaid-green{
-    width: 100%;
-    height: 100%;
-    background-image:
-        linear-gradient(45deg, var(--color-green-24ight) 25%, transparent 25%, transparent 75%, var(--color-green-24ight) 75%),
-        linear-gradient(45deg, var(--color-green-24ight) 25%, transparent 25%, transparent 75%, var(--color-green-24ight) 75%);
-  background-position: 0 0, 32px 32px;
-  background-size: 64px 64px;
-  background-color: var(--color-white);
-}
-
-
 /* ■■■ 共通ID：コンテンツエリア ■■■ */
 #desktop-area{
     position: fixed;
@@ -266,18 +253,6 @@ dialog section{
 .container{
     width: var(--container-width);
     margin: 0 auto;
-}
-
-
-/* ■■■ 共通クラス：コンテンツ自動スクロール領域(デスクトップ用) ■■■ */
-.marquee{
-  position: relative;
-  display: flex;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 100%;
-  gap: 1rem;
-  font-size: 3rem;
 }
 
 
