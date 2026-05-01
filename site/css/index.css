@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/* ■■■ ■■■ */
+#area-mobile{
+    background-image: url("../assets/img/background-a1.svg");
+}
+
 /* ■■■ ファーストビュー ■■■ */
 /* ファーストビューの基本スタイル */
 #first-view{

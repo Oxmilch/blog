@@ -258,17 +258,17 @@ html{
     font-size: var(--font-size);
 }
 
-#desktop-area{
+#area-desktop{
     position: fixed;
     top: 0px;
     width: 100vw;
     height: 100vh;
     background-color: var(--color-blue);
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: -100;
 }
 
-#menu-area{
+#area-menu{
     position: fixed;
     top: 0;
     left: 50%;
@@ -283,16 +283,16 @@ html{
     width: 100%;
     max-width: var(--content-width-max);
     height: 100vh;
+    overflow: hidden;
     z-index: 100;
 }
 
-#mobile-area{
-    position: absolute;
+#area-mobile{
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--color-white);
-    background-image: url("../assets/img/background-a1.svg");
     background-repeat: repeat-y;
     background-position-x: center;
     background-origin: border-box;
@@ -300,11 +300,10 @@ html{
     min-width: var(--content-width-min);
     width: 100%;
     max-width: var(--content-width-max);
+    height: 100vh;
     margin: 0 auto;
+    overflow: auto;
     z-index: 0;
-}
-#mobile-area *{
-    position: relative;
 }
 
 .container{
@@ -317,6 +316,9 @@ html{
 header{
     position:sticky;
     top: 0;
+    width: 100%;
+    height: var(--button-icon-size) + 32px;
+    background-color: black;
 }
 
 .header-menu-button{
