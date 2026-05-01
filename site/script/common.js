@@ -93,8 +93,14 @@ class PageOpen{
     /** 新規タブで開く：福岡市美術館交通案内 */
     static venueFukuokaArtMusiumAccess(){ window.open("https://www.fukuoka-art-museum.jp/guide/access/", "_blank", "noopener"); }
 
-    /** 新規タブで開く：学校 */
-    static venueSchool1() { window.open("", "_blank", "noopener"); }
+    /** 新規タブで開く：福岡市美術館(GoogleMaps) */
+    static venueFukuokaArtMusiumGMap(){ window.open("https://maps.app.goo.gl/UhTmdb4mkmkTnJt88", "_blank", "noopener"); }
+
+    /** 新規タブで開く：福岡市立城西中学校 */
+    static venueFukuokaJyoseiJHSAccess() { window.open("https://sites.google.com/fuku-c.ed.jp/jhjyosei/%E5%AD%A6%E6%A0%A1%E6%A6%82%E8%A6%81/%E6%89%80%E5%9C%A8%E5%9C%B0", "_blank", "noopener"); }
+
+    /** 新規タブで開く：福岡市立城西中学校(GoogleMaps) */
+    static venueFukuokaJyoseiJHSGMap() { window.open("https://maps.app.goo.gl/X8M8cR6w1UiL71rC9", "_blank", "noopener"); }
 
     /** 新規タブで開く：学校 */
     static venueSchool2() { window.open("", "_blank", "noopener"); }

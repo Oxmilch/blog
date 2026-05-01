@@ -24,13 +24,13 @@
     <script src="./script/index.js" defer></script>
 </head>
 <body id="top">
-    <div id="mobile-area" class="content">
+    <div id="mobile-area">
         <header class="header-menu">
             <button type="button" class="img-btn-icon" aria-label="2026年福岡市民が作る大アート展のトップページに戻る" onclick="PageOpen.eventTop()">
                 <img src="./assets/img/icon.svg" alt="福岡市民がつくる大アート店トップページへ">
             </button>
-            <button type="button" class="img-btn-icon" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.open()">
-                
+            <button type="button" class="header-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.open()">
+                <span></span>
             </button>
         </header>
         <main>
@@ -104,52 +104,81 @@
             </section>
             <section id="schedule">
                 <h2>スケジュール案内</h2>
-                <ul>
+                <ul class="container">
                     <li>
-                        <h3>6.5～8.21 Tシャツ公募</h3>
-                        <p>オリジナルTシャツ大募集！</p>
-                    </li>
-                    <li>
-                        <h3>7.25～ 事前ワークショップ</h3>
                         <table>
-                            <tr>
-                                <th>7.25</th>
-                                <th>西鉄バス内ポスター広告作成</th>
-                            </tr>
-                            <tr>
-                                <th>7.26</th>
-                                <th>福岡市営地下鉄扉口広告作成</th>
-                            </tr>
-                            <tr>
-                                <th>8.1</th>
-                                <th>JR車両中吊り広告</th>
-                            </tr>
-                            <tr>
-                                <th>8.15</th>
-                                <th>西鉄電車中吊り広告</th>
-                            </tr>
-                            <tr>
-                                <th>8.16</th>
-                                <th>オブジェ作成</th>
-                            </tr>
-                            <tr>
-                                <th>8.22</th>
-                                <th>オブジェ作成</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>6.5～8.21 Tシャツ公募</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>オリジナルTシャツ大募集！</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </li>
                     <li>
-                        <h2>8.30 当時ワークショップ</h2>
-                        <ol>
-                            <li>怒られないらくがき部屋</li>
-                            <li>ライブパフォーマンス</li>
-                            <li>オリジナルシール作成</li>
-                            <li>オリジナルTシャツ作成</li>
-                        </ol>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">7.25～ 事前ワークショップ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>7.25</td>
+                                    <td>西鉄バス内ポスター広告作成</td>
+                                </tr>
+                                <tr>
+                                    <td>7.26</td>
+                                    <td>福岡市営地下鉄扉口広告作成</td>
+                                </tr>
+                                <tr>
+                                    <td>8.1</td>
+                                    <td>JR車両中吊り広告</td>
+                                </tr>
+                                <tr>
+                                    <td>8.15</td>
+                                    <td>西鉄電車中吊り広告</td>
+                                </tr>
+                                <tr>
+                                    <td>8.16</td>
+                                    <td>オブジェ作成</td>
+                                </tr>
+                                <tr>
+                                    <td>8.22</td>
+                                    <td>オブジェ作成</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>8.30 当日ワークショップ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>怒られないらくがき部屋</td>
+                                </tr>
+                                <tr>
+                                    <td>ライブパフォーマンス</td>
+                                </tr>
+                                    <td>オリジナルシール作成</td>
+                                </tr>
+                                <tr>
+                                    <td>オリジナルTシャツ作成</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </li>
                 </ul>
             </section>
-            <section id="access">
+            <section id="access" class="container">
                 <h2>アクセス</h2>
                 <h3>地下鉄、西鉄バス、お車でも！</h3>
                 <p>地下鉄から徒歩10分！</p>
@@ -200,7 +229,8 @@
             <button type="button" class="img-btn-icon" aria-label="2026年福岡市民が作る大アート展のトップページに戻る" onclick="PageOpen.eventTop()">
                 <img src="./assets/img/icon.svg" alt="福岡市民がつくる大アート店トップページへ">
             </button>
-            <button type="button" class="img-btn-icon" aria-label="メニューを閉じる" aria-expanded="true aria-controls="menu-area" onclick="HamburgerMenu.close()">
+            <button type="button" class="header-menu-button" aria-label="メニューを閉じる" aria-expanded="true" aria-controls="menu-area" onclick="HamburgerMenu.close()">
+                <span></span>
             </button>
         </div>
         <ul>
