@@ -209,12 +209,12 @@
             <div class="container">
                 <img src="./assets/img/logo-main2.svg" alt="福岡市民がつくる大アート展〜誰もがアーティスト〜">
                 <ul>
-                    <li><button type="button" onclick="PageOpen.eventTop()">Top</button></li>
-                    <li><button type="button" onclick="PageOpen.eventWorkShopMain()">当日ワークショップ</button></li>
-                    <li><button type="button" onclick="PageOpen.eventWorkShopInAdvance()">事前ワークショップ</button></li>
-                    <li><button type="button" onclick="">ワークショップ申し込み</button></li>
-                    <li><button type="button" onclick="PageOpen.eventPublicRecruitment()">Tシャツ公募</button></li>
-                    <li><button type="button" onclick="PageOpen.eventForm()">Tシャツ申し込み</button></li>
+                    <li><button type="button" onclick="PageOpen.eventTop()">トップページ</button></li>
+                    <li><button type="button" onclick="PageOpen.eventWorkShopMain()">みんなでつくる大アート展</button></li>
+                    <li><button type="button" onclick="PageOpen.eventWorkShopInAdvance()">ワークショップにチャレンジ</button></li>
+                    <li><button type="button" onclick="">ワークショップお申し込み</button></li>
+                    <li><button type="button" onclick="PageOpen.eventPublicRecruitment()">Tシャツデザインにチャレンジ</button></li>
+                    <li><button type="button" onclick="PageOpen.eventForm()">Tシャツお申し込み</button></li>
                     <li><button type="button" onclick="PageOpen.eventWorkShopInAdvance()">スケジュール案内</button></li>
                     <li><button type="button" onclick="PageOpen.venueFukuokaArtMusiumAccess()">アクセス(外部)</button></li>
                     <li><button type="button" onclick="PageOpen.fukuokaJCPrivacyPolicy()">プライバシーポリシー(福岡青年会議所)</button></li>
@@ -242,19 +242,28 @@
                 </button>
             </li>
         </ul>
-        <nav>
+        <nav class="font-title-exbold-20 container">
             <ul>
-                <li><button type="button" aria-label="" onclick="PageOpen.eventTop()">トップへ戻る</button></li>
-                <li><button type="button" aria-label="">みんなでつくる大アート展</button></li>
-                <li><button type="button" aria-label="">ワークショップにチャレンジ</button></li>
-                <li><button type="button" aria-label="">Tシャツデザインにチャレンジ</button></li>
-                <li>
-                    <button type="button" aria-label="">ワークショップ<br>お申し込み</button>
-                    <button type="button" aria-label="">Tシャツ<br>お申し込み</button>
+                <li><button type="button" onclick="PageOpen.eventTop()">トップページ</button></li>
+                <li><button type="button" onclick="PageOpen.eventWorkShopMain()">みんなでつくる大アート展</button></li>
+                <li><button type="button" onclick="PageOpen.eventWorkShopInAdvance()">ワークショップにチャレンジ</button></li>
+                <li><button type="button" onclick="PageOpen.eventPublicRecruitment()">Tシャツデザインにチャレンジ</button></li>
+                <li id="header-menu-form">
+                    <button type="button" aria-label="" onclick="">ワークショップ<br>お申し込み</button>
+                    <button type="button" aria-label="" onclick="PageOpen.eventForm()">Tシャツ<br>お申し込み</button>
                 </li>
-                <li>
+                <li id="header-menu-sns">
                     <button type="button" class="img-btn-instagram" onclick="PageOpen.eventInstagram()">
-                        <img src="./assets/img/logo-instagram.webp" alt="Instagramアカウントへ" fetchpriority="low" loading="lazy">
+                        <img src="./assets/img/logo-instagram.webp" alt="福岡市民がつくる大アート展のInstagramアカウントへ" fetchpriority="low" loading="lazy">
+                    </button>
+                </li>
+                <li id="header-menu-fjc" class="font-title-exbold">
+                    <label>福岡青年会議所の<br>発信はこちら</label>
+                    <button type="button" class="img-btn-instagram" onclick="PageOpen.fukuokaJCInstagram()">
+                        <img src="./assets/img/logo-instagram.webp" alt="福岡青年会議所のInstagram" fetchpriority="low" loading="lazy">
+                    </button>
+                    <button type="button" class="img-btn-tiktok" onclick="PageOpen.fukuokaJCTikTok()">
+                        <img src="./assets/img/logo-tiktok.svg" alt="福岡市青年会議所のTikTok" fetchpriority="low" loading="lazy">
                     </button>
                 </li>
             </ul>

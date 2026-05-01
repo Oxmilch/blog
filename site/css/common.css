@@ -19,11 +19,14 @@
     /* 色 ※変数名の数字は透明度を表す */
     --color-white: #FAFAFA;
     --color-black: #333;
-    --color-black-86: #333D;
+    --color-black-70: #333333B3;
     --color-red:#ED1818;
+    --color-red-59:#ED181897;
     --color-green: #2DB82D;
+    --color-green-59: #2DB82D97;
     --color-green-light: #50C850;
     --color-blue: #1F4E8C;
+    --color-blue-59: #1F4E8C97;
     --color-blue-light: #0054a7;
     --color-blue-footer: #12335E;
     --color-yellow:#FFD700;
@@ -295,6 +298,67 @@ dialog .header-menu-button span{
     }
 }
 
+nav li{
+    margin: 1em auto;
+}
+
+#header-menu-form,
+#header-menu-sns,
+#header-menu-fjc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li:nth-child(-n+4) button{
+    position: relative;
+    padding-bottom: 4px;
+    border-bottom: solid 6px var(--color-black-70);
+
+    &::after{
+        position: absolute;
+        top: 0;
+        right: -0.25em;
+        content:"";
+        background-color: var(--color-black);
+        background-image: url("../assets/img/button.svg");
+        background-position: center;
+        background-size: calc(1.5em - 4px);
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        z-index: 102;
+    }
+}
+
+nav ul li{
+    &:nth-child(2) button{
+        color: var(--color-font-red);
+        border-color: var(--color-red-59);
+
+        &::after{
+            background-color: var(--color-font-red);
+        }
+    }
+
+    &:nth-child(3) button{
+        color: var(--color-font-green);
+        border-color: var(--color-green-59);
+
+        &::after{
+            background-color: var(--color-font-green);
+        }
+    }
+
+    &:nth-child(4) button{
+        color: var(--color-font-blue);
+        border-color: var(--color-blue-59);
+
+        &::after{
+            background-color: var(--color-font-blue);
+        }
+    }
+}
 
 /* ■■■ メイン ■■■ */
 main{
