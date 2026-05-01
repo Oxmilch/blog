@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ワークショップ | 福岡市民がつくる大アート展〜誰もがアーティスト〜</title>
+    <title>大アート展 | 福岡市民がつくる大アート展〜誰もがアーティスト〜</title>
     <meta name="description" content="">
     <meta name="robots" content="">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="article">
     <meta property="og:url" content="">
-    <meta property="og:title" content="ワークショップ | 福岡市民がつくる大アート展〜誰もがアーティスト〜">
+    <meta property="og:title" content="大アート展 | 福岡市民がつくる大アート展〜誰もがアーティスト〜">
     <meta property="og:site_name" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="ワークショップ | 福岡市民がつくる大アート展〜誰もがアーティスト〜">
+    <meta name="twitter:title" content="大アート展 | 福岡市民がつくる大アート展〜誰もがアーティスト〜">
     <meta name="twitter:description" content="">
     <link rel="stylesheet" href="./css/ress.min.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -24,21 +24,36 @@
     <script src="./script/workshop-main.js" defer></script>
 </head>
 <body id="top">
-    <div id="mobile-content" class="content">
-        <header></header>
+    <div id="area-mobile">
+        <header>
+            <ul class="header-menu container">
+                <li>
+                    <button type="button" class="img-btn-icon" aria-label="2026年福岡市民が作る大アート展のトップページに戻る" onclick="PageOpen.eventTop()">
+                        <img src="./assets/img/icon.svg" alt="福岡市民がつくる大アート店トップページへ" fetchpriority="high">
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="header-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.open()">
+                        <span></span>
+                    </button>
+                </li>
+            </ul>
+        </header>
         <main>
-            <section id="first-view">
+            <section id="main-firstview">
                 <h2>大アート展</h2>
             </section>
-            <section id="workshop-list">
+            <section id="main-content">
                 <h2>ワークショップ一覧</h2>
+                <h3>気をつけてほしいポイント</h3>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+        </footer>
     </div>
-        <div id="desktop-area">
-    </div>
-    <dialog id="menu-area" aria-label="メニュー">
+    <dialog id="area-menu" aria-label="メニュー">
     </dialog>
+    <div id="area-desktop">
+    </div>
 </body>
 </html>

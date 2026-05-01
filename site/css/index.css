@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-/* ■■■ ■■■ */
+/* ■■■ 背景設定 ■■■ */
 #area-mobile{
     background-image: url("../assets/img/background-b1.svg");
 }
 
 /* ■■■ ファーストビュー ■■■ */
 /* ファーストビューの基本スタイル */
-#first-view-period{
+#main-firstview-period{
     position: relative;
     width: 100%;
     text-align: right;
@@ -20,13 +20,13 @@
     margin-top: 1em;
 }
 
-#first-view-period p:nth-child(2){
+#main-firstview-period p:nth-child(2){
     margin: 0 0 0 auto;
     width: fit-content;
     border-bottom: 3px solid var(--color-white);
 }
 
-#first-view-button{
+#main-firstview-button{
     display: grid;
     gap: 2em 1em;
     grid-template-areas:
@@ -37,7 +37,7 @@
     margin-top: 2em;
 }
 
-#first-view-button button{
+#main-firstview-button button{
     position: relative;
     padding: 16px 8px;
     border: solid 3px var(--color-black);
@@ -46,29 +46,29 @@
     padding: 16px 16px 8px;
 }
 
-#first-view-button-main{
+#main-firstview-button-main{
     grid-area: main;
     color: var(--color-font-white);
     background-color: var(--color-red);
 }
 
-#first-view-button-advance{
+#main-firstview-button-advance{
     grid-area: workshop;
     color: var(--color-font-white);
     background-color: var(--color-green);
 }
 
-#first-view-button-public{
+#main-firstview-button-public{
     grid-area: public;
     color: var(--color-font);
     background-color: var(--color-yellow);
 }
 
 /* ファーストビューの左上の装飾文字 */
-#first-view-period::before,
-#first-view-button-main::before,
-#first-view-button-advance::before,
-#first-view-button-public::before{
+#main-firstview-period::before,
+#main-firstview-button-main::before,
+#main-firstview-button-advance::before,
+#main-firstview-button-public::before{
     position: absolute;
     top: calc(var(--font-size) * -1);
     left: 6px;
@@ -80,31 +80,31 @@
     padding: 1px 1em;
     z-index: 1;
 }
-#first-view-period::before{
+#main-firstview-period::before{
     content:"参加無料";
     font-size: var(--font-size-20);
     color: var(--color-font-blue);
 }
-#first-view-button-main::before{
+#main-firstview-button-main::before{
     content:"8.30";
     font-size: var(--font-size-20);
     color: var(--color-font-red);
 }
-#first-view-button-advance::before{
+#main-firstview-button-advance::before{
     content:" 7.25~　";
     font-size: var(--font-size);
     color: var(--color-font-green);
 }
-#first-view-button-public::before{
+#main-firstview-button-public::before{
     content:"6.5~8.21";
     font-size: var(--font-size);
     color: var(--color-font);
 }
 
 /* ファーストビューのボタンの右下のボタン */
-#first-view-button-main::after,
-#first-view-button-advance::after,
-#first-view-button-public::after{
+#main-firstview-button-main::after,
+#main-firstview-button-advance::after,
+#main-firstview-button-public::after{
     position: absolute;
     bottom: var(--font-size-12);
     right: var(--font-size-12);
@@ -116,7 +116,7 @@
     z-index: 1;
 }
 
-#first-view-button-main::after{
+#main-firstview-button-main::after{
     width: var(--font-size-30);
     height: var(--font-size-30);
 }
