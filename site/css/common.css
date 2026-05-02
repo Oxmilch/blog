@@ -167,7 +167,7 @@ html{
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--color-white);
-    background-image: url("../assets/img/background-b2.svg");
+    background-image: url("../assets/img/background/geometric2.svg");
     background-repeat: repeat-y;
     background-position-x: center;
     background-origin: border-box;
