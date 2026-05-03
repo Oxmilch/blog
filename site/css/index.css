@@ -6,7 +6,6 @@
 }
 
 /* ■■■ ファーストビュー ■■■ */
-/* ファーストビューの基本スタイル */
 .firstview-period-style{
     background-color: var(--color-blue);
 }
@@ -32,6 +31,28 @@
     background-color: var(--color-yellow);
 }
 
+
+/* ■■■ メインコンテンツ ■■■ */
 .main-content-style{
     margin-top: calc(var(--default-length) * 3);
+}
+
+.main-content-workshop-style{
+    background-color: var(--color-blue);
+}
+
+.main-content-workshop-top-style{
+    width: 71%;
+}
+
+.main-content-workshop-main-style{
+    background-color: var(--color-red);
+}
+
+.main-content-workshop-advance-style{
+    background-color: var(--color-green);
+}
+
+.main-content-workshop-public-style{
+    background-color: var(--color-yellow);
 }
