@@ -380,8 +380,8 @@ footer li button{
 }
 
 
-/* ■■■ 画像のアンカーリンクボタン ■■■ */
-.button-image-icon{
+/* ■■■ 画像のアンカーリンク ■■■ */
+.ankerlink-image-top{
     width: var(--button-icon-size);
     height: var(--button-icon-size);
     background-color: var(--color-black);
@@ -390,24 +390,27 @@ footer li button{
     border-radius: 50%;
 }
 
-.button-image-instagram{
+.ankerlink-image-instagram{
     width: var(--button-sns-size);
     height: var(--button-sns-size);
     margin: 16px;
     padding: 1px;
     background-color: var(--color-white);
     background-image: url("../assets/img/logo/instagram.webp");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     border-radius: var(--font-size-ss);
 }
 
-.button-image-tiktok{
+.ankerlink-image-tiktok{
     width: var(--button-sns-size);
     height: var(--button-sns-size);
     margin: 16px;
     padding: 1px;
     background-color: var(--color-white);
     background-image: url("../assets/img/logo/tiktok.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
     border-radius: 50%;
 }
 
