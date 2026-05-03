@@ -22,34 +22,25 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" href="./assets/img/logo/main1.svg">
     <script src="./script/common.js" defer></script>
-    <script src="./script/index.js" defer></script>
 </head>
 <body id="top">
     <div id="area-mobile">
-        <header>
-            <ul class="header-menu container">
-                <li>
-                    <button type="button" class="img-btn-icon" aria-label="2026年福岡市民が作る大アート展のトップページに戻る" onclick="PageOpen.eventTop()">
-                        <img src="./assets/img/logo/main1.svg" alt="福岡市民がつくる大アート店トップページへ" fetchpriority="high">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="header-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.open()">
-                        <span></span>
-                    </button>
-                </li>
-            </ul>
+        <header class="header-menu container">
+            <button type="button" class="button-image-icon" aria-label="2026年福岡市民が作る大アート展のトップページに戻る" onclick="PageOpen.eventTop()"></button>
+            <button type="button" class="header-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.open()">
+                <span></span>
+            </button>
         </header>
         <main>
             <section id="main-firstview" class="container">
                 <h1><img src="./assets/img/logo/main2.svg" alt="福岡市民が作る大アート展 誰もがアーティスト" fetchpriority="high"></h1>
                 <div id="main-firstview-period">
-                    <p class="font-title-exbold-12">福岡市美術館 ギャラリースペースA〜F</p>
-                    <p class="font-title-exbold-30">2026.8.25~8.30</p>
+                    <p class="font-title-exbold-ss">福岡市美術館 ギャラリースペースA〜F</p>
+                    <p class="font-title-exbold-llll">2026.8.25~8.30</p>
                     <p class="font-title-exbold">10:00~17:00</p>
                 </div>
                 <div id="main-firstview-button">
-                     <button type="button" id="main-firstview-button-main" class="font-title-exbold-30" aria-label="2026年福岡市民が作る大アート展の2026年8月30日の当日ワークショップについて詳しく知る" onclick="PageOpen.eventWorkShopMain()">
+                     <button type="button" id="main-firstview-button-main" class="font-title-exbold-llll" aria-label="2026年福岡市民が作る大アート展の2026年8月30日の当日ワークショップについて詳しく知る" onclick="PageOpen.eventWorkShopMain()">
                         <p>みんなでつくる<br>大アート展</p>
                      </button>
                      <button type="button" id="main-firstview-button-advance" class="font-title-exbold" aria-label="2026年福岡市民が作る大アート展の2026年7月から8月の事前ワークショップについて詳しく知る" onclick="PageOpen.eventWorkShopInAdvance()">
@@ -195,8 +186,6 @@
                 </button>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5589.9943593901!2d130.37608059363473!3d33.58374907044375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193cd9b0690ad%3A0x34c4517959bb6062!2z56aP5bKh5biC576O6KGT6aSo!5e0!3m2!1sja!2sjp!4v1777515712093!5m2!1sja!2sjp"
-                    width="100%"
-                    max-width="500px"
                     height="500px"
                     style="border:0;"
                     allowfullscreen=""
@@ -205,7 +194,7 @@
                 </iframe>
             </section>
         </main>
-        <footer class="font-text-12">
+        <footer class="font-text-ss">
             <div class="container">
                 <img src="./assets/img/logo/main2.svg" alt="福岡市民がつくる大アート展〜誰もがアーティスト〜">
                 <ul>
@@ -218,31 +207,22 @@
                     <li><button type="button" onclick="PageOpen.eventWorkShopInAdvance()">スケジュール案内</button></li>
                     <li><button type="button" onclick="PageOpen.venueFukuokaArtMusiumAccess()">アクセス(外部)</button></li>
                     <li><button type="button" onclick="PageOpen.fukuokaJCPrivacyPolicy()">プライバシーポリシー(福岡青年会議所)</button></li>
-                    <li class="sns-button">
-                        <button type="button" class="img-btn-instagram" onclick="PageOpen.eventInstagram()">
-                            <img src="./assets/img/logo/instagram.webp" alt="Instagramアカウントへ" fetchpriority="low" loading="lazy">
-                        </button>
-                    </li>
+                    <li><button type="button" class="button-image-instagram" onclick="PageOpen.eventInstagram()" aria-label="2026年福岡市民が作る大アート展のInstagramアカウントを開く"></button></li>
                     <li>主催：一般社団法人　福岡青年会議所</li>
                 </ul>
                 <small>&copy;2026 福岡青年会議所</small>
             </div>
         </footer>
     </div>
+    <div id="area-desktop"></div>
     <dialog id="area-menu" aria-label="メニュー">
-        <ul class="header-menu container">
-            <li>
-                <button type="button" class="img-btn-icon" aria-label="2026年福岡市民が作る大アート展のトップページに戻る" onclick="PageOpen.eventTop()">
-                    <img src="./assets/img/logo/main1.svg" alt="福岡市民がつくる大アート店トップページへ">
-                </button>
-            </li>
-            <li>
-                <button type="button" class="header-menu-button" aria-label="メニューを閉じる" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.close()">
-                    <span></span>
-                </button>
-            </li>
-        </ul>
-        <nav class="font-title-exbold-20 container">
+        <div class="header-menu container">
+            <button type="button" class="button-image-icon" onclick="PageOpen.eventTop()" aria-label="2026年福岡市民が作る大アート展のトップページに戻る"></button>
+            <button type="button" class="header-menu-button" aria-label="メニューを閉じる" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.close()">
+                <span></span>
+            </button>
+        </div>
+        <nav class="font-title-exbold-ll">
             <ul>
                 <li><button type="button" onclick="PageOpen.eventTop()">トップページ</button></li>
                 <li><button type="button" onclick="PageOpen.eventWorkShopMain()">みんなでつくる大アート展</button></li>
@@ -253,23 +233,15 @@
                     <button type="button" aria-label="" onclick="PageOpen.eventForm()">Tシャツ<br>お申し込み</button>
                 </li>
                 <li id="header-menu-sns">
-                    <button type="button" class="img-btn-instagram" onclick="PageOpen.eventInstagram()">
-                        <img src="./assets/img/logo/instagram.webp" alt="福岡市民がつくる大アート展のInstagramアカウントへ" fetchpriority="low" loading="lazy">
-                    </button>
+                    <button type="button" class="button-image-instagram" onclick="PageOpen.eventInstagram()" aria-label="2026年福岡市民が作る大アート展のInstagramアカウントを開く"></button>
                 </li>
                 <li id="header-menu-fjc" class="font-title-exbold">
                     <label>福岡青年会議所の<br>発信はこちら</label>
-                    <button type="button" class="img-btn-instagram" onclick="PageOpen.fukuokaJCInstagram()">
-                        <img src="./assets/img/logo/instagram.webp" alt="福岡青年会議所のInstagram" fetchpriority="low" loading="lazy">
-                    </button>
-                    <button type="button" class="img-btn-tiktok" onclick="PageOpen.fukuokaJCTikTok()">
-                        <img src="./assets/img/logo/tiktok.svg" alt="福岡市青年会議所のTikTok" fetchpriority="low" loading="lazy">
-                    </button>
+                    <button type="button" class="button-image-instagram" onclick="PageOpen.fukuokaJCInstagram()" aria-label="主催している福岡市青年会議所のInstagramアカウントを開く"></button>
+                    <button type="button" class="button-image-tiktok" onclick="PageOpen.fukuokaJCTikTok()" aria-label="主催している福岡市青年会議所のTikTokアカウントを開く"></button>
                 </li>
             </ul>
         </nav>
     </dialog>
-    <div id="area-desktop">
-    </div>
 </body>
 </html>

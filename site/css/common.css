@@ -41,93 +41,45 @@
     --font-style: normal;
 
     /* フォントサイズ (最小375px - 最大540px） */
-    --font-size-36: clamp(2.25rem, 1.176rem + 4.582vw, 2.723rem);
-    --font-size-32: clamp(2rem, 1.045rem + 4.073vw, 2.42rem);
-    --font-size-30: clamp(1.875rem, 0.980rem + 3.818vw, 2.269rem);
-    --font-size-24: clamp(1.5rem, 0.784rem + 3.055vw, 1.815rem);
-    --font-size-20: clamp(1.25rem, 0.653rem + 2.545vw, 1.512rem);
-    --font-size-18: clamp(1.125rem, 0.588rem + 2.291vw, 1.361rem);
-    --font-size: clamp(1rem, 0.523rem + 2.036vw, 1.21rem);
-    --font-size-14: clamp(0.875rem, 0.457rem + 1.782vw, 1.05875rem);
-    --font-size-12: clamp(0.75rem, 0.392rem + 1.527vw, 0.907rem);
+    --font-size-llllll: clamp(2.25rem, 1.176rem + 4.582vw, 2.723rem); /* 36px */
+    --font-size-lllll: clamp(2rem, 1.045rem + 4.073vw, 2.42rem);      /* 32px */
+    --font-size-llll: clamp(1.875rem, 0.980rem + 3.818vw, 2.269rem);  /* 30px */
+    --font-size-lll: clamp(1.5rem, 0.784rem + 3.055vw, 1.815rem);     /* 24px */
+    --font-size-ll: clamp(1.25rem, 0.653rem + 2.545vw, 1.512rem);     /* 20px */
+    --font-size-l: clamp(1.125rem, 0.588rem + 2.291vw, 1.361rem);     /* 18px */
+    --font-size: clamp(1rem, 0.523rem + 2.036vw, 1.21rem);     /* 最小時 16px */
+    --font-size-s: clamp(0.875rem, 0.457rem + 1.782vw, 1.05875rem);   /* 14px */
+    --font-size-ss: clamp(0.75rem, 0.392rem + 1.527vw, 0.907rem);     /* 12px */
 
     /* 共通スタイル */
     --transition-time: 0.4s;
     --header-height: clamp(66px, 36.448px + 7.879vw, 79px) + 16px;
     --container-width: 92%;
-    --content-width-min: 320px;
+    --content-width-min: 375x;
     --content-width-max: 540px;
     --button-icon-size: clamp(66px, 36.448px + 7.879vw, 79px);
     --button-sns-size: clamp(50px, 25.008px + 6.667vw, 61px);
 }
 
 
-/* ■■■ 共通スタイル ■■■ */
-h1,h2,h3,h4,h5{
-    font-family: var(--font-family-title-black);
-    margin: 0 auto;
-    text-align: center;
+/* ■■■ アクセシビリティ ■■■ */
+/* 視覚的非表示 */
+.visually-hidden{
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
 }
 
-h1{
-    font-size: var(--font-size-30);
-}
-
-h2{
-    font-size: var(--font-size-24);
-}
-
-h3{
-    font-size: var(--font-size-20);
-}
-
-a{
-    text-decoration: none;
-}
-
-img{
-    width: 100%;
-}
-
-button{
-    width: 100%;
-}
-
-li{
-    list-style-type: none;
-}
-
-
-/* ■■■ アニメーションの基本時間 ■■■ */
-*{
-    transition: all var(--transition-time);
-}
-
-
-/* ■■■ 画像のアンカーリンクボタン ■■■ */
-.img-btn-icon{
-    width: var(--button-icon-size);
-    height: var(--button-icon-size);
-    padding: 1px;
-    background-color: var(--color-black);
-}
-
-.img-btn-instagram,
-.img-btn-tiktok{
-    width: var(--button-sns-size);
-    height: var(--button-sns-size);
-    padding: 1px;
-    margin: 16px;
-    background-color: var(--color-white);
-}
-
-.img-btn-instagram{
-    border-radius: 14px;
-}
-
-.img-btn-icon,
-.img-btn-tiktok{
-    border-radius: 50%;
+/* キーボード使用時フォーカス */
+:focus-visible{
+    outline: dashed 8px darkorange !important;
+    transition: outline-offset 0s !important;
 }
 
 
@@ -135,9 +87,11 @@ li{
 html{
     scroll-behavior: smooth;
     background-color: var(--color-white);
+    color: var(--color-font);
     font-family: var(--font-family-text);
     font-style: var(--font-style);
     font-size: var(--font-size);
+    transition: all var(--transition-time);
 }
 
 #area-mobile{
@@ -176,7 +130,7 @@ html{
     width: 100%;
     max-width: var(--content-width-max);
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     z-index: 100;
 }
 
@@ -196,21 +150,76 @@ html{
 }
 
 
-/* ■■■ ヘッダーとハンバーガーメニュー ■■■ */
+/* ■■■ 共通スタイル ■■■ */
 header,
-dialog{
+main,
+footer{
+    padding-top: 8px;
+}
+
+footer{
+    margin-top: 24px;
+    padding-bottom: 8px;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
+
+h1,h2,h3,h4,h5{
+    font-family: var(--font-family-title-black);
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    font-size: var(--font-size-llll);
+}
+
+h2{
+    font-size: var(--font-size-lll);
+}
+
+h3{
+    font-size: var(--font-size-ll);
+}
+
+iframe{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+button{
+    width: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+/* ■■■ ヘッダーとハンバーガーメニュー ■■■ */
+.header-menu{
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     container-type: scroll-state;
     width: 100%;
     height: var(--header-height);
-    padding-top: 8px;
+    padding: 8px 8px 0;
     z-index: 99;
 }
 
 header button{
     transform: scale(0.80) translateY(calc(var(--button-icon-size) * 0.1 / 2));
     transform-origin: center;
+    transition: all var(--transition-time);
     @container scroll-state(stuck: top){
         transform: scale(1);
         box-shadow:
@@ -253,12 +262,10 @@ header button{
     top: 12px;
 }
 
-.header-menu{
-    display: flex;
-    justify-content: space-between;
-}
 
+/* ハンバーガーメニュー内画面 */
 dialog{
+    max-height: 100vh;
     border: none;
     opacity: 0;
     transition:
@@ -300,6 +307,8 @@ dialog .header-menu-button span{
 
 nav li{
     margin: 1em auto;
+    border-top: solid 5px var(--color-blak);
+    border-bottom: solid 5px var(--color-red);
 }
 
 #header-menu-form,
@@ -360,25 +369,8 @@ nav ul li{
     }
 }
 
-/* ■■■ メイン ■■■ */
-main{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin-top: 8px;
-}
-
 
 /* ■■■ フッター ■■■ */
-footer{
-    margin-top: 24px;
-    padding-bottom: 8px;
-    color: var(--color-white);
-    background-color: var(--color-blue);
-    text-align: center;
-}
-
 footer li{
     margin: 0.8em auto;
 }
@@ -388,159 +380,136 @@ footer li button{
 }
 
 
-/* ■■■ アコーディオンメニュー ■■■ */
-details{
-    position: relative;
-    background-color: var(--color-yellow);
-    text-align: center;
-    width: var(--container-width);
-    margin: 0 auto;
-    padding: 1rem;
-    cursor: pointer;
-    border-radius: 16px;
-    transition: 1s;
-
-    &::after{
-        position: absolute;
-        content:"∨";
-        top: 75%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    &[open]::after{
-        content:"∧";
-        top: auto;
-        bottom: -1rem;
-    }
+/* ■■■ 画像のアンカーリンクボタン ■■■ */
+.button-image-icon{
+    width: var(--button-icon-size);
+    height: var(--button-icon-size);
+    background-color: var(--color-black);
+    background-image: url("../assets/img/logo/main1.svg");
+    padding: 1px;
+    border-radius: 50%;
 }
 
-summary{
-    font-family: var(--font-family-title-black);
-    font-size: var(--font-size-30);
-    list-style-type: none;
+.button-image-instagram{
+    width: var(--button-sns-size);
+    height: var(--button-sns-size);
+    margin: 16px;
+    padding: 1px;
+    background-color: var(--color-white);
+    background-image: url("../assets/img/logo/instagram.webp");
+    background-size: cover;
+    border-radius: var(--font-size-ss);
 }
 
-
-/* ■■■ アクセシビリティ ■■■ */
-/* 視覚的非表示 */
-.visually-hidden{
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
+.button-image-tiktok{
+    width: var(--button-sns-size);
+    height: var(--button-sns-size);
+    margin: 16px;
+    padding: 1px;
+    background-color: var(--color-white);
+    background-image: url("../assets/img/logo/tiktok.svg");
+    border-radius: 50%;
 }
-
-/* キーボード使用時フォーカス */
-:focus-visible{
-    outline: dashed 8px darkorange !important;
-    transition: outline-offset 0s !important;
-}
-
 
 /* ■■■ フォントファミリー ■■■ */
 /* 見出し用フォント（weight:900） */
-.font-title-black-36,
-.font-title-black-32,
-.font-title-black-30,
-.font-title-black-24,
-.font-title-black-20,
-.font-title-black-18,
+.font-title-black-llllll,
+.font-title-black-lllll,
+.font-title-black-llll,
+.font-title-black-lll,
+.font-title-black-ll,
+.font-title-black-l,
 .font-title-black,
-.font-title-black-14,
-.font-title-black-12{
+.font-title-black-s,
+.font-title-black-ss{
     font-family: var(--font-family-title-black);
     font-style: var(--font-style);
 }
 
 /* 見出し用フォント（weight:800） */
-.font-title-exbold-36,
-.font-title-exbold-32,
-.font-title-exbold-30,
-.font-title-exbold-24,
-.font-title-exbold-20,
-.font-title-exbold-18,
+.font-title-exbold-llllll,
+.font-title-exbold-lllll,
+.font-title-exbold-llll,
+.font-title-exbold-lll,
+.font-title-exbold-ll,
+.font-title-exbold-l,
 .font-title-exbold,
-.font-title-exbold-14,
-.font-title-exbold-12{
+.font-title-exbold-s,
+.font-title-exbold-ss{
     font-family: var(--font-family-title-exbold);
     font-style: var(--font-style);
 }
 
 /* テキスト用フォント（weight:700） */
-.font-text-bold-36,
-.font-text-bold-32,
-.font-text-bold-30,
-.font-text-bold-24,
-.font-text-bold-20,
-.font-text-bold-18,
+.font-text-bold-llllll,
+.font-text-bold-lllll,
+.font-text-bold-llll,
+.font-text-bold-lll,
+.font-text-bold-ll,
+.font-text-bold-l,
 .font-text-bold,
-.font-text-bold-14,
-.font-text-bold-12{
+.font-text-bold-s,
+.font-text-bold-ss{
     font-family: var(--font-family-text-bold);
     font-style: var(--font-style);
 }
 
 /* テキスト用フォント（weight:400） */
-.font-text-36,
-.font-text-32,
-.font-text-30,
-.font-text-24,
-.font-text-20,
-.font-text-18,
+.font-text-llllll,
+.font-text-lllll,
+.font-text-llll,
+.font-text-lll,
+.font-text-ll,
+.font-text-l,
 .font-text,
-.font-text-14,
-.font-text-12{
+.font-text-s,
+.font-text-ss{
     font-family: var(--font-family-text);
     font-style: var(--font-style);
 }
 
 
 /* ■■■ フォントサイズ ■■■ */
-.font-title-black-36,
-.font-title-exbold-36,
-.font-text-bold-36,
-.font-text-36{
-    font-size: var(--font-size-36);
+.font-title-black-llllll,
+.font-title-exbold-llllll,
+.font-text-bold-llllll,
+.font-text-llllll{
+    font-size: var(--font-size-llllll);
 }
 
-.font-title-black-32,
-.font-title-exbold-32,
-.font-text-bold-32,
-.font-text-32{
-    font-size: var(--font-size-32);
+.font-title-black-lllll,
+.font-title-exbold-lllll,
+.font-text-bold-lllll,
+.font-text-lllll{
+    font-size: var(--font-size-lllll);
 }
 
-.font-title-black-30,
-.font-title-exbold-30,
-.font-text-bold-30,
-.font-text-30{
-    font-size: var(--font-size-30);
+.font-title-black-llll,
+.font-title-exbold-llll,
+.font-text-bold-llll,
+.font-text-llll{
+    font-size: var(--font-size-llll);
 }
 
-.font-title-black-24,
-.font-title-exbold-24,
-.font-text-bold-24,
-.font-text-24{
-    font-size: var(--font-size-24);
+.font-title-black-lll,
+.font-title-exbold-lll,
+.font-text-bold-lll,
+.font-text-lll{
+    font-size: var(--font-size-lll);
 }
 
-.font-title-black-20,
-.font-title-exbold-20,
-.font-text-bold-20,
-.font-text-20{
-    font-size: var(--font-size-20);
+.font-title-black-ll,
+.font-title-exbold-ll,
+.font-text-bold-ll,
+.font-text-ll{
+    font-size: var(--font-size-ll);
 }
 
-.font-title-black-18,
-.font-title-exbold-18,
-.font-text-bold-18,
-.font-text-18{
-    font-size: var(--font-size-18);
+.font-title-black-l,
+.font-title-exbold-l,
+.font-text-bold-l,
+.font-text-l{
+    font-size: var(--font-size-l);
 }
 
 .font-title-black,
@@ -550,16 +519,16 @@ summary{
     font-size: var(--font-size);
 }
 
-.font-title-black-14,
-.font-title-exbold-14,
-.font-text-bold-14,
-.font-text-14{
-    font-size: var(--font-size-14);
+.font-title-black-s,
+.font-title-exbold-s,
+.font-text-bold-s,
+.font-text-s{
+    font-size: var(--font-size-s);
 }
 
-.font-title-black-12,
-.font-title-exbold-12,
-.font-text-bold-12,
-.font-text-12{
-    font-size: var(--font-size-12);
+.font-title-black-ss,
+.font-title-exbold-ss,
+.font-text-bold-ss,
+.font-text-ss{
+    font-size: var(--font-size-ss);
 }
