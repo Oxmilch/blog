@@ -8,12 +8,21 @@
 /* ■■■ ファーストビュー ■■■ */
 .firstview-period-style{
     background-color: var(--color-blue);
+    margin-top: calc(var(--default-length) * 4);
+    padding: calc(var(--default-length) * 2);
+
+    &p{
+        border: solid 2px var(--color-white);
+    }
 }
 
 .firstview-ankerlink-style{
-    grid-template-areas: 
+    grid-template-areas:
     "main    main"
     "advance public";
+    margin-top: calc(var(--default-length) * 4);
+    row-gap: calc(var(--default-length) * 4);
+    column-gap: calc(var(--default-length) * 2);
 }
 
 .firstview-ankerlink-main-style{
@@ -34,24 +43,12 @@
 
 /* ■■■ メインコンテンツ ■■■ */
 .main-content-style{
-    position: relative;
     margin-top: calc(var(--default-length) * 3);
-    z-index: -1;
-}
-
-.main-content-style::after{
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 48px;
-    background-color: var(--color-white);
-    z-index: 0;
 }
 
 .main-content-workshop-style{
     position: relative;
+    top: calc(var(--default-length) * -6);
     z-index: 10;
 }
 
@@ -64,6 +61,13 @@
     margin-top: calc(var(--default-length) * 4);
 }
 
+.main-content-workshop-main-base-style,
+.main-content-workshop-advance-base-style{
+    width: 100%;
+    padding: calc(var(--default-length) * 2);
+    background-color: var(--color-white);
+}
+
 .main-content-workshop-advance-style{
     border: solid 2px var(--color-black);
     margin-top: calc(var(--default-length) * 4);
@@ -72,6 +76,5 @@
 .main-content-workshop-public-style{
     border: solid 2px var(--color-black);
     background-color: var(--color-yellow);
-    margin-top: calc(var(--default-length) * 4);
 }
 

@@ -198,14 +198,15 @@ html{
     gap: var(--default-length);
 }
 
-/* 枠の基本形状（背景色・枠の色は各々で） */
+/* 枠の基本形状 */
 .box-square,
 .box-round,
 .box-round-shadow{
     width: 100%;
     height: fit-content;
-    padding: var(--default-length);
-    border: solid 4px transparent;
+    padding: calc(var(--default-length) * 2);
+    border: solid 2px transparent;
+    background-color: var(--color-white);
 }
 
 .box-round,
@@ -217,6 +218,7 @@ html{
     box-shadow: 5px 5px 0 var(--color-black);
 }
 
+/* 上下の境界が波模様 */
 .box-wave-blue{
     --mask:
         radial-gradient(26.83px at 50% 36px,#000 99%,#0000 101%) 50% 0/96px 51% repeat-x,
@@ -232,6 +234,7 @@ html{
     -webkit-mask: var(--mask);
 }
 
+/* 背景が斜めのストライプ模様 */
 .box-stripe-red{
     width: 100%;
     height: 100%;
@@ -245,6 +248,7 @@ html{
             var(--color-white-translucent) calc(var(--default-length) * 2.5));
 }
 
+/* 背景が水玉模様 */
 .box-dot-green{
     background-color: var(--color-green);
     background-image:
@@ -255,15 +259,16 @@ html{
     background-repeat: repeat;
 }
 
+/* 背景が市松模様 */
 .box-checker-yellow{
     width: 100%;
     height: 100%;
-    background-color: var(--color-yellow);
+    background-color: transparent;
     background-image:
         repeating-conic-gradient(
-            var(--color-white) 0deg 90deg,
+            var(--color-yellow) 0deg 90deg,
             transparent 90deg 180deg,
-            var(--color-white) 180deg 270deg,
+            var(--color-yellow) 180deg 270deg,
             transparent 270deg 360deg);
     background-size: 50px 50px;
     background-repeat: repeat;
