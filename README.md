@@ -1,3 +1,21 @@
+# コーディング規約
+- HTML上では文書と構造に関するもののみを記述する。
+- 構造、ラッパー、フレックスボックス、グリッドレイアウトはクラスで指定する
+    - エリア：一番の大枠、area-mobile, area-desktop, area-menuで設定
+    - フレックスボックス：flex
+    - グリッドレイアウト：grid
+    - 要素の形：box-〇〇
+
+- フォントサイズ、フォントの色、テキストの位置はクラスで指定する。
+  - フォントサイズ：font-title-black-l, font-text-s 等のクラスを利用
+  - フォントの色：font-color-white, font-color-green-shadow 等を利用
+  - テキストの位置：text-left, text-center, text-right
+
+- 要素におけるスタイルは、〇〇-styleの命名とし、共通のクラスから不足している内容を記載する。
+
+- id を指定する場合は、ページ内リンク、またはJavaScriptで制御が必要な場合のみとする。スタイルの設定はしない。
+
+
 # フォント
 ## 利用フォント
 - [Google Fonts - M PLUS Rounded 1c](https://fonts.google.com/specimen/M+PLUS+Rounded+1c)
