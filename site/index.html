@@ -24,202 +24,230 @@
     <script src="./script/common.js" defer></script>
 </head>
 <body id="top">
-    <div class="area-mobile">
-        <header class="wrapper flex header-menu">
+    <dialog id="hamburger-menu" class="layout-menu" aria-label="メニュー">
+        <div class="container flex header-menu">
+            <a class="ankerlink-image-top"></a>
+            <button type="button" class="header-menu-button" aria-label="メニューを閉じる" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.close()">
+                <span></span>
+            </button>
+        </div>
+        <nav>
+            <ul class="font-title-exbold-ll text-center">
+                <li><a href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る">トップページ</a></li>
+                <li><a href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
+                <li><a href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
+                <li><a href="./public-recruitment.html" alt="">Tシャツデザインにチャレンジ</a></li>
+            </ul>
+            <ul class="flex font-title-exbold text-center">
+                <li><a href="#" alt="">ワークショップ<br>お申し込み</a></li>
+                <li><a href="#" alt="">Tシャツ<br>お申し込み</a></li>
+            </ul>
+            <ul class="flex container">
+                <li><a class="ankerlink-image-instagram" href="#" alt="2026年福岡市民が作る大アート展のInstagramアカウントを開く"></a></li>
+            </ul>
+            <ul class="flex container">
+                <li class="font-title-exbold">福岡青年会議所の<br>発信はこちら</li>
+                <li>
+                    <a class="ankerlink-image-instagram-small" href="https://www.instagram.com/fukuokajc/" target="_blank" alt="主催している福岡市青年会議所のInstagramアカウントを開く"></a>
+                    <a class="ankerlink-image-tiktok-small" href="https://www.tiktok.com/@fukuokaj" target="_blank" alt="主催している福岡市青年会議所のTikTokアカウントを開く"></a>
+                </li>
+            </ul>
+        </nav>
+    </dialog>
+    <div class="layout-mobile">
+        <header class="container flex header-menu">
             <a class="header-button ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
             <button type="button" class="header-button header-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.open()">
                 <span></span>
             </button>
         </header>
+        <section id="firstview">
+            <h1 class="container">
+                <img src="./assets/img/logo/main2.svg" alt="福岡市民が作る大アート展 誰もがアーティスト" fetchpriority="high">
+            </h1>
+            <div class="firstview-period-style">
+                <div class="container text-right font-color-white">
+                    <p class="font-title-exbold-ss">福岡市美術館 ギャラリースペースA〜F</p>
+                    <p class="font-title-exbold-llll">2026.8.25~8.30</p>
+                    <p class="font-title-exbold">10:00~17:00</p>
+                </div>
+            </div>
+            <div class="container grid firstview-ankerlink-style">
+                <a class="box-round firstview-ankerlink-main-style
+                        text-center font-title-exbold-llll font-color-white"
+                   href="./workshop-main.html"
+                   alt="2026年福岡市民が作る大アート展の2026年8月30日の当日ワークショップについて詳しく知る">
+                    みんなでつくる<br>
+                    大アート展
+                </a>
+                <a class="box-round firstview-ankerlink-advance-style
+                        text-center font-title-exbold font-color-white"
+                   href="./workshop-in-advance.html"
+                   alt="2026年福岡市民が作る大アート展の2026年7月から8月の事前ワークショップについて詳しく知る">
+                    ワークショップ<br>
+                    にチャレンジ
+                </a>
+                <a class="box-round firstview-ankerlink-public-style
+                        text-center font-title-exbold"
+                   href="./public-recruitment.html"
+                   alt="2026年福岡市民が作る大アート展のTシャツ公募について詳しく知る">
+                    Tシャツデザイン<br>
+                    にチャレンジ
+                </a>
+            </div>
+        </section>
         <main>
-            <section>
-                <h1 class="wrapper">
-                    <img src="./assets/img/logo/main2.svg" alt="福岡市民が作る大アート展 誰もがアーティスト" fetchpriority="high">
-                </h1>
-                <div class="firstview-period-style">
-                    <div class="wrapper text-right font-color-white">
-                        <p class="font-title-exbold-ss">福岡市美術館 ギャラリースペースA〜F</p>
-                        <p class="font-title-exbold-llll">2026.8.25~8.30</p>
-                        <p class="font-title-exbold">10:00~17:00</p>
-                    </div>
-                </div>
-                <div class="wrapper grid firstview-ankerlink-style">
-                     <a class="box-round firstview-ankerlink-main-style
-                               text-center font-title-exbold-llll font-color-white"
-                        href="./workshop-main.html"
-                        alt="2026年福岡市民が作る大アート展の2026年8月30日の当日ワークショップについて詳しく知る">
-                        みんなでつくる<br>
-                        大アート展
-                     </a>
-                     <a class="box-round firstview-ankerlink-advance-style
-                               text-center font-title-exbold font-color-white"
-                        href="./workshop-in-advance.html"
-                        alt="2026年福岡市民が作る大アート展の2026年7月から8月の事前ワークショップについて詳しく知る">
-                        ワークショップ<br>
-                        にチャレンジ
-                     </a>
-                     <a class="box-round firstview-ankerlink-public-style
-                               text-center font-title-exbold"
-                        href="./public-recruitment.html"
-                        alt="2026年福岡市民が作る大アート展のTシャツ公募について詳しく知る">
-                        Tシャツデザイン<br>
-                        にチャレンジ
-                     </a>
-                </div>
-            </section>
-            <section class="box-square-checker-yellow main-content-style">
-                <dl>
-                    <div class="main-content-workshop-style">
-                        <div class="wrapper main-content-workshop-top-style">
-                            <dt>
-                                <h2 class="font-color-white">誰もがアーティスト</h2>
-                            </dt>
-                            <dd class="text-left font-text font-color-white">
-                                「未来の福岡」をテーマに創作した子どもたちの作品を展示し、市民交流と文化への参加を広げるアートプロジェクトです。
-                                美術館や公共交通機関で展開し、入場・参加無料でご参加いただけます。
-                            </dd>
-                        </div>
-                        <div class="box-round main-content-workshop-main-style">
-                            <dt>
-                                <h2>みんなでつくる大アート展</h2>
-                            </dt>
-                            <dd class="text-left font-text">
-                                当日限定のワークショップとして「怒られないらくがき部屋」、ライブパフォーマンス、オリジナルシール・Tシャツ作成を開催！
-                            </dd>
-                            <div>
-                                <button type="button" aria-label="2026年福岡市民が作る大アート展の2026年8月30日の当日ワークショップについて詳しく知る" onclick="PageOpen.eventWorkShopMain()">
-                                    もっと見る→
-                                </button>
-                            </div>
-                        </div>
-                        <div class="box-round main-content-workshop-advance-style">
-                            <dt>
-                                <h2>ワークショップにチャレンジ</h2>
-                            </dt>
-                            <dd class="text-left font-text">
-                                子どもたちが自由な発想で「未来の福岡」を表現！アーティストとの制作を通してつくることの楽しさを体験しよう！
-                            </dd>
-                            <div>
-                                <button type="button" onclick="PageOpen.eventWorkShopInAdvance()">もっと見る→</button>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <a href="" alt="">ワークショップに応募</a>
-                        </div>
-                    </div>
-                    <div class="main-content-workshop-public-style">
+            <dl class="box-checker-yellow main-content-style">
+                <div class="box-wave-blue main-content-workshop-style">
+                    <div class="container main-content-workshop-top-style">
                         <dt>
-                            <h2>Tシャツデザインにチャレンジ</h2>
+                            <h2 class="font-color-white">誰もがアーティスト</h2>
+                        </dt>
+                        <dd class="text-left font-text font-color-white">
+                            「未来の福岡」をテーマに創作した子どもたちの作品を展示し、市民交流と文化への参加を広げるアートプロジェクトです。
+                            美術館や公共交通機関で展開し、入場・参加無料でご参加いただけます。
+                        </dd>
+                    </div>
+                    <div class="box-round box-stripe-red main-content-workshop-main-style">
+                        <dt>
+                            <h2>みんなでつくる大アート展</h2>
                         </dt>
                         <dd class="text-left font-text">
-                            あなたのデザインしたTシャツが展示されるかも！？
-                            夏休みの思い出にアートに触れよう！
+                            当日限定のワークショップとして「怒られないらくがき部屋」、ライブパフォーマンス、オリジナルシール・Tシャツ作成を開催！
                         </dd>
                         <div>
-                            <button type="button" onclick="PageOpen.eventPublicRecruitment()">もっと見る→</button>
+                            <button type="button" aria-label="2026年福岡市民が作る大アート展の2026年8月30日の当日ワークショップについて詳しく知る" onclick="PageOpen.eventWorkShopMain()">
+                                もっと見る→
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-round box-dot-green main-content-workshop-advance-style">
+                        <dt>
+                            <h2>ワークショップにチャレンジ</h2>
+                        </dt>
+                        <dd class="text-left font-text">
+                            子どもたちが自由な発想で「未来の福岡」を表現！アーティストとの制作を通してつくることの楽しさを体験しよう！
+                        </dd>
+                        <div>
+                            <button type="button" onclick="PageOpen.eventWorkShopInAdvance()">もっと見る→</button>
                         </div>
                     </div>
                     <div class="text-center">
-                        <a href="" alt="">Tシャツデザインに応募</a>
+                        <a href="#" alt="">ワークショップに応募</a>
                     </div>
-                </dl>
-            </section>
-            <section id="main-schedule">
-                <h2>スケジュール案内</h2>
-                <ul class="wrapper">
-                    <li>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>6.5～8.21 Tシャツ公募</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>オリジナルTシャツ大募集！</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </li>
-                    <li>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th colspan="2">7.25～ 事前ワークショップ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>7.25</td>
-                                    <td>西鉄バス内ポスター広告作成</td>
-                                </tr>
-                                <tr>
-                                    <td>7.26</td>
-                                    <td>福岡市営地下鉄扉口広告作成</td>
-                                </tr>
-                                <tr>
-                                    <td>8.1</td>
-                                    <td>JR車両中吊り広告</td>
-                                </tr>
-                                <tr>
-                                    <td>8.15</td>
-                                    <td>西鉄電車中吊り広告</td>
-                                </tr>
-                                <tr>
-                                    <td>8.16</td>
-                                    <td>オブジェ作成</td>
-                                </tr>
-                                <tr>
-                                    <td>8.22</td>
-                                    <td>オブジェ作成</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </li>
-                    <li>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>8.30 当日ワークショップ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>怒られないらくがき部屋</td>
-                                </tr>
-                                <tr>
-                                    <td>ライブパフォーマンス</td>
-                                </tr>
-                                    <td>オリジナルシール作成</td>
-                                </tr>
-                                <tr>
-                                    <td>オリジナルTシャツ作成</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </li>
-                </ul>
-            </section>
-            <section id="main-access" class="wrapper">
-                <h2>アクセス</h2>
-                <h3>地下鉄、西鉄バス、お車でも！</h3>
-                <p>地下鉄から徒歩10分！</p>
-                <p>西鉄バスから徒歩3分！駐車場有！</p>
-                <button type="button" onclick="PageOpen.venueFukuokaArtMusiumAccess()">
-                    福岡市美術館へのアクセスはコチラ
-                </button>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5589.9943593901!2d130.37608059363473!3d33.58374907044375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193cd9b0690ad%3A0x34c4517959bb6062!2z56aP5bKh5biC576O6KGT6aSo!5e0!3m2!1sja!2sjp!4v1777515712093!5m2!1sja!2sjp"
-                    height="500px"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </section>
+                </div>
+                <div class="box-round main-content-workshop-public-style">
+                    <dt>
+                        <h2>Tシャツデザインにチャレンジ</h2>
+                    </dt>
+                    <dd class="text-left font-text">
+                        あなたのデザインしたTシャツが展示されるかも！？
+                        夏休みの思い出にアートに触れよう！
+                    </dd>
+                    <div>
+                        <button type="button" onclick="PageOpen.eventPublicRecruitment()">もっと見る→</button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" alt="">Tシャツデザインに応募</a>
+                </div>
+            </dl>
         </main>
+        <section id="schedule">
+            <h2>スケジュール案内</h2>
+            <ul class="container">
+                <li>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>6.5～8.21 Tシャツ公募</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>オリジナルTシャツ大募集！</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">7.25～ 事前ワークショップ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7.25</td>
+                                <td>西鉄バス内ポスター広告作成</td>
+                            </tr>
+                            <tr>
+                                <td>7.26</td>
+                                <td>福岡市営地下鉄扉口広告作成</td>
+                            </tr>
+                            <tr>
+                                <td>8.1</td>
+                                <td>JR車両中吊り広告</td>
+                            </tr>
+                            <tr>
+                                <td>8.15</td>
+                                <td>西鉄電車中吊り広告</td>
+                            </tr>
+                            <tr>
+                                <td>8.16</td>
+                                <td>オブジェ作成</td>
+                            </tr>
+                            <tr>
+                                <td>8.22</td>
+                                <td>オブジェ作成</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>8.30 当日ワークショップ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>怒られないらくがき部屋</td>
+                            </tr>
+                            <tr>
+                                <td>ライブパフォーマンス</td>
+                            </tr>
+                                <td>オリジナルシール作成</td>
+                            </tr>
+                            <tr>
+                                <td>オリジナルTシャツ作成</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+        </section>
+        <aside class="container">
+            <h2>アクセス</h2>
+            <h3>地下鉄、西鉄バス、お車でも！</h3>
+            <p>地下鉄から徒歩10分！</p>
+            <p>西鉄バスから徒歩3分！駐車場有！</p>
+            <button type="button" onclick="PageOpen.venueFukuokaArtMusiumAccess()">
+                福岡市美術館へのアクセスはコチラ
+            </button>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5589.9943593901!2d130.37608059363473!3d33.58374907044375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193cd9b0690ad%3A0x34c4517959bb6062!2z56aP5bKh5biC576O6KGT6aSo!5e0!3m2!1sja!2sjp!4v1777515712093!5m2!1sja!2sjp"
+                height="500px"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </aside>
         <footer class="font-text-ss">
-            <div class="wrapper">
+            <div class="container">
                 <img src="./assets/img/logo/main2.svg" alt="福岡市民がつくる大アート展〜誰もがアーティスト〜">
                 <ul>
                     <li><button type="button" onclick="PageOpen.eventTop()">トップページ</button></li>
@@ -238,36 +266,6 @@
             </div>
         </footer>
     </div>
-    <div class="area-desktop"></div>
-    <dialog id="hamburger-menu" class="area-menu" aria-label="メニュー">
-        <div class="wrapper flex header-menu">
-            <a class="ankerlink-image-top"></a>
-            <button type="button" class="header-menu-button" aria-label="メニューを閉じる" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.close()">
-                <span></span>
-            </button>
-        </div>
-        <nav>
-            <ul class="font-title-exbold-ll text-center">
-                <li><a href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る">トップページ</a></li>
-                <li><a href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
-                <li><a href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
-                <li><a href="./public-recruitment.html" alt="">Tシャツデザインにチャレンジ</a></li>
-            </ul>
-            <ul class="flex font-title-exbold text-center">
-                <li><a href="#" alt="">ワークショップ<br>お申し込み</a></li>
-                <li><a href="#" alt="">Tシャツ<br>お申し込み</a></li>
-            </ul>
-            <ul class="flex wrapper">
-                <li><a class="ankerlink-image-instagram" href="#" alt="2026年福岡市民が作る大アート展のInstagramアカウントを開く"></a></li>
-            </ul>
-            <ul class="flex wrapper">
-                <li class="font-title-exbold">福岡青年会議所の<br>発信はこちら</li>
-                <li>
-                    <a class="ankerlink-image-instagram-small" href="https://www.instagram.com/fukuokajc/" target="_blank" alt="主催している福岡市青年会議所のInstagramアカウントを開く"></a>
-                    <a class="ankerlink-image-tiktok-small" href="https://www.tiktok.com/@fukuokaj" target="_blank" alt="主催している福岡市青年会議所のTikTokアカウントを開く"></a>
-                </li>
-            </ul>
-        </nav>
-    </dialog>
+    <div class="layout-desktop"></div>
 </body>
 </html>

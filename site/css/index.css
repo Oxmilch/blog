@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* ■■■ 背景設定 ■■■ */
-.area-mobile{
+.layout-mobile{
     background-image: url("../assets/img/background/geometric1.svg");
 }
 
@@ -34,11 +34,25 @@
 
 /* ■■■ メインコンテンツ ■■■ */
 .main-content-style{
+    position: relative;
     margin-top: calc(var(--default-length) * 3);
+    z-index: -1;
+}
+
+.main-content-style::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 48px;
+    background-color: var(--color-white);
+    z-index: 0;
 }
 
 .main-content-workshop-style{
-    background-color: var(--color-blue);
+    position: relative;
+    z-index: 10;
 }
 
 .main-content-workshop-top-style{
@@ -46,13 +60,18 @@
 }
 
 .main-content-workshop-main-style{
-    background-color: var(--color-red);
+    border: solid 2px var(--color-black);
+    margin-top: calc(var(--default-length) * 4);
 }
 
 .main-content-workshop-advance-style{
-    background-color: var(--color-green);
+    border: solid 2px var(--color-black);
+    margin-top: calc(var(--default-length) * 4);
 }
 
 .main-content-workshop-public-style{
+    border: solid 2px var(--color-black);
     background-color: var(--color-yellow);
+    margin-top: calc(var(--default-length) * 4);
 }
+

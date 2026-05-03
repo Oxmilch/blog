@@ -92,3 +92,4 @@
 # その他
 ## 計算ツール
 - [Clamp関数生成ツール](https://free.page-craft.jp/clamp)
+- [CSS Generators - Wavy Pattern](https://css-generators.com/wavy-shapes/)

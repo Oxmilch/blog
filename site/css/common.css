@@ -18,6 +18,7 @@
 
     /* 色 */
     --color-white: #FAFAFA;
+    --color-white-translucent: #FAFAFAB3;
     --color-black: #333;
     --color-black-translucent: #333333B3;
     --color-red:#ED1818;
@@ -86,7 +87,7 @@
 }
 
 
-/* ■■■ 基本となる表示範囲（ラッパー・フレックス・グリッド） ■■■ */
+/* ■■■ 基本となる表示範囲（レイアウト・コンテナ・フレックス・グリッド） ■■■ */
 html{
     scroll-behavior: smooth;
     background-color: var(--color-white);
@@ -97,7 +98,7 @@ html{
     transition: all var(--transition-time);
 }
 
-.area-mobile{
+.layout-mobile{
     position: fixed;
     top: 0;
     left: 50%;
@@ -116,7 +117,7 @@ html{
     z-index: 0;
 }
 
-.area-menu{
+.layout-menu{
     position: fixed;
     top: 0;
     left: 50%;
@@ -162,7 +163,7 @@ html{
     }
 }
 
-.area-desktop{
+.layout-desktop{
     position: fixed;
     top: 0px;
     width: 100vw;
@@ -172,8 +173,8 @@ html{
     z-index: -100;
 }
 
-/* ラッパー */
-.wrapper{
+/* コンテナ */
+.container{
     width: var(--content-width);
     max-width: var(--content-width);
     margin: 0 auto;
@@ -204,7 +205,7 @@ html{
     width: 100%;
     height: fit-content;
     padding: var(--default-length);
-    border: solid var(--default-length) transparent;
+    border: solid 4px transparent;
 }
 
 .box-round,
@@ -216,15 +217,53 @@ html{
     box-shadow: 5px 5px 0 var(--color-black);
 }
 
-.box-square-checker-yellow{
+.box-wave-blue{
+    --mask:
+        radial-gradient(26.83px at 50% 36px,#000 99%,#0000 101%) 50% 0/96px 51% repeat-x,
+        radial-gradient(26.83px at 50% -12px,#0000 99%,#000 101%) calc(50% - 48px) 24px/96px calc(51% - 24px) repeat-x,
+        radial-gradient(26.83px at 50% calc(100% - 36px),#000 99%,#0000 101%) 50% 100%/96px 51% repeat-x,
+        radial-gradient(26.83px at 50% calc(100% + 12px),#0000 99%,#000 101%) calc(50% - 48px) calc(100% - 24px)/96px calc(51% - 24px) repeat-x;
     width: 100%;
     height: 100%;
-    background-color: var(--color-white);
+    background-color: var(--color-blue);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    mask: var(--mask);
+    -webkit-mask: var(--mask);
+}
+
+.box-stripe-red{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-red);
+    background-image:
+        repeating-linear-gradient(
+            135deg,
+            transparent 0px,
+            transparent calc(var(--default-length) * 2),
+            var(--color-white-translucent) calc(var(--default-length) * 2),
+            var(--color-white-translucent) calc(var(--default-length) * 2.5));
+}
+
+.box-dot-green{
+    background-color: var(--color-green);
+    background-image:
+        radial-gradient(var(--color-white-translucent) 30%, transparent 30%),
+        radial-gradient(var(--color-white-translucent) 30%, transparent 30%);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+    background-repeat: repeat;
+}
+
+.box-checker-yellow{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-yellow);
     background-image:
         repeating-conic-gradient(
-            var(--color-yellow-translucent) 0deg 90deg,
+            var(--color-white) 0deg 90deg,
             transparent 90deg 180deg,
-            var(--color-yellow-translucent) 180deg 270deg,
+            var(--color-white) 180deg 270deg,
             transparent 270deg 360deg);
     background-size: 50px 50px;
     background-repeat: repeat;
