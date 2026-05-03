@@ -24,49 +24,65 @@
     <script src="./script/common.js" defer></script>
 </head>
 <body id="top">
-    <div id="area-mobile">
-        <header class="header-menu container">
-            <a class="ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
-            <button type="button" class="header-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.open()">
+    <div class="area-mobile">
+        <header class="wrapper flex header-menu">
+            <a class="header-button ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
+            <button type="button" class="header-button header-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.open()">
                 <span></span>
             </button>
         </header>
         <main>
-            <section id="main-firstview" class="container">
-                <h1><img src="./assets/img/logo/main2.svg" alt="福岡市民が作る大アート展 誰もがアーティスト" fetchpriority="high"></h1>
-                <div id="main-firstview-period">
-                    <p class="font-title-exbold-ss">福岡市美術館 ギャラリースペースA〜F</p>
-                    <p class="font-title-exbold-llll">2026.8.25~8.30</p>
-                    <p class="font-title-exbold">10:00~17:00</p>
+            <section>
+                <h1 class="wrapper">
+                    <img src="./assets/img/logo/main2.svg" alt="福岡市民が作る大アート展 誰もがアーティスト" fetchpriority="high">
+                </h1>
+                <div class="firstview-period-style">
+                    <div class="wrapper text-right font-color-white">
+                        <p class="font-title-exbold-ss">福岡市美術館 ギャラリースペースA〜F</p>
+                        <p class="font-title-exbold-llll">2026.8.25~8.30</p>
+                        <p class="font-title-exbold">10:00~17:00</p>
+                    </div>
                 </div>
-                <div id="main-firstview-button">
-                     <button type="button" id="main-firstview-button-main" class="font-title-exbold-llll" aria-label="2026年福岡市民が作る大アート展の2026年8月30日の当日ワークショップについて詳しく知る" onclick="PageOpen.eventWorkShopMain()">
-                        <p>みんなでつくる<br>大アート展</p>
-                     </button>
-                     <button type="button" id="main-firstview-button-advance" class="font-title-exbold" aria-label="2026年福岡市民が作る大アート展の2026年7月から8月の事前ワークショップについて詳しく知る" onclick="PageOpen.eventWorkShopInAdvance()">
-                        <p>ワークショップ<br>にチャレンジ</p>
-                     </button>
-                     <button type="button" id="main-firstview-button-public" class="font-title-exbold" aria-label="2026年福岡市民が作る大アート展のTシャツ公募について詳しく知る" onclick="PageOpen.eventPublicRecruitment()">
-                        <p>Tシャツデザイン<br>にチャレンジ</p>
-                     </button>
+                <div class="wrapper grid firstview-ankerlink-style">
+                     <a class="box-round firstview-ankerlink-main-style
+                               text-center font-title-exbold-llll font-color-white"
+                        href="./workshop-main.html"
+                        alt="2026年福岡市民が作る大アート展の2026年8月30日の当日ワークショップについて詳しく知る">
+                        みんなでつくる<br>
+                        大アート展
+                     </a>
+                     <a class="box-round firstview-ankerlink-advance-style
+                               text-center font-title-exbold font-color-white"
+                        href="./workshop-in-advance.html"
+                        alt="2026年福岡市民が作る大アート展の2026年7月から8月の事前ワークショップについて詳しく知る">
+                        ワークショップ<br>
+                        にチャレンジ
+                     </a>
+                     <a class="box-round firstview-ankerlink-public-style
+                               text-center font-title-exbold"
+                        href="./public-recruitment.html"
+                        alt="2026年福岡市民が作る大アート展のTシャツ公募について詳しく知る">
+                        Tシャツデザイン<br>
+                        にチャレンジ
+                     </a>
                 </div>
             </section>
-            <section id="main-content">
-                <dl class="container">
-                    <div id="main-content-haeding">
+            <section class="box-square-checker-yellow main-content-style">
+                <dl class="wrapper">
+                    <div>
                         <dt>
-                            <h2>誰もが<br>アーティスト</h2>
+                            <h2 class="font-color">誰もがアーティスト</h2>
                         </dt>
-                        <dd class="font-text">
+                        <dd class="text-left font-text">
                             「未来の福岡」をテーマに創作した子どもたちの作品を展示し、市民交流と文化への参加を広げるアートプロジェクトです。
                             美術館や公共交通機関で展開し、入場・参加無料でご参加いただけます。
                         </dd>
                     </div>
-                    <div id="main-content-main">
+                    <div>
                         <dt>
-                            <h2>当日<br>ワークショップ</h2>
+                            <h2>みんなでつくる大アート展</h2>
                         </dt>
-                        <dd class="font-text">
+                        <dd class="text-left font-text">
                             当日限定のワークショップとして「怒られないらくがき部屋」、ライブパフォーマンス、オリジナルシール・Tシャツ作成を開催！
                         </dd>
                         <div>
@@ -75,22 +91,25 @@
                             </button>
                         </div>
                     </div>
-                    <div id="main-content-advance">
+                    <div>
                         <dt>
-                            <h2>事前<br>ワークショップ</h2>
+                            <h2>ワークショップにチャレンジ</h2>
                         </dt>
-                        <dd class="font-text">
+                        <dd class="text-left font-text">
                             子どもたちが自由な発想で「未来の福岡」を表現！アーティストとの制作を通してつくることの楽しさを体験しよう！
                         </dd>
                         <div>
                             <button type="button" onclick="PageOpen.eventWorkShopInAdvance()">もっと見る→</button>
                         </div>
                     </div>
+                    <div class="text-center">
+                        <a href="" alt="">ワークショップに応募</a>
+                    </div>
                     <div id="main-content-public">
                         <dt>
-                            <h2>Ｔシャツ公募</h2>
+                            <h2>Tシャツデザインにチャレンジ</h2>
                         </dt>
-                        <dd class="font-text">
+                        <dd class="text-left font-text">
                             あなたのデザインしたTシャツが展示されるかも！？
                             夏休みの思い出にアートに触れよう！
                         </dd>
@@ -98,11 +117,14 @@
                             <button type="button" onclick="PageOpen.eventPublicRecruitment()">もっと見る→</button>
                         </div>
                     </div>
+                    <div class="text-center">
+                        <a href="" alt="">Tシャツデザインに応募</a>
+                    </div>
                 </dl>
             </section>
             <section id="main-schedule">
                 <h2>スケジュール案内</h2>
-                <ul class="container">
+                <ul class="wrapper">
                     <li>
                         <table>
                             <thead>
@@ -176,7 +198,7 @@
                     </li>
                 </ul>
             </section>
-            <section id="main-access" class="container">
+            <section id="main-access" class="wrapper">
                 <h2>アクセス</h2>
                 <h3>地下鉄、西鉄バス、お車でも！</h3>
                 <p>地下鉄から徒歩10分！</p>
@@ -195,7 +217,7 @@
             </section>
         </main>
         <footer class="font-text-ss">
-            <div class="container">
+            <div class="wrapper">
                 <img src="./assets/img/logo/main2.svg" alt="福岡市民がつくる大アート展〜誰もがアーティスト〜">
                 <ul>
                     <li><button type="button" onclick="PageOpen.eventTop()">トップページ</button></li>
@@ -214,31 +236,33 @@
             </div>
         </footer>
     </div>
-    <div id="area-desktop"></div>
-    <dialog id="area-menu" aria-label="メニュー">
-        <div class="header-menu container">
-            <button type="button" class="ankerlink-image-top" onclick="PageOpen.eventTop()" aria-label="2026年福岡市民が作る大アート展のトップページに戻る"></button>
+    <div class="area-desktop"></div>
+    <dialog id="hamburger-menu" class="area-menu" aria-label="メニュー">
+        <div class="wrapper flex header-menu">
+            <a class="ankerlink-image-top"></a>
             <button type="button" class="header-menu-button" aria-label="メニューを閉じる" aria-expanded="false" aria-controls="menu-area" onclick="HamburgerMenu.close()">
                 <span></span>
             </button>
         </div>
-        <nav class="font-title-exbold-ll">
-            <ul>
-                <li><button type="button" onclick="PageOpen.eventTop()">トップページ</button></li>
-                <li><button type="button" onclick="PageOpen.eventWorkShopMain()">みんなでつくる大アート展</button></li>
-                <li><button type="button" onclick="PageOpen.eventWorkShopInAdvance()">ワークショップにチャレンジ</button></li>
-                <li><button type="button" onclick="PageOpen.eventPublicRecruitment()">Tシャツデザインにチャレンジ</button></li>
-                <li id="header-menu-form">
-                    <button type="button" aria-label="" onclick="">ワークショップ<br>お申し込み</button>
-                    <button type="button" aria-label="" onclick="PageOpen.eventForm()">Tシャツ<br>お申し込み</button>
-                </li>
-                <li id="header-menu-sns">
-                    <a class="ankerlink-image-instagram" href="" alt="2026年福岡市民が作る大アート展のInstagramアカウントを開く"></a>
-                </li>
-                <li id="header-menu-fjc" class="font-title-exbold">
-                    <label>福岡青年会議所の<br>発信はこちら</label>
-                    <a class="ankerlink-image-instagram" href="https://www.instagram.com/fukuokajc/" target="_blank" alt="主催している福岡市青年会議所のInstagramアカウントを開く"></a>
-                    <a class="ankerlink-image-tiktok" href="https://www.tiktok.com/@fukuokaj" target="_blank" alt="主催している福岡市青年会議所のTikTokアカウントを開く"></a>
+        <nav>
+            <ul class="font-title-exbold-ll text-center">
+                <li><a href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る">トップページ</a></li>
+                <li><a href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
+                <li><a href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
+                <li><a href="./public-recruitment.html" alt="">Tシャツデザインにチャレンジ</a></li>
+            </ul>
+            <ul class="flex font-title-exbold text-center">
+                <li><a href="#" alt="">ワークショップ<br>お申し込み</a></li>
+                <li><a href="#" alt="">Tシャツ<br>お申し込み</a></li>
+            </ul>
+            <ul class="flex wrapper">
+                <li><a class="ankerlink-image-instagram" href="#" alt="2026年福岡市民が作る大アート展のInstagramアカウントを開く"></a></li>
+            </ul>
+            <ul class="flex wrapper">
+                <li class="font-title-exbold">福岡青年会議所の<br>発信はこちら</li>
+                <li>
+                    <a class="ankerlink-image-instagram-small" href="https://www.instagram.com/fukuokajc/" target="_blank" alt="主催している福岡市青年会議所のInstagramアカウントを開く"></a>
+                    <a class="ankerlink-image-tiktok-small" href="https://www.tiktok.com/@fukuokaj" target="_blank" alt="主催している福岡市青年会議所のTikTokアカウントを開く"></a>
                 </li>
             </ul>
         </nav>

@@ -1,177 +1,37 @@
 @charset "UTF-8";
 
 /* ■■■ 背景設定 ■■■ */
-#area-mobile{
+.area-mobile{
     background-image: url("../assets/img/background/geometric1.svg");
 }
 
 /* ■■■ ファーストビュー ■■■ */
 /* ファーストビューの基本スタイル */
-#main-firstview-period{
-    position: relative;
-    width: 100%;
-    text-align: right;
-    color: var(--color-font-white);
+.firstview-period-style{
     background-color: var(--color-blue);
-    border: solid 3px var(--color-black);
-    border-radius: 24px;
-    line-height: 1.2;
-    padding: 16px 16px 8px;
-    margin-top: 1em;
 }
 
-#main-firstview-period p:nth-child(2){
-    margin: 0 0 0 auto;
-    width: fit-content;
-    border-bottom: 3px solid var(--color-white);
+.firstview-ankerlink-style{
+    grid-template-areas: 
+    "main    main"
+    "advance public";
 }
 
-#main-firstview-button{
-    display: grid;
-    gap: 2em 1em;
-    grid-template-areas:
-        "main     main"
-        "workshop public";
-    grid-template-rows: 7.5rem 7.5rem;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 2em;
-}
-
-#main-firstview-button button{
-    position: relative;
-    padding: 16px 8px;
-    border: solid 3px var(--color-black);
-    border-radius: 24px;
-    line-height: 1.2;
-    padding: 16px 16px 8px;
-}
-
-#main-firstview-button-main{
+.firstview-ankerlink-main-style{
     grid-area: main;
-    color: var(--color-font-white);
     background-color: var(--color-red);
 }
 
-#main-firstview-button-advance{
-    grid-area: workshop;
-    color: var(--color-font-white);
+.firstview-ankerlink-advance-style{
+    grid-area: advance;
     background-color: var(--color-green);
 }
 
-#main-firstview-button-public{
+.firstview-ankerlink-public-style{
     grid-area: public;
-    color: var(--color-font);
     background-color: var(--color-yellow);
 }
 
-/* ファーストビューの左上の装飾文字 */
-#main-firstview-period::before,
-#main-firstview-button-main::before,
-#main-firstview-button-advance::before,
-#main-firstview-button-public::before{
-    position: absolute;
-    top: calc(var(--font-size) * -1);
-    left: 6px;
-    font-family: var(--font-family-title-black);
-    width: fit-content;
-    background-color: var(--color-white);
-    border: solid 2px var(--color-black);
-    border-radius: 2em;
-    padding: 1px 1em;
-    z-index: 1;
-}
-#main-firstview-period::before{
-    content:"参加無料";
-    font-size: var(--font-size-20);
-    color: var(--color-font-blue);
-}
-#main-firstview-button-main::before{
-    content:"8.30";
-    font-size: var(--font-size-20);
-    color: var(--color-font-red);
-}
-#main-firstview-button-advance::before{
-    content:" 7.25~　";
-    font-size: var(--font-size);
-    color: var(--color-font-green);
-}
-#main-firstview-button-public::before{
-    content:"6.5~8.21";
-    font-size: var(--font-size);
-    color: var(--color-font);
-}
-
-/* ファーストビューのボタンの右下のボタン */
-#main-firstview-button-main::after,
-#main-firstview-button-advance::after,
-#main-firstview-button-public::after{
-    position: absolute;
-    bottom: var(--font-size-12);
-    right: var(--font-size-12);
-    content:"";
-    background-image: url("../assets/img/button.svg");
-    background-size: contain;
-    width: var(--font-size);
-    height: var(--font-size);
-    z-index: 1;
-}
-
-#main-firstview-button-main::after{
-    width: var(--font-size-30);
-    height: var(--font-size-30);
-}
-
-
-/* ■■■ メインコンテンツ ■■■ */
-/* メインコンテンツ */
-#main-content{
-    margin-top: 64px;
-}
-
-#main-content dd{
-    margin-top: 12px;
-}
-
-#main-content-haeding,
-#main-content-main,
-#main-content-advance,
-#main-content-public{
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-white);
-    border-style: solid;
-    border-width: 12px;
-    border-radius: 24px;
-    padding: 1.5rem 1rem;
-    margin-top: 32px;
-}
-#main-content-haeding{
-    border-color: var(--color-blue);
-}
-#main-content-main{
-    border-color: var(--color-red);
-}
-#main-content-advance{
-    border-color: var(--color-green);
-}
-#main-content-public{
-    border-color: var(--color-yellow);
-}
-
-
-#main-content-haeding h2{
-    color: var(--color-font-blue);
-}
-
-#main-content-main h2{
-    color: var(--color-font-red);
-}
-
-#main-content-advance h2{
-    color: var(--color-font-green);
-}
-
-#main-content-public h2{
-    color: var(--color-font-yellow);
+.main-content-style{
+    margin-top: calc(var(--default-length) * 3);
 }

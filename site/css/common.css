@@ -16,20 +16,21 @@
     --color-font-blue: #1F4E8C;
     --color-font-yellow: #B89B00;
 
-    /* 色 ※変数名の数字は透明度を表す */
+    /* 色 */
     --color-white: #FAFAFA;
     --color-black: #333;
-    --color-black-70: #333333B3;
+    --color-black-translucent: #333333B3;
     --color-red:#ED1818;
-    --color-red-59:#ED181897;
+    --color-red-translucent:#ED181897;
     --color-green: #2DB82D;
-    --color-green-59: #2DB82D97;
+    --color-green-translucent: #2DB82D97;
     --color-green-light: #50C850;
     --color-blue: #1F4E8C;
-    --color-blue-59: #1F4E8C97;
+    --color-blue-translucent: #1F4E8C97;
     --color-blue-light: #0054a7;
     --color-blue-footer: #12335E;
     --color-yellow:#FFD700;
+    --color-yellow-translucent:#FFD70097;
 
     /* フォントサブセット(使用文字のみ) */
     --font-family-title-black: "M PLUS Rounded 1c Black Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
@@ -53,12 +54,14 @@
 
     /* 共通スタイル */
     --transition-time: 0.4s;
-    --header-height: clamp(66px, 36.448px + 7.879vw, 79px) + 16px;
-    --container-width: 92%;
-    --content-width-min: 375x;
-    --content-width-max: 540px;
+    --default-length: 8px;
+    --header-height: clamp(66px, 36.448px + 7.879vw, 79px) + var(--default-length) * 2;
+    --area-width-min: 375px;
+    --area-width-max: 540px;
+    --content-width: 90%;
     --button-icon-size: clamp(66px, 36.448px + 7.879vw, 79px);
     --button-sns-size: clamp(50px, 25.008px + 6.667vw, 61px);
+    --button-sns-size-s: clamp(34px, 18.096px + 4.242vw, 41px);
 }
 
 
@@ -83,7 +86,7 @@
 }
 
 
-/* ■■■ ベースとコンテナ（基本となる表示範囲制御） ■■■ */
+/* ■■■ 基本となる表示範囲（ラッパー・フレックス・グリッド） ■■■ */
 html{
     scroll-behavior: smooth;
     background-color: var(--color-white);
@@ -94,8 +97,7 @@ html{
     transition: all var(--transition-time);
 }
 
-#area-mobile{
-    scrollbar-gutter: stable both-edges;
+.area-mobile{
     position: fixed;
     top: 0;
     left: 50%;
@@ -105,17 +107,16 @@ html{
     background-position-x: center;
     background-origin: border-box;
     background-size: 100%;
-    min-width: var(--content-width-min);
+    min-width: var(--area-width-min);
     width: 100%;
-    max-width: var(--content-width-max);
+    max-width: var(--area-width-max);
     height: 100vh;
     margin: 0 auto;
     overflow: auto;
     z-index: 0;
 }
 
-#area-menu{
-    scrollbar-gutter: stable both-edges;
+.area-menu{
     position: fixed;
     top: 0;
     left: 50%;
@@ -126,15 +127,42 @@ html{
     background-position-x: center;
     background-origin: border-box;
     background-size: 100%;
-    min-width: var(--content-width-min);
+    min-width: var(--area-width-min);
     width: 100%;
-    max-width: var(--content-width-max);
+    max-width: var(--area-width-max);
     height: 100vh;
+    max-height: 100vh;
+    border: none;
     overflow: auto;
     z-index: 100;
+    opacity: 0;
+    transition:
+        opacity var(--transition-time),
+        translate var(--transition-time),
+        overlay var(--transition-time) allow-discrete,
+        display var(--transition-time) allow-discrete;
+
+    &[open]{
+        opacity: 1;
+        @starting-style{
+            opacity: 0;
+        }
+    }
+
+    &::backdrop{
+        opacity: 0;
+        transition: opacity var(--transition-time);
+    }
+
+    &[open]::backdrop{
+        opacity: 1;
+        @starting-style{
+            opacity: 0;
+        }
+    }
 }
 
-#area-desktop{
+.area-desktop{
     position: fixed;
     top: 0px;
     width: 100vw;
@@ -144,9 +172,62 @@ html{
     z-index: -100;
 }
 
-.container{
-    width: var(--container-width);
+/* ラッパー */
+.wrapper{
+    width: var(--content-width);
+    max-width: var(--content-width);
     margin: 0 auto;
+}
+
+/* フレックスボックス */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: var(--default-length);
+}
+
+/* グリッドレイアウト */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    gap: var(--default-length);
+}
+
+/* 枠の基本形状（背景色・枠の色は各々で） */
+.box-square,
+.box-round,
+.box-round-shadow{
+    width: 100%;
+    height: fit-content;
+    padding: var(--default-length);
+    border: solid var(--default-length) transparent;
+}
+
+.box-round,
+.box-round-shadow{
+    border-radius: calc(var(--default-length) * 2);
+}
+
+.box-round-shadow{
+    box-shadow: 5px 5px 0 var(--color-black);
+}
+
+.box-square-checker-yellow{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    background-image:
+        repeating-conic-gradient(
+            var(--color-yellow-translucent) 0deg 90deg,
+            transparent 90deg 180deg,
+            var(--color-yellow-translucent) 180deg 270deg,
+            transparent 270deg 360deg);
+    background-size: 50px 50px;
+    background-repeat: repeat;
 }
 
 
@@ -187,6 +268,8 @@ iframe{
 }
 
 a{
+    display: inline-block;
+    color: var(--color-black);
     text-decoration: none;
 }
 
@@ -205,8 +288,6 @@ li{
 
 /* ■■■ ヘッダーとハンバーガーメニュー ■■■ */
 .header-menu{
-    display: flex;
-    justify-content: space-between;
     position: sticky;
     top: 0;
     container-type: scroll-state;
@@ -216,7 +297,7 @@ li{
     z-index: 99;
 }
 
-header button{
+.header-button{
     transform: scale(0.80) translateY(calc(var(--button-icon-size) * 0.1 / 2));
     transform-origin: center;
     transition: all var(--transition-time);
@@ -264,37 +345,7 @@ header button{
 
 
 /* ハンバーガーメニュー内画面 */
-dialog{
-    max-height: 100vh;
-    border: none;
-    opacity: 0;
-    transition:
-        opacity var(--transition-time),
-        translate var(--transition-time),
-        overlay var(--transition-time) allow-discrete,
-        display var(--transition-time) allow-discrete;
-
-    &[open]{
-        opacity: 1;
-        @starting-style{
-            opacity: 0;
-        }
-    }
-
-    &::backdrop{
-        opacity: 0;
-        transition: opacity var(--transition-time);
-    }
-
-    &[open]::backdrop{
-        opacity: 1;
-        @starting-style{
-            opacity: 0;
-        }
-    }
-}
-
-dialog .header-menu-button span{
+.area-menu .header-menu-button span{
     width: 0;
 
     &::before{
@@ -322,7 +373,7 @@ nav li{
 nav ul li:nth-child(-n+4) button{
     position: relative;
     padding-bottom: 4px;
-    border-bottom: solid 6px var(--color-black-70);
+    border-bottom: solid 6px var(--color-black-translucent);
 
     &::after{
         position: absolute;
@@ -343,7 +394,7 @@ nav ul li:nth-child(-n+4) button{
 nav ul li{
     &:nth-child(2) button{
         color: var(--color-font-red);
-        border-color: var(--color-red-59);
+        border-color: var(--color-red-translucent);
 
         &::after{
             background-color: var(--color-font-red);
@@ -352,7 +403,7 @@ nav ul li{
 
     &:nth-child(3) button{
         color: var(--color-font-green);
-        border-color: var(--color-green-59);
+        border-color: var(--color-green-translucent);
 
         &::after{
             background-color: var(--color-font-green);
@@ -361,7 +412,7 @@ nav ul li{
 
     &:nth-child(4) button{
         color: var(--color-font-blue);
-        border-color: var(--color-blue-59);
+        border-color: var(--color-blue-translucent);
 
         &::after{
             background-color: var(--color-font-blue);
@@ -390,10 +441,11 @@ footer li button{
     border-radius: 50%;
 }
 
-.ankerlink-image-instagram{
+.ankerlink-image-instagram,
+.ankerlink-image-instagram-small{
     width: var(--button-sns-size);
     height: var(--button-sns-size);
-    margin: 16px;
+    margin: calc(var(--button-sns-size) * 0.5);
     padding: 1px;
     background-color: var(--color-white);
     background-image: url("../assets/img/logo/instagram.webp");
@@ -402,10 +454,11 @@ footer li button{
     border-radius: var(--font-size-ss);
 }
 
-.ankerlink-image-tiktok{
+.ankerlink-image-tiktok,
+.ankerlink-image-tiktok-small{
     width: var(--button-sns-size);
     height: var(--button-sns-size);
-    margin: 16px;
+    margin: calc(var(--button-sns-size) * 0.5);
     padding: 1px;
     background-color: var(--color-white);
     background-image: url("../assets/img/logo/tiktok.svg");
@@ -413,6 +466,14 @@ footer li button{
     background-repeat: no-repeat;
     border-radius: 50%;
 }
+
+.ankerlink-image-instagram-small,
+.ankerlink-image-tiktok-small{
+    width: var(--button-sns-size-s);
+    height: var(--button-sns-size-s);
+    margin: calc(var(--button-sns-size-s) * 0.5)
+}
+
 
 /* ■■■ フォントファミリー ■■■ */
 /* 見出し用フォント（weight:900） */
@@ -534,4 +595,56 @@ footer li button{
 .font-text-bold-ss,
 .font-text-ss{
     font-size: var(--font-size-ss);
+}
+
+/* ■■■ フォントカラー ■■■ */
+.font-color-black{
+    color: var(--color-font);
+}
+
+.font-color-white,
+.font-color-white-shadow{
+    color: var(--color-font-white);
+}
+
+.font-color-blue,
+.font-color-blue-shadow{
+    color: var(--color-font-blue);
+}
+
+.font-color-red,
+.font-color-red-shadow{
+    color: var(--color-font-red);
+}
+
+.font-color-green
+.font-color-green-shadow{
+    color: var(--color-font-green);
+}
+
+.font-color-yellow,
+.font-color-yellow-shadow{
+    color: var(--color-font-yellow);
+}
+
+/* ■■■ フォントカラー(影付き) ■■■ */
+.font-color-white-shadow,
+.font-color-blue-shadow,
+.font-color-red-shadow,
+.font-color-green-shadow,
+.font-color-yellow-shadow{
+    text-shadow: 0.25em 0.25em 0 var(--color-font);
+}
+
+/* ■■■ テキスト位置 ■■■ */
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
 }
