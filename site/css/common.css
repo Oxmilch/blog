@@ -96,6 +96,19 @@ html{
     font-style: var(--font-style);
     font-size: var(--font-size);
     transition: all var(--transition-time);
+    line-height: 1.5;
+    /* scrollbar-color: var(--color-font-red) var(--color-blue);
+    scrollbar-width: calc(var(--default-length) * 0.25); */
+
+    &::webkit-scrollbar{
+        background-color: var(--color-blue);
+        width: calc(var(--default-length) * 0.25);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--color-red);
+        border: solid 1px var(--color-white);
+    }
 }
 
 .layout-mobile{
@@ -114,6 +127,7 @@ html{
     height: 100vh;
     margin: 0 auto;
     overflow: auto;
+    scrollbar-gutter: stable;
     z-index: 0;
 }
 
@@ -137,6 +151,7 @@ html{
     overflow: auto;
     z-index: 100;
     opacity: 0;
+    scrollbar-gutter: stable;
     transition:
         opacity var(--transition-time),
         translate var(--transition-time),
