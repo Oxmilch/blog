@@ -507,37 +507,31 @@ nav ul li{
 }
 
 .ankerlink-image-instagram,
-.ankerlink-image-instagram-small{
-    width: var(--button-sns-size);
-    height: var(--button-sns-size);
-    margin: calc(var(--button-sns-size) * 0.5);
-    padding: 1px;
-    background-image: url("../assets/img/logo/instagram.webp");
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: var(--font-size-ss);
-}
-
+.ankerlink-image-instagram-white,
 .ankerlink-image-tiktok,
-.ankerlink-image-tiktok-small{
+.ankerlink-image-tiktok-white{
     width: var(--button-sns-size);
     height: var(--button-sns-size);
     margin: calc(var(--button-sns-size) * 0.5);
-    padding: 1px;
-    background-color: var(--color-white);
-    background-image: url("../assets/img/logo/tiktok.svg");
+
     background-size: contain;
     background-repeat: no-repeat;
-    border-radius: 50%;
 }
 
-.ankerlink-image-instagram-small,
-.ankerlink-image-tiktok-small{
-    width: var(--button-sns-size-s);
-    height: var(--button-sns-size-s);
-    margin: calc(var(--button-sns-size-s) * 0.5)
+.ankerlink-image-instagram{
+    background-image: url("../assets/img/logo/Instagram_Glyph_Gradient.webp");
 }
 
+.ankerlink-image-instagram-white{
+    background-image: url("../assets/img/logo/Instagram_Glyph_White.webp");
+}
+.ankerlink-image-tiktok{
+    background-image: url("../assets/img/logo/TIKTOK_SOCIAL_ICON_CIRCLE_WHITE.svg");
+}
+
+.ankerlink-image-tiktok-white{
+    background-image: url("../assets/img/logo/TIKTOK_SIMPLIFIED_NOTE_WHITE.svg");
+}
 
 /* ■■■ フォントファミリー ■■■ */
 /* 見出し用フォント（weight:900） */
