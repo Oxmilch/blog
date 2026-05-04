@@ -23,7 +23,7 @@
     <link rel="icon" href="./assets/img/logo/main1.svg">
     <script src="./script/common.js" defer></script>
 </head>
-<body id="top">
+<body>
     <dialog id="hamburger-menu" class="layout-menu" aria-label="メニュー">
         <div class="container flex header-menu">
             <a class="ankerlink-image-top"></a>
@@ -116,8 +116,8 @@
                             <dd class="text-left font-text">
                                 30日に来館いただくと「怒られないらくがき部屋」「ライブパフォーマンス」「オリジナルシール・Tシャツ作成」など楽しいワークショップに参加できます！
                             </dd>
-                            <a href="./workshop-main.html" alt="2026年福岡市民が作る大アート展の2026年8月30日の当日ワークショップについて詳しく知る">
-                                もっと見る→
+                            <a class="font-title-exbold-s" href="./workshop-main.html" alt="2026年福岡市民が作る大アート展の2026年8月30日の当日ワークショップについて詳しく知る">
+                                もっとみる→
                             </a>
                         </div>
                     </div>
@@ -129,8 +129,8 @@
                             <dd class="text-left font-text">
                                 子どもたちが自由な発想で「未来の福岡」を表現！アーティストとの制作を通してつくることの楽しさを体験しよう！
                             </dd>
-                            <a href="./workshop-in-advance.html" alt="2026年福岡市民が作る大アート展のTシャツ公募について詳しく知る">
-                                もっと見る→
+                            <a class="font-title-exbold-s" href="./workshop-in-advance.html" alt="2026年福岡市民が作る大アート展のTシャツ公募について詳しく知る">
+                                もっとみる→
                             </a>
                         </div>
                     </div>
@@ -144,15 +144,15 @@
                 </div>
                 <div class="box-round main-content-workshop-public-style">
                     <dt>
-                        <h2>Tシャツデザインに<br>チャレンジ</h2>
+                        <h2 class="text-left">Tシャツデザインに<br>チャレンジ</h2>
                     </dt>
                     <dd class="text-left font-text">
                         あなたのデザインしたオリジナルTシャツがアート展期間中に展示されるかも！？<br>
                         夏休みの思い出にアートに触れませんか？
                     </dd>
-                    <div>
-                        <button type="button" onclick="PageOpen.eventPublicRecruitment()">もっと見る→</button>
-                    </div>
+                    <a class="font-title-exbold-s" href="./public-recruitment.html" alt="2026年福岡市民が作る大アート展のTシャツ公募について詳しく知る">
+                        もっとみる→
+                    </a>
                 </div>
                 <div class="text-center">
                     <a class="box-round-shadow main-content-ankerlink-style
@@ -239,40 +239,44 @@
                 </li>
             </ul>
         </section>
-        <aside class="container">
-            <h2>アクセス</h2>
-            <h3>地下鉄、西鉄バス、お車でも！</h3>
-            <p>地下鉄から徒歩10分！</p>
-            <p>西鉄バスから徒歩3分！駐車場有！</p>
-            <button type="button" onclick="PageOpen.venueFukuokaArtMusiumAccess()">
-                福岡市美術館へのアクセスはコチラ
-            </button>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5589.9943593901!2d130.37608059363473!3d33.58374907044375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193cd9b0690ad%3A0x34c4517959bb6062!2z56aP5bKh5biC576O6KGT6aSo!5e0!3m2!1sja!2sjp!4v1777515712093!5m2!1sja!2sjp"
-                height="500px"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <aside id="access" class="container text-center">
+            <div class="box-round-shadow access-style">
+                <div class="box-round access-base-style">
+                    <h2 class="visually-hidden">アクセス</h2>
+                    <h3>地下鉄、西鉄バス、お車でも！</h3>
+                    <a class="font-title-exbold-s"
+                       href="https://www.fukuoka-art-museum.jp/guide/access/" target="_blank" alt="">
+                        福岡市美術館へのアクセスはコチラ
+                    </a>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5589.9943593901!2d130.37608059363473!3d33.58374907044375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193cd9b0690ad%3A0x34c4517959bb6062!2z56aP5bKh5biC576O6KGT6aSo!5e0!3m2!1sja!2sjp!4v1777515712093!5m2!1sja!2sjp"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <p class="text-left font-text-ss">会場：福岡市美術館</p>
+                    <p class="text-left font-text-ss">住所：&#12306;810-0051 福岡市中央区大濠公園 1-6</p>
+                </div>
+            </div>
         </aside>
-        <footer class="font-text-ss">
+        <footer class="text-center font-color-white">
             <div class="container">
                 <img src="./assets/img/logo/main2.svg" alt="福岡市民がつくる大アート展〜誰もがアーティスト〜">
                 <ul>
-                    <li><button type="button" onclick="PageOpen.eventTop()">トップページ</button></li>
-                    <li><button type="button" onclick="PageOpen.eventWorkShopMain()">みんなでつくる大アート展</button></li>
-                    <li><button type="button" onclick="PageOpen.eventWorkShopInAdvance()">ワークショップにチャレンジ</button></li>
-                    <li><button type="button" onclick="">ワークショップお申し込み</button></li>
-                    <li><button type="button" onclick="PageOpen.eventPublicRecruitment()">Tシャツデザインにチャレンジ</button></li>
-                    <li><button type="button" onclick="PageOpen.eventForm()">Tシャツお申し込み</button></li>
-                    <li><button type="button" onclick="PageOpen.eventWorkShopInAdvance()">スケジュール案内</button></li>
-                    <li><button type="button" onclick="PageOpen.venueFukuokaArtMusiumAccess()">アクセス(外部)</button></li>
-                    <li><button type="button" onclick="PageOpen.fukuokaJCPrivacyPolicy()">プライバシーポリシー(福岡青年会議所)</button></li>
-                    <li><button type="button" class="ankerlink-image-instagram" onclick="PageOpen.eventInstagram()" aria-label="2026年福岡市民が作る大アート展のInstagramアカウントを開く"></button></li>
-                    <li>主催：一般社団法人　福岡青年会議所</li>
+                    <li><a class="font-title-exbold-ss font-color-white" href="#firstview" alt="">トップページ</a></li>
+                    <li><a class="font-title-exbold-ss font-color-white" href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
+                    <li><a class="font-title-exbold-ss font-color-white" href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
+                    <li><a class="font-title-exbold-ss font-color-white" href="#" alt="">ワークショップお申し込み(外部)</a></li>
+                    <li><a class="font-title-exbold-ss font-color-white" href="./public-recruitment.html" alt="">Tシャツデザインにチャレンジ</a></li>
+                    <li><a class="font-title-exbold-ss font-color-white" href="#" alt="">Tシャツお申し込み(外部)</a></li>
+                    <li><a class="font-title-exbold-ss font-color-white" href="#schedule" alt="">スケジュール案内</a></li>
+                    <li><a class="font-title-exbold-ss font-color-white" href="#access" alt="">アクセス</a></li>
+                    <li><a class="ankerlink-image-instagram" href="#" target="_blank" alt=""></a></li>
+                    <li><a class="font-title-exbold-sss font-color-white" href="https://www.fukuoka-jc.or.jp/" target="_blank" lt="">主催：一般社団法人　福岡青年会議所</a></li>
+                    <li><a class="font-title-exbold-sss font-color-white" href="https://www.fukuoka-jc.or.jp/pp" target="_blank" alt="">プライバシーポリシーについて</a></li>
                 </ul>
-                <small>&copy;2026 福岡青年会議所</small>
+                <div class=""></div>
+                <small>&copy;一般社団法人　福岡年会議所</small>
             </div>
         </footer>
     </div>

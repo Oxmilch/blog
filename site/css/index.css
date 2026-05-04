@@ -159,7 +159,7 @@
     width: 71%;
 
     & dd{
-        padding-top: calc(var(--default-length) * 1.5);
+        margin-top: calc(var(--default-length) * 1.5);
     }
 }
 
@@ -178,8 +178,20 @@
 /* 共通：説明文の白背景 */
 .main-content-workshop-whiteback-style{
     width: 100%;
-    padding: calc(var(--default-length) * 2);
+    padding: calc(var(--default-length) * 4) calc(var(--default-length) * 2);
     background-color: var(--color-white);
+
+    & dd{
+        padding-top: var(--default-length);
+        padding-right: calc(var(--default-length) * 2);
+        padding-left: calc(var(--default-length) * 2);
+    }
+
+    & a{
+        margin-top: calc(var(--default-length) * 1.5);
+        width: fit-content;
+        border-bottom: solid 2px var(--color-black);
+    }
 }
 
 /* 共通：ボタン */
@@ -193,4 +205,85 @@
 .main-content-workshop-public-style{
     border: solid 2px var(--color-black);
     background-color: var(--color-yellow);
+    padding: 16.8% 16.8% 16.8% 9%;
+    margin-left: 0;
+    margin-right: auto;
+    width: 88.8%;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    & dd{
+        margin-top: calc(var(--default-length) * 1.5);
+    }
+
+    & a{
+        margin-top: calc(var(--default-length) * 1.5);
+        width: fit-content;
+        border-bottom: solid 2px var(--color-black);
+    }
+}
+
+/* ■■■ スケジュール ■■■ */
+
+/* ■■■ アクセス ■■■ */
+.access-style{
+    position: relative;
+    background-color: var(--color-blue);
+    margin-top: calc(var(--default-length) * 4);
+    z-index: 0;
+
+    &::before{
+        position: absolute;
+        content:"アクセス";
+        top: -0.75em;
+        left: -0.1em;
+        color: var(--color-font-black);
+        font-family: var(--font-family-title-black);
+        font-size: var(--font-size-lll);
+        border: solid 2px var(--color-black);
+        background-color: var(--color-yellow);
+        width: fit-content;
+        height: fit-content;
+        padding: 0 1em;
+        border-radius: 1em;
+        box-shadow: 3px 3px 0 var(--color-black);
+        z-index: 1;
+    }
+
+    & a{
+        position: relative;
+        width: fit-content;
+        border-bottom: solid 1px var(--color-black);
+        margin: var(--default-length) auto 0;
+    }
+
+    & a::before{
+        position: absolute;
+        top: 1em;
+        left: -2em;
+        content: "";
+        width: 2em;
+        height: 2px;
+        background-color: var(--color-black);
+        transform: rotate(45deg);
+    }
+
+    & a::after{
+        position: absolute;
+        top: 1em;
+        right: -2em;
+        content: "";
+        width: 2em;
+        height: 2px;
+        background-color: var(--color-black);
+        transform: rotate(-45deg);
+    }
+}
+
+.access-base-style{
+    position: relative;
+    width: 100%;
+    padding: calc(var(--default-length) * 3) var(--default-length) calc(var(--default-length) * 2);
+    background-color: var(--color-white);
 }

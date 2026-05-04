@@ -53,6 +53,7 @@
     --font-size: clamp(1rem, 0.523rem + 2.036vw, 1.21rem);     /* 最小時 16px */
     --font-size-s: clamp(0.875rem, 0.457rem + 1.782vw, 1.05875rem);   /* 14px */
     --font-size-ss: clamp(0.75rem, 0.392rem + 1.527vw, 0.907rem);     /* 12px */
+    --font-size-sss: clamp(0.625rem, 0.434rem + 0.95vw, 0.756rem);    /* 10px */
 
     /* 共通スタイル */
     --transition-time: 0.4s;
@@ -286,14 +287,29 @@ html{
 header,
 main,
 footer{
-    padding-top: 8px;
+    padding-top: var(--default-length);
 }
 
 footer{
-    margin-top: 24px;
-    padding-bottom: 8px;
-    color: var(--color-white);
+    margin-top: calc(var(--default-length) * 4);
+    padding-bottom: var(--default-length);
     background-color: var(--color-blue);
+    background-image:
+        url("../assets/img/background/geometric1.svg"),
+        url("../assets/img/background/geometric1.svg");
+    background-blend-mode: multiply;
+    background-position: 0% 0%, 50% 100%;
+    background-size: 150%;
+    background-repeat: repeat;
+
+    & li:nth-child(-n+9){
+        margin: var(--default-length) auto;
+    }
+
+    & li .ankerlink-image-instagram{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 h1,h2,h3,h4,h5{
@@ -311,11 +327,19 @@ h2{
 }
 
 h3{
-    font-size: var(--font-size-ll);
+    font-size: var(--font-size-l);
+}
+
+small{
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-sss);
 }
 
 iframe{
+    margin-top: calc(var(--default-length) * 2);
     width: 100%;
+    aspect-ratio: 4/3;
+    border: none;
 }
 
 a{
@@ -472,16 +496,6 @@ nav ul li{
 }
 
 
-/* ■■■ フッター ■■■ */
-footer li{
-    margin: 0.8em auto;
-}
-
-footer li button{
-    color: var(--color-white);
-}
-
-
 /* ■■■ 画像のアンカーリンク ■■■ */
 .ankerlink-image-top{
     width: var(--button-icon-size);
@@ -498,7 +512,6 @@ footer li button{
     height: var(--button-sns-size);
     margin: calc(var(--button-sns-size) * 0.5);
     padding: 1px;
-    background-color: var(--color-white);
     background-image: url("../assets/img/logo/instagram.webp");
     background-size: contain;
     background-repeat: no-repeat;
@@ -550,7 +563,8 @@ footer li button{
 .font-title-exbold-l,
 .font-title-exbold,
 .font-title-exbold-s,
-.font-title-exbold-ss{
+.font-title-exbold-ss,
+.font-title-exbold-sss{
     font-family: var(--font-family-title-exbold);
     font-style: var(--font-style);
 }
@@ -564,7 +578,8 @@ footer li button{
 .font-text-bold-l,
 .font-text-bold,
 .font-text-bold-s,
-.font-text-bold-ss{
+.font-text-bold-ss,
+.font-text-bold-sss{
     font-family: var(--font-family-text-bold);
     font-style: var(--font-style);
 }
@@ -578,7 +593,8 @@ footer li button{
 .font-text-l,
 .font-text,
 .font-text-s,
-.font-text-ss{
+.font-text-ss,
+.font-text-sss{
     font-family: var(--font-family-text);
     font-style: var(--font-style);
 }
@@ -648,6 +664,14 @@ footer li button{
     font-size: var(--font-size-ss);
 }
 
+.font-title-black-sss,
+.font-title-exbold-sss,
+.font-text-bold-sss,
+.font-text-sss{
+    font-size: var(--font-size-sss);
+}
+
+
 /* ■■■ フォントカラー ■■■ */
 .font-color-black{
     color: var(--color-font);
@@ -678,6 +702,7 @@ footer li button{
     color: var(--color-font-yellow);
 }
 
+
 /* ■■■ フォントカラー(影付き) ■■■ */
 .font-color-white-shadow,
 .font-color-blue-shadow,
@@ -686,6 +711,7 @@ footer li button{
 .font-color-yellow-shadow{
     text-shadow: 0.25em 0.25em 0 var(--color-font);
 }
+
 
 /* ■■■ テキスト位置 ■■■ */
 .text-left{
