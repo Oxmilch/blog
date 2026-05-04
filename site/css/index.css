@@ -5,6 +5,7 @@
     background-image: url("../assets/img/background/geometric1.svg");
 }
 
+
 /* ■■■ ファーストビュー ■■■ */
 .firstview-period-style{
     position: relative;
@@ -40,6 +41,7 @@
     }
 }
 
+/* アンカーリンク */
 .firstview-ankerlink-style{
     grid-template-areas:
     "main    main"
@@ -49,6 +51,7 @@
     column-gap: calc(var(--default-length) * 2);
 }
 
+/* アンカーリンク：大アート展 */
 .firstview-ankerlink-main-style{
     position: relative;
     grid-area: main;
@@ -77,16 +80,65 @@
     }
 }
 
+/* アンカーリンク：ワークショップ */
 .firstview-ankerlink-advance-style{
     position: relative;
     grid-area: advance;
     background-color: var(--color-green);
+    padding-top: 1.25em;
+    z-index: 0;
+    border: solid 2px var(--color-black);
+
+    &::before{
+        position: absolute;
+        content:" 7.25〜　";
+        top: -1em;
+        left: -0.1em;
+        color: var(--color-font-green);
+        font-family: var(--font-family-title-black);
+        font-size: var(--font-size);
+        border: solid 2px var(--color-black);
+        background-color: var(--color-white);
+        width: fit-content;
+        height: fit-content;
+        padding: 0 1em;
+        border-radius: 1em;
+        box-shadow: 3px 3px 0 var(--color-black);
+        z-index: 1;
+    }
 }
 
+/* Tシャツ */
 .firstview-ankerlink-public-style{
     position: relative;
     grid-area: public;
     background-color: var(--color-yellow);
+    padding-top: 1.25em;
+    z-index: 0;
+    border: solid 2px var(--color-black);
+
+    &::before{
+        position: absolute;
+        content:"6.5〜8.21";
+        top: -1em;
+        left: -0.1em;
+        color: var(--color-font-yellow);
+        font-family: var(--font-family-title-black);
+        font-size: var(--font-size);
+        text-shadow:
+             1px -1px 0 var(--color-black-translucent),
+             1px  1px 0 var(--color-black-translucent),
+            -1px  1px 0 var(--color-black-translucent),
+            -1px -1px 0 var(--color-black-translucent);
+        border: solid 2px var(--color-black);
+        background-color: var(--color-white);
+        width: fit-content;
+        height: fit-content;
+        padding: 0 1em;
+        border-radius: 1em;
+        box-shadow: 3px 3px 0 var(--color-black);
+        z-index: 1;
+    }
 }
 
 
@@ -99,33 +151,41 @@
     position: relative;
     top: calc(var(--default-length) * -6);
     z-index: 10;
+}
 
-    & div{
-        margin-top: calc(var(--default-length) * 4);
+/* 表題 */
+.main-content-workshop-top-style{
+    margin-top: calc(var(--default-length) * 4);
+    width: 71%;
+
+    & dd{
+        padding-top: calc(var(--default-length) * 1.5);
     }
 }
 
-.main-content-workshop-top-style{
-    width: 71%;
-}
-
+/* 大アート展 */
 .main-content-workshop-main-style{
+    margin-top: calc(var(--default-length) * 6);
     border: solid 2px var(--color-black);
 }
 
-.main-content-workshop-main-base-style,
-.main-content-workshop-advance-base-style{
+/* ワークショップ */
+.main-content-workshop-advance-style{
+    border: solid 2px var(--color-black);
+    margin-top: calc(var(--default-length) * 6);
+}
+
+/* 共通：説明文の白背景 */
+.main-content-workshop-whiteback-style{
     width: 100%;
     padding: calc(var(--default-length) * 2);
     background-color: var(--color-white);
 }
 
-.main-content-workshop-advance-style{
-    border: solid 2px var(--color-black);
+/* 共通：ボタン */
+.main-content-ankerlink-style{
     margin-top: calc(var(--default-length) * 4);
-}
-
-.main-content-workshop-ankerlink-style{
+    margin-bottom: calc(var(--default-length) * 4);
     width: clac(var(--default-length) * 35);
     background-color: var(--color-red);
 }
@@ -134,4 +194,3 @@
     border: solid 2px var(--color-black);
     background-color: var(--color-yellow);
 }
-

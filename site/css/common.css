@@ -10,28 +10,29 @@
 :root{
     /* 文字色 */
     --color-font: #333;
-    --color-font-white: #FAFAFA;
-    --color-font-red: #ED1818; 
-    --color-font-green: #2DB82D;
-    --color-font-blue: #1F4E8C;
-    --color-font-yellow: #B89B00;
+    --color-font-white: #fafafa;
+    --color-font-red: #ed1818; 
+    --color-font-green: #2db82d;
+    --color-font-blue: #1f4e8c;
+    --color-font-yellow: #ffd700;
 
     /* 色 */
-    --color-white: #FAFAFA;
-    --color-white-translucent: #FAFAFAB3;
+    --color-white: #fafafa;
+    --color-white-translucent: #fafafab3;
     --color-black: #333;
-    --color-black-translucent: #333333B3;
-    --color-red:#ED1818;
-    --color-red-translucent:#ED181897;
-    --color-green: #2DB82D;
-    --color-green-translucent: #2DB82D97;
-    --color-green-light: #50C850;
-    --color-blue: #1F4E8C;
-    --color-blue-translucent: #1F4E8C97;
+    --color-black-translucent: #333333b3;
+    --color-red:#ed1818;
+    --color-red-translucent:#ed181897;
+    --color-green: #2db82d;
+    --color-green-translucent: #2db82d97;
+    --color-green-light: #50c850;
+    --color-blue: #1f4e8c;
+    --color-blue-translucent: #1f4e8c97;
     --color-blue-light: #0054a7;
-    --color-blue-footer: #12335E;
-    --color-yellow:#FFD700;
-    --color-yellow-translucent:#FFD70097;
+    --color-blue-footer: #12335e;
+    --color-yellow:#ffd700;
+    --color-yellow-translucent:#ffd70097;
+    --color-orange:#f90;
 
     /* フォントサブセット(使用文字のみ) */
     --font-family-title-black: "M PLUS Rounded 1c Black Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
@@ -55,7 +56,7 @@
 
     /* 共通スタイル */
     --transition-time: 0.4s;
-    --default-length: 8px;
+    --default-length: clamp(8px, 2.133vw, 11.52px);
     --header-height: clamp(66px, 36.448px + 7.879vw, 79px) + var(--default-length) * 2;
     --area-width-min: 375px;
     --area-width-max: 540px;
@@ -82,14 +83,18 @@
 
 /* キーボード使用時フォーカス */
 :focus-visible{
-    outline: dashed 8px darkorange !important;
+    outline: dashed 8px var(--color-orange) !important;
     transition: outline-offset 0s !important;
 }
 
 
 /* ■■■ 基本となる表示範囲（レイアウト・コンテナ・フレックス・グリッド） ■■■ */
 html{
+    overflow: hidden;
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+    scrollbar-color: var(--color-orange) var(--color-blue);
+    scrollbar-width: thin;
     background-color: var(--color-white);
     color: var(--color-font);
     font-family: var(--font-family-text);
@@ -97,18 +102,6 @@ html{
     font-size: var(--font-size);
     transition: all var(--transition-time);
     line-height: 1.5;
-    /* scrollbar-color: var(--color-font-red) var(--color-blue);
-    scrollbar-width: calc(var(--default-length) * 0.25); */
-
-    &::webkit-scrollbar{
-        background-color: var(--color-blue);
-        width: calc(var(--default-length) * 0.25);
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background-color: var(--color-red);
-        border: solid 1px var(--color-white);
-    }
 }
 
 .layout-mobile{
@@ -184,7 +177,6 @@ html{
     width: 100vw;
     height: 100vh;
     background-color: var(--color-blue);
-    overflow: hidden;
     z-index: -100;
 }
 
@@ -219,7 +211,7 @@ html{
 .box-round-shadow{
     width: 100%;
     height: fit-content;
-    padding: calc(var(--default-length) * 2);
+    padding: calc(var(--default-length) * 1.5);
     border: solid 2px transparent;
     background-color: var(--color-white);
 }
