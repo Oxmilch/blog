@@ -227,6 +227,10 @@
 /* ■■■ スケジュール ■■■ */
 
 /* ■■■ アクセス ■■■ */
+aside{
+    scroll-margin-top: calc((var(--default-length) * 4) + var(--header-height));
+}
+
 .access-style{
     position: relative;
     background-color: var(--color-blue);
