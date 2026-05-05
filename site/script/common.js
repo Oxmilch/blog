@@ -18,7 +18,7 @@ class AccordionMenu{
     /** 開閉する
      * @param {string} targetId 開閉対象のタグのId
      */
-    static toggle(buttonObject, targetId){
+    static toggle(targetId){
         document.getElementById(targetId).classList.toggle("open");
     }
 }
