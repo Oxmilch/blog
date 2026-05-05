@@ -11,9 +11,23 @@
   - フォントの色：font-color-white, font-color-green-shadow 等を利用
   - テキストの位置：text-left, text-center, text-right
 
+- 見出しタグ（h1~h5）、スモールタグは、フォントファミリーとフォントサイズを例外的に指定する。
+
 - 要素におけるスタイルは、〇〇-styleの命名とし、共通のクラスから不足している内容を記載する。
 
 - id を指定する場合は、ページ内リンク、またはJavaScriptで制御が必要な場合のみとする。スタイルの設定はしない。
+
+
+# 基本的なHTML構造
+- body
+  - dialog（ハンバーガーメニュー内画面：共通部品）
+  - div（モバイルレイアウト）
+    - header（ヘッダー：共通部品）
+    - section（ファーストビュー）
+    - main（主要な内容）
+    - aside（補足的な内容）
+    - footer（フッター：共通部品）
+  - div（デスクトップレイアウト 広い画面でみたときに左右に表示されるもの：共通部品）
 
 
 # フォント
@@ -31,9 +45,7 @@
 # SNS
 ## ロゴ
 - [Instagram](https://www.meta.com/ja-jp/brand/resources/instagram/instagram-brand/)
-  - 使用ファイル：01 Gradient Glyph 内の SVGファイルを Photoshop で開き、ラスタライズ 798px, 解像度 72ppiで開き、透明部分をトリミングしwebpで保存
 - [Tiktok](https://tiktokbrandhub.com/downloads)
-  - 使用ファイル：TIKTOK_SOCIAL_ICONS/TIKTOK_SOCIAL_ICONS_CIRCLE/SVG/TIKTOK_SOCIAL_ICON_CIRCLE_WHITE.svg をそのまま利用
 
 
 # アクセシビリティ
