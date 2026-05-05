@@ -55,17 +55,22 @@
     --font-size-ss: clamp(0.75rem, 0.392rem + 1.527vw, 0.907rem);     /* 12px */
     --font-size-sss: clamp(0.625rem, 0.434rem + 0.95vw, 0.756rem);    /* 10px */
 
+
+    /* 基準となる長さ。Mobile LENgth の略。
+       この特設サイトの最小サイズ(375px)から最大サイズ(540px)の可変的なサイズに対応させた独自のもの
+       最小最大を変更した場合は、ここの値も変更するとほぼすべてのレイアウトにも反映される（はず）
+       標準フォントサイズには影響されない。 */
+    --mlen: clamp(8px, 2.133vw, 11.52px);
+
     /* 共通スタイル */
     --transition-time: 0.4s;
-    --default-length: clamp(8px, 2.133vw, 11.52px);
-    --header-height: clamp(66px, 36.448px + 7.879vw, 79px) + var(--default-length) * 2;
+    --header-height: calc(clamp(66px, 36.448px + 7.879vw, 79px) + var(--mlen) * 2);
     --footer-character-height: clamp(150px, 7.724rem + 7.042vw, 225px);
-    --area-width-min: 375px;
-    --area-width-max: 540px;
+    --layout-width-min: 375px;
+    --layout-width-max: 540px;
     --content-width: 90%;
     --button-icon-size: clamp(66px, 36.448px + 7.879vw, 79px);
-    --button-sns-size: clamp(50px, 25.008px + 6.667vw, 61px);
-    --button-sns-size-s: clamp(34px, 18.096px + 4.242vw, 41px);
+    --button-sns-size: clamp(56px, 28.72px + 7.273vw, 68px);
 }
 
 
@@ -91,8 +96,8 @@
 
 
 /* ■■■ 基本となる表示範囲（レイアウト・コンテナ・フレックス・グリッド） ■■■ */
-html{
-    overflow: hidden;
+body{
+    overflow: auto;
     scroll-behavior: smooth;
     scrollbar-gutter: stable;
     scrollbar-color: var(--color-orange) var(--color-blue);
@@ -116,9 +121,9 @@ html{
     background-position-x: center;
     background-origin: border-box;
     background-size: 100%;
-    min-width: var(--area-width-min);
+    min-width: var(--layout-width-min);
     width: 100%;
-    max-width: var(--area-width-max);
+    max-width: var(--layout-width-max);
     height: 100vh;
     margin: 0 auto;
     overflow: auto;
@@ -137,9 +142,9 @@ html{
     background-position-x: center;
     background-origin: border-box;
     background-size: 100%;
-    min-width: var(--area-width-min);
+    min-width: var(--layout-width-min);
     width: 100%;
-    max-width: var(--area-width-max);
+    max-width: var(--layout-width-max);
     height: 100vh;
     max-height: 100vh;
     border: none;
@@ -166,7 +171,6 @@ html{
     }
 
     &[open]::backdrop{
-        opacity: 1;
         @starting-style{
             opacity: 0;
         }
@@ -195,7 +199,7 @@ html{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: var(--default-length);
+    gap: var(--mlen);
 }
 
 /* グリッドレイアウト */
@@ -204,7 +208,7 @@ html{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 100%;
-    gap: var(--default-length);
+    gap: var(--mlen);
 }
 
 /* 枠の基本形状 */
@@ -213,14 +217,14 @@ html{
 .box-round-shadow{
     width: 100%;
     height: fit-content;
-    padding: calc(var(--default-length) * 1.5);
+    padding: calc(var(--mlen) * 1.5);
     border: solid 2px transparent;
     background-color: var(--color-white);
 }
 
 .box-round,
 .box-round-shadow{
-    border-radius: calc(var(--default-length) * 2);
+    border-radius: calc(var(--mlen) * 2);
 }
 
 .box-round-shadow{
@@ -252,9 +256,9 @@ html{
         repeating-linear-gradient(
             135deg,
             transparent 0px,
-            transparent calc(var(--default-length) * 2),
-            var(--color-white-translucent) calc(var(--default-length) * 2),
-            var(--color-white-translucent) calc(var(--default-length) * 2.5));
+            transparent calc(var(--mlen) * 2),
+            var(--color-white-translucent) calc(var(--mlen) * 2),
+            var(--color-white-translucent) calc(var(--mlen) * 2.5));
 }
 
 /* 背景が水玉模様 */
@@ -286,9 +290,8 @@ html{
 
 /* ■■■ 共通スタイル ■■■ */
 header,
-main,
-footer{
-    padding-top: var(--default-length);
+main{
+    padding-top: var(--mlen);
 }
 
 h1,h2,h3,h4,h5{
@@ -310,14 +313,12 @@ h3{
 }
 
 small{
-    display: inline-block;
     font-family: var(--font-family-text);
     font-size: var(--font-size-sss);
-    padding-top:  calc(var(--default-length) * 2);
 }
 
 iframe{
-    margin-top: calc(var(--default-length) * 2);
+    margin-top: calc(var(--mlen) * 2);
     width: 100%;
     aspect-ratio: 4/3;
     border: none;
@@ -342,7 +343,7 @@ li{
 }
 
 
-/* ■■■ ヘッダーとハンバーガーメニュー ■■■ */
+/* ■■■ ヘッダー ■■■ */
 .header-menu{
     position: sticky;
     top: 0;
@@ -365,6 +366,7 @@ li{
     }
 }
 
+/* ハンバーガーメニューボタン外形 */
 .header-menu-button{
     display: flex;
     justify-content: center;
@@ -376,6 +378,7 @@ li{
     border-radius: 50%;
 }
 
+/* ハンバーガーメニューボタン内側 */
 .header-menu-button span::before,
 .header-menu-button span,
 .header-menu-button span::after{
@@ -400,8 +403,9 @@ li{
 }
 
 
-/* ハンバーガーメニュー内画面 */
-.area-menu .header-menu-button span{
+/* ■■■ ハンバーガーメニュー画面 ■■■ */
+/* ハンバーガーメニュー画面 ボタン内側 */
+.layout-menu .header-menu-button span{
     width: 0;
 
     &::before{
@@ -412,6 +416,7 @@ li{
     }
 }
 
+/* リンク一覧 */
 nav li{
     margin: 1em auto;
     border-top: solid 5px var(--color-blak);
@@ -437,7 +442,7 @@ nav ul li:nth-child(-n+4) button{
         right: -0.25em;
         content:"";
         background-color: var(--color-black);
-        background-image: url("../assets/img/button.svg");
+        background-image: url("../assets/img/icon/button.svg");
         background-position: center;
         background-size: calc(1.5em - 4px);
         width: 1.5em;
@@ -479,7 +484,8 @@ nav ul li{
 
 /* ■■■ フッター ■■■ */
 footer{
-    margin-top: calc(var(--default-length) * 4);
+    padding-top: calc(var(--mlen) * 2);
+    margin-top: calc(var(--mlen) * 4);
     background-color: var(--color-blue);
     background-image:
         url("../assets/img/background/geometric1.svg"),
@@ -489,76 +495,83 @@ footer{
     background-size: 150%;
     background-repeat: repeat;
 
-    & img{
-        padding-top: calc(var(--default-length) * 3);
-    }
-
+    /* リンク */
     & li:nth-child(-n+8){
-        margin: calc(var(--default-length) * 2.5) auto 0;
+        margin: calc(var(--mlen) * 2.5) auto 0;
         border-bottom: dashed 1px var(--color-white);
         width: var(--content-width);
     }
 
+    /* Instagram Logo */
     & li:nth-child(9){
-        margin-top: calc(var(--default-length) * 2);
-    }
-    & li:nth-child(10){
-        margin-top: calc(var(--default-length) * 2);
+        margin-top: calc(var(--mlen) * 2);
     }
 
-    & .flex{
-        margin-top: calc(var(--default-length) * 2);
+    /* 主催情報 */
+    & li:nth-last-child(2){
+        margin-top: calc(var(--mlen) * 3);
+    }
+
+    /* 主催SNS */
+    & li:nth-last-child(1){
+        margin-top: calc(var(--mlen) * 1);
         justify-content: center;
     }
 
+    /* 最下部キャラ */
     & .footer-character-style{
         position: relative;
         height: var(--footer-character-height);
-        margin-top: calc(var(--default-length) * 4);
+        margin-top: calc(var(--mlen) * 4);
         overflow-y: hidden;
         z-index: 0;
 
         & img{
             display:inline-block;
 
+            /* パレット */
             &:nth-child(1){
                 position: absolute;
-                bottom: calc(var(--default-length) * -2.5);
-                left: calc(var(--default-length) * -1.5);
+                bottom: calc(var(--mlen) * -2.5);
+                left: calc(var(--mlen) * -1.5);
                 width: 35%;
                 transform: rotate(-15deg);
             }
 
+            /* えんぴつ */
             &:nth-child(2){
                 position: absolute;
-                bottom: calc(var(--default-length) * -4);
-                left: calc(var(--default-length) * 11.5);
+                bottom: calc(var(--mlen) * -4);
+                left: calc(var(--mlen) * 10);
                 width: 45%;
                 transform: rotate(30deg) rotateY(180deg);
                 z-index: 2;
             }
 
+            /* バケツ */
             &:nth-child(3){
                 position: absolute;
-                bottom: calc(var(--default-length) * 1);
-                left: calc(var(--default-length) * 18);
+                bottom: calc(var(--mlen) * 1);
+                left: calc(var(--mlen) * 18);
                 width: 40%;
                 z-index: 3;
             }
 
+            /* 太陽 */
             &:nth-child(4){
                 position: absolute;
-                bottom: calc(var(--default-length) * -3.5);
-                left: calc(var(--default-length) * 24);
+                bottom: calc(var(--mlen) * -3.5);
+                left: calc(var(--mlen) * 24);
                 width: 30%;
                 transform: rotate(-5deg);
                 z-index: 4;
             }
 
+            /* 絵筆 */
             &:nth-child(5){
                 position: absolute;
-                bottom: calc(var(--default-length) * -2);
-                left: calc(var(--default-length) * 36);
+                bottom: calc(var(--mlen) * -2);
+                left: calc(var(--mlen) * 36);
                 width: 20%;
                 transform: rotate(0deg);
                 z-index: 5;
@@ -604,6 +617,29 @@ footer{
 .ankerlink-image-tiktok-white{
     background-image: url("../assets/img/logo/TIKTOK_SIMPLIFIED_NOTE_WHITE.svg");
 }
+
+/* ■■■ 外部サイトのアイコン ■■■ */
+.add-external-site-icon,
+.add-external-site-icon-white{
+    position: relative;
+    &::after{
+        content:"";
+        position: absolute;
+        top: -0.15em;
+        right: -1.75em;
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+.add-external-site-icon::after{
+    background-image: url("../assets/img/icon/up-right-form-square.svg");
+}
+
+.add-external-site-icon-white::after{
+    background-image: url("../assets/img/icon/up-right-form-square-white.svg");
+}
+
 
 /* ■■■ フォントファミリー ■■■ */
 /* 見出し用フォント（weight:900） */
