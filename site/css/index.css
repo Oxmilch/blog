@@ -78,6 +78,16 @@
         box-shadow: 3px 3px 0 var(--color-black);
         z-index: 1;
     }
+
+    /* after-internal-site-icon-white から継承 */
+    &::after{
+        top: auto;
+        left: auto;
+        bottom: calc(var(--mlen) * 0.5);
+        right: calc(var(--mlen) * 0.5);
+        border:solid calc(var(--mlen) * 0.25) var(--color-white);
+        border-radius: 50%;
+    }
 }
 
 /* アンカーリンク：ワークショップ */
@@ -105,6 +115,16 @@
         border-radius: 1em;
         box-shadow: 3px 3px 0 var(--color-black);
         z-index: 1;
+    }
+
+    /* after-internal-site-icon-white から継承 */
+    &::after{
+        top: auto;
+        left: auto;
+        bottom: calc(var(--mlen) * 0.5);
+        right: calc(var(--mlen) * 0.5);
+        border:solid calc(var(--mlen) * 0.25) var(--color-white);
+        border-radius: 50%;
     }
 }
 
@@ -138,6 +158,16 @@
         border-radius: 1em;
         box-shadow: 3px 3px 0 var(--color-black);
         z-index: 1;
+    }
+
+    /* after-internal-site-icon から継承 */
+    &::after{
+        top: auto;
+        left: auto;
+        bottom: calc(var(--mlen) * 0.5);
+        right: calc(var(--mlen) * 0.5);
+        border:solid calc(var(--mlen) * 0.25) var(--color-black);
+        border-radius: 50%;
     }
 }
 

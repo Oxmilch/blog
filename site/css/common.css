@@ -65,7 +65,7 @@
     /* 共通スタイル */
     --transition-time: 0.4s;
     --header-height: calc(clamp(66px, 36.448px + 7.879vw, 79px) + var(--mlen) * 2);
-    --footer-character-height: clamp(150px, 7.724rem + 7.042vw, 225px);
+    --footer-character-height: clamp(150px, -20.448px + 45.455vw, 225px);
     --layout-width-min: 375px;
     --layout-width-max: 540px;
     --content-width: 90%;
@@ -508,7 +508,7 @@ footer{
     }
 
     /* 主催情報 */
-    & li:nth-last-child(2){
+    & li:nth-last-child(3){
         margin-top: calc(var(--mlen) * 3);
     }
 
@@ -618,9 +618,33 @@ footer{
     background-image: url("../assets/img/logo/TIKTOK_SIMPLIFIED_NOTE_WHITE.svg");
 }
 
-/* ■■■ 外部サイトのアイコン ■■■ */
-.add-external-site-icon,
-.add-external-site-icon-white{
+
+/* ■■■ アイコン関連 ■■■ */
+/* 内部サイトリンク */
+.after-internal-site-icon,
+.after-internal-site-icon-white{
+    position: relative;
+    &::after{
+        content:"";
+        position: absolute;
+        top: 0;
+        right: -1.75em;
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+.after-internal-site-icon::after{
+    background-image: url("../assets/img/icon/arrow-right.svg");
+}
+
+.after-internal-site-icon-white::after{
+    background-image: url("../assets/img/icon/arrow-right-white.svg");
+}
+
+/* 外部サイトリンク */
+.after-external-site-icon,
+.after-external-site-icon-white{
     position: relative;
     &::after{
         content:"";
@@ -632,11 +656,11 @@ footer{
     }
 }
 
-.add-external-site-icon::after{
+.after-external-site-icon::after{
     background-image: url("../assets/img/icon/up-right-form-square.svg");
 }
 
-.add-external-site-icon-white::after{
+.after-external-site-icon-white::after{
     background-image: url("../assets/img/icon/up-right-form-square-white.svg");
 }
 
