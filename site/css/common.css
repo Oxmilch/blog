@@ -416,68 +416,148 @@ li{
     }
 }
 
-/* リンク一覧 */
-nav li{
-    margin: 1em auto;
-    border-top: solid 5px var(--color-blak);
-    border-bottom: solid 5px var(--color-red);
-}
+/* ハンバーガーメニュー画面 */
+.layout-menu nav{
+    /* サイト内リンク一覧 */
+    & ul:nth-child(1) li{
+        position: relative;
+        padding-bottom: var(--mlen);
 
-#header-menu-form,
-#header-menu-sns,
-#header-menu-fjc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        & a{
+            position: relative;
+            width: var(--content-width);
+            z-index: 110;
+        }
 
-nav ul li:nth-child(-n+4) button{
-    position: relative;
-    padding-bottom: 4px;
-    border-bottom: solid 6px var(--color-black-translucent);
+        /* 下線 */
+        &::before{
+            position: absolute;
+            content:"";
+            bottom: -0.1em;
+            left: 0;
+            width: calc(var(--content-width) + ((100% - var(--content-width)) * 0.5));
+            border-style: solid;
+            border-width: calc(var(--mlen) * 0.5);
+        }
 
-    &::after{
-        position: absolute;
-        top: 0;
-        right: -0.25em;
-        content:"";
-        background-color: var(--color-black);
-        background-image: url("../assets/img/icon/button.svg");
-        background-position: center;
-        background-size: calc(1.5em - 4px);
-        width: 1.5em;
-        height: 1.5em;
-        border-radius: 50%;
-        z-index: 102;
-    }
-}
+        &:nth-child(even)::before{
+            left: auto;
+            right: 0;
+        }
 
-nav ul li{
-    &:nth-child(2) button{
-        color: var(--color-font-red);
-        border-color: var(--color-red-translucent);
-
+        /* after-internal-site-icon の継承(矢印アイコン) */
         &::after{
-            background-color: var(--color-font-red);
+            top: auto;
+            left: auto;
+            right: calc((100% - var(--content-width)) * 0.5);
+            bottom: var(--mlen);
+            padding: 2px;
+            border-radius: 50%;
+        }
+
+        /* 下線と矢印の色設定 */
+        &:nth-child(1){
+            margin-top: calc(var(--mlen) * 1);
+
+            &::before{
+                border-color: var(--color-black-translucent);
+            }
+            &::after{
+                background-color: var(--color-black-translucent);
+            }
+        }
+
+        &:nth-child(2){
+            margin-top: calc(var(--mlen) * 4);
+
+            &::before{
+                border-color: var(--color-red-translucent);
+            }
+            &::after{
+                background-color: var(--color-red-translucent);
+            }
+        }
+
+        &:nth-child(3){
+            margin-top: calc(var(--mlen) * 4);
+
+            &::before{
+                border-color: var(--color-green-translucent);
+            }
+            &::after{
+                background-color: var(--color-green-translucent);
+            }
+        }
+
+        &:nth-child(4){
+            margin-top: calc(var(--mlen) * 4);
+
+            &::before{
+                border-color: var(--color-blue-translucent);
+            }
+            &::after{
+                background-color: var(--color-blue-translucent);
+            }
         }
     }
 
-    &:nth-child(3) button{
-        color: var(--color-font-green);
-        border-color: var(--color-green-translucent);
+    /* 申込みフォームリンク */
+    & ul:nth-child(2){
+        margin-top: calc(var(--mlen) * 2);
+        justify-content: center;
 
-        &::after{
-            background-color: var(--color-font-green);
+        & li{
+            width: calc(var(--content-width) * 0.5);
+
+            &:nth-child(1) a{
+                border: solid 6px var(--color-green);
+
+                &::after{
+                    top: auto;
+                    left: atuo;
+                    right: 0;
+                    bottom: 0;
+                    background-size: 1.5em;
+                    background-position: center;
+                    width: 1em;
+                    height: 1em;
+                    padding: 1em;
+                    border-radius: var(--mlen);
+                }
+            }
+
+            &:nth-last-child(1) a{
+                border: solid 6px var(--color-blue);
+
+                &::after{
+                    top: auto;
+                    left: atuo;
+                    right: 0;
+                    bottom: 0;
+                    background-size: 1.5em;
+                    background-position: center;
+                    width: 1em;
+                    height: 1em;
+                    padding: 1em;
+                    border-radius: var(--mlen);
+                }
+            }
         }
     }
 
-    &:nth-child(4) button{
-        color: var(--color-font-blue);
-        border-color: var(--color-blue-translucent);
+    /* SNS */
+    & ul:nth-child(3){
+        justify-content: center;
+    }
 
-        &::after{
-            background-color: var(--color-font-blue);
-        }
+    /* 福岡青年会議所 */
+    & h3{
+        padding-top: calc(var(--mlen) * 1);
+    }
+
+    & ul:nth-last-child(1){
+        justify-content: center;
+
     }
 }
 
@@ -649,10 +729,10 @@ footer{
     &::after{
         content:"";
         position: absolute;
-        top: -0.15em;
-        right: -1.75em;
-        width: 1.5em;
-        height: 1.5em;
+        top: 0.15em;
+        right: -1.5em;
+        width: 1.25em;
+        height: 1.25em;
     }
 }
 
