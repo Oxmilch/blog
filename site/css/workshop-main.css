@@ -1,1 +1,65 @@
 @charset "UTF-8";
+
+/* ■■■ 背景設定 ■■■ */
+.layout-mobile{
+    background-image: url("../assets/img/background/geometric3.svg");
+}
+
+
+/* ■■■ ファーストビュー ■■■ */
+.firstview-style{
+    margin-top: calc(var(--mlen) * 4);
+    background-color: var(--color-red);
+}
+
+.firstview-top-style{
+    margin-top: calc(var(--mlen) * 4);
+
+    & p:nth-last-child(1){
+        display: inline-block;
+        margin-top: calc(var(--mlen) * 2);
+        width: fit-content;
+        padding: 0 2em;
+        background-color: var(--color-black);
+    }
+}
+
+.firstview-schedule-style{
+    margin-top: calc(var(--mlen) * 4);
+    margin-bottom: calc(var(--mlen) * 5);
+    background-color: var(--color-yellow);
+}
+
+
+/* ■■■ ワークショップ一覧 ■■■ */
+.workshop-list-heading-style{
+    --ajust-left: calc(var(--mlen) * 8);
+
+    position: relative;
+    transform: rotate(-3.5deg);
+    margin-top: calc(var(--mlen) * 4);
+    margin-left: var(--ajust-left);
+    height: 5em;
+    z-index: 0;
+
+    &::before{
+        position: absolute;
+        top: -0.9em;
+        left: calc(var(--ajust-left) * -1);
+        display: inline-block;
+        content: "";
+        background-image: url("../assets/img/decoration/ribbon.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(3.5deg);
+        width: calc(100% + var(--ajust-left));
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+}
+
+.workshop-detail-1{
+    background-color: var(--color-green);
+}

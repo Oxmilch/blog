@@ -180,6 +180,7 @@
 .main-content-workshop-style{
     position: relative;
     top: calc(var(--mlen) * -6);
+    background-color: var(--color-blue);
     z-index: 10;
 }
 
