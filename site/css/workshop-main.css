@@ -35,6 +35,7 @@
 .workshop-list-heading-background-style{
     justify-content: center;
     align-content: center;
+    margin-top: calc(var(--mlen) * 5);
     width: 100%;
     height: calc(var(--mlen) * 12);
     background-image: url("../assets/img/decoration/ribbon.svg");
@@ -56,6 +57,7 @@
 .workshop-list-detail-4-style{
     position: relative;
     padding-top: calc(var(--mlen) * 4);
+    margin-top: calc(var(--mlen) * 4);
     z-index: 0;
 
     &::before{
@@ -126,4 +128,19 @@
 /* 怒られない落書き部屋 */
 .workshop-list-detail-1-style{
     background-color: var(--color-green-vivid);
+}
+
+/* ライブパフォーマンス */
+.workshop-list-detail-2-style{
+    background-color: var(--color-yellow);
+}
+
+/* オリジナルシール作り */
+.workshop-list-detail-3-style{
+    background-color: var(--color-blue);
+}
+
+/* オリジナルTシャツシャツ作り */
+.workshop-list-detail-4-style{
+    background-color: var(--color-red);
 }
