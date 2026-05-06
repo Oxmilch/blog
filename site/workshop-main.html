@@ -31,7 +31,7 @@
             </button>
         </div>
         <nav class="text-center">
-            <ul class="font-title-exbold-ll text-center">
+            <ul class="font-title-exbold-l2 text-center">
                 <li class="after-internal-site-icon-white"><a href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る">トップページ</a></li>
                 <li class="after-internal-site-icon-white"><a class="font-color-red" href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
                 <li class="after-internal-site-icon-white"><a class="font-color-green" href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
@@ -59,7 +59,7 @@
             </button>
         </header>
         <section id="firstview" class="text-center">
-            <h1>大アート展</h1>
+            <h1 class="font-title-black-l7 font-color-white-stroke-shadow">大アート展</h1>
             <p>8.30</p>
             <p>10:00〜16:00</p>
             <div class="box-wave firstview-style">
@@ -105,15 +105,19 @@
             </div>
         </section>
         <main id="workshop-list" class="workshop-list-style">
-            <h2 class="text-left font-title-black-lll workshop-list-heading-style">ワークショップ一覧</h2>
+            <div class="flex workshop-list-heading-background-style">
+                <h2 class="font-title-black-l3 workshop-list-heading-style">
+                    ワークショップ一覧
+                </h2>
+            </div>
             <ul class="container">
-                <li class="box-round-shadow workshop-list-detail-1
-                           text-center">
-                    <h3>怒られない落書き部屋</h3>
-                    <p>壁！床！家具！　全て真っ白！</p>
-                    <span></span>
-                    <div id="workshop-detail-1" class="accordion-menu workshop-detail-1">
-                        <p>10:30〜16:00</p>
+                <li class="box-round-shadow workshop-list-detail-1-style
+                           text-center font-color-white">
+                    <h3 class="font-title-black-l3 font-color-white-stroke-shadow">怒られない落書き部屋</h3>
+                    <p class="font-title-exbold-l">壁！床！家具！　全て真っ白！</p>
+                    <span class="container decoration-line"></span>
+                    <div id="workshop-detail-1" class="accordion-menu workshop-detail-1-style">　
+                        <p class="container font-title-exbold-l4 work-shop-detail-time-style">10:30〜16:00</p>
                         <div>
                             <div>
                                 <p>
@@ -134,8 +138,15 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="box-round-shadow" onclick="AccordionMenu.toggle('workshop-detail-1')">
+                    <button type="button" aria-label="怒られない落書き部屋の詳細情報を開く" aria-expanded="false" aria-controls="workshop-detail-1-button"
+                            id="workshop-detail-1-button-open" class="box-round-shadow workshop-detail-button-red-style font-title-exbold-s font-color-white"
+                            onclick="AccordionMenu.toggle('workshop-detail-1'); AccordionMenu.openButton(this, 'workshop-detail-1-button-close');">
                         くわしくみる
+                    </button>
+                    <button type="button" aria-label="怒られない落書き部屋の詳細情報を閉じる" aria-expanded="true" aria-controls="workshop-detail-1-button"
+                            id="workshop-detail-1-button-close" class="box-round-shadow workshop-detail-button-red-style button-hidden font-title-exbold-s font-color-white"
+                            onclick="AccordionMenu.toggle('workshop-detail-1'); AccordionMenu.closeButton(this, 'workshop-detail-1-button-open');">
+                        とじる
                     </button>
                 </li>
             </ul>
@@ -160,7 +171,7 @@
                         <a class="ankerlink-image-tiktok-white" href="https://www.tiktok.com/@fukuokajc" target="_blank" alt=""></a>
                     </li>
                 </ul>
-                <small>&copy;2026　一般社団法人　福岡年会議所</small>
+                <smal2>&copy;2026　一般社団法人　福岡年会議所</smal2>
             </div>
             <div class="footer-character-style">
                 <img src="./assets/img/character/palette.svg" alt="">

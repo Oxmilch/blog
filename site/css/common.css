@@ -26,6 +26,7 @@
     --color-green: #2db82d;
     --color-green-translucent: #2db82d97;
     --color-green-light: #50c850;
+    --color-green-vivid: #32CD32;
     --color-blue: #1f4e8c;
     --color-blue-translucent: #1f4e8c97;
     --color-blue-light: #0054a7;
@@ -44,16 +45,17 @@
     --font-style: normal;
 
     /* フォントサイズ (最小375px - 最大540px） */
-    --font-size-llllll: clamp(2.25rem, 1.176rem + 4.582vw, 2.723rem); /* 36px */
-    --font-size-lllll: clamp(2rem, 1.045rem + 4.073vw, 2.42rem);      /* 32px */
-    --font-size-llll: clamp(1.875rem, 0.980rem + 3.818vw, 2.269rem);  /* 30px */
-    --font-size-lll: clamp(1.5rem, 0.784rem + 3.055vw, 1.815rem);     /* 24px */
-    --font-size-ll: clamp(1.25rem, 0.653rem + 2.545vw, 1.512rem);     /* 20px */
-    --font-size-l: clamp(1.125rem, 0.588rem + 2.291vw, 1.361rem);     /* 18px */
-    --font-size: clamp(1rem, 0.523rem + 2.036vw, 1.21rem);     /* 最小時 16px */
-    --font-size-s: clamp(0.875rem, 0.457rem + 1.782vw, 1.05875rem);   /* 14px */
-    --font-size-ss: clamp(0.75rem, 0.392rem + 1.527vw, 0.907rem);     /* 12px */
-    --font-size-sss: clamp(0.625rem, 0.434rem + 0.95vw, 0.756rem);    /* 10px */
+    --font-size-l7: clamp(3rem, 12.8vw, 4.32rem);                   /* 48px */
+    --font-size-l6: clamp(2.25rem, 1.176rem + 4.582vw, 2.723rem);   /* 36px */
+    --font-size-l5: clamp(2rem, 1.045rem + 4.073vw, 2.42rem);       /* 32px */
+    --font-size-l4: clamp(1.875rem, 0.98rem + 3.818vw, 2.269rem) ;  /* 30px */
+    --font-size-l3: clamp(1.5rem, 0.784rem + 3.055vw, 1.815rem);    /* 24px */
+    --font-size-l2: clamp(1.25rem, 0.653rem + 2.545vw, 1.512rem);   /* 20px */
+    --font-size-l: clamp(1.125rem, 0.588rem + 2.291vw, 1.361rem);   /* 18px */
+    --font-size: clamp(1rem, 0.523rem + 2.036vw, 1.21rem);    /* 最小時 16px */
+    --font-size-s: clamp(0.875rem, 0.457rem + 1.782vw, 1.05875rem); /* 14px */
+    --font-size-ss: clamp(0.75rem, 0.392rem + 1.527vw, 0.907rem);   /* 12px */
+    --font-size-sss: clamp(0.625rem, 0.434rem + 0.95vw, 0.756rem);  /* 10px */
 
 
     /* 基準となる長さ。Mobile LENgth の略。
@@ -228,7 +230,7 @@ body{
 }
 
 .box-round-shadow{
-    box-shadow: 5px 5px 0 var(--color-black);
+    box-shadow: calc(var(--mlen) * 0.5) calc(var(--mlen) * 0.5) 0 var(--color-black);
 }
 
 /* 上下の境界が波模様 */
@@ -301,11 +303,11 @@ h1,h2,h3,h4,h5{
 }
 
 h1{
-    font-size: var(--font-size-llll);
+    font-size: var(--font-size-l4);
 }
 
 h2{
-    font-size: var(--font-size-lll);
+    font-size: var(--font-size-l3);
 }
 
 h3{
@@ -573,6 +575,10 @@ li{
     overflow: auto;
 }
 
+.button-hidden{
+    display: none;
+}
+
 
 /* ■■■ フッター ■■■ */
 footer{
@@ -757,13 +763,35 @@ footer{
 }
 
 
+/* ■■■ 装飾 ■■■ */
+/* 横線 */
+.decoration-line,
+.decoration-line-white{
+    display: inline-block;
+    width: 100%;
+    height: calc(var(--mlen) * 0.5);
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.decoration-line{
+    background-color: var(--color-black);
+}
+
+.decoration-line-white{
+    background-color: var(--color-white);
+}
+
+
+
 /* ■■■ フォントファミリー ■■■ */
 /* 見出し用フォント（weight:900） */
-.font-title-black-llllll,
-.font-title-black-lllll,
-.font-title-black-llll,
-.font-title-black-lll,
-.font-title-black-ll,
+.font-title-black-l7,
+.font-title-black-l6,
+.font-title-black-l5,
+.font-title-black-l4,
+.font-title-black-l3,
+.font-title-black-l2,
 .font-title-black-l,
 .font-title-black,
 .font-title-black-s,
@@ -773,11 +801,12 @@ footer{
 }
 
 /* 見出し用フォント（weight:800） */
-.font-title-exbold-llllll,
-.font-title-exbold-lllll,
-.font-title-exbold-llll,
-.font-title-exbold-lll,
-.font-title-exbold-ll,
+.font-title-exbold-l7,
+.font-title-exbold-l6,
+.font-title-exbold-l5,
+.font-title-exbold-l4,
+.font-title-exbold-l3,
+.font-title-exbold-l2,
 .font-title-exbold-l,
 .font-title-exbold,
 .font-title-exbold-s,
@@ -788,11 +817,12 @@ footer{
 }
 
 /* テキスト用フォント（weight:700） */
-.font-text-bold-llllll,
-.font-text-bold-lllll,
-.font-text-bold-llll,
-.font-text-bold-lll,
-.font-text-bold-ll,
+.font-text-bold-l7,
+.font-text-bold-l6,
+.font-text-bold-l5,
+.font-text-bold-l4,
+.font-text-bold-l3,
+.font-text-bold-l2,
 .font-text-bold-l,
 .font-text-bold,
 .font-text-bold-s,
@@ -803,11 +833,12 @@ footer{
 }
 
 /* テキスト用フォント（weight:400） */
-.font-text-llllll,
-.font-text-lllll,
-.font-text-llll,
-.font-text-lll,
-.font-text-ll,
+.font-text-l7,
+.font-text-l6,
+.font-text-l5,
+.font-text-l4,
+.font-text-l3,
+.font-text-l2,
 .font-text-l,
 .font-text,
 .font-text-s,
@@ -819,39 +850,46 @@ footer{
 
 
 /* ■■■ フォントサイズ ■■■ */
-.font-title-black-llllll,
-.font-title-exbold-llllll,
-.font-text-bold-llllll,
-.font-text-llllll{
-    font-size: var(--font-size-llllll);
+.font-title-black-l7,
+.font-title-exbold-l7,
+.font-text-bold-l7,
+.font-text-l7{
+    font-size: var(--font-size-l7);
 }
 
-.font-title-black-lllll,
-.font-title-exbold-lllll,
-.font-text-bold-lllll,
-.font-text-lllll{
-    font-size: var(--font-size-lllll);
+.font-title-black-l6,
+.font-title-exbold-l6,
+.font-text-bold-l6,
+.font-text-l6{
+    font-size: var(--font-size-l6);
 }
 
-.font-title-black-llll,
-.font-title-exbold-llll,
-.font-text-bold-llll,
-.font-text-llll{
-    font-size: var(--font-size-llll);
+.font-title-black-l5,
+.font-title-exbold-l5,
+.font-text-bold-l5,
+.font-text-l5{
+    font-size: var(--font-size-l5);
 }
 
-.font-title-black-lll,
-.font-title-exbold-lll,
-.font-text-bold-lll,
-.font-text-lll{
-    font-size: var(--font-size-lll);
+.font-title-black-l4,
+.font-title-exbold-l4,
+.font-text-bold-l4,
+.font-text-l4{
+    font-size: var(--font-size-l4);
 }
 
-.font-title-black-ll,
-.font-title-exbold-ll,
-.font-text-bold-ll,
-.font-text-ll{
-    font-size: var(--font-size-ll);
+.font-title-black-l3,
+.font-title-exbold-l3,
+.font-text-bold-l3,
+.font-text-l3{
+    font-size: var(--font-size-l3);
+}
+
+.font-title-black-l2,
+.font-title-exbold-l2,
+.font-text-bold-l2,
+.font-text-l2{
+    font-size: var(--font-size-l2);
 }
 
 .font-title-black-l,
@@ -896,27 +934,37 @@ footer{
 }
 
 .font-color-white,
-.font-color-white-shadow{
+.font-color-white-shadow,
+.font-color-white-stroke-shadow,
+.font-color-white-stroke-shadow-thick{
     color: var(--color-font-white);
 }
 
 .font-color-blue,
-.font-color-blue-shadow{
+.font-color-blue-shadow,
+.font-color-blue-stroke-shadow,
+.font-color-blue-stroke-shadow-thick{
     color: var(--color-font-blue);
 }
 
 .font-color-red,
-.font-color-red-shadow{
+.font-color-red-shadow,
+.font-color-red-stroke-shadow,
+.font-color-red-stroke-shadow-thick{
     color: var(--color-font-red);
 }
 
-.font-color-green
-.font-color-green-shadow{
+.font-color-green,
+.font-color-green-shadow,
+.font-color-green-stroke-shadow,
+.font-color-green-stroke-shadow-thick{
     color: var(--color-font-green);
 }
 
 .font-color-yellow,
-.font-color-yellow-shadow{
+.font-color-yellow-shadow,
+.font-color-yellow-stroke-shadow,
+.font-color-yellow-stroke-shadow-thick{
     color: var(--color-font-yellow);
 }
 
@@ -927,7 +975,32 @@ footer{
 .font-color-red-shadow,
 .font-color-green-shadow,
 .font-color-yellow-shadow{
-    text-shadow: 0.25em 0.25em 0 var(--color-font);
+    text-shadow: 0.1em 0.1em 0 var(--color-font);
+}
+
+.font-color-white-stroke-shadow,
+.font-color-blue-stroke-shadow,
+.font-color-red-stroke-shadow,
+.font-color-green-stroke-shadow,
+.font-color-yellow-stroke-shadow{
+    text-shadow:
+         -1px  -1px 0 var(--color-font),
+          1px  -1px 0 var(--color-font),
+        0.1em 0.1em 0 var(--color-font),
+         -1px   1px 0 var(--color-font);
+}
+
+.font-color-white-stroke-shadow-thick,
+.font-color-blue-stroke-shadow-thick,
+.font-color-red-stroke-shadow-thick,
+.font-color-green-stroke-shadow-thick,
+.font-color-yellow-stroke-shadow-thick{
+    text-shadow:
+          -1px   -1px 0 var(--color-font),
+           1px   -1px 0 var(--color-font),
+         0.1em  0.1em 0 var(--color-font),
+        0.15em 0.15em 0 var(--color-font),
+          -1px    1px 0 var(--color-font);
 }
 
 

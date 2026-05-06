@@ -28,7 +28,7 @@
         left: calc((100% - var(--content-width)) * 0.5);
         color: var(--color-font-white);
         font-family: var(--font-family-title-black);
-        font-size: var(--font-size-lll);
+        font-size: var(--font-size-l3);
         text-shadow:
              0   -3px 0 var(--color-blue),
              3px -3px 0 var(--color-blue),
@@ -68,7 +68,7 @@
         left: -0.1em;
         color: var(--color-font-red);
         font-family: var(--font-family-title-black);
-        font-size: var(--font-size-lll);
+        font-size: var(--font-size-l3);
         border: solid 2px var(--color-black);
         background-color: var(--color-white);
         width: fit-content;
@@ -275,7 +275,7 @@ aside{
         left: -0.1em;
         color: var(--color-font-black);
         font-family: var(--font-family-title-black);
-        font-size: var(--font-size-lll);
+        font-size: var(--font-size-l3);
         border: solid 2px var(--color-black);
         background-color: var(--color-yellow);
         width: fit-content;
