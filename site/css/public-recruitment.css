@@ -1,34 +1,14 @@
 @charset "UTF-8";
 
-/* アコーディオンメニュー（タイトル） */
-summary{
-    font-family: var(--font-family-title-black);
-    font-size: var(--font-size-llll);
-    list-style-type: none;
+/* ■■■ 背景設定 ■■■ */
+.layout-mobile{
+    background-image: url("../assets/img/background/geometric3.svg");
 }
 
-/* アコーディオンメニュー（展開） */
-details{
-    position: relative;
-    background-color: var(--color-yellow);
-    text-align: center;
-    width: var(--container-width);
-    margin: 0 auto;
-    padding: 1rem;
-    cursor: pointer;
-    border-radius: 16px;
-    transition: 1s;
+/* ■■■ ファーストビュー ■■■ */
 
-    &::after{
-        position: absolute;
-        content:"∨";
-        top: 75%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    &[open]::after{
-        content:"∧";
-        top: auto;
-        bottom: -1rem;
-    }
+
+.infomation-style{
+    top: calc(var(--mlen) * -6);
+    background-color: var(--color-yellow);
 }
