@@ -314,6 +314,28 @@ body{
     background-repeat: repeat;
 }
 
+/* 背景がリボン */
+.box-ribbon{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--mlen5);
+    width: 100%;
+    height: calc(var(--mlen) * 12);
+    background-image: url("../assets/img/decoration/ribbon.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* リボン上に合わせてテキストを表示する (L3サイズ) */
+    & .box-ribbon-title-l3{
+        font-family: var(--font-family-title-black);
+        font-size: var(--font-size-l3);
+        width: fit-content;
+        height: var(--mlen6);
+        transform: rotate(-3.8deg) translateX(-10%) translateY(calc(var(--mlen) * 1.7));
+    }
+}
+
 
 /* ■■■ 共通スタイル ■■■ */
 header,

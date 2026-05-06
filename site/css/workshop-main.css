@@ -32,24 +32,6 @@
 
 
 /* ■■■ ワークショップ一覧 ■■■ */
-.workshop-list-heading-background-style{
-    justify-content: center;
-    align-content: center;
-    margin-top: var(--mlen5);
-    width: 100%;
-    height: calc(var(--mlen) * 12);
-    background-image: url("../assets/img/decoration/ribbon.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.workshop-list-heading-style{
-    width: fit-content;
-    height: var(--mlen6);
-    transform: rotate(-3.75deg) translateX(-10%) translateY(calc(var(--mlen) * -1.25));
-}
-
 /* 各ワークショップの共通デザイン(リングノート風) */
 .workshop-list-detail-1-style,
 .workshop-list-detail-2-style,
