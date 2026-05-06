@@ -61,12 +61,37 @@
     /* 基準となる長さ。Mobile LENgth の略。
        この特設サイトの最小サイズ(375px)から最大サイズ(540px)の可変的なサイズに対応させた独自のもの
        最小最大を変更した場合は、ここの値も変更するとほぼすべてのレイアウトにも反映される（はず）
-       標準フォントサイズには影響されない。 */
+       標準フォントサイズには影響されない。
+       -h -> harf の略。２分の１
+       -q -> quarter の略。４分の１
+       -n -> negative の略。負の値を表す */
     --mlen: clamp(8px, 2.133vw, 11.52px);
+    --mlen-q: calc(var(--mlen) * 0.25);
+    --mlen-h: calc(var(--mlen) * 0.5);
+    --mlen2: calc(var(--mlen) * 2);
+    --mlen3: calc(var(--mlen) * 3);
+    --mlen4: calc(var(--mlen) * 4);
+    --mlen5: calc(var(--mlen) * 5);
+    --mlen6: calc(var(--mlen) * 6);
+    --mlen7: calc(var(--mlen) * 7);
+    --mlen8: calc(var(--mlen) * 8);
+    --mlen9: calc(var(--mlen) * 9);
+    
+    --mlen-q-n: calc(var(--mlen) * -0.25);
+    --mlen-h-n: calc(var(--mlen) * -0.5);
+    --mlen-n: calc(var(--mlen) * -1);
+    --mlen2-n: calc(var(--mlen) * -2);
+    --mlen3-n: calc(var(--mlen) * -3);
+    --mlen4-n: calc(var(--mlen) * -4);
+    --mlen5-n: calc(var(--mlen) * -5);
+    --mlen6-n: calc(var(--mlen) * -6);
+    --mlen7-n: calc(var(--mlen) * -7);
+    --mlen8-n: calc(var(--mlen) * -8);
+    --mlen8-n: calc(var(--mlen) * -9);
 
     /* 共通スタイル */
     --transition-time: 0.4s;
-    --header-height: calc(clamp(66px, 36.448px + 7.879vw, 79px) + var(--mlen) * 2);
+    --header-height: calc(clamp(66px, 36.448px + 7.879vw, 79px) + var(--mlen2));
     --footer-character-height: clamp(150px, -20.448px + 45.455vw, 225px);
     --layout-width-min: 375px;
     --layout-width-max: 540px;
@@ -226,11 +251,11 @@ body{
 
 .box-round,
 .box-round-shadow{
-    border-radius: calc(var(--mlen) * 2);
+    border-radius: var(--mlen2);
 }
 
 .box-round-shadow{
-    box-shadow: calc(var(--mlen) * 0.5) calc(var(--mlen) * 0.5) 0 var(--color-black);
+    box-shadow: var(--mlen-h) var(--mlen-h) 0 var(--color-black);
 }
 
 /* 上下の境界が波模様 */
@@ -257,9 +282,9 @@ body{
     background-image:
         repeating-linear-gradient(
             135deg,
-            transparent 0px,
-            transparent calc(var(--mlen) * 2),
-            var(--color-white-translucent) calc(var(--mlen) * 2),
+            transparent 0,
+            transparent var(--mlen2),
+            var(--color-white-translucent) var(--mlen2),
             var(--color-white-translucent) calc(var(--mlen) * 2.5));
 }
 
@@ -320,7 +345,7 @@ small{
 }
 
 iframe{
-    margin-top: calc(var(--mlen) * 2);
+    margin-top: var(--mlen2);
     width: 100%;
     aspect-ratio: 4/3;
     border: none;
@@ -439,7 +464,7 @@ li{
             left: 0;
             width: calc(var(--content-width) + ((100% - var(--content-width)) * 0.5));
             border-style: solid;
-            border-width: calc(var(--mlen) * 0.5);
+            border-width: var(--mlen-h);
         }
 
         &:nth-child(even)::before{
@@ -459,7 +484,7 @@ li{
 
         /* 下線と矢印の色設定 */
         &:nth-child(1){
-            margin-top: calc(var(--mlen) * 1);
+            margin-top: var(--mlen);
 
             &::before{
                 border-color: var(--color-black-translucent);
@@ -470,7 +495,7 @@ li{
         }
 
         &:nth-child(2){
-            margin-top: calc(var(--mlen) * 4);
+            margin-top: var(--mlen4);
 
             &::before{
                 border-color: var(--color-red-translucent);
@@ -481,7 +506,7 @@ li{
         }
 
         &:nth-child(3){
-            margin-top: calc(var(--mlen) * 4);
+            margin-top: var(--mlen4);
 
             &::before{
                 border-color: var(--color-green-translucent);
@@ -492,7 +517,7 @@ li{
         }
 
         &:nth-child(4){
-            margin-top: calc(var(--mlen) * 4);
+            margin-top: var(--mlen4);
 
             &::before{
                 border-color: var(--color-blue-translucent);
@@ -505,7 +530,7 @@ li{
 
     /* 申込みフォームリンク */
     & ul:nth-child(2){
-        margin-top: calc(var(--mlen) * 2);
+        margin-top: var(--mlen2);
         justify-content: center;
 
         & li{
@@ -554,7 +579,7 @@ li{
 
     /* 福岡青年会議所 */
     & h3{
-        padding-top: calc(var(--mlen) * 1);
+        padding-top: var(--mlen);
     }
 
     & ul:nth-last-child(1){
@@ -582,8 +607,8 @@ li{
 
 /* ■■■ フッター ■■■ */
 footer{
-    padding-top: calc(var(--mlen) * 2);
-    margin-top: calc(var(--mlen) * 4);
+    padding-top: var(--mlen2);
+    margin-top: var(--mlen4);
     background-color: var(--color-blue);
     background-image:
         url("../assets/img/background/geometric1.svg"),
@@ -602,17 +627,17 @@ footer{
 
     /* Instagram Logo */
     & li:nth-child(9){
-        margin-top: calc(var(--mlen) * 2);
+        margin-top: var(--mlen2);
     }
 
     /* 主催情報 */
     & li:nth-last-child(3){
-        margin-top: calc(var(--mlen) * 3);
+        margin-top: var(--mlen3);
     }
 
     /* 主催SNS */
     & li:nth-last-child(1){
-        margin-top: calc(var(--mlen) * 1);
+        margin-top: var(--mlen);
         justify-content: center;
     }
 
@@ -620,7 +645,7 @@ footer{
     & .footer-character-style{
         position: relative;
         height: var(--footer-character-height);
-        margin-top: calc(var(--mlen) * 4);
+        margin-top: var(--mlen4);
         overflow-y: hidden;
         z-index: 0;
 
@@ -639,7 +664,7 @@ footer{
             /* えんぴつ */
             &:nth-child(2){
                 position: absolute;
-                bottom: calc(var(--mlen) * -4);
+                bottom: var(--mlen4-n);
                 left: calc(var(--mlen) * 10);
                 width: 45%;
                 transform: rotate(30deg) rotateY(180deg);
@@ -649,7 +674,7 @@ footer{
             /* バケツ */
             &:nth-child(3){
                 position: absolute;
-                bottom: calc(var(--mlen) * 1);
+                bottom: var(--mlen);
                 left: calc(var(--mlen) * 18);
                 width: 40%;
                 z-index: 3;
@@ -668,7 +693,7 @@ footer{
             /* 絵筆 */
             &:nth-child(5){
                 position: absolute;
-                bottom: calc(var(--mlen) * -2);
+                bottom: var(--mlen2-n);
                 left: calc(var(--mlen) * 36);
                 width: 20%;
                 transform: rotate(0deg);
@@ -769,7 +794,7 @@ footer{
 .decoration-line-white{
     display: inline-block;
     width: 100%;
-    height: calc(var(--mlen) * 0.5);
+    height: var(--mlen-h);
     background-position-x: center;
     background-repeat: no-repeat;
 }
