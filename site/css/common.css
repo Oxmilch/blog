@@ -959,6 +959,7 @@ footer{
 }
 
 .font-color-white,
+.font-color-white-stroke-thin,
 .font-color-white-shadow,
 .font-color-white-stroke-shadow,
 .font-color-white-stroke-shadow-thick{
@@ -966,6 +967,7 @@ footer{
 }
 
 .font-color-blue,
+.font-color-blue-stroke-thin,
 .font-color-blue-shadow,
 .font-color-blue-stroke-shadow,
 .font-color-blue-stroke-shadow-thick{
@@ -973,6 +975,7 @@ footer{
 }
 
 .font-color-red,
+.font-color-red-stroke-thin,
 .font-color-red-shadow,
 .font-color-red-stroke-shadow,
 .font-color-red-stroke-shadow-thick{
@@ -980,6 +983,7 @@ footer{
 }
 
 .font-color-green,
+.font-color-green-stroke-thin,
 .font-color-green-shadow,
 .font-color-green-stroke-shadow,
 .font-color-green-stroke-shadow-thick{
@@ -987,6 +991,7 @@ footer{
 }
 
 .font-color-yellow,
+.font-color-yellow-stroke-thin,
 .font-color-yellow-shadow,
 .font-color-yellow-stroke-shadow,
 .font-color-yellow-stroke-shadow-thick{
@@ -994,38 +999,53 @@ footer{
 }
 
 
-/* ■■■ フォントカラー(影付き) ■■■ */
+/* フォントカラー(影のみ) */
 .font-color-white-shadow,
 .font-color-blue-shadow,
 .font-color-red-shadow,
 .font-color-green-shadow,
 .font-color-yellow-shadow{
-    text-shadow: 0.1em 0.1em 0 var(--color-font);
+    text-shadow: 0.1em 0.1em 0 var(--color-black);
 }
 
+/* フォントカラー(縁のみ) */
+.font-color-white-stroke-thin,
+.font-color-blue-stroke-thin,
+.font-color-red-stroke-thin,
+.font-color-green-stroke-thin,
+.font-color-yellow-stroke-thin{
+    text-shadow:
+        -1px  -1px 0 var(--color-black-translucent),
+         1px  -1px 0 var(--color-black-translucent),
+         1px   1px 0 var(--color-black-translucent),
+        -1px   1px 0 var(--color-black-translucent);
+}
+
+/* フォントカラー(縁と影のみ) */
 .font-color-white-stroke-shadow,
 .font-color-blue-stroke-shadow,
 .font-color-red-stroke-shadow,
 .font-color-green-stroke-shadow,
 .font-color-yellow-stroke-shadow{
     text-shadow:
-         -1px  -1px 0 var(--color-font),
-          1px  -1px 0 var(--color-font),
-        0.1em 0.1em 0 var(--color-font),
-         -1px   1px 0 var(--color-font);
+         -1px  -1px 0 var(--color-black),
+          1px  -1px 0 var(--color-black),
+        0.1em 0.1em 0 var(--color-black),
+         -1px   1px 0 var(--color-black);
 }
 
+/* フォントカラー(縁と厚めの影のみ) */
 .font-color-white-stroke-shadow-thick,
 .font-color-blue-stroke-shadow-thick,
 .font-color-red-stroke-shadow-thick,
 .font-color-green-stroke-shadow-thick,
 .font-color-yellow-stroke-shadow-thick{
     text-shadow:
-          -1px   -1px 0 var(--color-font),
-           1px   -1px 0 var(--color-font),
-         0.1em  0.1em 0 var(--color-font),
-        0.15em 0.15em 0 var(--color-font),
-          -1px    1px 0 var(--color-font);
+          -1px   -1px 0 var(--color-black),
+           1px   -1px 0 var(--color-black),
+         0.1em  0.1em 0 var(--color-black),
+        0.15em 0.15em 0 var(--color-black),
+          -1px    1px 0 var(--color-black);
 }
 
 
