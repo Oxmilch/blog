@@ -90,6 +90,7 @@
 /* リングノート風の内容の時間 */
 .work-shop-detail-time-style{
     position: relative;
+    margin: 0 auto;
     width: fit-content;
 
     &::after{
