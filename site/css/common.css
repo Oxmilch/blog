@@ -136,6 +136,13 @@ body{
     font-size: var(--font-size);
     transition: all var(--transition-time);
     line-height: 1.5;
+
+    &::-webkit-scrollbar-track-piece{
+        background-color: var(--color-blue);
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: var(--color-orange);
+    }
 }
 
 .layout-mobile{
