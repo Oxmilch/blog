@@ -87,7 +87,7 @@
     --mlen6-n: calc(var(--mlen) * -6);
     --mlen7-n: calc(var(--mlen) * -7);
     --mlen8-n: calc(var(--mlen) * -8);
-    --mlen8-n: calc(var(--mlen) * -9);
+    --mlen9-n: calc(var(--mlen) * -9);
 
     /* 共通スタイル */
     --transition-time: 0.4s;
@@ -722,6 +722,127 @@ footer{
                 z-index: 5;
             }
         }
+    }
+}
+
+
+/* ■■■ キャラクター画像のアンカーリンク ■■■ */
+/* ワークショップ応募ボタンデザイン */
+.ankerlink-workshop-apply{
+    --button-width: calc(var(--mlen) * 28);
+    --button-height: fit-content;
+    --button-margin-top: var(--mlen4);
+    --button-margin-bottom: var(--mlen4);
+    --button-padding: calc(var(--mlen) * 1.5);
+    --border-radius: var(--mlen2);
+
+    position: relative;
+    text-align: center;
+    padding-top: var(--mlen4);
+    z-index: 0;
+
+    /* ボタンデザイン */
+    &::before{
+        content: "";
+        position: relative;
+        height: var(--button-height);
+        padding: var(--button-padding) calc(var(--button-width) * 0.5);
+        border: solid 2px transparent;
+        border-radius: var(--border-radius);
+        background-color: var(--color-red);
+        box-shadow: var(--mlen-h) var(--mlen-h) 0 var(--color-black);
+        z-index: 1;
+    }
+
+    /* キャラクター */
+    &::after{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        bottom: var(--mlen6-n);
+        left: var(--mlen5);
+        width: calc(var(--mlen) * 14);
+        height: calc(var(--mlen) * 14);
+        background-image: url("../assets/img/character/pen.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transform: rotate(30deg) rotateY(180deg);
+        z-index: 2;
+    }
+
+    /* 透明ボタン */
+    & a{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+        width: var(--button-width);
+        height: var(--button-height);
+        padding: var(--button-padding);
+        background-color: transparent;
+        border: solid 2px transparent;
+        border-radius: var(--border-radius);
+        z-index: 3;
+    }
+}
+
+/* Tシャツデザイン応募ボタンデザイン */
+.ankerlink-public-apply{
+    --button-width: calc(var(--mlen) * 28);
+    --button-height: fit-content;
+    --button-margin-top: var(--mlen4);
+    --button-margin-bottom: var(--mlen4);
+    --button-padding: calc(var(--mlen) * 1.5);
+    --border-radius: var(--mlen2);
+
+    position: relative;
+    text-align: center;
+    padding-top: var(--mlen4);
+    z-index: 0;
+
+    /* ボタンデザイン */
+    &::before{
+        content: "";
+        position: relative;
+        height: var(--button-height);
+        padding: var(--button-padding) calc(var(--button-width) * 0.5);
+        border: solid 2px transparent;
+        border-radius: var(--border-radius);
+        background-color: var(--color-red);
+        box-shadow: var(--mlen-h) var(--mlen-h) 0 var(--color-black);
+        z-index: 1;
+    }
+
+    /* キャラクター */
+    &::after{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: var(--mlen9-n);
+        right: var(--mlen4);
+        width: calc(var(--mlen) * 14);
+        height: calc(var(--mlen) * 14);
+        background-image: url("../assets/img/character/bucket.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: 2;
+    }
+
+    /* 透明ボタン */
+    & a{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+        width: var(--button-width);
+        height: var(--button-height);
+        padding: var(--button-padding);
+        background-color: transparent;
+        border: solid 2px transparent;
+        border-radius: var(--border-radius);
+        z-index: 3;
     }
 }
 

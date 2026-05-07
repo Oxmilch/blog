@@ -8,7 +8,15 @@
 /* ■■■ ファーストビュー ■■■ */
 
 
+/* ■■■ インフォメーション ■■■ */
+main{
+    margin-top: var(--mlen3);
+}
 .infomation-style{
-    top: calc(var(--mlen) * -6);
+    padding-top: var(--mlen3);
     background-color: var(--color-yellow);
+}
+
+.infomation-top-style{
+    padding-top: var(--mlen6);
 }

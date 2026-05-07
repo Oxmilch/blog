@@ -179,7 +179,8 @@
 
 .main-content-workshop-style{
     position: relative;
-    top: calc(var(--mlen) * -6);
+    top: var(--mlen6-n);
+    padding-bottom: var(--mlen9);
     background-color: var(--color-blue);
     z-index: 10;
 }
@@ -226,13 +227,6 @@
 }
 
 /* 共通：ボタン */
-.main-content-ankerlink-style{
-    margin-top: calc(var(--mlen) * 4);
-    margin-bottom: calc(var(--mlen) * 4);
-    width: clac(var(--mlen) * 35);
-    background-color: var(--color-red);
-}
-
 .main-content-workshop-public-style{
     border: solid 2px var(--color-black);
     background-color: var(--color-yellow);
