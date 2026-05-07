@@ -352,6 +352,7 @@ main{
 
 h1,h2,h3,h4,h5{
     font-family: var(--font-family-title-black);
+    width: fit-content;
     margin: 0 auto;
     text-align: center;
 }
@@ -366,6 +367,10 @@ h2{
 
 h3{
     font-size: var(--font-size-l);
+}
+
+h4{
+    font-size: var(--font-size);
 }
 
 small{
@@ -939,6 +944,50 @@ footer{
 
 
 /* ■■■ 装飾 ■■■ */
+/* 前後の斜め線 */
+.decoration-slash-before-after,
+.decoration-slash-before-after-white{
+    position: relative;
+
+    &::before{
+        position: absolute;
+        bottom: 0.75em;
+        left: -2em;
+        content: "";
+        width: 2em;
+        height: var(--mlen-q);
+        transform: rotate(45deg);
+    }
+
+    &::after{
+        position: absolute;
+        bottom: 0.75em;
+        right: -2em;
+        content: "";
+        width: 2em;
+        height: var(--mlen-q);
+        transform: rotate(-45deg);
+    }
+}
+
+.decoration-slash-before-after{
+    &::before{
+        background-color: var(--color-black);
+    }
+    &::after{
+        background-color: var(--color-black);
+    }
+}
+
+.decoration-slash-before-after-white{
+    &::before{
+        background-color: var(--color-white);
+    }
+    &::after{
+        background-color: var(--color-white);
+    }
+}
+
 /* 横線 */
 .decoration-line,
 .decoration-line-white{

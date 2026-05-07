@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-:root{
-    --top-shift: var(--mlen6-n);
-}
-
-
 /* ■■■ 背景設定 ■■■ */
 .layout-mobile{
     background-image: url("../assets/img/background/geometric1.svg");
@@ -185,7 +180,7 @@
 
 .main-content-workshop-style{
     position: relative;
-    top: var(--top-shift);
+    top: var(--mlen6-n); /* 親要素のチェック柄が見えてしまうため、上にシフト */
     padding-bottom: var(--mlen9);
     background-color: var(--color-blue);
     z-index: 10;
@@ -291,28 +286,6 @@ aside{
         width: fit-content;
         border-bottom: solid 1px var(--color-black);
         margin: var(--mlen) auto 0;
-    }
-
-    & a::before{
-        position: absolute;
-        top: 1em;
-        left: -2em;
-        content: "";
-        width: 2em;
-        height: 2px;
-        background-color: var(--color-black);
-        transform: rotate(45deg);
-    }
-
-    & a::after{
-        position: absolute;
-        top: 1em;
-        right: -2em;
-        content: "";
-        width: 2em;
-        height: 2px;
-        background-color: var(--color-black);
-        transform: rotate(-45deg);
     }
 }
 
