@@ -135,7 +135,7 @@ body{
     font-style: var(--font-style);
     font-size: var(--font-size);
     transition: all var(--transition-time);
-    line-height: 1.5;
+    line-height: 1.7;
 
     &::-webkit-scrollbar-track-piece{
         background-color: var(--color-blue);

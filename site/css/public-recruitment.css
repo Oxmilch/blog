@@ -20,3 +20,37 @@ main{
 .infomation-top-style{
     padding-top: var(--mlen6);
 }
+
+.infomation-top-detail-style{
+    padding: var(--mlen2) calc((100% - var(--content-width)) * 0.5) 0;
+}
+
+.infomation-example-style{
+    position: relative;
+    margin: var(--mlen6) 0 0 auto;
+    padding: var(--mlen6) 0 var(--mlen3);
+    border: solid var(--mlen-q) var(--color-black);
+    border-top-right-radius:  0;
+    border-bottom-right-radius: 0;
+    border-right-color: transparent;
+    width: var(--content-width);
+    z-index: 0;
+
+    &::before{
+        content:"かんたん応募";
+        position: absolute;
+        top: var(--mlen2-n);
+        left: var(--mlen8);
+        font-family: var(--font-family-title-exbold);
+        font-size: var(--font-size-l2);
+        /* color: var(--color-font-white); */
+    }
+}
+
+.infomation-caution-style{
+    position: relative;
+    top: var(--mlen3);
+    background-color: var(--color-green);
+    border: solid var(--mlen-q) var(--color-black);
+}
+
