@@ -44,18 +44,19 @@
     /* フォントスタイル */
     --font-style: normal;
 
-    /* フォントサイズ (最小375px - 最大540px） */
-    --font-size-l7: clamp(3rem, 12.8vw, 4.32rem);                   /* 48px */
-    --font-size-l6: clamp(2.25rem, 1.176rem + 4.582vw, 2.723rem);   /* 36px */
-    --font-size-l5: clamp(2rem, 1.045rem + 4.073vw, 2.42rem);       /* 32px */
-    --font-size-l4: clamp(1.875rem, 0.98rem + 3.818vw, 2.269rem) ;  /* 30px */
-    --font-size-l3: clamp(1.5rem, 0.784rem + 3.055vw, 1.815rem);    /* 24px */
-    --font-size-l2: clamp(1.25rem, 0.653rem + 2.545vw, 1.512rem);   /* 20px */
-    --font-size-l: clamp(1.125rem, 0.588rem + 2.291vw, 1.361rem);   /* 18px */
-    --font-size: clamp(1rem, 0.523rem + 2.036vw, 1.21rem);    /* 最小時 16px */
-    --font-size-s: clamp(0.875rem, 0.457rem + 1.782vw, 1.05875rem); /* 14px */
-    --font-size-ss: clamp(0.75rem, 0.392rem + 1.527vw, 0.907rem);   /* 12px */
-    --font-size-sss: clamp(0.625rem, 0.434rem + 0.95vw, 0.756rem);  /* 10px */
+    /* １方向の長さの可変値 (最小320px(倍率0.91) - 基準375px(基準倍率1.0) - 最大540px(倍率1.20) */
+    /* フォントサイズ */
+    --font-size-l7: clamp(2.73rem, 1.465rem + 6.327vw, 3.6rem);    /* 48px 3rem */
+    --font-size-l6: clamp(2.047rem, 1.098rem + 4.745vw, 2.7rem);   /* 36px 2.25rem */
+    --font-size-l5: clamp(1.82rem, 0.976rem + 4.218vw, 2.4rem);    /* 32px 2rem */
+    --font-size-l4: clamp(1.706rem, 0.915rem + 3.955vw, 2.25rem);  /* 30px 1.875rem */
+    --font-size-l3: clamp(1.365rem, 0.732rem + 3.164vw, 1.8rem);   /* 24px 1.5rem */
+    --font-size-l2: clamp(1.137rem, 0.610rem + 2.636vw, 1.5rem);   /* 20px 1.25rem */
+    --font-size-l: clamp(1.024rem, 0.549rem + 2.373vw, 1.35rem);   /* 18px 1.125rem */
+    --font-size: clamp(0.91rem, 0.488rem + 2.109vw, 1.2rem);   /* 基準 16px 1rem */
+    --font-size-s: clamp(0.796rem, 0.427rem + 1.845vw, 1.05rem);   /* 14px 0.875rem */
+    --font-size-ss: clamp(0.682rem, 0.366rem + 1.582vw, 0.9rem);   /* 12px 0.75rem */
+    --font-size-sss: clamp(0.569rem, 0.305rem + 1.318vw, 0.75rem); /* 10px 0.625rem */
 
 
     /* 基準となる長さ。Mobile LENgth の略。
@@ -65,7 +66,7 @@
        -h -> harf の略。２分の１
        -q -> quarter の略。４分の１
        -n -> negative の略。負の値を表す */
-    --mlen: clamp(8px, 2.133vw, 11.52px);
+    --mlen: clamp(7.28px, 0.244rem + 3.904px, 9.6px); /* 基準 8px */
     --mlen-q: calc(var(--mlen) * 0.25);
     --mlen-h: calc(var(--mlen) * 0.5);
     --mlen2: calc(var(--mlen) * 2);
@@ -90,15 +91,22 @@
     --mlen9-n: calc(var(--mlen) * -9);
 
     /* 共通スタイル */
-    --transition-time: 0.4s;
-    --header-height: calc(clamp(66px, 36.448px + 7.879vw, 79px) + var(--mlen2));
     --footer-character-height: clamp(150px, -20.448px + 45.455vw, 225px);
-    --layout-width-min: 375px;
+    --layout-width-min: 320px;
+    --laytou-width-target: 375px;
     --layout-width-max: 540px;
     --content-width: 90%;
-    --button-icon-size: clamp(66px, 36.448px + 7.879vw, 79px);
-    --button-sns-size: clamp(56px, 28.72px + 7.273vw, 68px);
+
+    /* ２方向の面積の可変値 (最小320px(倍率0.85) - 基準375px(基準倍率1.0) - 最大540px(倍率1.44)） */
+    /* 共通スタイル */
+    --button-icon-size: clamp(54.4px, -0.528px + 17.164vw, 92.16px); /* 64px */
+    --button-sns-size: clamp(47.6px, -0.464px + 15.018vw, 80.64px);  /* 56px */
+
+    /* その他 */
+    --transition-time: 0.4s;
+    --header-height: calc(var(--button-icon-size) + var(--mlen2));
 }
+
 
 
 /* ■■■ アクセシビリティ ■■■ */
@@ -117,12 +125,13 @@
 
 /* キーボード使用時フォーカス */
 :focus-visible{
-    outline: dashed 8px var(--color-orange) !important;
+    outline: dashed var(--mlen) var(--color-orange) !important;
     transition: outline-offset 0s !important;
 }
 
 
 /* ■■■ 基本となる表示範囲（レイアウト・コンテナ・フレックス・グリッド） ■■■ */
+/* 基本 */
 body{
     overflow: auto;
     scroll-behavior: smooth;
@@ -136,15 +145,15 @@ body{
     font-size: var(--font-size);
     transition: all var(--transition-time);
     line-height: 1.7;
-
-    &::-webkit-scrollbar-track-piece{
-        background-color: var(--color-blue);
-    }
-    &::-webkit-scrollbar-thumb{
-        background-color: var(--color-orange);
-    }
+}
+body::-webkit-scrollbar-track-piece{
+    background-color: var(--color-blue);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--color-orange);
 }
 
+/* モバイル部分の画面 */
 .layout-mobile{
     position: fixed;
     top: 0;
@@ -165,6 +174,7 @@ body{
     z-index: 0;
 }
 
+/* ハンバーガーメニューの画面 */
 .layout-menu{
     position: fixed;
     top: 0;
@@ -191,26 +201,24 @@ body{
         translate var(--transition-time),
         overlay var(--transition-time) allow-discrete,
         display var(--transition-time) allow-discrete;
-
-    &[open]{
-        opacity: 1;
-        @starting-style{
-            opacity: 0;
-        }
-    }
-
-    &::backdrop{
+}
+.layout-menu[open]{
+    opacity: 1;
+    @starting-style{
         opacity: 0;
-        transition: opacity var(--transition-time);
     }
-
-    &[open]::backdrop{
-        @starting-style{
-            opacity: 0;
-        }
+}
+.layout-menu::backdrop{
+    opacity: 0;
+    transition: opacity var(--transition-time);
+}
+.layout-menu[open]::backdrop{
+    @starting-style{
+        opacity: 0;
     }
 }
 
+/* デスクトップ表示用の画面 */
 .layout-desktop{
     position: fixed;
     top: 0px;
