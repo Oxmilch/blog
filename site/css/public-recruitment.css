@@ -1,14 +1,18 @@
 @charset "UTF-8";
 
-/* ■■■ 背景設定 ■■■ */
+/* ▼▼▼ 背景設定 ▼▼▼ */
 .layout-mobile{
     background-image: url("../assets/img/background/geometric3.svg");
 }
 
-/* ■■■ ファーストビュー ■■■ */
 
 
-/* ■■■ インフォメーション ■■■ */
+/* ▼▼▼ ファーストビュー ▼▼▼ */
+/* ▲▲▲ ファーストビュー ▲▲▲ */
+
+
+
+/* ▼▼▼ インフォメーション ▼▼▼ */
 main{
     margin-top: var(--mlen3);
 }
@@ -35,17 +39,17 @@ main{
     border-right-color: transparent;
     width: var(--layout-mobile-width-content);
     z-index: 0;
-
-    &::before{
-        content:"かんたん応募";
-        position: absolute;
-        top: var(--mlen2-n);
-        left: var(--mlen8);
-        font-family: var(--font-family-title-exbold);
-        font-size: var(--font-size-l2);
-        /* color: var(--color-font-white); */
-    }
 }
+.infomation-example-style::before{
+    content:"かんたん応募";
+    position: absolute;
+    top: var(--mlen2-n);
+    left: var(--mlen8);
+    font-family: var(--font-family-title-exbold);
+    font-size: var(--font-size-l2);
+    /* color: var(--color-font-white); */
+}
+
 
 .infomation-caution-style{
     position: relative;
@@ -53,4 +57,4 @@ main{
     background-color: var(--color-green);
     border: solid var(--mlen-q) var(--color-black);
 }
-
+/* ▲▲▲ インフォメーション ▲▲▲ */
