@@ -7,18 +7,9 @@
 
 
 /* ▼▼▼ 共通変数 ▼▼▼ */
-:root{
-    /* ▼▼ レスポンシブ定義 ▼▼ */
-    /* 基準倍率（モバイル） */
-    --layout-mobile-magnification: 1.000;
-    --layout-desktop-left-magnification: 0.000;
-    --layout-desktop-right-magnification: 0.000;
-    --is-mobile-only-display: unset;
-    --is-mobile-only-visible: visible;
-    --is-desktop-only-display: none !important;
-
-    @media screen and (min-width:961px){
-        /* 基準倍率（デスクトップ） */
+/* ▼▼ レスポンシブ定義(デスクトップ) ▼▼ */
+@media (min-width:961px){
+    :root{
         --layout-mobile-magnification: 0.334;
         --layout-desktop-left-magnification: 0.333;
         --layout-desktop-right-magnification: 0.333;
@@ -26,10 +17,21 @@
         --is-mobile-only-visible: hidden;
         --is-desktop-only-display: unset;
     }
+}
+/* ▼▼ レスポンシブ定義(モバイル) ▼▼ */
+@media (max-width:960px){
+    :root{
+        --layout-mobile-magnification: 1.000;
+        --layout-desktop-left-magnification: 0.000;
+        --layout-desktop-right-magnification: 0.000;
+        --is-mobile-only-display: unset;
+        --is-mobile-only-visible: visible;
+        --is-desktop-only-display: none !important;
+    }
+}
 
-    /* ヘッダー */
-    --header-height: calc(var(--button-icon-size) + var(--mlen2));
-
+/* ▼▼ レスポンシブ定義(共通) ▼▼ */
+:root{
     /* モバイル領域 */
     --layout-mobile-width-min: 320px;
     --layout-mobile-width-max: 540px;
@@ -54,7 +56,6 @@
 
     /* フッター */
     --footer-character-height: clamp(150px, -20.448px + (45.455vw * var(--layout-mobile-magnification)), 225px);
-    /* ▲▲ レスポンシブ定義 ▲▲ */
 
 
     /* ▼▼ 共通定義 ▼▼ */
