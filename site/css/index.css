@@ -1,44 +1,42 @@
 @charset "UTF-8";
 
-/* ■■■ 背景設定 ■■■ */
+/* ▼▼▼ 背景設定 ▼▼▼ */
 .layout-mobile{
     background-image: url("../assets/img/background/geometric1.svg");
 }
 
 
-/* ■■■ ファーストビュー ■■■ */
+/* ▼▼▼ ファーストビュー ▼▼▼ */
 .firstview-period-style{
     position: relative;
     background-color: var(--color-blue);
     margin-top: var(--mlen4);
     padding: var(--mlen2);
     z-index: 0;
-
-    & p:nth-child(2){
-        border-bottom: solid var(--mlen-h) var(--color-white);
-        width: fit-content;
-        margin-left: auto;
-        margin-right: 0;
-    }
-
-    &::before{
-        position: absolute;
-        content:"参加無料";
-        top: -0.75em;
-        left: calc((100% - var(--layout-mobile-width-content)) * 0.5);
-        color: var(--color-font-white);
-        font-family: var(--font-family-title-black);
-        font-size: var(--font-size-l3);
-        text-shadow:
-             0   -3px 0 var(--color-blue),
-             3px -3px 0 var(--color-blue),
-             3px  0   0 var(--color-blue),
-             3px  3px 0 var(--color-blue),
-            -3px  3px 0 var(--color-blue),
-            -3px  0   0 var(--color-blue),
-            -3px -3px 0 var(--color-blue);
-        z-index: 1;
-    }
+}
+.firstview-period-style p:nth-child(2){
+    border-bottom: solid var(--mlen-h) var(--color-white);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 0;
+}
+.firstview-period-style::before{
+    position: absolute;
+    content:"参加無料";
+    top: -0.75em;
+    left: calc((100% - var(--layout-mobile-width-content)) * 0.5);
+    color: var(--color-white-font);
+    font-family: var(--font-family-title-black);
+    font-size: var(--font-size-l3);
+    text-shadow:
+         0   -3px 0 var(--color-blue),
+         3px -3px 0 var(--color-blue),
+         3px  0   0 var(--color-blue),
+         3px  3px 0 var(--color-blue),
+        -3px  3px 0 var(--color-blue),
+        -3px  0   0 var(--color-blue),
+        -3px -3px 0 var(--color-blue);
+    z-index: 1;
 }
 
 /* アンカーリンク */
@@ -51,7 +49,7 @@
     column-gap: var(--mlen2);
 }
 
-/* アンカーリンク：大アート展 */
+/* ▼▼ アンカーリンク：大アート展 ▼▼ */
 .firstview-ankerlink-main-style{
     position: relative;
     grid-area: main;
@@ -60,37 +58,37 @@
     padding-top: 0.75em;
     padding-bottom: 0.75em;
     border: solid var(--mlen-q) var(--color-black);
-
-    &::before{
-        position: absolute;
-        content:"8.30";
-        top: -0.75em;
-        left: -0.1em;
-        color: var(--color-font-red);
-        font-family: var(--font-family-title-black);
-        font-size: var(--font-size-l3);
-        border: solid var(--mlen-q) var(--color-black);
-        background-color: var(--color-white);
-        width: fit-content;
-        height: fit-content;
-        padding: 0 1em;
-        border-radius: 1em;
-        box-shadow: 3px 3px 0 var(--color-black);
-        z-index: 1;
-    }
-
-    /* after-internal-site-icon-white から継承 */
-    &::after{
-        top: auto;
-        left: auto;
-        bottom: var(--mlen-h);
-        right: var(--mlen-h);
-        border:solid var(--mlen-q) var(--color-white);
-        border-radius: 50%;
-    }
+}
+.firstview-ankerlink-main-style::before{
+    position: absolute;
+    content:"8.30";
+    top: -0.75em;
+    left: -0.1em;
+    color: var(--color-red-font);
+    font-family: var(--font-family-title-black);
+    font-size: var(--font-size-l3);
+    border: solid var(--mlen-q) var(--color-black);
+    background-color: var(--color-white);
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 0 var(--color-black);
+    z-index: 1;
 }
 
-/* アンカーリンク：ワークショップ */
+/* after-internal-site-icon-white から継承 */
+.firstview-ankerlink-main-style::after{
+    top: auto;
+    left: auto;
+    bottom: var(--mlen-h);
+    right: var(--mlen-h);
+    border:solid var(--mlen-q) var(--color-white);
+    border-radius: 50%;
+}
+
+
+/* ▼▼ アンカーリンク：ワークショップ ▼▼ */
 .firstview-ankerlink-advance-style{
     position: relative;
     grid-area: advance;
@@ -98,37 +96,37 @@
     padding-top: 1.25em;
     z-index: 0;
     border: solid 2px var(--color-black);
-
-    &::before{
-        position: absolute;
-        content:" 7.25〜　";
-        top: -1em;
-        left: -0.1em;
-        color: var(--color-font-green);
-        font-family: var(--font-family-title-black);
-        font-size: var(--font-size);
-        border: solid 2px var(--color-black);
-        background-color: var(--color-white);
-        width: fit-content;
-        height: fit-content;
-        padding: 0 1em;
-        border-radius: 1em;
-        box-shadow: 3px 3px 0 var(--color-black);
-        z-index: 1;
-    }
-
-    /* after-internal-site-icon-white から継承 */
-    &::after{
-        top: auto;
-        left: auto;
-        bottom: var(--mlen-h);
-        right: var(--mlen-h);
-        border:solid var(--mlen-q) var(--color-white);
-        border-radius: 50%;
-    }
+}
+.firstview-ankerlink-advance-style::before{
+    position: absolute;
+    content:" 7.25〜";
+    top: -1em;
+    left: -0.1em;
+    color: var(--color-green-font);
+    font-family: var(--font-family-title-black);
+    font-size: var(--font-size);
+    border: solid 2px var(--color-black);
+    background-color: var(--color-white);
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 0 var(--color-black);
+    z-index: 1;
 }
 
-/* Tシャツ */
+/* after-internal-site-icon-white から継承 */
+.firstview-ankerlink-advance-style::after{
+    top: auto;
+    left: auto;
+    bottom: var(--mlen-h);
+    right: var(--mlen-h);
+    border:solid var(--mlen-q) var(--color-white);
+    border-radius: 50%;
+}
+
+
+/* ▼▼ Tシャツ ▼▼ */
 .firstview-ankerlink-public-style{
     position: relative;
     grid-area: public;
@@ -136,43 +134,44 @@
     padding-top: 1.25em;
     z-index: 0;
     border: solid var(--mlen-q) var(--color-black);
-
-    &::before{
-        position: absolute;
-        content:"6.5〜8.21";
-        top: -1em;
-        left: -0.1em;
-        color: var(--color-font-yellow);
-        font-family: var(--font-family-title-black);
-        font-size: var(--font-size);
-        text-shadow:
-             1px -1px 0 var(--color-black-translucent),
-             1px  1px 0 var(--color-black-translucent),
-            -1px  1px 0 var(--color-black-translucent),
-            -1px -1px 0 var(--color-black-translucent);
-        border: solid 2px var(--color-black);
-        background-color: var(--color-white);
-        width: fit-content;
-        height: fit-content;
-        padding: 0 1em;
-        border-radius: 1em;
-        box-shadow: 3px 3px 0 var(--color-black);
-        z-index: 1;
-    }
-
-    /* after-internal-site-icon から継承 */
-    &::after{
-        top: auto;
-        left: auto;
-        bottom: var(--mlen-h);
-        right: var(--mlen-h);
-        border:solid var(--mlen-q) var(--color-black);
-        border-radius: 50%;
-    }
+}
+.firstview-ankerlink-public-style::before{
+    position: absolute;
+    content:"6.5〜8.21";
+    top: -1em;
+    left: -0.1em;
+    color: var(--color-yellow-font);
+    font-family: var(--font-family-title-black);
+    font-size: var(--font-size);
+    text-shadow:
+         1px -1px 0 var(--color-black-translucent),
+         1px  1px 0 var(--color-black-translucent),
+        -1px  1px 0 var(--color-black-translucent),
+        -1px -1px 0 var(--color-black-translucent);
+    border: solid 2px var(--color-black);
+    background-color: var(--color-white);
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 0 var(--color-black);
+    z-index: 1;
 }
 
+/* after-internal-site-icon から継承 */
+.firstview-ankerlink-public-style::after{
+    top: auto;
+    left: auto;
+    bottom: var(--mlen-h);
+    right: var(--mlen-h);
+    border:solid var(--mlen-q) var(--color-black);
+    border-radius: 50%;
+}
+/* ▲▲▲ ファーストビュー ▲▲▲ */
 
-/* ■■■ メインコンテンツ ■■■ */
+
+
+/* ▼▼▼ メインコンテンツ ▼▼▼ */
 .main-content-style{
     margin-top: var(--mlen3);
     padding-bottom: var(--mlen6);
@@ -190,10 +189,9 @@
 .main-content-workshop-top-style{
     margin-top: var(--mlen4);
     width: 71%;
-
-    & dd{
-        margin-top: calc(var(--mlen) * 1.5);
-    }
+}
+.main-content-workshop-top-style dd{
+    margin-top: calc(var(--mlen) * 1.5);
 }
 
 /* 大アート展 */
@@ -213,18 +211,17 @@
     width: 100%;
     padding: var(--mlen4) var(--mlen2);
     background-color: var(--color-white);
+}
+.main-content-workshop-whiteback-style dd{
+    padding-top: var(--mlen);
+    padding-right: var(--mlen2);
+    padding-left: var(--mlen2);
+}
 
-    & dd{
-        padding-top: var(--mlen);
-        padding-right: var(--mlen2);
-        padding-left: var(--mlen2);
-    }
-
-    & a{
-        margin-top: calc(var(--mlen) * 1.5);
-        width: fit-content;
-        border-bottom: solid 2px var(--color-black);
-    }
+.main-content-workshop-whiteback-style a{
+    margin-top: calc(var(--mlen) * 1.5);
+    width: fit-content;
+    border-bottom: solid 2px var(--color-black);
 }
 
 /* 共通：ボタン */
@@ -238,21 +235,26 @@
     border-left: none;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-
-    & dd{
-        margin-top: calc(var(--mlen) * 1.5);
-    }
-
-    & a{
-        margin-top: calc(var(--mlen) * 1.5);
-        width: fit-content;
-        border-bottom: solid 2px var(--color-black);
-    }
+}
+.main-content-workshop-public-style dd{
+    margin-top: calc(var(--mlen) * 1.5);
 }
 
-/* ■■■ スケジュール ■■■ */
+.main-content-workshop-public-style a{
+    margin-top: calc(var(--mlen) * 1.5);
+    width: fit-content;
+    border-bottom: solid 2px var(--color-black);
+}
+/* ▲▲▲ メインコンテンツ ▲▲▲ */
 
-/* ■■■ アクセス ■■■ */
+
+
+/* ▼▼▼ スケジュール ▼▼▼ */
+/* ▲▲▲ スケジュール ▲▲▲ */
+
+
+
+/* ▼▼▼ アクセス ▼▼▼ */
 aside{
     scroll-margin-top: calc(var(--mlen4) + var(--header-height));
 }
@@ -262,31 +264,30 @@ aside{
     background-color: var(--color-blue);
     margin-top: var(--mlen4);
     z-index: 0;
+}
+.access-style::before{
+    position: absolute;
+    content:"アクセス";
+    top: -0.75em;
+    left: -0.1em;
+    color: var(--color-font-black);
+    font-family: var(--font-family-title-black);
+    font-size: var(--font-size-l3);
+    border: solid var(--mlen-q) var(--color-black);
+    background-color: var(--color-yellow);
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 0 var(--color-black);
+    z-index: 1;
+}
 
-    &::before{
-        position: absolute;
-        content:"アクセス";
-        top: -0.75em;
-        left: -0.1em;
-        color: var(--color-font-black);
-        font-family: var(--font-family-title-black);
-        font-size: var(--font-size-l3);
-        border: solid var(--mlen-q) var(--color-black);
-        background-color: var(--color-yellow);
-        width: fit-content;
-        height: fit-content;
-        padding: 0 1em;
-        border-radius: 1em;
-        box-shadow: 3px 3px 0 var(--color-black);
-        z-index: 1;
-    }
-
-    & a{
-        position: relative;
-        width: fit-content;
-        border-bottom: solid 1px var(--color-black);
-        margin: var(--mlen) auto 0;
-    }
+.access-style a{
+    position: relative;
+    width: fit-content;
+    border-bottom: solid var(--mlen-e) var(--color-black);
+    margin: var(--mlen) auto 0;
 }
 
 .access-base-style{
@@ -295,3 +296,4 @@ aside{
     padding: var(--mlen3) var(--mlen) var(--mlen2);
     background-color: var(--color-white);
 }
+/* ▲▲▲ アクセス ▲▲▲ */

@@ -34,7 +34,7 @@
     --layout-mobile-width-min: 320px;
     --layout-mobile-width-max: 540px;
     --layout-mobile-width-current: clamp(var(--layout-mobile-width-min),
-                                         (100vw * var(--layout-mobile-magnification)),
+                                        (100vw * var(--layout-mobile-magnification)),
                                          var(--layout-mobile-width-max));
     --layout-mobile-width-content: 90%;
 
