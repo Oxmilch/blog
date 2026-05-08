@@ -1,4 +1,22 @@
 # コーディング規約
+## 対応デバイス
+- iOS 15.5 以上を対象とする。（iPhone SE1, 6以降）
+  - **記載禁止**（レイアウトが大幅に崩れるため）
+    - HTML
+    - CSS
+      - &（入れ子構造）
+      - コンテナクエリ
+      ー Media Queries: Range Syntax（メディアクエリの@media (100px <= width <= 1900px)というような書き方）
+  - **記載可能** 大きく崩れないが意図しない見た目になる
+    - CSS
+      - scrollbar-gutter / scrollbar-width
+  - **記載OK** （パフォーマンスに影響あり）
+    - CSS
+      - iframeのloading=”lazy”
+      - image-set()
+
+[参考](https://deep-space.blue/web/2893#index_id5)
+
 ## HTML
 - HTML上では文書と構造に関するものを記述する。style属性は使用しない。
 - 基本的なclassの記述は、配置 →　外形 → 独自クラス →　テキスト配置 →　フォントファミリーとサイズ →　フォントの色 → 表示制御用クラス の順とする 
