@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-/* ■■■ 背景設定 ■■■ */
+/* ▼▼▼ 背景設定 ▼▼▼ */
 .layout-mobile{
     background-image: url("../assets/img/background/geometric3.svg");
 }
 
 
-/* ■■■ ファーストビュー ■■■ */
+/* ▼▼▼ ファーストビュー ▼▼▼ */
 .firstview-style{
     margin-top: var(--mlen4);
     background-color: var(--color-red);
@@ -14,14 +14,13 @@
 
 .firstview-top-style{
     margin-top: var(--mlen4);
-
-    & p:nth-last-child(1){
-        display: inline-block;
-        margin-top: var(--mlen2);
-        width: fit-content;
-        padding: 0 2em;
-        background-color: var(--color-black);
-    }
+}
+.firstview-top-style p:nth-last-child(1){
+    display: inline-block;
+    margin-top: var(--mlen2);
+    width: fit-content;
+    padding: 0 2em;
+    background-color: var(--color-black);
 }
 
 .firstview-schedule-style{
@@ -29,9 +28,10 @@
     margin-bottom: var(--mlen5);
     background-color: var(--color-yellow);
 }
+/* ▲▲▲ ファーストビュー ▲▲▲ */
 
 
-/* ■■■ ワークショップ一覧 ■■■ */
+/* ▼▼▼ ワークショップ ▼▼▼ */
 /* 各ワークショップの共通デザイン(リングノート風) */
 .workshop-list-detail-1-style,
 .workshop-list-detail-2-style,
@@ -42,20 +42,22 @@
     margin-top: var(--mlen4);
     border: solid var(--mlen-q) var(--color-black);
     z-index: 0;
-
-    &::before{
-        position: absolute;
-        content: "";
-        top: var(--mlen-n);
-        left: 0;
-        right: 0;
-        background-image: url("../assets/img/decoration/ring.svg");
-        background-size: clamp(228px, 60.8vw, 328.32px);
-        background-position: center top;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
+}
+.workshop-list-detail-1-style::before,
+.workshop-list-detail-2-style::before,
+.workshop-list-detail-3-style::before,
+.workshop-list-detail-4-style::before{
+    position: absolute;
+    content: "";
+    top: var(--mlen-n);
+    left: 0;
+    right: 0;
+    background-image: url("../assets/img/decoration/ring.svg");
+    background-size: clamp(228px, 60.8vw, 328.32px);
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 /* リングノート風の内容 */
@@ -92,21 +94,20 @@
     position: relative;
     margin: 0 auto;
     width: fit-content;
-
-    &::after{
-        position: absolute;
-        content:"";
-        bottom: -0.1em;
-        left: auto;
-        right: -1.2em;
-        width: 100%;
-        height: 100%;
-        background-image: url("../assets/img/character/clock.svg");
-        background-position-x: right;
-        background-repeat: no-repeat;
-        background-size: 1em;
-        z-index: 3;
-    }
+}
+.work-shop-detail-time-style::after{
+    position: absolute;
+    content:"";
+    bottom: -0.1em;
+    left: auto;
+    right: -1.2em;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/character/clock.svg");
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 1em;
+    z-index: 3;
 }
 
 /* 怒られない落書き部屋 */
@@ -128,3 +129,4 @@
 .workshop-list-detail-4-style{
     background-color: var(--color-red);
 }
+/* ▲▲▲ ワークショップ ▲▲▲ */
