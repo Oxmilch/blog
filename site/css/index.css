@@ -25,7 +25,7 @@
         position: absolute;
         content:"参加無料";
         top: -0.75em;
-        left: calc((100% - var(--content-width)) * 0.5);
+        left: calc((100% - var(--layout-mobile-width-content)) * 0.5);
         color: var(--color-font-white);
         font-family: var(--font-family-title-black);
         font-size: var(--font-size-l3);
