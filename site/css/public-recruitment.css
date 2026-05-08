@@ -18,6 +18,7 @@ main{
 }
 .infomation-style{
     padding-top: var(--mlen3);
+    padding-bottom: calc(var(--mlen) * 12);
     background-color: var(--color-yellow);
 }
 
@@ -50,11 +51,40 @@ main{
     /* color: var(--color-font-white); */
 }
 
-
 .infomation-caution-style{
     position: relative;
-    top: var(--mlen3);
+    top: var(--mlen6-n);
     background-color: var(--color-green);
     border: solid var(--mlen-q) var(--color-black);
 }
+
+.infomation-caution-base-style{
+    background-color: var(--color-white);
+}
+
+.infomation-caution-list-style{
+    padding: var(--mlen-h) var(--mlen) 0;
+}
+.infomation-caution-list-style li{
+    list-style-image: url("../assets/img/icon/check.svg");
+    list-style-position: outside;
+    margin-left: 1em;
+    border-bottom: dashed var(--mlen-e) var(--color-black);
+}
+
 /* ▲▲▲ インフォメーション ▲▲▲ */
+
+
+
+/* ▼▼▼ 募集期間と展示期間 ▼▼▼ */
+/* ▲▲▲ 募集期間と展示期間 ▲▲▲ */
+
+
+
+/* ▼▼▼ Tシャツデザインにお申し込み ▼▼▼ */
+/* ▲▲▲ Tシャツデザインにお申し込み ▲▲▲ */
+
+
+
+/* ▼▼▼ 概要 ▼▼▼ */
+/* ▲▲▲ 概要 ▲▲▲ */

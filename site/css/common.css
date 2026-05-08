@@ -412,7 +412,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     margin-top: var(--mlen5);
     width: 100%;
-    height: calc(var(--mlen) * 12);
+    height: calc(var(--mlen) * 14.5);
     background-image: url("../assets/img/decoration/ribbon.svg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -424,7 +424,7 @@ body::-webkit-scrollbar-thumb{
     font-size: var(--font-size-l3);
     width: fit-content;
     height: var(--mlen6);
-    transform: rotate(-3.8deg) translateX(-10%) translateY(calc(var(--mlen) * 1.7));
+    transform: rotate(-4deg) translate(-10%, 39%);
 }
 /* ▲▲▲ 基本となる表示範囲（レイアウト・コンテナ・フレックス・グリッド） ▲▲▲ */
 
