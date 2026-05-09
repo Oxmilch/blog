@@ -10,7 +10,7 @@
 /* ▼▼ レスポンシブ定義(モバイル) ▼▼ */
 @media (max-width:960px){
     :root{
-        --layout-width-min: 320x;
+        --layout-width-min: 320px;
         --layout-width-max: 960px;
         --layout-mobile-magnification: 0.999;
         --layout-desktop-left-magnification: 0.000;
@@ -113,15 +113,18 @@
     --color-yellow-translucent:#ffd70097;
     --color-yellow-font: #ffd700;
 
-    --color-orange:#f90;
+    --color-orange:#f90; /* スクロールバー、フォーカスの色に使用 */
 
 
-    /* フォントサブセット(使用文字のみ) */
-    --font-family-title-black: "M PLUS Rounded 1c Black Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
-    --font-family-title-exbold: "M PLUS Rounded 1c ExtraBold Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
-    --font-family-text-bold: "Noto Sans JP Bold Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
-    --font-family-text: "Noto Sans JP Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
-
+    /* フォント設定（Google Fontsでのフォント名を優先にしているため、Html上のコメントアウトを外せば自動的に使われます） */
+    --font-family-title-black: "M PLUS Rounded 1c", "M PLUS Rounded 1c Black Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-title-black-weight: 900;
+    --font-family-title-exbold: "M PLUS Rounded 1c", "M PLUS Rounded 1c ExtraBold Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-title-exbold-weight: 800;
+    --font-family-text-bold: "Noto Sans JP", "Noto Sans JP Bold Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-text-bold-weight: 700;
+    --font-family-text: "Noto Sans JP", "Noto Sans JP Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    --font-family-text-weight: 400;
 
     /* フォントスタイル */
     --font-style: normal;
@@ -194,6 +197,11 @@
 
 
 /* ▼▼▼ アクセシビリティ ▼▼▼ */
+/* ダブルタップによる拡大の無効化 */
+*{
+    touch-action: manipulation;
+}
+
 /* 視覚的非表示 */
 .visually-hidden{
     position: absolute !important;
@@ -219,8 +227,9 @@
 
 /* ▼▼▼ 基本となる表示範囲（レイアウト・コンテナ・フレックス・グリッド） ▼▼▼ */
 /* 基本 */
-body{
-    overflow: auto;
+html{
+    overflow-x: hidden;
+    overflow-y: auto;
     scroll-behavior: smooth;
     scrollbar-gutter: stable;
     scrollbar-color: var(--color-orange) var(--color-blue);
@@ -233,10 +242,10 @@ body{
     transition: all var(--transition-time);
     line-height: 1.7;
 }
-body::-webkit-scrollbar-track-piece{
+html::-webkit-scrollbar-track-piece{
     background-color: var(--color-blue);
 }
-body::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb{
     background-color: var(--color-orange);
 }
 
@@ -327,7 +336,7 @@ body::-webkit-scrollbar-thumb{
     background-origin: border-box;
     background-size: 100%;
     min-width: var(--layout-mobile-width-min);
-    width: calc(100% * var(--layout-mobile-magnification));
+    width: var(--layout-mobile-width-current);
     max-width: var(--layout-mobile-width-max);
     margin: 0 auto;
     padding-top: var(--header-height);
@@ -340,6 +349,7 @@ body::-webkit-scrollbar-thumb{
     grid-area: left;
     background-color: var(--color-blue);
     width: var(--layout-desktop-left-current);
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -347,6 +357,8 @@ body::-webkit-scrollbar-thumb{
     grid-area: right;
     background-color: var(--color-blue);
     width: var(--layout-desktop-right-current);
+    overflow-x: hidden;
+    
     margin: 0;
 }
 
@@ -1148,6 +1160,7 @@ footer .footer-character-style img:nth-child(5){
 .font-title-black-s,
 .font-title-black-s2{
     font-family: var(--font-family-title-black);
+    font-weight: var(--font-family-title-black-weight);
     font-style: var(--font-style);
 }
 
@@ -1164,6 +1177,7 @@ footer .footer-character-style img:nth-child(5){
 .font-title-exbold-s2,
 .font-title-exbold-s3{
     font-family: var(--font-family-title-exbold);
+    font-weight: var(--font-family-title-exbold-weight);
     font-style: var(--font-style);
 }
 
@@ -1180,6 +1194,7 @@ footer .footer-character-style img:nth-child(5){
 .font-text-bold-s2,
 .font-text-bold-s3{
     font-family: var(--font-family-text-bold);
+    font-weight: var(--font-family-text-bold-weight);
     font-style: var(--font-style);
 }
 
@@ -1196,6 +1211,7 @@ footer .footer-character-style img:nth-child(5){
 .font-text-s2,
 .font-text-s3{
     font-family: var(--font-family-text);
+    font-weight: var(--font-family-text-weight);
     font-style: var(--font-style);
 }
 /* ▲▲▲ フォントファミリー ▲▲▲ */
