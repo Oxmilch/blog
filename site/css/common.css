@@ -263,10 +263,9 @@ body::-webkit-scrollbar-thumb{
 
 /* ハンバーガーメニューの画面 */
 .layout-menu{
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    height: var(--header-height);
+    margin: 0 auto;
     background-color: var(--color-white);
     background-image: url("../assets/img/background/geometric2.svg");
     background-repeat: repeat-y;
