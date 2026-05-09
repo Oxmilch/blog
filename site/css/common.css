@@ -10,9 +10,12 @@
 /* ▼▼ レスポンシブ定義(デスクトップ) ▼▼ */
 @media (min-width:961px){
     :root{
+        --layout-width-min: 961px;
+        --layout-width-max: 1920px;
         --layout-mobile-magnification: 0.334;
         --layout-desktop-left-magnification: 0.333;
         --layout-desktop-right-magnification: 0.333;
+        --layout-footer-magnification: 0.50;
         --is-mobile-only-display: none !important;
         --is-mobile-only-visible: hidden;
         --is-desktop-only-display: unset;
@@ -21,9 +24,12 @@
 /* ▼▼ レスポンシブ定義(モバイル) ▼▼ */
 @media (max-width:960px){
     :root{
+        --layout-width-min: 320x;
+        --layout-width-max: 960px;
         --layout-mobile-magnification: 1.000;
         --layout-desktop-left-magnification: 0.000;
         --layout-desktop-right-magnification: 0.000;
+        --layout-footer-magnification: var(--layout-mobile-magnification);
         --is-mobile-only-display: unset;
         --is-mobile-only-visible: visible;
         --is-desktop-only-display: none !important;
@@ -33,28 +39,40 @@
 /* ▼▼ レスポンシブ定義(共通) ▼▼ */
 :root{
     /* モバイル領域 */
-    --layout-mobile-width-min: 320px;
+    --layout-mobile-width-min: calc(var(--layout-width-min) * var(--layout-mobile-magnification));
     --layout-mobile-width-max: 540px;
-    --layout-mobile-width-current: clamp(var(--layout-mobile-width-min),
-                                        (100vw * var(--layout-mobile-magnification)),
-                                         var(--layout-mobile-width-max));
+    --layout-mobile-width-current: 
+        clamp(
+            var(--layout-mobile-width-min),
+            (100vw * var(--layout-mobile-magnification)),
+            var(--layout-mobile-width-max));
     --layout-mobile-width-content: 90%;
 
     /* デスクトップ領域左 */
-    --layout-desktop-left-width-min: 320px;
-    --layout-desktop-left-width-max: 690px;
-    --layout-desktop-left-current: clamp(var(--layout-desktop-left-width-min),
-                                        (100vw * var(--layout-mobile-magnification)),
-                                         var(--layout-desktop-left-width-max));
+    --layout-desktop-left-width-min: calc(var(--layout-width-min) * var(--layout-desktop-left-magnification));
+    --layout-desktop-left-width-max: calc(var(--layout-width-max) * var(--layout-desktop-left-magnification));
+    --layout-desktop-left-current:
+        clamp(var(--layout-desktop-left-width-min),
+            (100vw * var(--layout-mobile-magnification)),
+            var(--layout-desktop-left-width-max));
 
     /* デスクトップ領域右 */
-    --layout-desktop-right-width-min: 320px;
-    --layout-desktop-right-width-max: 690px;
-    --layout-desktop-right-current: clamp(var(--layout-desktop-right-width-min),
-                                        (100vw * var(--layout-mobile-magnification)),
-                                         var(--layout-desktop-right-width-max));
+    --layout-desktop-right-width-min: calc(var(--layout-width-min) * var(--layout-desktop-right-magnification));
+    --layout-desktop-right-width-max: calc(var(--layout-width-max) * var(--layout-desktop-right-magnification));
+    --layout-desktop-right-current:
+        clamp(
+            var(--layout-desktop-right-width-min),
+            (100vw * var(--layout-mobile-magnification)),
+            var(--layout-desktop-right-width-max));
 
     /* フッター */
+    --footer-width-min: calc(var(--layout-width-min) * var(--layout-footer-magnification));
+    --footer-width-max: calc(var(--layout-width-max) * var(--layout-footer-magnification));
+    --footer-width-current:
+        clamp(var(--footer-width-min),
+        (100vw * var(--layout-mobile-magnification)),
+        var(--footer-width-max));
+
     --footer-character-height: clamp(150px, -20.448px + (45.455vw * var(--layout-mobile-magnification)), 225px);
 
 
