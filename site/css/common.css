@@ -73,12 +73,12 @@
             var(--layout-desktop-right-width-max));
 
     /* フッター */
-    --footer-width-min: calc(var(--layout-width-min) * var(--layout-footer-magnification));
-    --footer-width-max: calc(var(--layout-width-max) * var(--layout-footer-magnification));
-    --footer-width-current:
-        clamp(var(--footer-width-min),
+    --layout-footer-width-min: calc(var(--layout-width-min) * var(--layout-footer-magnification));
+    --layout-footer-width-max: calc(var(--layout-width-max) * var(--layout-footer-magnification));
+    --layout-footer-width-current:
+        clamp(var(--layout-footer-width-min),
         (100vw * var(--layout-mobile-magnification)),
-        var(--footer-width-max));
+        var(--layout-footer-width-max));
 
     --footer-character-height: clamp(150px, -20.448px + (45.455vw * var(--layout-mobile-magnification)), 225px);
 
@@ -116,7 +116,9 @@
     --color-orange:#f90; /* スクロールバー、フォーカスの色に使用 */
 
 
-    /* フォント設定（Google Fontsでのフォント名を優先にしているため、Html上のコメントアウトを外せば自動的に使われます） */
+    /* フォント設定
+     ・Google Fontsのフォント名を優先にしているため、Html上のコメントアウトを外せば自動的に使われます
+     ・コメントアウト状態にしていれば、サブセット化したフォントを利用します */
     --font-family-title-black: "M PLUS Rounded 1c", "M PLUS Rounded 1c Black Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
     --font-family-title-black-weight: 900;
     --font-family-title-exbold: "M PLUS Rounded 1c", "M PLUS Rounded 1c ExtraBold Min JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
@@ -189,8 +191,6 @@
 
     /* その他 */
     --transition-time: 0.4s;
-
-    /* ▼▼ 共通定義 ▼▼ */
 }
 /* ▲▲▲ 共通変数 ▲▲▲ */
 
@@ -215,7 +215,6 @@
     border: 0 !important;
 }
 
-
 /* キーボード使用時フォーカス */
 :focus-visible{
     outline: dashed var(--mlen) var(--color-orange) !important;
@@ -225,7 +224,7 @@
 
 
 
-/* ▼▼▼ 基本となる表示範囲（レイアウト・コンテナ・フレックス・グリッド） ▼▼▼ */
+/* ▼▼▼ 基本構造のスタイル（HTML, body直下の構造） ▼▼▼ */
 /* 基本 */
 html{
     overflow-x: hidden;
@@ -270,7 +269,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 
-/* ハンバーガーメニューの画面 */
+/* ハンバーガーメニュー */
 .layout-menu{
     width: 100%;
     height: var(--header-height);
@@ -314,7 +313,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 
-/* コンテンツ表示領域　*/
+/* コンテンツ（モバイル・デスクトップ）　*/
 .layout-base{
     display: grid;
     grid-template-areas: "left center right";
@@ -327,7 +326,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 
-/* モバイル部分の画面 */
+/* モバイル */
 .layout-mobile{
     grid-area: center;
     background-color: var(--color-white);
@@ -344,7 +343,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 
-/* デスクトップ表示用の画面 */
+/* デスクトップ（左） */
 .layout-desktop-left{
     grid-area: left;
     background-color: var(--color-blue);
@@ -353,6 +352,8 @@ html::-webkit-scrollbar-thumb{
     margin: 0;
 }
 
+
+/* デスクトップ（右） */
 .layout-desktop-right{
     grid-area: right;
     background-color: var(--color-blue);
@@ -363,6 +364,32 @@ html::-webkit-scrollbar-thumb{
 }
 
 
+/* フッター領域 */
+.layout-footer{
+    width: 100%;
+    background-color: var(--color-blue);
+    text-align: center;
+}
+
+.layout-footer-inner{
+    min-width: var(--layout-footer-width-min);
+    width: var(--layout-footer-width-current);
+    max-width: var(--layout-footer-width-max);
+    padding: var(--mlen2) calc((100% - var(--layout-footer-width-current) * 0.5) 0);
+    margin: 0 auto;
+    background-image:
+        url("../assets/img/background/geometric1.svg"),
+        url("../assets/img/background/geometric1.svg");
+    background-blend-mode: multiply;
+    background-position: 0% 0%, 50% 100%;
+    background-size: 150%;
+    background-repeat: repeat;
+}
+/* ▲▲▲ 基本の構造領域のスタイル（HTML, body直下の構造） ▲▲▲ */
+
+
+
+/* ▼▼▼ 基本のとなる ▼▼▼ */
 /* コンテナ */
 .container{
     width: var(--content-width);
@@ -784,20 +811,6 @@ li{
 
 
 /* ▼▼▼ フッター ▼▼▼ */
-footer{
-    position: relative;
-    padding-top: var(--mlen2);
-    margin-top: var(--mlen4);
-    background-color: var(--color-blue);
-    background-image:
-        url("../assets/img/background/geometric1.svg"),
-        url("../assets/img/background/geometric1.svg");
-    background-blend-mode: multiply;
-    background-position: 0% 0%, 50% 100%;
-    background-size: 150%;
-    background-repeat: repeat;
-}
-
 /* リンク一覧 */
 footer li:nth-child(-n+8){
     margin: calc(var(--mlen) * 2.5) auto 0;
