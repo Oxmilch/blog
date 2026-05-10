@@ -174,13 +174,13 @@
 /* ▼▼▼ メインコンテンツ ▼▼▼ */
 .main-content-style{
     margin-top: var(--mlen3);
-    padding-bottom: var(--mlen6);
+    padding-bottom: var(--mlen9);
 }
 
 .main-content-workshop-style{
     position: relative;
     top: var(--mlen6-n); /* 親要素のチェック柄が見えてしまうため、上にシフト */
-    padding-bottom: var(--mlen9);
+    padding-bottom: calc(var(--mlen) * 15);
     background-color: var(--color-blue);
     z-index: 10;
 }
