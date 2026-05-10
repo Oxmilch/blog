@@ -18,16 +18,28 @@
     <meta name="twitter:description" content="">
     <meta name="theme-color" content="#ffd700">
     <link rel="stylesheet" href="./css/ress.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/public-recruitment.css">
     <link rel="icon" href="./assets/img/logo/main1.svg">
     <script src="./script/common.js" defer></script>
 </head>
-<body>
+<body id="top">
+    <header class="layout-header">
+        <div class="flex layout-header-inner">
+            <a class="header-button ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
+            <button type="button" class="header-button layout-header-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="hamburger-menu" onclick="HamburgerMenu.open()">
+                <span></span>
+            </button>
+        </div>
+    </header>
     <dialog id="hamburger-menu" class="layout-menu" aria-label="メニュー">
-        <div class="container flex header-menu">
-            <a class="ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
-            <button type="button" class="header-menu-button" aria-label="メニューを閉じる" aria-expanded="true" aria-controls="hamburger-menu" onclick="HamburgerMenu.close()">
+        <div class="container flex layout-header-inner">
+            <a class="header-button ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
+            <button type="button" class="header-button layout-header-button" aria-label="メニューを閉じる" aria-expanded="true" aria-controls="hamburger-menu" onclick="HamburgerMenu.close()">
                 <span></span>
             </button>
         </div>
@@ -52,143 +64,147 @@
             </ul>
         </nav>
     </dialog>
-    <div class="layout-mobile">
-        <header class="container flex header-menu">
-            <a class="header-button ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
-            <button type="button" class="header-button header-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="hamburger-menu" onclick="HamburgerMenu.open()">
-                <span></span>
-            </button>
-        </header>
-        <section id="firstview" class="inline-center">
-            <h1 class="font-title-black-l6 font-color-white-stroke-shadow">Tシャツデザインに<br>チャレンジ</h1>
-            <p class="font-title-exbold-l3 font-color-red-stroke-shadow">6.5〜8.21</p>
-            <div class="ankerlink-public-apply font-title-exbold-s">
-                <a class="font-title-exbold-s font-color-white" href="#" alt="">
-                    Tシャツデザインにお申し込み
-                </a>
-            </div>
-        </section>
-        <main id="infomation">
-            <div class="box-wave infomation-style">
-                <div class="infomation-top-style">
-                    <dt class="container">
-                        <h2 class="decoration-slash-before-after">Tシャツ展示について</h2>
-                    </dt>
-                    <dd class="container infomation-top-detail-style inline-left font-text font-color">
-                        福岡市民がつくる大アート展では、みなさまから応募いただきましたオリジナルTシャツの中から283枚をピックアップして福岡市美術館2階にて展示を行います！<br>
-                        作品テーマは「未来の福岡」<br>
-                        思い思いのままにペイントしたTシャツをぜひご応募ください♪
-                    </dd>
+    <div class="layout-base">
+        <div class="layout-mobile">
+            <section id="firstview" class="inline-center">
+                <h1 class="font-title-black-l6 font-color-white-stroke-shadow">Tシャツデザインに<br>チャレンジ</h1>
+                <p class="font-title-exbold-l3 font-color-red-stroke-shadow">6.5〜8.21</p>
+                <div class="ankerlink-public-apply font-title-exbold-s">
+                    <a class="font-title-exbold-s font-color-white" href="#" alt="">
+                        Tシャツデザインにお申し込み
+                    </a>
                 </div>
-                <div class="container box-round infomation-example-style">
-                    <h3 class="visually-hidden">かんたん応募</h3>
-                    <p class="container inline-left font-title-exbold-l">自由な発想でつくろう！<br>Tシャツアイデア例</p>
-                    <ul class="grid">
-                        <li>古着のTシャツをリメイクする</li>
-                        <li>スパンコールやビーズを貼る</li>
-                        <li>スタンプやスポンジで模様をつける</li>
-                        <li>絵の具やペンで自由に絵を描く</li>
-                        <li>端切れぬいつけてコラージュする</li>
-                        <li>ボタンやリボンでデコレーションする</li>
-                    </ul>
+            </section>
+            <main id="infomation">
+                <div class="box-wave infomation-style">
+                    <div class="infomation-top-style">
+                        <dt class="container">
+                            <h2 class="decoration-slash-before-after">Tシャツ展示について</h2>
+                        </dt>
+                        <dd class="container infomation-top-detail-style inline-left font-text font-color">
+                            福岡市民がつくる大アート展では、みなさまから応募いただきましたオリジナルTシャツの中から283枚をピックアップして福岡市美術館2階にて展示を行います！<br>
+                            作品テーマは「未来の福岡」<br>
+                            思い思いのままにペイントしたTシャツをぜひご応募ください♪
+                        </dd>
+                    </div>
+                    <div class="container box-round infomation-example-style">
+                        <h3 class="visually-hidden">かんたん応募</h3>
+                        <p class="container inline-left font-title-exbold-l">自由な発想でつくろう！<br>Tシャツアイデア例</p>
+                        <ul class="grid">
+                            <li>古着のTシャツをリメイクする</li>
+                            <li>スパンコールやビーズを貼る</li>
+                            <li>スタンプやスポンジで模様をつける</li>
+                            <li>絵の具やペンで自由に絵を描く</li>
+                            <li>端切れぬいつけてコラージュする</li>
+                            <li>ボタンやリボンでデコレーションする</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="box-round infomation-caution-style inline-left">
-                <div class="box-round infomation-caution-base-style">
-                    <h3 class="font-color">気をつけてほしいポイント</h3>
-                    <ol class="infomation-caution-list-style font-text-s">
-                        <li>アニメやマンガ、ゲームなどのイラストをそのまま描いたもの</li>
-                        <li>有名ブランドなどの会社のロゴやマークをまねしたもの</li>
-                        <li>他の人の作品をコピーしたもの</li>
-                        <li>危険な行為や暴力的な表現のもの</li>
-                        <li>個人情報を書いたもの</li>
-                    </ol>
+                <div class="box-round infomation-caution-style inline-left">
+                    <div class="box-round infomation-caution-base-style">
+                        <h3 class="font-color">気をつけてほしいポイント</h3>
+                        <ol class="infomation-caution-list-style font-text-s">
+                            <li>アニメやマンガ、ゲームなどのイラストをそのまま描いたもの</li>
+                            <li>有名ブランドなどの会社のロゴやマークをまねしたもの</li>
+                            <li>他の人の作品をコピーしたもの</li>
+                            <li>危険な行為や暴力的な表現のもの</li>
+                            <li>個人情報を書いたもの</li>
+                        </ol>
+                    </div>
                 </div>
-            </div>
-        </main>
-        <section id="period">
-            <div class="box-round-shadow">
-                <h3 class="visually-hidden">募集期間</h3>
-                <p>2026.6.5(金)〜8.21(金)</p>
-            </div>
-            <div class="box-round-shadow">
-                <h3 class="visually-hidden">展示期間</h3>
-                <p>2026.8.25(月)〜8.30(土)</p>
-            </div>
-        </section>
-        <section id="how-apply">
-            <div class="ankerlink-public-apply font-title-exbold-s">
-                <a class="font-title-exbold-s font-color-white" href="#" alt="">
-                    Tシャツデザインにお申し込み
-                </a>
-            </div>
-        </section>
-        <aside id="how-detail box-checker-yellow">
-            <div class="container">
-                <table>
-                    <caption>応募概要</caption>
-                    <tbody>
+            </main>
+            <section id="period">
+                <div class="box-round-shadow">
+                    <h3 class="visually-hidden">募集期間</h3>
+                    <p>2026.6.5(金)〜8.21(金)</p>
+                </div>
+                <div class="box-round-shadow">
+                    <h3 class="visually-hidden">展示期間</h3>
+                    <p>2026.8.25(月)〜8.30(土)</p>
+                </div>
+            </section>
+            <section id="how-apply">
+                <div class="ankerlink-public-apply font-title-exbold-s">
+                    <a class="font-title-exbold-s font-color-white" href="#" alt="">
+                        Tシャツデザインにお申し込み
+                    </a>
+                </div>
+            </section>
+            <aside id="how-detail box-checker-yellow">
+                <div class="container">
+                    <table>
+                        <caption>応募概要</caption>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <caption>展示概要</caption>
                         <tr>
-                            <td></td>
+                            <td>日程</td>
+                            <td>2026年8月25日(月)〜2026年8月30日(土)</td>
                         </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <caption>展示概要</caption>
-                    <tr>
-                        <td>日程</td>
-                        <td>2026年8月25日(月)〜2026年8月30日(土)</td>
-                    </tr>
-                    <tr>
-                        <td>時間</td>
-                        <td>10:00〜17:00</td>
-                    </tr>
-                    <tr>
-                        <td>場所</td>
-                        <td>福岡市美術館<br>ギャラリースペースA〜F</td>
-                    </tr>
-                    <tr>
-                        <td>作品</td>
-                        <td>公募によるTシャツ 計283枚</td>
-                    </tr>
-                    <tr>
-                        <td>対象者</td>
-                        <td>福岡市内の<br>小学生から大学生までの学生    </td>
-                    </tr>
-                </table>
-            </div>
-        </aside>
-        <footer class="inline-center font-color-white">
-            <div class="container">
-                <img class="container" src="./assets/img/logo/main2.svg" alt="福岡市民がつくる大アート展〜誰もがアーティスト〜">
-                <ul>
-                    <li><a class="font-title-exbold-l font-color-white" href="./index.html#firstview" alt="">トップページ</a></li>
-                    <li><a class="font-title-exbold-l font-color-white" href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
-                    <li><a class="font-title-exbold-l font-color-white" href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
-                    <li><a class="font-title-exbold-l font-color-white after-external-site-icon-white" href="#" alt="">ワークショップにお申し込み</a></li>
-                    <li><a class="font-title-exbold-l font-color-white" href="./public-recruitment.html" alt="">Tシャツデザインにチャレンジ</a></li>
-                    <li><a class="font-title-exbold-l font-color-white after-external-site-icon-white" href="#" alt="">Tシャツデザインにお申し込み</a></li>
-                    <li><a class="font-title-exbold-l font-color-white" href="./index.html#schedule" alt="">スケジュール案内</a></li>
-                    <li><a class="font-title-exbold-l font-color-white" href="./index.html#access" alt="">アクセス</a></li>
-                    <li><a class="ankerlink-image-instagram-white" href="#" target="_blank" alt=""></a></li>
-                    <li><a class="font-title-exbold font-color-white after-external-site-icon-white" href="https://www.fukuoka-jc.or.jp/" target="_blank" lt="">主催：一般社団法人　福岡青年会議所</a></li>
-                    <li><a class="font-title-exbold-s font-color-white after-external-site-icon-white" href="https://www.fukuoka-jc.or.jp/pp" target="_blank" alt="">プライバシーポリシーについて</a></li>
-                    <li class="flex">
-                        <a class="ankerlink-image-instagram-white" href="https://www.instagram.com/fukuokajc/" target="_blank" alt=""></a>
-                        <a class="ankerlink-image-tiktok-white" href="https://www.tiktok.com/@fukuokajc" target="_blank" alt=""></a>
-                    </li>
-                </ul>
-                <small>&copy;2026　一般社団法人　福岡年会議所</small>
-            </div>
-            <div class="footer-character-style">
-                <img src="./assets/img/character/palette.svg" alt="">
-                <img src="./assets/img/character/pen.svg" alt="">
-                <img src="./assets/img/character/bucket.svg" alt="">
-                <img src="./assets/img/character/sun.svg" alt="">
-                <img src="./assets/img/character/paintbrush-blue.webp" alt="">
-            </div>
-        </footer>
+                        <tr>
+                            <td>時間</td>
+                            <td>10:00〜17:00</td>
+                        </tr>
+                        <tr>
+                            <td>場所</td>
+                            <td>福岡市美術館<br>ギャラリースペースA〜F</td>
+                        </tr>
+                        <tr>
+                            <td>作品</td>
+                            <td>公募によるTシャツ 計283枚</td>
+                        </tr>
+                        <tr>
+                            <td>対象者</td>
+                            <td>福岡市内の<br>小学生から大学生までの学生    </td>
+                        </tr>
+                    </table>
+                </div>
+            </aside>
+        </div>
+        <div class="layout-desktop-left"></div>
+        <div class="layout-desktop-right"></div>
     </div>
-    <div class="layout-desktop"></div>
+    <footer class="layout-footer">
+        <div class="layout-footer-inner font-color-white">
+            <img class="container footer-logo" src="./assets/img/logo/main2.svg" alt="福岡市民がつくる大アート展〜誰もがアーティスト〜">
+            <ul class="footer-linklist">
+                <li><a class="font-title-exbold-l font-color-white" href="#top" alt="">トップページ</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
+                <li><a class="font-title-exbold-l font-color-white after-external-site-icon-white" href="#URL置換ワークショップ" alt="">ワークショップにお申し込み</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="./public-recruitment.html" alt="">Tシャツデザインにチャレンジ</a></li>
+                <li><a class="font-title-exbold-l font-color-white after-external-site-icon-white" href="#URL置換Tシャツ" alt="">Tシャツデザインにお申し込み</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="#schedule" alt="">スケジュール案内</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="#access" alt="">アクセス</a></li>
+            </ul>
+            <ul class="footer-sns">
+                <li>
+                    <a class="ankerlink-image-instagram-white" href="#" target="_blank" alt=""></a>
+                    <p class="font-title-exbold">大アート展</p>
+                    <p class="font-text-s">Instagram</p>
+                </li>
+                <li>
+                    <a class="ankerlink-image-instagram-white" href="https://www.instagram.com/fukuokajc/" target="_blank" alt=""></a>
+                    <p class="font-title-exbold">主催</p>
+                    <p class="font-text-s">Instagram</p>
+                </li>
+                <li>
+                    <a class="ankerlink-image-tiktok-white" href="https://www.tiktok.com/@fukuokajc" target="_blank" alt=""></a>
+                    <p class="font-title-exbold">主催</p>
+                    <p class="font-text-s">TikTok<p>
+                </li>
+            </ul>
+            <ul class="footer-fjc">
+                <li><a class="font-title-exbold font-color-white after-external-site-icon-white" href="https://www.fukuoka-jc.or.jp/" target="_blank" alt="">主催：一般社団法人　福岡青年会議所</a></li>
+                <li><a class="font-title-exbold-s font-color-white after-external-site-icon-white" href="https://www.fukuoka-jc.or.jp/pp" target="_blank" alt="">プライバシーポリシーについて</a></li>
+            </ul>
+            <small>&copy;2026　一般社団法人　福岡年会議所</small>
+        </div>
+    </footer>
 </body>
 </html>
