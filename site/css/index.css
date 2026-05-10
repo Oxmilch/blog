@@ -251,18 +251,17 @@
 
 /* ▼▼▼ スケジュール ▼▼▼ */
 .schedule-list-style h3{
-    padding-top: 1.25em;
-    padding-bottom: 0.5em;
+    padding-top: var(--mlen4);
+    padding-bottom: var(--mlen);
     margin: 0;
     width: 100%;
     border-bottom: solid var(--mlen-q) var(--color-black);
 }
-
 .schedule-list-style ol{
     border-bottom-left-radius: var(--mlen2);
     border-bottom-right-radius: var(--mlen2);
+    overflow: hidden;
 }
-
 .schedule-list-style ol li{
     padding: 0.5em 0.5em 0.5em 1em;
 }
@@ -301,6 +300,10 @@
 }
 
 .schedule-detail-advance-style ol{
+    background-color: var(--color-green);
+}
+.schedule-detail-advance-style ol li{
+    display: flex;
     background-color: var(--color-green);
 }
 
