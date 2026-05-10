@@ -250,6 +250,68 @@
 
 
 /* ▼▼▼ スケジュール ▼▼▼ */
+.schedule-list-style h3{
+    padding-top: 1.25em;
+    padding-bottom: 0.5em;
+    margin: 0;
+    width: 100%;
+    border-bottom: solid var(--mlen-q) var(--color-black);
+}
+
+.schedule-list-style ol{
+    border-bottom-left-radius: var(--mlen2);
+    border-bottom-right-radius: var(--mlen2);
+}
+
+.schedule-list-style ol li{
+    padding: 0.5em 0.5em 0.5em 1em;
+}
+.schedule-list-style ol li time{
+    display: inline-block;
+    min-width: 3em;
+}
+
+.schedule-detail-public-style,
+.schedule-detail-advance-style,
+.schedule-detail-main-style{
+    position: relative;
+    margin-top: var(--mlen6);
+    padding: 0;
+    z-index: 0;
+    border-color: var(--color-black);
+}
+.schedule-detail-public-style::before,
+.schedule-detail-advance-style::before,
+.schedule-detail-main-style::before{
+    position: absolute;
+    content: "";
+    top: var(--mlen-n);
+    left: 0;
+    right: 0;
+    background-image: url("../assets/img/decoration/ring.svg");
+    background-size: clamp(228px, calc(60.8vw * var(--layout-mobile-magnification)), 328.32px);
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.schedule-detail-public-style ol{
+    background-color: var(--color-yellow);
+}
+
+.schedule-detail-advance-style ol{
+    background-color: var(--color-green);
+}
+
+.schedule-detail-main-style ol{
+    background-color: var(--color-red);
+}
+
+.schedule-detail-main-style ol li{
+    list-style-type: decimal;
+    list-style-position: inside;
+}
 /* ▲▲▲ スケジュール ▲▲▲ */
 
 
@@ -262,7 +324,7 @@ aside{
 .access-style{
     position: relative;
     background-color: var(--color-blue);
-    margin-top: var(--mlen4);
+    margin-top: var(--mlen8);
     z-index: 0;
 }
 .access-style::before{

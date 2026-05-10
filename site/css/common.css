@@ -396,7 +396,12 @@ html::-webkit-scrollbar-thumb{
 
 
 
-/* ▼▼▼ 基本のとなる ▼▼▼ */
+/* ▼▼▼ 基本のとなるかたち ▼▼▼ */
+.space{
+    margin-top: var(--mlen8);
+}
+
+
 /* コンテナ */
 .container{
     width: var(--content-width);
