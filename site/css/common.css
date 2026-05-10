@@ -1130,11 +1130,15 @@ footer .footer-character-style img:nth-child(5){
 
 /* 外部サイトリンク */
 .after-external-site-icon,
-.after-external-site-icon-white{
+.after-external-site-icon-white,
+.after-external-site-icon-blue,
+.after-external-site-icon-green{
     position: relative;
 }
 .after-external-site-icon::after,
-.after-external-site-icon-white::after{
+.after-external-site-icon-white::after,
+.after-external-site-icon-blue::after,
+.after-external-site-icon-green::after{
     content:"";
     position: absolute;
     top: 0.15em;
@@ -1147,6 +1151,12 @@ footer .footer-character-style img:nth-child(5){
 }
 .after-external-site-icon-white::after{
     background-image: url("../assets/img/icon/up-right-form-square-white.svg");
+}
+.after-external-site-icon-blue::after{
+    background-image: url("../assets/img/icon/up-right-form-square-blue.svg");
+}
+.after-external-site-icon-green::after{
+    background-image: url("../assets/img/icon/up-right-form-square-green.svg");
 }
 /* ▲▲▲ アイコン関連 ▲▲▲ */
 
