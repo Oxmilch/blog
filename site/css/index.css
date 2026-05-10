@@ -99,7 +99,7 @@
 }
 .firstview-ankerlink-advance-style::before{
     position: absolute;
-    content:" 7.25〜";
+    content:" 7.26〜";
     top: -1em;
     left: -0.1em;
     color: var(--color-green-font);

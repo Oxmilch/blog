@@ -1,1 +1,23 @@
 @charset "UTF-8";
+
+/* ▼▼▼ 背景設定 ▼▼▼ */
+.layout-mobile{
+    background-image: url("../assets/img/background/geometric3.svg");
+}
+
+
+
+/* ▼▼▼ ファーストビュー ▼▼▼ */
+/* ▲▲▲ ファーストビュー ▲▲▲ */
+
+
+
+/* ▼▼▼ インフォメーション ▼▼▼ */
+main{
+    margin-top: var(--mlen3);
+}
+.infomation-style{
+    padding-top: var(--mlen3);
+    padding-bottom: calc(var(--mlen) * 12);
+    background-color: var(--color-green);
+}

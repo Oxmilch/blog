@@ -533,7 +533,7 @@ html::-webkit-scrollbar-thumb{
     font-size: var(--font-size-l3);
     width: fit-content;
     height: var(--mlen6);
-    transform: rotate(-4deg) translate(-10%, 39%);
+    transform: rotate(-4deg) translate(-10%, 30%);
 }
 /* ▲▲▲ 基本となる表示範囲（レイアウト・コンテナ・フレックス・グリッド） ▲▲▲ */
 
