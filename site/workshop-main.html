@@ -18,16 +18,28 @@
     <meta name="twitter:description" content="">
     <meta name="theme-color" content="#ed1818">
     <link rel="stylesheet" href="./css/ress.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/workshop-main.css">
     <link rel="icon" href="./assets/img/logo/main1.svg">
     <script src="./script/common.js" defer></script>
 </head>
-<body>
+<body id="top">
+    <header class="layout-header">
+        <div class="flex layout-header-inner">
+            <a class="header-button ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
+            <button type="button" class="header-button layout-header-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="hamburger-menu" onclick="HamburgerMenu.open()">
+                <span></span>
+            </button>
+        </div>
+    </header>
     <dialog id="hamburger-menu" class="layout-menu" aria-label="メニュー">
-        <div class="container flex header-menu">
-            <a class="ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
-            <button type="button" class="header-menu-button" aria-label="メニューを閉じる" aria-expanded="true" aria-controls="hamburger-menu" onclick="HamburgerMenu.close()">
+        <div class="container flex layout-header-inner">
+            <a class="header-button ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
+            <button type="button" class="header-button layout-header-button" aria-label="メニューを閉じる" aria-expanded="true" aria-controls="hamburger-menu" onclick="HamburgerMenu.close()">
                 <span></span>
             </button>
         </div>
@@ -52,251 +64,251 @@
             </ul>
         </nav>
     </dialog>
-    <div class="layout-mobile">
-        <header class="container flex header-menu">
-            <a class="header-button ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
-            <button type="button" class="header-button header-menu-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="hamburger-menu" onclick="HamburgerMenu.open()">
-                <span></span>
-            </button>
-        </header>
-        <section id="firstview" class="inline-center">
-            <h1 class="font-title-black-l7 font-color-white-stroke-shadow">大アート展</h1>
-            <p class="font-title-exbold-l5 font-color-red-stroke-shadow">8.30</p>
-            <p class="font-title-exbold">10:00〜16:00</p>
-            <div class="box-wave firstview-style">
-                <div class="container firstview-top-style inline-center">
-                    <h3 class="decoration-slash-before-after-white inline-center font-title-exbold-l font-color-white">
-                        30日当日に開催される<br>
-                        ワークショップを楽しもう！
-                    </h3>
-                    <p class="box-round inline-center font-title-exbold-s font-color-white">
-                        &#64;&nbsp;福岡市美術館
-                    </p>
+    <div class="layout-base">
+        <div class="layout-mobile">
+            <section id="firstview" class="inline-center">
+                <h1 class="font-title-black-l7 font-color-white-stroke-shadow">大アート展</h1>
+                <p class="font-title-exbold-l5 font-color-red-stroke-shadow">8.30</p>
+                <p class="font-title-exbold">10:00〜16:00</p>
+                <div class="box-wave firstview-style">
+                    <div class="container firstview-top-style inline-center">
+                        <h3 class="decoration-slash-before-after-white inline-center font-title-exbold-l font-color-white">
+                            30日当日に開催される<br>
+                            ワークショップを楽しもう！
+                        </h3>
+                        <p class="box-round inline-center font-title-exbold-s font-color-white">
+                            &#64;&nbsp;福岡市美術館
+                        </p>
+                    </div>
+                    <div class="container box-round firstview-schedule-style">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>
+                                        <p>大アート展　OPEN</p>
+                                        <p>Tシャツ展示　開始</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td><p>ワークショップ　開始</p></td>
+                                </tr>
+                                <tr>
+                                    <td>15:30</td>
+                                    <td>
+                                        <p>
+                                            隈部裕太郎氏<br>
+                                            ライブパフォーマンス
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>16:00</td>
+                                    <td><p>ワークショップ　終了</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="container box-round firstview-schedule-style">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>10:00</td>
-                                <td>
-                                    <p>大アート展　OPEN</p>
-                                    <p>Tシャツ展示　開始</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>10:00</td>
-                                <td><p>ワークショップ　開始</p></td>
-                            </tr>
-                            <tr>
-                                <td>15:30</td>
-                                <td>
+            </section>
+            <main id="workshop-list" class="workshop-list-style">
+                <div class="box-ribbon">
+                    <h2 class="box-ribbon-title-l3">
+                        ワークショップ一覧
+                    </h2>
+                </div>
+                <ul class="container">
+                    <li class="container box-round-shadow workshop-list-detail-1-style inline-center font-color-white">
+                        <h3 class="font-title-black-l3 font-color-white-stroke-shadow">怒られない落書き部屋</h3>
+                        <p class="font-title-exbold font-color-white-stroke-thin">壁！床！家具！　全て真っ白！</p>
+                        <span class="container decoration-line"></span>
+                        <div id="workshop-detail-1" class="accordion-menu workshop-detail-1-style">　
+                            <p class="font-title-exbold-l4 work-shop-detail-time-style">10:30~16:00</p>
+                            <div>
+                                <div>
                                     <p>
-                                        隈部裕太郎氏<br>
-                                        ライブパフォーマンス
+                                        お家では<br>
+                                        「そこは描いちゃダメ！」と<br>
+                                        言われてしまう壁と床。<br>
+                                        ここでは、そのすべてが<br>
+                                        真っ白なキャンバスです！
                                     </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>16:00</td>
-                                <td><p>ワークショップ　終了</p></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        <main id="workshop-list" class="workshop-list-style">
-            <div class="box-ribbon">
-                <h2 class="box-ribbon-title-l3">
-                    ワークショップ一覧
-                </h2>
-            </div>
-            <ul class="container">
-                <li class="container box-round-shadow workshop-list-detail-1-style
-                           inline-center font-color-white">
-                    <h3 class="font-title-black-l3 font-color-white-stroke-shadow">怒られない落書き部屋</h3>
-                    <p class="font-title-exbold font-color-white-stroke-thin">壁！床！家具！　全て真っ白！</p>
-                    <span class="container decoration-line"></span>
-                    <div id="workshop-detail-1" class="accordion-menu workshop-detail-1-style">　
-                        <p class="font-title-exbold-l4 work-shop-detail-time-style">10:30~16:00</p>
-                        <div>
-                            <div>
-                                <p>
-                                    お家では<br>
-                                    「そこは描いちゃダメ！」と<br>
-                                    言われてしまう壁と床。<br>
-                                    ここでは、そのすべてが<br>
-                                    真っ白なキャンバスです！
-                                </p>
-                            </div>
-                            <div>
-                                <p>
-                                    自由すぎる<br>
-                                    楽しさの中で<br>
-                                    最高のアート体験を<br>
-                                    楽しみましょう
-                                </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        自由すぎる<br>
+                                        楽しさの中で<br>
+                                        最高のアート体験を<br>
+                                        楽しみましょう
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <button type="button" aria-label="怒られない落書き部屋の詳細情報を開く" aria-expanded="false" aria-controls="workshop-detail-1-button"
-                            id="workshop-detail-1-button-open" class="box-round-shadow workshop-detail-button-red-style font-title-exbold-s font-color-white"
-                            onclick="AccordionMenu.toggle('workshop-detail-1'); AccordionMenu.openButton(this, 'workshop-detail-1-button-close');">
-                        くわしくみる
-                    </button>
-                    <button type="button" aria-label="怒られない落書き部屋の詳細情報を閉じる" aria-expanded="true" aria-controls="workshop-detail-1-button"
-                            id="workshop-detail-1-button-close" class="box-round-shadow workshop-detail-button-red-style font-title-exbold-s font-color-white button-hidden"
-                            onclick="AccordionMenu.toggle('workshop-detail-1'); AccordionMenu.closeButton(this, 'workshop-detail-1-button-open');">
-                        とじる
-                    </button>
-                </li>
-                <li class="container box-round-shadow workshop-list-detail-2-style
-                           inline-center">
-                    <h3 class="font-title-black-l3 font-color-white-stroke-shadow">ライブパフォーマンス</h3>
-                    <p class="font-title-exbold">アーティストと一緒に作品作り</p>
-                    <span class="container decoration-line"></span>
-                    <div id="workshop-detail-2" class="accordion-menu workshop-detail-2-style">　
-                        <p class="font-title-exbold-l4 work-shop-detail-time-style">10:30~16:00</p>
-                        <div>
+                        <button class="layout-desktop" type="button" aria-label="怒られない落書き部屋の詳細情報を開く" aria-expanded="false" aria-controls="workshop-detail-1-button"
+                                id="workshop-detail-1-button-open" class="box-round-shadow workshop-detail-button-red-style font-title-exbold-s font-color-white"
+                                onclick="AccordionMenu.toggle('workshop-detail-1'); AccordionMenu.openButton(this, 'workshop-detail-1-button-close');">
+                            くわしくみる
+                        </button>
+                        <button type="button" aria-label="怒られない落書き部屋の詳細情報を閉じる" aria-expanded="true" aria-controls="workshop-detail-1-button"
+                                id="workshop-detail-1-button-close" class="box-round-shadow workshop-detail-button-red-style font-title-exbold-s font-color-white button-hidden"
+                                onclick="AccordionMenu.toggle('workshop-detail-1'); AccordionMenu.closeButton(this, 'workshop-detail-1-button-open');">
+                            とじる
+                        </button>
+                    </li>
+                    <li class="container box-round-shadow workshop-list-detail-2-style inline-center">
+                        <h3 class="font-title-black-l3 font-color-white-stroke-shadow">ライブパフォーマンス</h3>
+                        <p class="font-title-exbold">アーティストと一緒に作品作り</p>
+                        <span class="container decoration-line"></span>
+                        <div id="workshop-detail-2" class="accordion-menu workshop-detail-2-style">
+                            <p class="font-title-exbold-l4 work-shop-detail-time-style">10:30~16:00</p>
                             <div>
-                                <p>
-                                    お家では<br>
-                                    「そこは描いちゃダメ！」と<br>
-                                    言われてしまう壁と床。<br>
-                                    ここでは、そのすべてが<br>
-                                    真っ白なキャンバスです！
-                                </p>
-                            </div>
-                            <div>
-                                <p>
-                                    自由すぎる<br>
-                                    楽しさの中で<br>
-                                    最高のアート体験を<br>
-                                    楽しみましょう
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" aria-label="ライブパフォーマンスの詳細情報を開く" aria-expanded="false" aria-controls="workshop-detail-2-button"
-                            id="workshop-detail-2-button-open" class="box-round-shadow workshop-detail-button-red-style font-title-exbold-s font-color-white"
-                            onclick="AccordionMenu.toggle('workshop-detail-2'); AccordionMenu.openButton(this, 'workshop-detail-2-button-close');">
-                        くわしくみる
-                    </button>
-                    <button type="button" aria-label="ライブパフォーマンスの詳細情報を閉じる" aria-expanded="true" aria-controls="workshop-detail-2-button"
-                            id="workshop-detail-2-button-close" class="box-round-shadow workshop-detail-button-red-style font-title-exbold-s font-color-white button-hidden"
-                            onclick="AccordionMenu.toggle('workshop-detail-2'); AccordionMenu.closeButton(this, 'workshop-detail-2-button-open');">
-                        とじる
-                    </button>
-                </li>
-                <li class="container box-round-shadow workshop-list-detail-3-style
-                           inline-center font-color-white">
-                    <h3 class="font-title-black-l3 font-color-white-stroke-shadow">オリジナルシール作り</h3>
-                    <p class="font-title-exbold">世界に一つだけの宝物を手作り</p>
-                    <span class="container decoration-line-white"></span>
-                    <div id="workshop-detail-3" class="accordion-menu workshop-detail-3-style">　
-                        <p class="font-title-exbold-l4 work-shop-detail-time-style">10:30~16:00</p>
-                        <div>
-                            <div>
-                                <p>
-                                    お家では<br>
-                                    「そこは描いちゃダメ！」と<br>
-                                    言われてしまう壁と床。<br>
-                                    ここでは、そのすべてが<br>
-                                    真っ白なキャンバスです！
-                                </p>
-                            </div>
-                            <div>
-                                <p>
-                                    自由すぎる<br>
-                                    楽しさの中で<br>
-                                    最高のアート体験を<br>
-                                    楽しみましょう
-                                </p>
+                                <div>
+                                    <p>
+                                        お家では<br>
+                                        「そこは描いちゃダメ！」と<br>
+                                        言われてしまう壁と床。<br>
+                                        ここでは、そのすべてが<br>
+                                        真っ白なキャンバスです！
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        自由すぎる<br>
+                                        楽しさの中で<br>
+                                        最高のアート体験を<br>
+                                        楽しみましょう
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <button type="button" aria-label="オリジナルシール作りの詳細情報を開く" aria-expanded="false" aria-controls="workshop-detail-3-button"
-                            id="workshop-detail-3-button-open" class="box-round-shadow workshop-detail-button-white-style font-title-exbold-s font-color-red"
-                            onclick="AccordionMenu.toggle('workshop-detail-3'); AccordionMenu.openButton(this, 'workshop-detail-3-button-close');">
-                        くわしくみる
-                    </button>
-                    <button type="button" aria-label="オリジナルシール作りの詳細情報を閉じる" aria-expanded="true" aria-controls="workshop-detail-3-button"
-                            id="workshop-detail-3-button-close" class="box-round-shadow workshop-detail-button-white-style font-title-exbold-s font-color-red button-hidden"
-                            onclick="AccordionMenu.toggle('workshop-detail-3'); AccordionMenu.closeButton(this, 'workshop-detail-3-button-open');">
-                        とじる
-                    </button>
-                </li>
-                <li class="container box-round-shadow workshop-list-detail-4-style
-                           inline-center font-color-white">
-                    <h3 class="font-title-black-l3 font-color-white-stroke-shadow">オリジナルTシャツ作り</h3>
-                    <p class="font-title-exbold">展示を見たら、次は君の番！</p>
-                    <span class="container decoration-line-white"></span>
-                    <div id="workshop-detail-4" class="accordion-menu workshop-detail-4-style">　
-                        <p class="font-title-exbold-l4 work-shop-detail-time-style">10:30~16:00</p>
-                        <div>
+                        <button type="button" aria-label="ライブパフォーマンスの詳細情報を開く" aria-expanded="false" aria-controls="workshop-detail-2-button"
+                                id="workshop-detail-2-button-open" class="box-round-shadow workshop-detail-button-red-style font-title-exbold-s font-color-white"
+                                onclick="AccordionMenu.toggle('workshop-detail-2'); AccordionMenu.openButton(this, 'workshop-detail-2-button-close');">
+                            くわしくみる
+                        </button>
+                        <button type="button" aria-label="ライブパフォーマンスの詳細情報を閉じる" aria-expanded="true" aria-controls="workshop-detail-2-button"
+                                id="workshop-detail-2-button-close" class="box-round-shadow workshop-detail-button-red-style font-title-exbold-s font-color-white button-hidden"
+                                onclick="AccordionMenu.toggle('workshop-detail-2'); AccordionMenu.closeButton(this, 'workshop-detail-2-button-open');">
+                            とじる
+                        </button>
+                    </li>
+                    <li class="container box-round-shadow workshop-list-detail-3-style inline-center font-color-white">
+                        <h3 class="font-title-black-l3 font-color-white-stroke-shadow">オリジナルシール作り</h3>
+                        <p class="font-title-exbold">世界に一つだけの宝物を手作り</p>
+                        <span class="container decoration-line-white"></span>
+                        <div id="workshop-detail-3" class="accordion-menu workshop-detail-3-style">
+                            <p class="font-title-exbold-l4 work-shop-detail-time-style">10:30~16:00</p>
                             <div>
-                                <p>
-                                    お家では<br>
-                                    「そこは描いちゃダメ！」と<br>
-                                    言われてしまう壁と床。<br>
-                                    ここでは、そのすべてが<br>
-                                    真っ白なキャンバスです！
-                                </p>
-                            </div>
-                            <div>
-                                <p>
-                                    自由すぎる<br>
-                                    楽しさの中で<br>
-                                    最高のアート体験を<br>
-                                    楽しみましょう
-                                </p>
+                                <div>
+                                    <p>
+                                        お家では<br>
+                                        「そこは描いちゃダメ！」と<br>
+                                        言われてしまう壁と床。<br>
+                                        ここでは、そのすべてが<br>
+                                        真っ白なキャンバスです！
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        自由すぎる<br>
+                                        楽しさの中で<br>
+                                        最高のアート体験を<br>
+                                        楽しみましょう
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <button type="button" aria-label="オリジナルTシャツ作りの詳細情報を開く" aria-expanded="false" aria-controls="workshop-detail-4-button"
-                            id="workshop-detail-4-button-open" class="box-round-shadow workshop-detail-button-white-style font-title-exbold-s font-color-red"
-                            onclick="AccordionMenu.toggle('workshop-detail-4'); AccordionMenu.openButton(this, 'workshop-detail-4-button-close');">
-                        くわしくみる
-                    </button>
-                    <button type="button" aria-label="オリジナルTシャツ作りの詳細情報を閉じる" aria-expanded="true" aria-controls="workshop-detail-4-button"
-                            id="workshop-detail-4-button-close" class="box-round-shadow workshop-detail-button-white-style font-title-exbold-s font-color-red button-hidden"
-                            onclick="AccordionMenu.toggle('workshop-detail-4'); AccordionMenu.closeButton(this, 'workshop-detail-4-button-open');">
-                        とじる
-                    </button>
-                </li>
-            </ul>
-        </main>
-        <footer class="inline-center font-color-white">
-            <div class="container">
-                <img class="container" src="./assets/img/logo/main2.svg" alt="福岡市民がつくる大アート展〜誰もがアーティスト〜">
-                <ul>
-                    <li><a class="font-title-exbold-l font-color-white" href="./index.html#firstview" alt="">トップページ</a></li>
-                    <li><a class="font-title-exbold-l font-color-white" href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
-                    <li><a class="font-title-exbold-l font-color-white" href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
-                    <li><a class="font-title-exbold-l font-color-white after-external-site-icon-white" href="#" alt="">ワークショップにお申し込み</a></li>
-                    <li><a class="font-title-exbold-l font-color-white" href="./public-recruitment.html" alt="">Tシャツデザインにチャレンジ</a></li>
-                    <li><a class="font-title-exbold-l font-color-white after-external-site-icon-white" href="#" alt="">Tシャツデザインにお申し込み</a></li>
-                    <li><a class="font-title-exbold-l font-color-white" href="./index.html#schedule" alt="">スケジュール案内</a></li>
-                    <li><a class="font-title-exbold-l font-color-white" href="./index.html#access" alt="">アクセス</a></li>
-                    <li><a class="ankerlink-image-instagram-white" href="#" target="_blank" alt=""></a></li>
-                    <li><a class="font-title-exbold font-color-white after-external-site-icon-white" href="https://www.fukuoka-jc.or.jp/" target="_blank" lt="">主催：一般社団法人　福岡青年会議所</a></li>
-                    <li><a class="font-title-exbold-s font-color-white after-external-site-icon-white" href="https://www.fukuoka-jc.or.jp/pp" target="_blank" alt="">プライバシーポリシーについて</a></li>
-                    <li class="flex">
-                        <a class="ankerlink-image-instagram-white" href="https://www.instagram.com/fukuokajc/" target="_blank" alt=""></a>
-                        <a class="ankerlink-image-tiktok-white" href="https://www.tiktok.com/@fukuokajc" target="_blank" alt=""></a>
+                        <button type="button" aria-label="オリジナルシール作りの詳細情報を開く" aria-expanded="false" aria-controls="workshop-detail-3-button"
+                                id="workshop-detail-3-button-open" class="box-round-shadow workshop-detail-button-white-style font-title-exbold-s font-color-red"
+                                onclick="AccordionMenu.toggle('workshop-detail-3'); AccordionMenu.openButton(this, 'workshop-detail-3-button-close');">
+                            くわしくみる
+                        </button>
+                        <button type="button" aria-label="オリジナルシール作りの詳細情報を閉じる" aria-expanded="true" aria-controls="workshop-detail-3-button"
+                                id="workshop-detail-3-button-close" class="box-round-shadow workshop-detail-button-white-style font-title-exbold-s font-color-red button-hidden"
+                                onclick="AccordionMenu.toggle('workshop-detail-3'); AccordionMenu.closeButton(this, 'workshop-detail-3-button-open');">
+                            とじる
+                        </button>
+                    </li>
+                    <li class="container box-round-shadow workshop-list-detail-4-style inline-center font-color-white">
+                        <h3 class="font-title-black-l3 font-color-white-stroke-shadow">オリジナルTシャツ作り</h3>
+                        <p class="font-title-exbold">展示を見たら、次は君の番！</p>
+                        <span class="container decoration-line-white"></span>
+                        <div id="workshop-detail-4" class="accordion-menu workshop-detail-4-style">
+                            <p class="font-title-exbold-l4 work-shop-detail-time-style">10:30~16:00</p>
+                            <div>
+                                <div>
+                                    <p>
+                                        お家では<br>
+                                        「そこは描いちゃダメ！」と<br>
+                                        言われてしまう壁と床。<br>
+                                        ここでは、そのすべてが<br>
+                                        真っ白なキャンバスです！
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        自由すぎる<br>
+                                        楽しさの中で<br>
+                                        最高のアート体験を<br>
+                                        楽しみましょう
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" aria-label="オリジナルTシャツ作りの詳細情報を開く" aria-expanded="false" aria-controls="workshop-detail-4-button"
+                                id="workshop-detail-4-button-open" class="box-round-shadow workshop-detail-button-white-style font-title-exbold-s font-color-red"
+                                onclick="AccordionMenu.toggle('workshop-detail-4'); AccordionMenu.openButton(this, 'workshop-detail-4-button-close');">
+                            くわしくみる
+                        </button>
+                        <button type="button" aria-label="オリジナルTシャツ作りの詳細情報を閉じる" aria-expanded="true" aria-controls="workshop-detail-4-button"
+                                id="workshop-detail-4-button-close" class="box-round-shadow workshop-detail-button-white-style font-title-exbold-s font-color-red button-hidden"
+                                onclick="AccordionMenu.toggle('workshop-detail-4'); AccordionMenu.closeButton(this, 'workshop-detail-4-button-open');">
+                            とじる
+                        </button>
                     </li>
                 </ul>
-                <small>&copy;2026　一般社団法人　福岡年会議所</small>
-            </div>
-            <div class="footer-character-style">
-                <img src="./assets/img/character/palette.svg" alt="">
-                <img src="./assets/img/character/pen.svg" alt="">
-                <img src="./assets/img/character/bucket.svg" alt="">
-                <img src="./assets/img/character/sun.svg" alt="">
-                <img src="./assets/img/character/paintbrush-blue.webp" alt="">
-            </div>
-        </footer>
+            </main>
+        </div>
+        <div class="layout-desktop-left"></div>
+        <div class="layout-desktop-right"></div>
     </div>
-    <div class="layout-desktop"></div>
+    <footer class="layout-footer">
+        <div class="layout-footer-inner font-color-white">
+            <img class="container footer-logo" src="./assets/img/logo/main2.svg" alt="福岡市民がつくる大アート展〜誰もがアーティスト〜">
+            <ul class="footer-linklist">
+                <li><a class="font-title-exbold-l font-color-white" href="#top" alt="">トップページ</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
+                <li><a class="font-title-exbold-l font-color-white after-external-site-icon-white" href="#URL置換ワークショップ" alt="">ワークショップにお申し込み</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="./public-recruitment.html" alt="">Tシャツデザインにチャレンジ</a></li>
+                <li><a class="font-title-exbold-l font-color-white after-external-site-icon-white" href="#URL置換Tシャツ" alt="">Tシャツデザインにお申し込み</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="#schedule" alt="">スケジュール案内</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="#access" alt="">アクセス</a></li>
+            </ul>
+            <ul class="footer-sns">
+                <li>
+                    <a class="ankerlink-image-instagram-white" href="#" target="_blank" alt=""></a>
+                    <p class="font-title-exbold">大アート展</p>
+                    <p class="font-text-s">Instagram</p>
+                </li>
+                <li>
+                    <a class="ankerlink-image-instagram-white" href="https://www.instagram.com/fukuokajc/" target="_blank" alt=""></a>
+                    <p class="font-title-exbold">主催</p>
+                    <p class="font-text-s">Instagram</p>
+                </li>
+                <li>
+                    <a class="ankerlink-image-tiktok-white" href="https://www.tiktok.com/@fukuokajc" target="_blank" alt=""></a>
+                    <p class="font-title-exbold">主催</p>
+                    <p class="font-text-s">TikTok<p>
+                </li>
+            </ul>
+            <ul class="footer-fjc">
+                <li><a class="font-title-exbold font-color-white after-external-site-icon-white" href="https://www.fukuoka-jc.or.jp/" target="_blank" alt="">主催：一般社団法人　福岡青年会議所</a></li>
+                <li><a class="font-title-exbold-s font-color-white after-external-site-icon-white" href="https://www.fukuoka-jc.or.jp/pp" target="_blank" alt="">プライバシーポリシーについて</a></li>
+            </ul>
+            <small>&copy;2026　一般社団法人　福岡年会議所</small>
+        </div>
+    </footer>
 </body>
 </html>
