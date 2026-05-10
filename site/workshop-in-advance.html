@@ -3,44 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>事前ワークショップ | 福岡市民がつくる大アート展〜誰もがアーティスト〜</title>
+    <title>ワークショップにチャレンジ | 福岡市民がつくる大アート展〜誰もがアーティスト〜</title>
     <meta name="description" content="">
     <meta name="robots" content="">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="article">
     <meta property="og:url" content="">
-    <meta property="og:title" content="事前ワークショップ | 福岡市民がつくる大アート展〜誰もがアーティスト〜">
+    <meta property="og:title" content="ワークショップにチャレンジ | 福岡市民がつくる大アート展〜誰もがアーティスト〜">
     <meta property="og:site_name" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="事前ワークショップ | 福岡市民がつくる大アート展〜誰もがアーティスト〜">
+    <meta name="twitter:title" content="ワークショップにチャレンジ | 福岡市民がつくる大アート展〜誰もがアーティスト〜">
     <meta name="twitter:description" content="">
     <meta name="theme-color" content="#2db82d">
     <link rel="stylesheet" href="./css/ress.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/workshop-in-advance.css">
     <link rel="icon" href="./assets/img/logo/main1.svg">
     <script src="./script/common.js" defer></script>
 </head>
 <body id="top">
-    <div id="mobile-area" class="content">
-        <header></header>
-        <main>
-            <section id="first-view">
-                <h2>ワークショップ</h2>
-            </section>
-            <section id="info-resarve">
-            </section>
-            <section id="info-poster">
-                <h2>ワークショップ一覧</h2>
-            </section>
-        </main>
-        <footer></footer>
-    </div>
-    <div id="desktop-area">
-    </div>
-    <dialog id="menu-area" aria-label="メニュー">
+    <header class="layout-header">
+        <div class="flex layout-header-inner">
+            <a class="header-button ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
+            <button type="button" class="header-button layout-header-button" aria-label="メニューを開く" aria-expanded="false" aria-controls="hamburger-menu" onclick="HamburgerMenu.open()">
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <dialog id="hamburger-menu" class="layout-menu" aria-label="メニュー">
+        <div class="container flex layout-header-inner">
+            <a class="header-button ankerlink-image-top" href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る"></a>
+            <button type="button" class="header-button layout-header-button" aria-label="メニューを閉じる" aria-expanded="true" aria-controls="hamburger-menu" onclick="HamburgerMenu.close()">
+                <span></span>
+            </button>
+        </div>
+        <nav class="inline-center">
+            <ul class="font-title-exbold-l2 inline-center">
+                <li class="after-internal-site-icon-white"><a href="./index.html" alt="2026年福岡市民が作る大アート展のトップページに戻る">トップページ</a></li>
+                <li class="after-internal-site-icon-white"><a class="font-color-red" href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
+                <li class="after-internal-site-icon-white"><a class="font-color-green" href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
+                <li class="after-internal-site-icon-white"><a class="font-color-blue" href="./public-recruitment.html" alt="">Tシャツデザインにチャレンジ</a></li>
+            </ul>
+            <ul class="container flex font-title-exbold inline-center">
+                <li><a class="box-round-shadow font-title-black-s font-color-green after-external-site-icon" href="#" alt="">ワークショップ<br>お申し込み</a></li>
+                <li><a class="box-round-shadow font-title-black-s font-color-blue after-external-site-icon" href="#" alt="">Tシャツデザイン<br>お申し込み</a></li>
+            </ul>
+            <ul class="container flex">
+                <li><a class="ankerlink-image-instagram" href="#" alt="2026年福岡市民が作る大アート展のInstagramアカウントを開く"></a></li>
+            </ul>
+            <h3 class="font-title-exbold-l">福岡青年会議所の発信はこちら</h3>
+            <ul class="container flex">
+                <li><a class="ankerlink-image-instagram" href="https://www.instagram.com/fukuokajc/" target="_blank" alt="主催している福岡市青年会議所のInstagramアカウントを開く"></a></li>
+                <li><a class="ankerlink-image-tiktok" href="https://www.tiktok.com/@fukuokaj" target="_blank" alt="主催している福岡市青年会議所のTikTokアカウントを開く"></a></li>
+            </ul>
+        </nav>
     </dialog>
+    <div class="layout-base">
+        <div class="layout-mobile">
+            <main>
+                <section id="first-view">
+                    <h2>ワークショップ</h2>
+                </section>
+                <section id="info-resarve">
+                </section>
+                <section id="info-poster">
+                    <h2>ワークショップ一覧</h2>
+                </section>
+            </main>
+        </div>
+        <div class="layout-desktop-left"></div>
+        <div class="layout-desktop-right"></div>
+    </div>
+    <footer class="layout-footer">
+        <div class="layout-footer-inner font-color-white">
+            <img class="container footer-logo" src="./assets/img/logo/main2.svg" alt="福岡市民がつくる大アート展〜誰もがアーティスト〜">
+            <ul class="footer-linklist">
+                <li><a class="font-title-exbold-l font-color-white" href="#top" alt="">トップページ</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="./workshop-main.html" alt="">みんなでつくる大アート展</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="./workshop-in-advance.html" alt="">ワークショップにチャレンジ</a></li>
+                <li><a class="font-title-exbold-l font-color-white after-external-site-icon-white" href="#URL置換ワークショップ" alt="">ワークショップにお申し込み</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="./public-recruitment.html" alt="">Tシャツデザインにチャレンジ</a></li>
+                <li><a class="font-title-exbold-l font-color-white after-external-site-icon-white" href="#URL置換Tシャツ" alt="">Tシャツデザインにお申し込み</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="#schedule" alt="">スケジュール案内</a></li>
+                <li><a class="font-title-exbold-l font-color-white" href="#access" alt="">アクセス</a></li>
+            </ul>
+            <ul class="footer-sns">
+                <li>
+                    <a class="ankerlink-image-instagram-white" href="#" target="_blank" alt=""></a>
+                    <p class="font-title-exbold">大アート展</p>
+                    <p class="font-text-s">Instagram</p>
+                </li>
+                <li>
+                    <a class="ankerlink-image-instagram-white" href="https://www.instagram.com/fukuokajc/" target="_blank" alt=""></a>
+                    <p class="font-title-exbold">主催</p>
+                    <p class="font-text-s">Instagram</p>
+                </li>
+                <li>
+                    <a class="ankerlink-image-tiktok-white" href="https://www.tiktok.com/@fukuokajc" target="_blank" alt=""></a>
+                    <p class="font-title-exbold">主催</p>
+                    <p class="font-text-s">TikTok<p>
+                </li>
+            </ul>
+            <ul class="footer-fjc">
+                <li><a class="font-title-exbold font-color-white after-external-site-icon-white" href="https://www.fukuoka-jc.or.jp/" target="_blank" alt="">主催：一般社団法人　福岡青年会議所</a></li>
+                <li><a class="font-title-exbold-s font-color-white after-external-site-icon-white" href="https://www.fukuoka-jc.or.jp/pp" target="_blank" alt="">プライバシーポリシーについて</a></li>
+            </ul>
+            <small>&copy;2026　一般社団法人　福岡年会議所</small>
+        </div>
+    </footer>
 </body>
 </html>
