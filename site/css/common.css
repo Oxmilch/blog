@@ -30,7 +30,7 @@
         --layout-mobile-magnification: 0.333;
         --layout-desktop-left-magnification: 0.333;
         --layout-desktop-right-magnification: 0.333;
-        --layout-footer-magnification: 0.50;
+        --layout-footer-magnification: 0.999;
         --layout-footer-width-max: 960px;
         --is-mobile-only-display: none !important;
         --is-mobile-only-visible: hidden;
@@ -388,7 +388,7 @@ html::-webkit-scrollbar-thumb{
         url("../assets/img/background/geometric1.svg"),
         url("../assets/img/background/geometric1.svg");
     background-blend-mode: multiply;
-    background-position: 0% 0%, -150% 450%;
+    background-position: 0% 0%, 75% 325%;
     background-size: 150%;
     background-repeat: repeat;
 }
@@ -813,15 +813,48 @@ li{
 /* ▼▼▼ フッター ▼▼▼ */
 /* フッターロゴ */
 .footer-logo{
-    padding-top: var(--mlen5);
+    padding-top: var(--mlen4);
+    max-width: 640px;
 }
 
 /* リンク一覧 */
-.footer-linklist li{
-    margin: calc(var(--mlen) * 2.5) auto 0;
-    border-bottom: dashed var(--mlen-e) var(--color-white);
-    width: 80%;
+/* モバイルレイアウト */
+@media (max-width:960px){
+    .footer-linklist{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    .footer-linklist li{
+        margin: calc(var(--mlen) * 2.5) auto 0;
+        border-bottom: dashed var(--mlen-e) var(--color-white);
+        width: var(--content-width);
+    }
 }
+/* デスクトップレイアウト */
+@media (min-width:961px){
+    .footer-linklist{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(0, 1fr);
+        column-gap: var(--mlen8);
+        flex-grow: 1;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .footer-linklist li{
+        margin: calc(var(--mlen) * 2.5) auto 0 0;
+        border-bottom: none;
+        width: var(--content-width);
+    }
+}
+
+
+
 
 /* SNS */
 .footer-sns{
@@ -1168,6 +1201,7 @@ footer .footer-character-style img:nth-child(5){
     background-color: var(--color-white);
 }
 /* ▲▲▲ 装飾 ▲▲▲ */
+
 
 
 /* ▼▼▼ フォントファミリー ▼▼▼ */
