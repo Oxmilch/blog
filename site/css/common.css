@@ -906,6 +906,7 @@ li{
 .accordion-menu{
     position: relative;
     overflow: hidden;
+    margin-top: var(--mlen2);
     border: solid var(--mlen-q) var(--color-black);
     border-radius: var(--mlen2);
     background-color: var(--color-white);
@@ -914,6 +915,7 @@ li{
 
 .accordion-menu-header{
     position: relative;
+    padding: var(--mlen) 0;
 }
 
 .accordion-menu-detail{
@@ -922,12 +924,22 @@ li{
     padding-bottom: 2em;
 }
 
+.accordion-menu-detail h4{
+    padding-top: var(--mlen2);
+    line-height: 1.5;
+}
 .accordion-menu-detail h5{
-    padding: 0.25em 1em;
+    margin-top: var(--mlen2);
+    padding: 0.25em 1em 0.75em;
+    width: fit-content;
     mask-image: url("../assets/img/decoration/accordion-menu-subtitle-mask.svg");
     mask-mode: luminance;
     mask-size: contain;
     mask-repeat: no-repeat;
+}
+
+.accordion-menu-detail ol{
+    padding-top: var(--mlen2);
 }
 
 .accordion-menu-detail ol li{
@@ -1388,6 +1400,15 @@ footer .footer-character-style img:nth-child(5){
 .decoration-line-white{
     background-color: var(--color-white);
 }
+
+/* 横点線 */
+.decoration-line-dotted{
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    border-bottom: dotted var(--mlen-e) var(--color-black);
+}
+
 
 /* 時計キャラ */
 .decoration-clock-before,
