@@ -64,9 +64,9 @@ main{
 }
 
 .infomation-daily-schedule-jyosei-style::before{
-    content:"開催日程（福岡市城西中学校）";
+    content:"君のアートが街をジャック！？";
 }
 
 .infomation-daily-schedule-artmuseum-style::before{
-    content:"開催日程（福岡市美術館）";
+    content:"アーティストと大型アート作り";
 }
