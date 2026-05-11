@@ -8,14 +8,48 @@
 
 
 /* ▼▼▼ ファーストビュー ▼▼▼ */
-.firstview-daily-schedule-jyosei-style,
-.firstview-daily-schedule-artmuseum-style{
-    position: relative;
-    padding-top: 1em;
+/* ▲▲▲ ファーストビュー ▲▲▲ */
+
+
+
+/* ▼▼▼ インフォメーション ▼▼▼ */
+main{
+    margin-top: var(--mlen6);
+}
+.infomation-style{
+    padding-top: var(--mlen6);
+    padding-bottom: var(--mlen3);
+    background-color: var(--color-green);
 }
 
-.firstview-daily-schedule-jyosei-style::before,
-.firstview-daily-schedule-artmuseum-style::before{
+.infomation-list-style{
+    margin-top: var(--mlen3);
+}
+
+.infomation-list-style li{
+    width: 10em;
+    padding: auto 1em;
+    margin: 0 auto;
+    background-color: var(--color-black);
+    border: solid var(--mlen-q) transparent;
+    border-radius: var(--mlen2);
+}
+
+
+.infomation-daily-schedule-jyosei-style,
+.infomation-daily-schedule-artmuseum-style{
+    position: relative;
+    padding-top: var(--mlen3);
+    z-index: 0;
+}
+
+.infomation-daily-schedule-jyosei-style{
+    margin-top: var(--mlen7);
+}
+
+
+.infomation-daily-schedule-jyosei-style::before,
+.infomation-daily-schedule-artmuseum-style::before{
     position: absolute;
     top: -1em;
     left: 0.5em;
@@ -26,25 +60,13 @@
     border-radius: var(--mlen2);
     box-shadow: var(--mlen-q) var(--mlen-q) 0 var(--color-black);
     padding: 0 1em;
+    z-index: 1;
 }
 
-.firstview-daily-schedule-jyosei-style::before{
-    content:"開催日程 in 福岡市城西中学校";
+.infomation-daily-schedule-jyosei-style::before{
+    content:"開催日程（福岡市城西中学校）";
 }
 
-.firstview-daily-schedule-artmuseum-style::before{
-    content:"開催日程 in 福岡市美術館";
-}
-/* ▲▲▲ ファーストビュー ▲▲▲ */
-
-
-
-/* ▼▼▼ インフォメーション ▼▼▼ */
-main{
-    margin-top: var(--mlen3);
-}
-.infomation-style{
-    padding-top: var(--mlen3);
-    padding-bottom: calc(var(--mlen) * 12);
-    background-color: var(--color-green);
+.infomation-daily-schedule-artmuseum-style::before{
+    content:"開催日程（福岡市美術館）";
 }

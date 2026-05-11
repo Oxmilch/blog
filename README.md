@@ -10,12 +10,12 @@
   - **記載可能** 大きく崩れないが意図しない見た目になる
     - CSS
       - scrollbar-gutter / scrollbar-width
-  - **記載OK** （パフォーマンスに影響あり）
+  - **記載OK** （パフォーマンスに影響が出るのみ）
     - CSS
       - iframeのloading=”lazy”
       - image-set()
 
-[参考](https://deep-space.blue/web/2893#index_id5)
+[deep-space.blue - （随時更新）iOS○○から使えるCSSなどまとめ【iOS14以降で】](https://deep-space.blue/web/2893#index_id5)
 
 
 ## サイズ計算
@@ -71,6 +71,8 @@
 
 # 各構造
 ## ディレクトリ構造
+太字は、フォルダを表す。  
+
 - README.md（このファイル）
 - **site**
   - **assets**
@@ -88,6 +90,7 @@
     - **css**
       - common.css（共通で利用するスタイル）
     - **script**
+      - common.js（共通で利用するスクリプト）
     - index.html（トップページ）
     - workshop-main.html（当日ワークショップページ）
     - workshop-in-advance.html（事前ワークショップページ）
@@ -148,9 +151,20 @@
 | プライバシーポリシーを開く | プライバシーポリシーについて確認する（主催している福岡市青年会議所のプライバシーポリシーのページを開く） |
 
 # 特設サイト情報
-## ページ
-ドメインや環境について不明なため、どんな環境下でも動作するよう考慮する。
+- ドメインや環境について不明なため、どんな環境下でも動作するよう考慮する。  
+- URLがわからないものについては、次のURLを指定している。
+  - #URL置換用ドメイン → 本事業の公開URL。
+    - https://***.ドメイン/事業用ディレクトリ
+      - ※最後のスラッシュは含めない。既に書いてます。
+  - #URL置換用インスタグラム →　本事業用インスタグラムアカウントのURL
+  - #URL置換用事前ワークショップ → ワークショップ受付フォームのURL
+  - #URL置換用Tシャツ公募 → Tシャツ公募受付フォームのURL
 
+決まり次第、全てのページに対して一括置換すること。
+
+
+## 　URL一覧
+- [ドメイン](#URL置換用ドメイン/)
 - 特設サイト
   - [トップページ](./site/index.html)
   - [みんなでつくる大アート展（当日ワークショップ）](/site/workshop-main.html)
@@ -188,4 +202,4 @@
 - [Clamp関数生成ツール](https://free.page-craft.jp/clamp)
 - [CSS Generators - Wavy Pattern](https://css-generators.com/wavy-shapes/)
 ## 参考
-- [Qiita - 背景色がある角丸tableをつくる](https://qiita.com/c9qt/items/9d588c29d6c042f2a170)
+- [Qiita - 背景色がある角丸tableをつくる](https://qiita.com/c9qt/items/9d588c29d6c042f2a170) ※調べたけど面倒すぎて使ってない
