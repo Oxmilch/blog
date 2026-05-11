@@ -847,6 +847,8 @@ li{
                 <time>受付開始<time>
             </div>
             <div class="accordion-menu-detail">
+                <h4>サブタイトル</h4>
+                <h5>ワークショップのポイント</h5>
                 <h4>協力アーティスト</h4>
                 <div>
                     <img>写真</img>
@@ -907,6 +909,7 @@ li{
     border: solid var(--mlen-q) var(--color-black);
     border-radius: var(--mlen2);
     background-color: var(--color-white);
+    z-index: 2;
 }
 
 .accordion-menu-header{
@@ -918,31 +921,63 @@ li{
     background-color: var(--color-white);
 }
 
-/* .accordion-menu-detail::before{
-    content: "";
-    color: var(--color-font-white);
-    position: absolute;
+.accordion-menu-detail ol li::before{
+    position: relative;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../assets/img/decoration/paint-blue.svg");
-    background-size: contain;
-    background-position: left;
-    z-index: 3;
+    left: -0.5em;
+    background-image: url("../assets/img/decoration/flag.svg");
+    width: 2em;
+    height: 2em;
 }
-.accordion-menu-detail::after{
-    content: "";
+.accordion-menu-detail ol li:nth-child(1)::before{
+    content: "01";
+}
+.accordion-menu-detail ol li:nth-child(2)::before{
+    content: "02";
+}
+
+.accordion-menu-footer{
+    position: relative;
+    height: fit-content;
+    margin-top: 1em;
+    background-image: url("../assets/img/decoration/paint-blue.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    overflow: visible;
+}
+.accordion-menu-footer::after{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    content: "";
+    top: -3em;
+    left: 60%;
     width: 100%;
     height: 100%;
     background-image: url("../assets/img/character/paintbrush-blue.webp");
-    background-size: contain;
-    background-position: left;
-    z-index: 3;
-} */
+    background-size: 20%;
+    z-index: 4;
+}
+
+.accordion-menu-footer-text{
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.accordion-menu-footer-button{
+    position: absolute;
+    bottom: var(--mlen-q-n);
+    right: var(--mlen-q-n);
+    border: solid var(--mlen-q) var(--color-black);
+    border-top-left-radius: var(--mlen2);
+    border-bottom-left-radius: var(--mlen2);
+    padding-left: 1.5em;
+    width: 66%;
+    background-color: var(--color-white);
+    z-index: 5;
+}
+
+
 
 /* ▲▲▲ アコーディオンメニュー ▲▲▲ */
 
