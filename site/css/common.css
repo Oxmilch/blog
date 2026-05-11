@@ -836,6 +836,37 @@ li{
 
 
 /* ▼▼▼ アコーディオンメニュー ▼▼▼ */
+/* 構造
+  <ul>
+    <li>リングノート風のスタイル
+        <h3>タイトル</h3>
+        <p>説明文</p>
+        <div>アコーディオンの内容
+            <div> 丸枠
+                <p>開催情報</p>
+                <h4></h4>
+                <h5>一覧</h5>
+                <ul>
+                    <li>
+                        <span>受付開始※装飾あり</span>
+                        <time></time>
+                    </li>
+                    <li>
+                        <span>ワークショップ※装飾なし</span>
+                        <time></time>
+                    </li>
+                </ul>
+                <ol>
+                </ol>
+                <a>申し込み</a>
+            </div>
+        </div>
+        <span>装飾線</span>
+        <button>開く</button>
+        <button>閉じる</button>
+    </li>
+  </ul>
+/* */
 .accordion-menu{
     height: 0;
     overflow: hidden;
