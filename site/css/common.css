@@ -871,7 +871,7 @@ li{
     position: relative;
     width: 100%;
     height: fit-content;
-    padding: var(--mlen4) var(--mlen) calc(var(--mlen) * 1.5);
+    padding: var(--mlen4) 0 calc(var(--mlen) * 1.5);
     margin-top: var(--mlen4);
     border: solid var(--mlen-q) var(--color-black);
     border-radius: var(--mlen2);
@@ -919,27 +919,35 @@ li{
 .accordion-menu-detail{
     position: relative;
     background-color: var(--color-white);
+    padding-bottom: 2em;
 }
 
-.accordion-menu-detail ol li::before{
-    position: relative;
-    bottom: 0;
-    left: -0.5em;
+.accordion-menu-detail h5{
+    padding: 0.25em 1em;
+    mask-image: url("../assets/img/decoration/accordion-menu-subtitle-mask.svg");
+    mask-mode: luminance;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+}
+
+.accordion-menu-detail ol li{
+    display: flex;
+    column-gap: 1em;
+}
+
+.accordion-menu-detail ol li div:first-child{
+    margin-top: 0.5em;
     background-image: url("../assets/img/decoration/flag.svg");
-    width: 2em;
-    height: 2em;
-}
-.accordion-menu-detail ol li:nth-child(1)::before{
-    content: "01";
-}
-.accordion-menu-detail ol li:nth-child(2)::before{
-    content: "02";
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4em;
+    width: 3em;
 }
 
 .accordion-menu-footer{
     position: relative;
     height: fit-content;
-    margin-top: 1em;
+    background-color: var(--color-white);
     background-image: url("../assets/img/decoration/paint-blue.svg");
     background-position: left bottom;
     background-repeat: no-repeat;

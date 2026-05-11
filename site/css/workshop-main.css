@@ -26,5 +26,7 @@
 
 
 /* ▼▼▼ ワークショップ ▼▼▼ */
-
+.workshop-accordion-backcolor-1-style{
+    background-color: var(--color-green-light);
+}
 /* ▲▲▲ ワークショップ ▲▲▲ */
