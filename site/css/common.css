@@ -539,6 +539,44 @@ html::-webkit-scrollbar-thumb{
 
 
 
+/* ▼▼▼ 複合要素のスタイル ▼▼▼ */
+/* ■■ １日のスケジュール ■■
+  <ol>
+    <li>
+      <time></time>
+      <p></p>
+    </li>
+  </ol>
+ */
+.daily-schedule{
+    margin-top: var(--mlen4);
+    margin-bottom: var(--mlen5);
+    background-color: var(--color-yellow);
+    border: solid var(--mlen-q) var(--color-black);
+}
+.daily-schedule li{
+    display: flex;
+    align-items:flex-start;
+    padding: 0.5em 0.5em 0.5em 1em;
+    gap: 2em 2em;
+}
+.daily-schedule li time{
+    border: solid var(--mlen-q) var(--color-black);
+    border-radius: 3em;
+    background-color: var(--color-red);
+    color: var(--color-white-font);
+    padding: 0.1em 1em;
+    line-height: 1.3;
+    width: fit-content;
+    box-shadow: var(--mlen-q) var(--mlen-q) 0 var(--color-black);
+}
+
+/* ■■ １日のスケジュール ■■ */
+
+/* ▲▲▲ 複合要素のスタイル ▲▲▲ */
+
+
+
 /* ▼▼▼ タグ共通スタイル ▼▼▼ */
 h1,h2,h3,h4,h5{
     font-family: var(--font-family-title-black);
@@ -857,9 +895,6 @@ li{
         width: var(--content-width);
     }
 }
-
-
-
 
 /* SNS */
 .footer-sns{

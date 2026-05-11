@@ -8,6 +8,33 @@
 
 
 /* ▼▼▼ ファーストビュー ▼▼▼ */
+.firstview-daily-schedule-jyosei-style,
+.firstview-daily-schedule-artmuseum-style{
+    position: relative;
+    padding-top: 1em;
+}
+
+.firstview-daily-schedule-jyosei-style::before,
+.firstview-daily-schedule-artmuseum-style::before{
+    position: absolute;
+    top: -1em;
+    left: 0.5em;
+    font-family: var(--font-family-title-exbold);
+    font-size: var(--font-size);
+    background-color: var(--color-white);
+    border: solid var(--mlen-q) var(--color-black);
+    border-radius: var(--mlen2);
+    box-shadow: var(--mlen-q) var(--mlen-q) 0 var(--color-black);
+    padding: 0 1em;
+}
+
+.firstview-daily-schedule-jyosei-style::before{
+    content:"開催日程 in 福岡市城西中学校";
+}
+
+.firstview-daily-schedule-artmuseum-style::before{
+    content:"開催日程 in 福岡市美術館";
+}
 /* ▲▲▲ ファーストビュー ▲▲▲ */
 
 
