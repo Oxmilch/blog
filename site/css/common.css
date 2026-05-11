@@ -319,9 +319,6 @@ html::-webkit-scrollbar-thumb{
 /* コンテンツ（モバイル・デスクトップ）　*/
 .layout-base{
     overflow: hidden;
-    scrollbar-gutter: stable;
-    scrollbar-color: var(--color-orange) var(--color-blue);
-    scrollbar-width: thin;
     display: grid;
     grid-template-areas: "left center right";
     grid-template-columns:
@@ -336,6 +333,9 @@ html::-webkit-scrollbar-thumb{
 /* モバイル */
 .layout-mobile{
     grid-area: center;
+    scrollbar-gutter: stable;
+    scrollbar-color: var(--color-orange) var(--color-blue);
+    scrollbar-width: thin;
     background-color: var(--color-white);
     background-repeat: repeat-y;
     background-position-x: center;
