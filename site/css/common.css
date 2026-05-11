@@ -835,41 +835,60 @@ li{
 
 
 
-/* ▼▼▼ アコーディオンメニュー ▼▼▼ */
-/* 構造
+/* ▼▼▼ リングノート風のアコーディオンメニュー ▼▼▼
+構造
   <ul>
-    <li>リングノート風のスタイル
+    <li class="accordion-summary">リングノート風のスタイル
         <h3>タイトル</h3>
         <p>説明文</p>
-        <div>アコーディオンの内容
-            <div> 丸枠
-                <p>開催情報</p>
-                <h4></h4>
-                <h5>一覧</h5>
-                <ul>
-                    <li>
-                        <span>受付開始※装飾あり</span>
-                        <time></time>
-                    </li>
-                    <li>
-                        <span>ワークショップ※装飾なし</span>
-                        <time></time>
-                    </li>
-                </ul>
-                <ol>
-                </ol>
+        <div class="accordion-menu">アコーディオンの内容　まる枠
+            <div class="accordion-menu-header">
+                <time>開催時間</time>
+                <time>受付開始<time>
+            </div>
+            <div class="accordion-menu-detail">
+                <h4>協力アーティスト</h4>
+                <div>
+                    <img>写真</img>
+                    <p>名前</p>
+                    <img>インスタリンク</img>
+                </div>
+                <h4>開催場所</h4>
+                <p></p>
+                <iframe></iframe>
                 <a>申し込み</a>
             </div>
         </div>
         <span>装飾線</span>
-        <button>開く</button>
-        <button>閉じる</button>
+        <button>くわしくみる</button>
+        <button>とじる</button>
     </li>
-  </ul>
-/* */
-.accordion-menu{
-    height: 0;
-    overflow: hidden;
+  </ul>*/
+
+.accordion-summary{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: var(--mlen4) var(--mlen) calc(var(--mlen) * 1.5);
+    margin-top: var(--mlen4);
+    border: solid var(--mlen-q) var(--color-black);
+    border-radius: var(--mlen2);
+    box-shadow: var(--mlen-h) var(--mlen-h) 0 var(--color-black);
+    text-align: center;
+    z-index: 0;
+}
+.accordion-summary::before{
+    position: absolute;
+    content: "";
+    top: var(--mlen-n);
+    left: 0;
+    right: 0;
+    background-image: url("../assets/img/decoration/ring.svg");
+    background-size: clamp(228px, 60.8vw, 328.32px);
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .open{
@@ -880,6 +899,51 @@ li{
 .button-hidden{
     display: none;
 }
+
+
+.accordion-menu{
+    position: relative;
+    overflow: hidden;
+    border: solid var(--mlen-q) var(--color-black);
+    border-radius: var(--mlen2);
+    background-color: var(--color-white);
+}
+
+.accordion-menu-header{
+    position: relative;
+}
+
+.accordion-menu-detail{
+    position: relative;
+    background-color: var(--color-white);
+}
+
+/* .accordion-menu-detail::before{
+    content: "";
+    color: var(--color-font-white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/decoration/paint-blue.svg");
+    background-size: contain;
+    background-position: left;
+    z-index: 3;
+}
+.accordion-menu-detail::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/character/paintbrush-blue.webp");
+    background-size: contain;
+    background-position: left;
+    z-index: 3;
+} */
+
 /* ▲▲▲ アコーディオンメニュー ▲▲▲ */
 
 
@@ -1281,6 +1345,33 @@ footer .footer-character-style img:nth-child(5){
 .decoration-line-white{
     background-color: var(--color-white);
 }
+
+/* 時計キャラ */
+.decoration-clock-before,
+.decoration-clock-after{
+    position: relative;
+}
+.decoration-clock-before::before,
+.decoration-clock-after::after{
+    content: "";
+    position: absolute;
+    bottom: -0.25em;
+    height: 2em;
+    width: 2em;
+    background-image: url("../assets/img/character/clock.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.decoration-clock-before::before{
+    left: -2em;
+    z-index: 1;
+}
+.decoration-clock-after::after{
+    right: -2em;
+    z-index: 1;
+}
+
 /* ▲▲▲ 装飾 ▲▲▲ */
 
 
