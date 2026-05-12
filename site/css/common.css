@@ -874,7 +874,7 @@ li{
     padding: var(--mlen4) 0 calc(var(--mlen) * 1.5);
     margin-top: var(--mlen4);
     border: solid var(--mlen-q) var(--color-black);
-    border-radius: var(--mlen2);
+    border-radius: var(--mlen5);
     box-shadow: var(--mlen-h) var(--mlen-h) 0 var(--color-black);
     text-align: center;
     z-index: 0;
@@ -893,22 +893,13 @@ li{
     z-index: 1;
 }
 
-.open{
-    height: fit-content;
-    overflow: auto;
-}
-
-.button-hidden{
-    display: none;
-}
-
-
 .accordion-menu{
     position: relative;
+    display: none;
     overflow: hidden;
     margin-top: var(--mlen2);
     border: solid var(--mlen-q) var(--color-black);
-    border-radius: var(--mlen2);
+    border-radius: var(--mlen5);
     background-color: var(--color-white);
     z-index: 2;
 }
@@ -997,7 +988,29 @@ li{
     z-index: 5;
 }
 
+.accordion-button-open,
+.accordion-button-open-red,
+.accordion-button-close{
+    position: relative;
+    margin-top: 1em;
+    width: var(--content-width);
+    background-color: white;
+    border: solid var(--mlen-q) var(--color-black);
+    border-radius: var(--mlen2);
+    z-index: 6;
+}
 
+.accordion-button-open-red{
+    background-color: var(--color-red);
+}
+
+.accordion-menu-open{
+    display: block;
+}
+
+.button-hidden{
+    display: none;
+}
 
 /* ▲▲▲ アコーディオンメニュー ▲▲▲ */
 

@@ -13,31 +13,46 @@ class HamburgerMenu{
 
 /** ■■■ クラス：アコーディオンメニュー ■■■
  * @author Sozosha Recurrent School Fukuoka 2025.11~2026.05 Class 6B Team A - T.H.
- * @since 20260506
+ * @since 20260512
 */
 class AccordionMenu{
     /** 開閉する
-     * @param {string} accordionMenuId 開閉対象のタグのId
+     * @param {HTMLButtonElement} button くわしくみるボタン、またはとじるボタンのエレメント
      */
-    static toggle(accordionMenuId){
-        document.getElementById(accordionMenuId).classList.toggle("open");
-    }
+    static toggle(button){
+        // ボタンが押されたアコーディオンメニューの要素を取得
+        const accordionMenuElement = button.parentNode.querySelector(".accordion-menu");
+        // くわしくみるボタンかチェック
+        const isOpenButton = (button.classList.contains("accordion-button-open")
+                            || button.classList.contains("accordion-button-open-red"));
+        // とじるぼたんかチェック
+        const isCloseButton = button.classList.contains("accordion-button-close");
 
-    /** アコーディオンメニューを開くボタンを隠し、閉じるボタンを表示する
-     * @param {Element} openButtonElement 開くボタン
-     * @param {string} closeButtonId 表示する閉じるボタン
-     */
-    static openButton(openButtonElement, closeButtonId){
-        openButtonElement.classList.add("button-hidden");
-        document.getElementById(closeButtonId).classList.remove("button-hidden");
-    }
+        // アコーディオンメニューが見つからない場合は何もせずに処理を終える
+        if(accordionMenuElement == null) return;
 
-    /** アコーディオンメニューを閉じるボタンを隠し、元のボタンを表示する
-     * @param {Element} closeButtonElement 閉じるボタン
-     * @param {string} openButtonId 表示する開くボタン
-     */
-    static closeButton(closeButtonElement, openButtonId){
-        closeButtonElement.classList.add("button-hidden");
-        document.getElementById(openButtonId).classList.remove("button-hidden");
+        // くわしくみるボタンを押された場合
+        if(isOpenButton){
+            // アコーディオンメニューを表示する
+            accordionMenuElement.classList.toggle("accordion-menu-open");
+            // くわしくみるボタンを隠す
+            button.classList.toggle("button-hidden");
+            // 閉じるボタンを表示する
+            button.nextElementSibling.classList.toggle("button-hidden");
+            return;
+        }
+
+        // とじるボタンが押された場合
+        if(isCloseButton){
+            // アコーディオンメニューを隠す
+            accordionMenuElement.classList.toggle("accordion-menu-open");
+            // 閉じるボタンを隠す
+            button.classList.toggle("button-hidden");
+            // くわしくみるボタンを表示する
+            button.previousElementSibling.classList.toggle("button-hidden");
+            return;
+        }
+
+        return;
     }
 }
