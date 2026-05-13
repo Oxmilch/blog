@@ -30,8 +30,8 @@
         --layout-mobile-magnification: 0.333;
         --layout-desktop-left-magnification: 0.333;
         --layout-desktop-right-magnification: 0.333;
-        --layout-footer-magnification: 0.999;
-        --layout-footer-width-max: 960px;
+        --layout-footer-magnification: 0.333;
+        --layout-footer-width-max: 540px;
         --is-mobile-only-display: none !important;
         --is-mobile-only-visible: hidden;
         --is-desktop-only-display: unset;
@@ -80,8 +80,6 @@
         clamp(var(--layout-footer-width-min),
         (100vw * var(--layout-footer-magnification)),
         var(--layout-footer-width-max));
-
-    --footer-character-height: clamp(150px, -20.448px + (45.455vw * var(--layout-footer-magnification)), 225px);
 
 
     /* ▼▼ 共通定義 ▼▼ */
@@ -1065,10 +1063,8 @@ li{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: minmax(0, 1fr);
-        column-gap: var(--mlen8);
+        column-gap: var(--mlen);
         flex-grow: 1;
-        margin-left: 10%;
-        margin-right: 10%;
     }
 
     .footer-linklist li{
@@ -1097,64 +1093,6 @@ li{
 }
 .footer-fjc li{
     margin-top: 0.5em;
-}
-
-
-/* ■■ 最下部のキャラたち ■■ */
-footer .footer-character-style{
-    position: relative;
-    height: var(--footer-character-height);
-    margin-top: var(--mlen4);
-    overflow-y: hidden;
-    z-index: 0;
-}
-
-/* パレット */
-footer .footer-character-style img:nth-child(1){
-    position: absolute;
-    bottom: calc(var(--mlen) * -2.5);
-    left: calc(var(--mlen) * -1.5);
-    width: 35%;
-    transform: rotate(-15deg);
-}
-
-/* えんぴつ */
-footer .footer-character-style img:nth-child(2){
-    position: absolute;
-    bottom: var(--mlen4-n);
-    left: calc(var(--mlen) * 10);
-    width: 45%;
-    transform: rotate(30deg) rotateY(180deg);
-    z-index: 2;
-}
-
-/* バケツ */
-footer .footer-character-style img:nth-child(3){
-    position: absolute;
-    bottom: var(--mlen);
-    left: calc(var(--mlen) * 18);
-    width: 40%;
-    z-index: 3;
-}
-
-/* 太陽 */
-footer .footer-character-style img:nth-child(4){
-    position: absolute;
-    bottom: calc(var(--mlen) * -3.5);
-    left: calc(var(--mlen) * 24);
-    width: 30%;
-    transform: rotate(-5deg);
-    z-index: 4;
-}
-
-/* 絵筆 */
-footer .footer-character-style img:nth-child(5){
-    position: absolute;
-    bottom: var(--mlen2-n);
-    left: calc(var(--mlen) * 36);
-    width: 20%;
-    transform: rotate(0deg);
-    z-index: 5;
 }
 
 
