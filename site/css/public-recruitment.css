@@ -44,11 +44,17 @@ main{
 .infomation-example-style::before{
     content:"かんたん応募";
     position: absolute;
-    top: var(--mlen2-n);
-    left: var(--mlen8);
+    top: var(--mlen3-n);
+    left: var(--mlen2);
     font-family: var(--font-family-title-exbold);
     font-size: var(--font-size-l2);
-    /* color: var(--color-font-white); */
+    color: var(--color-white-font);
+    background-image: url("../assets/img/decoration/flag-holizontal.svg");
+    width: calc(var(--layout-mobile-width-current) * 0.5);
+    height: calc(var(--layout-mobile-width-current) * 0.5 * (63 / 216));
+    background-size: contain;
+    padding-top: calc(var(--layout-mobile-width-current) * 0.5 * (63 / 216) * 0.15);
+    padding-left: calc(var(--layout-mobile-width-current) * 0.5 * (63 / 216) * 0.15);
 }
 
 .infomation-caution-style{
