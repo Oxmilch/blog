@@ -94,6 +94,7 @@
     align-items: end;
     row-gap: var(--mlen3);
     justify-content: space-between;
+    padding-top: var(--mlen2);
     padding-left: calc(var(--content-width-space) * 0.5);
     padding-right: calc(var(--content-width-space) * 0.5);
 }

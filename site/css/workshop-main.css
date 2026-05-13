@@ -40,4 +40,25 @@
 .workshop-accordion-backcolor-4-style{
     background-color: var(--color-red);
 }
+
+.workshop-accordion-menu-collaborator-style{
+    border: none;
+}
+
+.workshop-accordion-menu-collaborator-style ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+    row-gap: var(--mlen3);
+    justify-content: center;
+    padding-top: var(--mlen2);
+    padding-left: calc(var(--content-width-space) * 0.5);
+    padding-right: calc(var(--content-width-space) * 0.5);
+    padding-bottom: var(--mlen2);
+}
+
+.workshop-accordion-menu-collaborator-style ul li{
+    width: 48%;
+}
 /* ▲▲▲ ワークショップ ▲▲▲ */
