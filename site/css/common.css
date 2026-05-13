@@ -287,9 +287,9 @@ html::-webkit-scrollbar-thumb{
     width: var(--layout-mobile-width-current);
     max-width: var(--layout-mobile-width-max);
     height: 100vh;
-    height: 100svh;
+    height: 100dvh;
     max-height: 100vh;
-    max-height: 100svh;
+    max-height: 100dvh;
     border: none;
     z-index: 100;
     opacity: 0;
