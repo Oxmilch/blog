@@ -287,7 +287,9 @@ html::-webkit-scrollbar-thumb{
     width: var(--layout-mobile-width-current);
     max-width: var(--layout-mobile-width-max);
     height: 100vh;
+    height: 100svh;
     max-height: 100vh;
+    max-height: 100svh;
     border: none;
     z-index: 100;
     opacity: 0;
@@ -1075,7 +1077,7 @@ li{
 }
 
 /* SNS */
-.footer-sns{
+.sns{
     /* 上余白はロゴ自体のパディングも利用 */
     margin-top: calc(var(--mlen4) * var(--layout-mobile-magnification));
     display: flex;
@@ -1083,7 +1085,7 @@ li{
     align-items: center;
     gap: 0;
 }
-.footer-sns li{
+.sns li{
     display: var(--is-mobile-only-display);
 }
 
