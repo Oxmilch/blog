@@ -817,20 +817,6 @@ li{
     padding: 1em;
     border-radius: var(--mlen);
 }
-
-/* ■■ 事業SNSアカウント ■■ */
-.layout-menu nav ul:nth-child(3){
-    justify-content: center;
-}
-
-    /* ■■ 福岡青年会議所 ■■ */
-.layout-menu nav h3{
-    padding-top: var(--mlen);
-}
-
-.layout-menu nav ul:nth-last-child(1){
-    justify-content: center;
-}
 /* ▲▲▲ ハンバーガーメニュー画面 ▲▲▲ */
 
 
