@@ -146,7 +146,7 @@
 
 
     /* 基準となる長さ。Mobile LENgth の略。
-       この特設サイトの最小サイズ(375px)から最大サイズ(540px)の可変的なサイズに対応させた独自のもの
+       この特設サイトの最小サイズ(320px)から最大サイズ(540px)の可変的なサイズに対応させた独自のもの
        最小最大を変更した場合は、ここの値も変更するとほぼすべてのレイアウトにも反映される（はず）
        標準フォントサイズには影響されない。
        -h -> harf の略。２分の１
@@ -184,6 +184,10 @@
     /* 共通スタイル */
     --button-icon-size: clamp(54.4px, -0.528px + (17.164vw * var(--layout-mobile-magnification)), 92.16px); /* 64px */
     --button-sns-size: clamp(47.6px, -0.464px + (15.018vw * var(--layout-mobile-magnification)), 80.64px);  /* 56px */
+    
+    /* ２方向の面積の可変値 (最小320px(倍率0.85) - 基準375px(基準倍率1.0) - 最大640px(倍率1.70) */
+    --button-sns-size-desktop: clamp(40.8px, -0.32px + (12.85vw * var(--layout-desktop-left-magnification)), 81.92px);  /* 48px */
+
     /* ヘッダー */
     --header-height: calc(var(--button-icon-size) + var(--mlen));
 
@@ -354,9 +358,27 @@ html::-webkit-scrollbar-thumb{
 .layout-desktop-left{
     grid-area: left;
     background-color: var(--color-blue);
+    min-width: var(--layout-desktop-left-width-min);
     width: var(--layout-desktop-left-current);
+    max-width: var(--layout-desktop-left-width-max);
+    height: 100vh;
+    height: 100dvh;
     overflow-x: hidden;
     margin: 0;
+    background-image: url("../assets/img/background/geometric1.svg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-left: calc(var(--content-width-space) * 0.5);
+    padding-right: calc(var(--content-width-space) * 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(calc((100vw - var(--layout-desktop-left-current) - var(--layout-mobile-width-current) - var(--layout-desktop-right-current) - var(--content-width-space)) * 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
@@ -365,10 +387,20 @@ html::-webkit-scrollbar-thumb{
     grid-area: right;
     background-color: var(--color-blue);
     width: var(--layout-desktop-right-current);
+    height: 100vh;
+    height: 100dvh;
     overflow-x: hidden;
     margin: 0;
+    background-image: url("../assets/img/background/geometric2.svg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-left: calc(var(--content-width-space) * 0.5);
+    padding-right: calc(var(--content-width-space) * 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(calc((100vw - var(--layout-desktop-left-current) - var(--layout-mobile-width-current) - var(--layout-desktop-right-current) - var(--content-width-space)) * -0.5));
 }
-
 
 /* フッター領域 */
 .layout-footer{
@@ -1225,7 +1257,15 @@ li{
     width: var(--button-sns-size);
     height: var(--button-sns-size);
     margin: calc(var(--button-sns-size) * 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+.ankerlink-image-instagram-desktop-white,
+.ankerlink-image-tiktok-desktop-white{
+    width: var(--button-sns-size-desktop);
+    height: var(--button-sns-size-desktop);
+    margin: calc(var(--button-sns-size-desktop) * 0.5);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1234,14 +1274,16 @@ li{
     background-image: url("../assets/img/logo/Instagram_Glyph_Gradient.webp");
 }
 
-.ankerlink-image-instagram-white{
+.ankerlink-image-instagram-white,
+.ankerlink-image-instagram-desktop-white{
     background-image: url("../assets/img/logo/Instagram_Glyph_White.webp");
 }
 .ankerlink-image-tiktok{
     background-image: url("../assets/img/logo/TIKTOK_SOCIAL_ICON_CIRCLE_WHITE.svg");
 }
 
-.ankerlink-image-tiktok-white{
+.ankerlink-image-tiktok-white,
+.ankerlink-image-tiktok-desktop-white{
     background-image: url("../assets/img/logo/TIKTOK_SIMPLIFIED_NOTE_WHITE.svg");
 }
 /* ▲▲▲ 画像のアンカーリンク ▲▲▲ */
@@ -1393,67 +1435,40 @@ li{
     right: -2em;
     z-index: 1;
 }
-
 /* ▲▲▲ 装飾 ▲▲▲ */
 
 
 
 /* ▼▼▼ デスクトップレイアウト ▼▼▼ */
-.layout-desktop-left,
-.layout-desktop-right {
-    background-image: url("../assets/img/background/geometric1.svg");
-    background-size: cover;
-    background-blend-mode: multiply;
+/* ▼▼ デスクトップレイアウト(左) ▼▼ */
+.layout-desktop-left .sns li{
+    display: block;
 }
 
-/* デスクトップ版レフト */
-.layout-desktop-left img {
-    width: 80%;
-}
-
-.footer-sns-style {
-    /* 上余白はロゴ自体のパディングも利用 */
-    margin-top: calc(var(--mlen4) * var(--layout-mobile-magnification));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-}
-
-.ankerlink-image-instagram-white-style {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.font-title-exbold-style {
-    color: var(--color-white);
-    text-align: center;
-}
-
-.font-text-s-style {
-    color: var(--color-white);
-    text-align: center;
-}
-
-.layout-desktop-left-cara {
+.layout-desktop-left-cara{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
+    width: calc(var(--layout-desktop-left-current) * var(--content-width-magnification));
     gap: 5%;
+    margin: 0 calc(var(--content-width-magnification-space) * 0.5);
 }
 
-.layout-desktop-left-cara img {
-    width: 100px;
-    margin-top: 50px;
+.layout-desktop-left-cara li{
+    margin-top: var(--mlen6);
+    width: 30%;
+}
+
+.layout-desktop-left-cara img{
+    width: 100%;
 }
 
 
-/* デスクトップ版ライト */
+/* ▼▼ デスクトップレイアウト(右) ▼▼ */
 .layout-desktop-right-style {
     width: 95%;
     max-width: 430px;
     margin: 0 auto;
-    /* margin-top: var(--mlen4); */
     position: relative;
 }
 
@@ -1588,32 +1603,6 @@ li{
     top: 50%;
     translate: 0 -50%;
 }
-
-
-
-/* ▼▼▼ 本田追記分 ▼▼▼ */
-.layout-desktop-left,
-.layout-desktop-right {
-    display: grid;
-    align-content: center;
-}
-
-.layout-desktop-left {
-    position: fixed;
-    height: 100%;
-    left: calc((33.3% - var(--layout-mobile-width-current))/2);
-    top: 0;
-}
-
-.layout-desktop-right {
-    position: fixed;
-    height: 100%;
-    right: calc((33.3% - var(--layout-mobile-width-current))/2);
-    ;
-    top: 0;
-}
-
-/* ▲▲▲ 本田追記分 ▲▲▲ */
 /* ▲▲▲ デスクトップレイアウト ▲▲▲ */
 
 
