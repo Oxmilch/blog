@@ -13,7 +13,7 @@ class HamburgerMenu{
 
 /** ■■■ クラス：アコーディオンメニュー ■■■
  * @author Sozosha Recurrent School Fukuoka 2025.11~2026.05 Class 6B Team A - T.H.
- * @since 20260512
+ * @since 20260513
  * @summary リングノート風のアコーディオンメニューの開閉に使用する
 */
 class AccordionMenu{
@@ -27,7 +27,7 @@ class AccordionMenu{
         const cssClassAccordionButtonHidden = "button-hidden";
 
         /** ボタンが押されたアコーディオンメニューの要素を取得 */
-        const accordionMenuElement = button.parentNode.querySelector(".accordion-menu");
+        const accordionMenuElements = button.parentNode.querySelectorAll(".accordion-menu");
         /** 「くわしくみる」ボタンチェック */
         const isOpenButton = (button.classList.contains("accordion-button-open")
                             || button.classList.contains("accordion-button-open-red"));
@@ -35,12 +35,12 @@ class AccordionMenu{
         const isCloseButton = button.classList.contains("accordion-button-close");
 
         // アコーディオンメニューが見つからない場合は何もせずに処理を終える
-        if(accordionMenuElement == null) return;
+        if(accordionMenuElements.length == 0) return;
 
         // くわしくみるボタンを押された場合
         if(isOpenButton){
             // アコーディオンメニューを表示する
-            accordionMenuElement.classList.toggle(cssClassAccordionMenuOpen);
+            accordionMenuElements.forEach(elem => { elem.classList.toggle(cssClassAccordionMenuOpen); });
             // くわしくみるボタンを隠す
             button.classList.toggle(cssClassAccordionButtonHidden);
             // 閉じるボタンを表示する
@@ -51,7 +51,7 @@ class AccordionMenu{
         // とじるボタンが押された場合
         if(isCloseButton){
             // アコーディオンメニューを隠す
-            accordionMenuElement.classList.toggle(cssClassAccordionMenuOpen);
+                accordionMenuElements.forEach(elem => { elem.classList.toggle(cssClassAccordionMenuOpen); });
             // 閉じるボタンを隠す
             button.classList.toggle(cssClassAccordionButtonHidden);
             // くわしくみるボタンを表示する

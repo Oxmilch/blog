@@ -72,16 +72,29 @@
 
 
 /* ▼▼▼ ワークショップ ▼▼▼ */
-.workshop-accordion-backcolor-1-style{
-    background-color: var(--color-green-light);
-}
 .workshop-accordion-backcolor-2-style{
     background-color: var(--color-yellow);
 }
 .workshop-accordion-backcolor-3-style{
     background-color: var(--color-blue);
 }
-.workshop-accordion-backcolor-4-style{
-    background-color: var(--color-red);
+
+.workshop-accordion-menu-collaborator-style{
+    border: none;
+}
+
+.workshop-accordion-menu-collaborator-style ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+    row-gap: var(--mlen3);
+    justify-content: space-between;
+    padding-left: calc(var(--content-width-space) * 0.5);
+    padding-right: calc(var(--content-width-space) * 0.5);
+}
+
+.workshop-accordion-menu-collaborator-style ul li{
+    width: 48%;
 }
 /* ▲▲▲ ワークショップ ▲▲▲ */
