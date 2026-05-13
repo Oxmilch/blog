@@ -945,6 +945,7 @@ li{
     mask-image: url("../assets/img/decoration/accordion-menu-subtitle-mask.svg");
     mask-mode: luminance;
     mask-size: contain;
+    mask-position: center;
     mask-repeat: no-repeat;
 }
 
@@ -1026,7 +1027,7 @@ li{
     background-image: url("../assets/img/icon/up-right-form-square.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: 90%;
+    background-position-x: 85%;
     z-index: 6;
 }
 
