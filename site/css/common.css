@@ -871,7 +871,7 @@ li{
     position: relative;
     width: 100%;
     height: fit-content;
-    padding: var(--mlen4) 0 calc(var(--mlen) * 1.5);
+    padding: var(--mlen6) 0 calc(var(--mlen) * 1.5);
     margin-top: var(--mlen4);
     border: solid var(--mlen-q) var(--color-black);
     border-radius: var(--mlen5);
@@ -944,7 +944,9 @@ li{
     background-size: contain;
     background-repeat: no-repeat;
     height: 4em;
-    width: 3em;
+    min-width: 3.25em;
+    max-width: 3.25em;
+    padding: 0.25em 0.5em;
 }
 
 .accordion-menu-footer{
@@ -975,6 +977,7 @@ li{
     padding-bottom: 2em;
 }
 
+.accordion-menu-footer-venue,
 .accordion-menu-footer-button{
     position: absolute;
     bottom: var(--mlen-q-n);
@@ -986,6 +989,21 @@ li{
     width: 66%;
     background-color: var(--color-white);
     z-index: 5;
+}
+
+.accordion-menu-footer-button::after{
+    content: "";
+    position: absolute;
+    top: var(--mlen-q);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 85%;
+    background-image: url("../assets/img/icon/up-right-form-square.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 90%;
+    z-index: 6;
 }
 
 .accordion-button-open,

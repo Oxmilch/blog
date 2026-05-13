@@ -13,10 +13,8 @@
 
 
 /* ▼▼▼ インフォメーション ▼▼▼ */
-main{
-    margin-top: var(--mlen6);
-}
 .infomation-style{
+    margin-top: var(--mlen6);
     padding-top: var(--mlen6);
     padding-bottom: var(--mlen3);
     background-color: var(--color-green);
@@ -70,3 +68,20 @@ main{
 .infomation-daily-schedule-artmuseum-style::before{
     content:"アーティストと大型アート作り";
 }
+
+
+
+/* ▼▼▼ ワークショップ ▼▼▼ */
+.workshop-accordion-backcolor-1-style{
+    background-color: var(--color-green-light);
+}
+.workshop-accordion-backcolor-2-style{
+    background-color: var(--color-yellow);
+}
+.workshop-accordion-backcolor-3-style{
+    background-color: var(--color-blue);
+}
+.workshop-accordion-backcolor-4-style{
+    background-color: var(--color-red);
+}
+/* ▲▲▲ ワークショップ ▲▲▲ */
