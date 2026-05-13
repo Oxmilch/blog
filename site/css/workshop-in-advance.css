@@ -79,6 +79,10 @@
     background-color: var(--color-blue);
 }
 
+.accordion-menu-detail ul{
+    padding-top: var(--mlen2);
+}
+
 .workshop-accordion-menu-collaborator-style{
     border: none;
 }

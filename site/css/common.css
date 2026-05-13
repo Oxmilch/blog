@@ -849,13 +849,14 @@ li{
             <div class="accordion-menu-detail">
                 <h4>サブタイトル</h4>
                 <h5>ワークショップのポイント</h5>
-                <h4>協力アーティスト</h4>
-                <h4>開催場所</h4>
-                <p></p>
-                <a>申し込み</a>
+                <ol>
+                    <li>
+                        <div>旗のアイコン</div>
+                        <p>説明文</p>
+                    </li>
+                </ol>
             </div>
         </div>
-        <div class=accordion-menu-detail
         <span>装飾線</span>
         <button>くわしくみる</button>
         <button>とじる</button>
@@ -916,8 +917,8 @@ li{
 }
 .accordion-menu-detail h5{
     margin-top: var(--mlen2);
-    padding: 0.25em 1em 0.75em;
-    width: fit-content;
+    padding: 0.25em 1em 0.5em;
+    width: 80%;
     mask-image: url("../assets/img/decoration/accordion-menu-subtitle-mask.svg");
     mask-mode: luminance;
     mask-size: contain;
@@ -930,18 +931,23 @@ li{
 
 .accordion-menu-detail ol li{
     display: flex;
-    column-gap: 1em;
+    column-gap: 5%;
+    padding-top: var(--mlen2);
 }
 
 .accordion-menu-detail ol li div:first-child{
-    margin-top: 0.5em;
     background-image: url("../assets/img/decoration/flag.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 4em;
-    min-width: 3.25em;
-    max-width: 3.25em;
-    padding: 0.25em 0.5em;
+    min-width: var(--mlen6);
+    max-width: var(--mlen6);
+    height: calc(var(--mlen6) * (37 / 29));
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    margin-top: var(--mlen);
+    padding-top: var(--mlen-h);
+    line-height: 1;
 }
 
 .accordion-menu-footer{
