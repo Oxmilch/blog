@@ -230,12 +230,24 @@ main{
 .how-apply-style{
     padding-top: var(--mlen6);
 }
+
+.how-apply-t-container-style{
+    scroll-snap-type: y mandatory;
+    height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.1);
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.how-apply-t-container-style::-webkit-scrollbar{
+    display: none;
+}
+
 .how-apply-t-shirt-1-style,
 .how-apply-t-shirt-2-style,
 .how-apply-t-shirt-3-style{
+    scroll-snap-align: start;
     position: relative;
     margin-top: var(--mlen3);
-    height: calc(var(--layout-mobile-width-current) * (293 / 375));
+    height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.1);
     z-index: 0;
     justify-content: center;
     align-items: center;
@@ -253,6 +265,7 @@ main{
     background-repeat: no-repeat;
     background-size: contain;
     transform-origin: center;
+    transform: scale(1.1) translateX(var(--mlen-h-n));
     z-index: -1;
 }
 
@@ -264,6 +277,7 @@ main{
 
 
 .how-apply-style div:last-child{
+    scroll-snap-align: end;
     margin-top: var(--mlen3);
 }
 /* ▲▲▲ Tシャツデザインにお申し込み ▲▲▲ */
