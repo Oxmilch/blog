@@ -175,6 +175,53 @@ main{
 
 
 /* ▼▼▼ 募集期間と展示期間 ▼▼▼ */
+.period-recruitment-style{
+    position: relative;
+    width: 80%;
+    margin: 0 0 0 auto;
+    background-color: var(--color-yellow);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.period-recruitment-style::before{
+    position: absolute;
+    white-space: pre;
+    content:"応募\A期間";
+    font-family: var(--font-family-title-exbold);
+    font-size: var(--font-size-l);
+    color: var(--color-white-font);
+    line-height: 1;
+    top: -1em;
+    left: -0.75em;
+    padding: 0.5em;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    box-shadow: var(--mlen-h) var(--mlen-h) 0 var(--color-black);
+}
+
+.period-exhibition-style{
+    position: relative;
+    width: 80%;
+    margin: var(--mlen4) auto 0 0;
+    background-color: var(--color-blue);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.period-exhibition-style::before{
+    position: absolute;
+    white-space: pre;
+    content:"展示\A期間";
+    font-family: var(--font-family-title-exbold);
+    font-size: var(--font-size-l);
+    color: var(--color-white-font);
+    line-height: 1;
+    top: -1em;
+    right: -1.25em;
+    padding: 0.5em;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    box-shadow: var(--mlen-h) var(--mlen-h) 0 var(--color-black);
+}
 /* ▲▲▲ 募集期間と展示期間 ▲▲▲ */
 
 
