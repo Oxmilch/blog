@@ -544,9 +544,9 @@ html::-webkit-scrollbar-thumb{
     background-image:
         repeating-conic-gradient(
             var(--color-yellow) 0deg 90deg,
-            transparent 90deg 180deg,
+            var(--color-white) 90deg 180deg,
             var(--color-yellow) 180deg 270deg,
-            transparent 270deg 360deg);
+            var(--color-white) 270deg 360deg);
     background-size: var(--square-size) var(--square-size);
     background-repeat: repeat;
 }
