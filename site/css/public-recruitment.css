@@ -232,4 +232,38 @@ main{
 
 
 /* ▼▼▼ 概要 ▼▼▼ */
+.how-detail-style{
+    margin-top: var(--mlen8);
+    padding-top: var(--mlen3);
+}
+
+.how-detail-recruitment-style,
+.how-detail-exhibition-style{
+    width: 100%;
+    margin-top: var(--mlen4);
+    border-collapse: collapse;
+    border: solid var(--mlen-q) var(--color-black);
+}
+
+.how-detail-recruitment-style tr td,
+.how-detail-exhibition-style tr td{
+    border: solid var(--mlen-e) var(--color-black);
+    padding: 0 1em;
+    background-color: var(--color-white);
+}
+
+.how-detail-recruitment-style tr th{
+    border: solid var(--mlen-e) var(--color-black);
+    padding: 0 1em;
+    background-color: var(--color-blue);
+}
+
+.how-detail-exhibition-style tr th{
+    border: solid var(--mlen-e) var(--color-black);
+    padding: 0 1em;
+    background-color: var(--color-yellow);
+}
+
+
+
 /* ▲▲▲ 概要 ▲▲▲ */
