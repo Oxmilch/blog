@@ -121,6 +121,21 @@
     - [参考ページ：JAJAAAN! -【Webフォント高速化】使わない文字を除く！サブセット化の方法](https://jajaaan.co.jp/growth-hack/speed-up/web-font-remove/#sabusettofontomekawo_shiu)
 - [武蔵システム - WOFFメーカー](https://opentype.jp/woffconv.htm)
 
+## サブセット化したフォントについて
+- サブセット化したフォント名は、元のフォント名にサフィックスとして MinJp をつけています。
+- Googleフォントの利用が可能な場合は、フォールバック用のフォントとして機能するようCSS上で指定しています。
+- Googleフォントが利用できない場合でも、当フォントを使うようにしているため、フォントが存在しないことによる意図しないデザインの崩れ等の発生を極力防いでます。
+
+| ファイル名 | フォント名 |
+| - | - |
+| MPLUSRounded1c-Black-Min-JP | MPLUSRounded1cBlackMinJP |
+| MPLUSRounded1c-ExtraBold-Min-JP | MPLUSRounded1cExtraBoldMinJP |
+| NotoSansJP-Bold-Min-JP | NotoSansBoldJPMinJP |
+| NotoSansJP-Regular-Min-JP | NotoSansJPMinJP |
+
+## フルセットのフォントについて
+- 元のフォントデータをそのまま woff, woff2形式に変換したものになります。
+- データ量が多いため、基本的に使用しないと思いますが、文言を変更した場合、サブセット化したフォントでは不足している場合に最終手段として利用してください。
 
 # SNS
 ## ロゴ
