@@ -92,11 +92,12 @@ main{
     z-index: 2;
 }
 .infomation-example-style ul li:nth-child(2):before{
-    top: -6.25em;
+    top:  -3.5em;
     left: -2.75em;
     background-image: url("../assets/img/decoration/speech-balloon-green-2.svg");
     width: calc(var(--layout-mobile-width-current) * 0.55);
     height: calc(var(--layout-mobile-width-current) * 0.55 * (189 / 160));
+    background-position: top;
     z-index: -2;
 }
 
@@ -104,11 +105,11 @@ main{
     z-index: 2;
 }
 .infomation-example-style ul li:nth-child(3):before{
-    top: -5.1em;
-    left: -3em;
+    top: -5.5em;
+    left: -3.25em;
     background-image: url("../assets/img/decoration/speech-balloon-green-1.svg");
-    width: calc(var(--layout-mobile-width-current) * 0.6);
-    height: calc(var(--layout-mobile-width-current) * 0.6 * (215 / 228));
+    width: calc(var(--layout-mobile-width-current) * 0.7);
+    height: calc(var(--layout-mobile-width-current) * 0.7 * (215 / 228));
     z-index: -2;
 }
 
@@ -116,11 +117,12 @@ main{
     z-index: 1;
 }
 .infomation-example-style ul li:nth-child(4):before{
-    top: -5em;
+    top: -4.25em;
     left: -1.75em;
     background-image: url("../assets/img/decoration/speech-balloon-flower.svg");
     width: calc(var(--layout-mobile-width-current) * 0.5);
     height: calc(var(--layout-mobile-width-current) * 0.5 * (174 / 167));
+    background-position: top;
     z-index: -3;
 }
 
@@ -128,11 +130,12 @@ main{
     z-index: 1;
 }
 .infomation-example-style ul li:nth-child(5):before{
-    top: -3.5em;
+    top: -2.75em;
     left: -1.25em;
     background-image: url("../assets/img/decoration/speech-balloon-flower.svg");
     width: calc(var(--layout-mobile-width-current) * 0.45);
     height: calc(var(--layout-mobile-width-current) * 0.45 * (174 / 167));
+    background-position: top;
     z-index: -3;
 }
 
@@ -141,11 +144,11 @@ main{
 
 }
 .infomation-example-style ul li:last-child:before{
-    top: -1.5em;
-    left: -2em;
+    top: -0.75em;
+    left: -2.25em;
     background-image: url("../assets/img/decoration/speech-balloon-blue.svg");
-    width: calc(var(--layout-mobile-width-current) * 0.5);
-    height: calc(var(--layout-mobile-width-current) * 0.5 * (101 / 171));
+    width: calc(var(--layout-mobile-width-current) * 0.55);
+    height: calc(var(--layout-mobile-width-current) * 0.55 * (101 / 171));
     z-index: -1;
 }
 
@@ -177,7 +180,7 @@ main{
 /* ▼▼▼ 募集期間と展示期間 ▼▼▼ */
 .period-recruitment-style{
     position: relative;
-    width: 80%;
+    width: 85%;
     margin: 0 0 0 auto;
     background-color: var(--color-yellow);
     border-top-right-radius: 0;
@@ -192,7 +195,7 @@ main{
     color: var(--color-white-font);
     line-height: 1;
     top: -1em;
-    left: -0.75em;
+    left: -1.5em;
     padding: 0.5em;
     background-color: var(--color-red);
     border-radius: 50%;
@@ -201,7 +204,7 @@ main{
 
 .period-exhibition-style{
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: var(--mlen4) auto 0 0;
     background-color: var(--color-blue);
     border-top-left-radius: 0;
@@ -233,8 +236,9 @@ main{
 
 .how-apply-t-container-style{
     scroll-snap-type: y mandatory;
-    height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.1);
-    overflow: scroll;
+    height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.15);
+    overflow-x: hidden;
+    overflow-y: scroll;
     scrollbar-width: none;
 }
 .how-apply-t-container-style::-webkit-scrollbar{
@@ -246,26 +250,40 @@ main{
 .how-apply-t-shirt-3-style{
     scroll-snap-align: start;
     position: relative;
-    margin-top: var(--mlen3);
+    margin-top: var(--mlen6);
+    width: var(--layout-mobile-width-current);
     height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.1);
     z-index: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: var(--mlen4);
+    background-image: url("../assets/img/decoration/t-shirt.svg");
+    background-position: var(--mlen-h-n) var(--mlen3);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .how-apply-t-shirt-1-style::before,
-.how-apply-t-shirt-2-style::before,
-.how-apply-t-shirt-3-style::before{
+.how-apply-t-shirt-2-style::before{
     position: absolute;
     content: "";
-    background-image: url("../assets/img/decoration/t-shirt.svg");
     width: var(--layout-mobile-width-current);
-    height: calc(var(--layout-mobile-width-current) * (293 / 375));
-    background-position: center;
+    height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.1);
+    background-image: url("../assets/img/decoration/t-shirt.svg");
+    background-position: var(--mlen-h-n) calc(var(--mlen) * 1.5);
     background-repeat: no-repeat;
-    background-size: contain;
-    transform-origin: center;
-    transform: scale(1.1) translateX(var(--mlen-h-n));
+    background-size: 100%;
+    z-index: -1;
+}
+.how-apply-t-shirt-1-style::after{
+    position: absolute;
+    content: "";
+    width: var(--layout-mobile-width-current);
+    height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.1);
+    background-image: url("../assets/img/decoration/t-shirt.svg");
+    background-position: var(--mlen-h-n) 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
     z-index: -1;
 }
 
