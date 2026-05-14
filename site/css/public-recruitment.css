@@ -23,7 +23,7 @@ main{
 }
 
 .infomation-top-style{
-    padding-top: var(--mlen6);
+    padding-top: var(--mlen8);
 }
 
 .infomation-top-detail-style{
@@ -33,7 +33,7 @@ main{
 .infomation-example-style{
     position: relative;
     margin: var(--mlen6) 0 0 auto;
-    padding: var(--mlen6) 0 var(--mlen3);
+    padding: var(--mlen9) 0 var(--mlen3);
     border: solid var(--mlen-q) var(--color-black);
     border-top-right-radius:  0;
     border-bottom-right-radius: 0;
@@ -83,8 +83,8 @@ main{
     top: -1.25em;
     left: -1.15em;
     background-image: url("../assets/img/decoration/speech-balloon-blue.svg");
-    width: calc(var(--layout-mobile-width-current) * 0.5);
-    height: calc(var(--layout-mobile-width-current) * 0.5 * (101 / 171));
+    width: calc(var(--layout-mobile-width-current) * 0.45);
+    height: calc(var(--layout-mobile-width-current) * 0.45 * (101 / 171));
     z-index: -1;
 }
 
@@ -92,11 +92,11 @@ main{
     z-index: 2;
 }
 .infomation-example-style ul li:nth-child(2):before{
-    top: -5.25em;
-    left: -1.75em;
+    top: -6.25em;
+    left: -2.75em;
     background-image: url("../assets/img/decoration/speech-balloon-green-2.svg");
-    width: calc(var(--layout-mobile-width-current) * 0.5);
-    height: calc(var(--layout-mobile-width-current) * 0.5 * (189 / 160));
+    width: calc(var(--layout-mobile-width-current) * 0.55);
+    height: calc(var(--layout-mobile-width-current) * 0.55 * (189 / 160));
     z-index: -2;
 }
 
@@ -104,11 +104,11 @@ main{
     z-index: 2;
 }
 .infomation-example-style ul li:nth-child(3):before{
-    top: -5em;
+    top: -5.1em;
     left: -3em;
     background-image: url("../assets/img/decoration/speech-balloon-green-1.svg");
-    width: calc(var(--layout-mobile-width-current) * 0.65);
-    height: calc(var(--layout-mobile-width-current) * 0.65 * (215 / 228));
+    width: calc(var(--layout-mobile-width-current) * 0.6);
+    height: calc(var(--layout-mobile-width-current) * 0.6 * (215 / 228));
     z-index: -2;
 }
 
@@ -116,7 +116,7 @@ main{
     z-index: 1;
 }
 .infomation-example-style ul li:nth-child(4):before{
-    top: -4.75em;
+    top: -5em;
     left: -1.75em;
     background-image: url("../assets/img/decoration/speech-balloon-flower.svg");
     width: calc(var(--layout-mobile-width-current) * 0.5);
@@ -129,10 +129,10 @@ main{
 }
 .infomation-example-style ul li:nth-child(5):before{
     top: -3.5em;
-    left: -1.5em;
+    left: -1.25em;
     background-image: url("../assets/img/decoration/speech-balloon-flower.svg");
-    width: calc(var(--layout-mobile-width-current) * 0.5);
-    height: calc(var(--layout-mobile-width-current) * 0.5 * (174 / 167));
+    width: calc(var(--layout-mobile-width-current) * 0.45);
+    height: calc(var(--layout-mobile-width-current) * 0.45 * (174 / 167));
     z-index: -3;
 }
 
@@ -188,7 +188,7 @@ main{
     white-space: pre;
     content:"応募\A期間";
     font-family: var(--font-family-title-exbold);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-l2);
     color: var(--color-white-font);
     line-height: 1;
     top: -1em;
@@ -212,7 +212,7 @@ main{
     white-space: pre;
     content:"展示\A期間";
     font-family: var(--font-family-title-exbold);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-l2);
     color: var(--color-white-font);
     line-height: 1;
     top: -1em;
@@ -227,6 +227,45 @@ main{
 
 
 /* ▼▼▼ Tシャツデザインにお申し込み ▼▼▼ */
+.how-apply-style{
+    padding-top: var(--mlen6);
+}
+.how-apply-t-shirt-1-style,
+.how-apply-t-shirt-2-style,
+.how-apply-t-shirt-3-style{
+    position: relative;
+    margin-top: var(--mlen3);
+    height: calc(var(--layout-mobile-width-current) * (293 / 375));
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.how-apply-t-shirt-1-style::before,
+.how-apply-t-shirt-2-style::before,
+.how-apply-t-shirt-3-style::before{
+    position: absolute;
+    content: "";
+    background-image: url("../assets/img/decoration/t-shirt.svg");
+    width: var(--layout-mobile-width-current);
+    height: calc(var(--layout-mobile-width-current) * (293 / 375));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform-origin: center;
+    z-index: -1;
+}
+
+.how-apply-t-container-style h3{
+    width: fit-content;
+    padding: 0 2em;
+    background-color: var(--color-red);
+}
+
+
+.how-apply-style div:last-child{
+    margin-top: var(--mlen3);
+}
 /* ▲▲▲ Tシャツデザインにお申し込み ▲▲▲ */
 
 
