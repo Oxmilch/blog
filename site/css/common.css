@@ -909,7 +909,7 @@ li{
     left: 0;
     right: 0;
     background-image: url("../assets/img/decoration/ring.svg");
-    background-size: clamp(228px, 60.8vw, 328.32px);
+    background-size: clamp(228px, 60.8vw * var(--layout-mobile-magnification), 328.32px);
     background-position: center top;
     width: 100%;
     height: 100%;
