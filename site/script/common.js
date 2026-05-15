@@ -13,7 +13,7 @@ class HamburgerMenu{
 
 /** ■■■ クラス：アコーディオンメニュー ■■■
  * @author Sozosha Recurrent School Fukuoka 2025.11~2026.05 Class 6B Team A - T.H.
- * @since 20260513
+ * @since 20260515
  * @summary リングノート風のアコーディオンメニューの開閉に使用する
 */
 class AccordionMenu{
@@ -56,6 +56,8 @@ class AccordionMenu{
             button.classList.toggle(cssClassAccordionButtonHidden);
             // くわしくみるボタンを表示する
             button.previousElementSibling.classList.toggle(cssClassAccordionButtonHidden);
+            // アコーディオンメニューのトップに移動する
+            button.parentNode.scrollIntoView({behavior: 'smooth', block: 'start'});
             return;
         }
 
