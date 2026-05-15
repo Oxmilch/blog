@@ -1066,6 +1066,11 @@ li{
     max-width: 640px;
 }
 
+.footer_character img{
+    margin-top: 2rem;
+    width: 300px;
+}
+
 /* リンク一覧 */
 /* モバイルレイアウト */
 @media (max-width:960px){
@@ -1097,6 +1102,10 @@ li{
         margin: calc(var(--mlen) * 2.5) auto 0 0;
         border-bottom: none;
         width: var(--content-width);
+    }
+
+    .footer_character img{
+        display: none;
     }
 }
 
