@@ -1073,6 +1073,11 @@ li{
     max-width: 640px;
 }
 
+.footer_character img{
+    margin-top: 2rem;
+    width: 300px;
+}
+
 /* リンク一覧 */
 /* モバイルレイアウト */
 @media (max-width:960px){
