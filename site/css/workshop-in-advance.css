@@ -14,8 +14,8 @@
 
 /* ▼▼▼ インフォメーション ▼▼▼ */
 .infomation-style {
-    margin-top: var(--mlen6);
-    padding-top: var(--mlen6);
+    margin-top: var(--mlen9);
+    padding-top: var(--mlen9);
     padding-bottom: var(--mlen3);
     background-color: var(--color-green);
 }

@@ -26,6 +26,10 @@ main{
     padding-top: var(--mlen8);
 }
 
+.infomation-top-style dd{
+    padding-top: var(--mlen3);
+}
+
 .infomation-top-detail-style{
     padding: var(--mlen2) calc((100% - var(--layout-mobile-width-content)) * 0.5) 0;
 }
