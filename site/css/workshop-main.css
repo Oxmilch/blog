@@ -8,6 +8,13 @@
 
 
 /* ▼▼▼ ファーストビュー ▼▼▼ */
+.firstview-character-style{
+    position: absolute;
+    width: calc(var(--layout-mobile-width-current) * 0.33);
+    transform: translateX(40%);
+    z-index: 1;
+}
+
 .firstview-style{
     margin-top: var(--mlen4);
     background-color: var(--color-red);

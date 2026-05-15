@@ -51,7 +51,7 @@ class AccordionMenu{
         // とじるボタンが押された場合
         if(isCloseButton){
             // アコーディオンメニューを隠す
-                accordionMenuElements.forEach(elem => { elem.classList.toggle(cssClassAccordionMenuOpen); });
+            accordionMenuElements.forEach(elem => { elem.classList.toggle(cssClassAccordionMenuOpen); });
             // 閉じるボタンを隠す
             button.classList.toggle(cssClassAccordionButtonHidden);
             // くわしくみるボタンを表示する

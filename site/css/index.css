@@ -7,6 +7,13 @@
 
 
 /* ▼▼▼ ファーストビュー ▼▼▼ */
+.firstview-character-style{
+    position: absolute;
+    width: calc(var(--layout-mobile-width-current) * 0.33);
+    transform: translate(200%, -30%);
+    z-index: 1;
+}
+
 .firstview-period-style{
     position: relative;
     background-color: var(--color-blue);
@@ -329,6 +336,13 @@
 
 
 /* ▼▼▼ スケジュール ▼▼▼ */
+.schedule-character-style{
+    position: absolute;
+    width: calc(var(--layout-mobile-width-current) * 0.22);
+    transform: translate(335%, -130%);
+    z-index: 1;
+}
+
 .schedule-list-style h3{
     padding-top: var(--mlen4);
     padding-bottom: var(--mlen);
@@ -404,6 +418,13 @@
 /* ▼▼▼ アクセス ▼▼▼ */
 aside{
     scroll-margin-top: calc(var(--mlen4) + var(--header-height));
+}
+
+.access-character-style{
+    position: absolute;
+    width: calc(var(--layout-mobile-width-current) * 0.25);
+    transform: translate(50%, -115%);
+    z-index: 2;
 }
 
 .access-style{
