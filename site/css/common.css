@@ -267,7 +267,7 @@ html::-webkit-scrollbar-thumb{
     width: var(--layout-mobile-width-current);
     max-width: var(--layout-mobile-width-max);
     margin: 0 auto;
-    padding: 0 calc(var(--content-width-space) * 0.5);
+    /* padding: 0 calc(var(--content-width-space) * 0.5); */
 }
 
 
@@ -275,14 +275,14 @@ html::-webkit-scrollbar-thumb{
 .layout-menu{
     overflow-x: hidden;
     overflow-y: auto;
-    scrollbar-gutter: stable;
+    /* scrollbar-gutter: stable; */
     scrollbar-color: var(--color-orange) var(--color-blue);
     scrollbar-width: thin;
     width: 100%;
     height: var(--header-height);
     margin: 0 auto;
     background-color: var(--color-white);
-    background-image: url("../assets/img/background/geometric2.svg");
+    background-image: url("../assets/img/background/geometric4.svg");
     background-repeat: repeat-y;
     background-position-x: center;
     background-origin: border-box;
