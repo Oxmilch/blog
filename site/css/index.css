@@ -218,7 +218,7 @@
     width: 22%;
     max-width: 82px;
     aspect-ratio: 82/66;
-    background-image: url(../assets/img/add/img_8-30.svg);
+    background-image: url("../assets/img/decoration/index-flag-0830.svg");
     background-size: contain;
     position: absolute;
     top: -9px;
@@ -242,7 +242,7 @@
     width: 22%;
     max-width: 82px;
     aspect-ratio: 82/66;
-    background-image: url(../assets/img/add/img_7-25.svg);
+    background-image: url("../assets/img/decoration/index-flag-0725.svg");
     background-size: contain;
     position: absolute;
     top: -9px;
@@ -293,7 +293,7 @@
     display: inline-block;
     width: 100%;
     aspect-ratio: 387/240;
-    background-image: url(../assets/img/add/t-shirt.svg);
+    background-image: url("../assets/img/decoration/t-shirt-2.svg");
     background-size: contain;
     position: absolute;
     bottom: 100%;
@@ -307,7 +307,7 @@
     width: 22%;
     max-width: 82px;
     aspect-ratio: 82/66;
-    background-image: url(../assets/img/add/img_6-25.svg);
+    background-image: url("../assets/img/decoration/index-flag-0625.svg");
     background-size: contain;
     position: absolute;
     top: -9px;
