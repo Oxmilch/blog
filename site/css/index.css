@@ -45,6 +45,7 @@
         "main    main"
         "advance public";
     margin-top: var(--mlen4);
+    margin-bottom: var(--mlen8);
     row-gap: var(--mlen4);
     column-gap: var(--mlen2);
 }
@@ -193,7 +194,7 @@
 
 /* 表題 */
 .main-content-workshop-top-style{
-    margin-top: var(--mlen4);
+    margin-top: var(--mlen6);
     width: 71%;
 }
 .main-content-workshop-top-style dd{
@@ -362,7 +363,7 @@ aside{
     position: relative;
     width: fit-content;
     border-bottom: solid var(--mlen-e) var(--color-black);
-    margin: var(--mlen) auto 0;
+    margin: var(--mlen) auto;
 }
 
 .access-base-style{
@@ -371,4 +372,9 @@ aside{
     padding: var(--mlen3) var(--mlen) var(--mlen2);
     background-color: var(--color-white);
 }
+
+.access-base-style h3{
+    margin-top: var(--mlen2);
+}
+
 /* ▲▲▲ アクセス ▲▲▲ */
