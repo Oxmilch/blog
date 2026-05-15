@@ -381,6 +381,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 
+
+
 /* デスクトップ（右） */
 .layout-desktop-right{
     grid-area: right;
@@ -608,6 +610,7 @@ html::-webkit-scrollbar-thumb{
     box-shadow: var(--mlen-q) var(--mlen-q) 0 var(--color-black);
 }
 
+
 /* ■■ １日のスケジュール ■■ */
 
 /* ▲▲▲ 複合要素のスタイル ▲▲▲ */
@@ -645,6 +648,7 @@ small{
 
 iframe{
     margin-top: var(--mlen2);
+    margin-bottom: var(--mlen2);
     width: 100%;
     aspect-ratio: 4/3;
     border: none;
@@ -984,6 +988,8 @@ li{
     background-size: contain;
     z-index: 3;
     overflow: visible;
+
+    aspect-ratio: 430.19/198.58;
 }
 .accordion-menu-footer::after{
     position: absolute;
@@ -999,7 +1005,7 @@ li{
 
 .accordion-menu-footer-text{
     padding-top: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 
 .accordion-menu-footer-venue,
@@ -1008,9 +1014,10 @@ li{
     bottom: var(--mlen-q-n);
     right: var(--mlen-q-n);
     border: solid var(--mlen-q) var(--color-black);
-    border-top-left-radius: var(--mlen2);
-    border-bottom-left-radius: var(--mlen2);
-    padding-left: 1.5em;
+    border-top-left-radius: var(--mlen4);
+    border-bottom-left-radius: var(--mlen4);
+    /* padding-left: 1.5em; */
+    padding: .5em 0 .5em 1.5em;
     width: 66%;
     background-color: var(--color-white);
     z-index: 5;
@@ -1292,6 +1299,7 @@ li{
 .ankerlink-image-tiktok-desktop-white{
     background-image: url("../assets/img/logo/TIKTOK_SIMPLIFIED_NOTE_WHITE.svg");
 }
+
 /* ▲▲▲ 画像のアンカーリンク ▲▲▲ */
 
 

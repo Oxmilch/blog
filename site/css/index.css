@@ -45,6 +45,7 @@
         "main    main"
         "advance public";
     margin-top: var(--mlen4);
+    margin-bottom: var(--mlen8);
     row-gap: var(--mlen4);
     column-gap: var(--mlen2);
 }
@@ -81,8 +82,10 @@
 .firstview-ankerlink-main-style::after{
     top: auto;
     left: auto;
-    bottom: var(--mlen-h);
-    right: var(--mlen-h);
+    /* 修正 */
+    bottom: 0.8em;
+    right: 1em;
+    /* 修正ここまで */
     border:solid var(--mlen-q) var(--color-white);
     border-radius: 50%;
 }
@@ -119,8 +122,10 @@
 .firstview-ankerlink-advance-style::after{
     top: auto;
     left: auto;
-    bottom: var(--mlen-h);
-    right: var(--mlen-h);
+    /* 修正 */
+    bottom: 0.8em;
+    right: 0.5em;
+    /* 修正ここまで */
     border:solid var(--mlen-q) var(--color-white);
     border-radius: 50%;
 }
@@ -162,8 +167,10 @@
 .firstview-ankerlink-public-style::after{
     top: auto;
     left: auto;
-    bottom: var(--mlen-h);
-    right: var(--mlen-h);
+    /* 修正 */
+    bottom: 0.8em;
+    right: 0.5em;
+    /* 修正ここまで */
     border:solid var(--mlen-q) var(--color-black);
     border-radius: 50%;
 }
@@ -187,7 +194,7 @@
 
 /* 表題 */
 .main-content-workshop-top-style{
-    margin-top: var(--mlen4);
+    margin-top: var(--mlen6);
     width: 71%;
 }
 .main-content-workshop-top-style dd{
@@ -315,6 +322,9 @@
 .schedule-detail-main-style ol li{
     list-style-type: decimal;
     list-style-position: inside;
+    /* 修正 */
+    padding: 0.5em 0.5em 0.5em 5em;
+    /* 修正ここまで */
 }
 /* ▲▲▲ スケジュール ▲▲▲ */
 
@@ -353,7 +363,7 @@ aside{
     position: relative;
     width: fit-content;
     border-bottom: solid var(--mlen-e) var(--color-black);
-    margin: var(--mlen) auto 0;
+    margin: var(--mlen) auto;
 }
 
 .access-base-style{
@@ -362,4 +372,9 @@ aside{
     padding: var(--mlen3) var(--mlen) var(--mlen2);
     background-color: var(--color-white);
 }
+
+.access-base-style h3{
+    margin-top: var(--mlen2);
+}
+
 /* ▲▲▲ アクセス ▲▲▲ */

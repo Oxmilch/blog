@@ -27,6 +27,22 @@
 
 
 
+/* ▼▼▼ インフォメーション ▼▼▼ */
+.infomation-list-style{
+    margin-top: var(--mlen3);
+}
+
+.infomation-list-style li{
+    width: 10em;
+    padding: auto 1em;
+    margin: 0 auto;
+    background-color: var(--color-black);
+    border: solid var(--mlen-q) transparent;
+    border-radius: var(--mlen2);
+}
+
+
+
 /* ▼▼▼ ワークショップ ▼▼▼ */
 .workshop-accordion-backcolor-1-style{
     background-color: var(--color-green-light);
@@ -61,4 +77,9 @@
 .workshop-accordion-menu-collaborator-style ul li{
     width: 48%;
 }
+
+.accordion-menu-footer-text span{
+    margin: 0 var(--mlen);
+}
+
 /* ▲▲▲ ワークショップ ▲▲▲ */
