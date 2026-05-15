@@ -1074,6 +1074,7 @@ li{
 }
 
 .footer_character img{
+    display: var(--is-mobile-only-display);
     margin-top: 2rem;
     width: 300px;
 }
