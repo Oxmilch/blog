@@ -222,15 +222,13 @@
 .main-content-workshop-main-style::before{
     content: "";
     display: inline-block;
-    width: 22%;
-    max-width: 82px;
+    width: calc(var(--layout-mobile-width-current) * 0.2);
     aspect-ratio: 82/66;
     background-image: url("../assets/img/decoration/index-flag-0830.svg");
     background-size: contain;
     position: absolute;
-    top: -9px;
-    left: 17px;
-    
+    top: var(--mlen-n);
+    left: var(--mlen2);
 }
 
 /* ワークショップ */
@@ -246,22 +244,20 @@
 .main-content-workshop-advance-style::before{
     content: "";
     display: inline-block;
-    width: 22%;
-    max-width: 82px;
+    width: calc(var(--layout-mobile-width-current) * 0.2);
     aspect-ratio: 82/66;
     background-image: url("../assets/img/decoration/index-flag-0725.svg");
     background-size: contain;
     position: absolute;
-    top: -9px;
-    left: 17px;
-    
+    top: var(--mlen-n);
+    left: var(--mlen2);
 }
 
 
 /* 共通：説明文の白背景 */
 .main-content-workshop-whiteback-style{
     width: 100%;
-    padding: var(--mlen4) var(--mlen2);
+    padding: var(--mlen6) var(--mlen2) var(--mlen4);
     background-color: var(--color-white);
 }
 
@@ -311,14 +307,13 @@
 .main-content-workshop-public-style::after{
     content: "";
     display: inline-block;
-    width: 22%;
-    max-width: 82px;
+    width: calc(var(--layout-mobile-width-current) * 0.2);
     aspect-ratio: 82/66;
     background-image: url("../assets/img/decoration/index-flag-0625.svg");
     background-size: contain;
     position: absolute;
-    top: -9px;
-    left: 17px;
+    top: var(--mlen-n);
+    left: var(--mlen2);
 }
 
 .main-content-workshop-public-style dd{
