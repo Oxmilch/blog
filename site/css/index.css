@@ -207,11 +207,49 @@
     border: solid var(--mlen-q) var(--color-black);
 }
 
+/* ホンダ追加 */
+.main-content-workshop-main-style{
+    position: relative;
+}
+
+.main-content-workshop-main-style::before{
+    content: "";
+    display: inline-block;
+    width: 22%;
+    max-width: 82px;
+    aspect-ratio: 82/66;
+    background-image: url(../assets/img/add/img_8-30.svg);
+    background-size: contain;
+    position: absolute;
+    top: -9px;
+    left: 17px;
+    
+}
+
 /* ワークショップ */
 .main-content-workshop-advance-style{
     border: solid var(--mlen-q) var(--color-black);
     margin-top: var(--mlen6);
 }
+
+.main-content-workshop-advance-style{
+    position: relative;
+}
+
+.main-content-workshop-advance-style::before{
+    content: "";
+    display: inline-block;
+    width: 22%;
+    max-width: 82px;
+    aspect-ratio: 82/66;
+    background-image: url(../assets/img/add/img_7-25.svg);
+    background-size: contain;
+    position: absolute;
+    top: -9px;
+    left: 17px;
+    
+}
+
 
 /* 共通：説明文の白背景 */
 .main-content-workshop-whiteback-style{
@@ -219,6 +257,8 @@
     padding: var(--mlen4) var(--mlen2);
     background-color: var(--color-white);
 }
+
+
 .main-content-workshop-whiteback-style dd{
     padding-top: var(--mlen);
     padding-right: var(--mlen2);
@@ -243,6 +283,37 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+/* ホンダ追加****************************** */
+.main-content-workshop-public-style{
+    position: relative;
+}
+.main-content-workshop-public-style::before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    aspect-ratio: 387/240;
+    background-image: url(../assets/img/add/t-shirt.svg);
+    background-size: contain;
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    translate: 0 40%;
+}
+
+.main-content-workshop-public-style::after{
+    content: "";
+    display: inline-block;
+    width: 22%;
+    max-width: 82px;
+    aspect-ratio: 82/66;
+    background-image: url(../assets/img/add/img_6-25.svg);
+    background-size: contain;
+    position: absolute;
+    top: -9px;
+    left: 17px;
+}
+
 .main-content-workshop-public-style dd{
     margin-top: calc(var(--mlen) * 1.5);
 }
