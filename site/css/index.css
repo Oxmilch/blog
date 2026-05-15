@@ -81,8 +81,10 @@
 .firstview-ankerlink-main-style::after{
     top: auto;
     left: auto;
-    bottom: var(--mlen-h);
-    right: var(--mlen-h);
+    /* 修正 */
+    bottom: 0.8em;
+    right: 1em;
+    /* 修正ここまで */
     border:solid var(--mlen-q) var(--color-white);
     border-radius: 50%;
 }
@@ -119,8 +121,10 @@
 .firstview-ankerlink-advance-style::after{
     top: auto;
     left: auto;
-    bottom: var(--mlen-h);
-    right: var(--mlen-h);
+    /* 修正 */
+    bottom: 0.8em;
+    right: 0.5em;
+    /* 修正ここまで */
     border:solid var(--mlen-q) var(--color-white);
     border-radius: 50%;
 }
@@ -162,8 +166,10 @@
 .firstview-ankerlink-public-style::after{
     top: auto;
     left: auto;
-    bottom: var(--mlen-h);
-    right: var(--mlen-h);
+    /* 修正 */
+    bottom: 0.8em;
+    right: 0.5em;
+    /* 修正ここまで */
     border:solid var(--mlen-q) var(--color-black);
     border-radius: 50%;
 }
@@ -315,6 +321,9 @@
 .schedule-detail-main-style ol li{
     list-style-type: decimal;
     list-style-position: inside;
+    /* 修正 */
+    padding: 0.5em 0.5em 0.5em 5em;
+    /* 修正ここまで */
 }
 /* ▲▲▲ スケジュール ▲▲▲ */
 
