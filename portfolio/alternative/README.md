@@ -1,5 +1,5 @@
 # ポートフォリオ 
-https://oxmilch.github.io/portfolio/
+https://oxmilch.github.io/blog/portfolio/alternative
 
 ## 目的 
 - 今までの経歴、成果などについてポートフォリオとしてまとめ記す。
