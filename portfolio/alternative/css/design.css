@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/*** design.css ***/
+
+/* メインコンテナは必要に応じてオーバーライドします（ただし、style.css はラッパーを処理します） */
+/* 「wrapper」内の「main」はデフォルトで全幅を占めると想定していますか？それとも調整が必要ですか？
+engineering.html では、main は右にフロートされ、幅が計算されています。
+style.css では、「main」は概ね width: 100vw に設定されていますが、特定の CSS で上書きされていますか？
+style.css 352 行目: main { width: 100vw; }
+engineering.css 58 行目: main { float: right; width: var(--main-width); }
+デザインページの main が正しく機能するようにリセットするか、確認する必要があるでしょう。
+*/
+
+main {
+    /* デザインページの全幅をリセット/確保する */
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--color-accents);
+    margin-bottom: 1.5rem;
+}
+
+/* Grid Layout */
+.design-grid {
+    display: grid;
+    /* width: 250px ~ 320px variable */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Blue Block (Card) */
+article {
+    /* height: 333px ~ 480px variable */
+    /* アスペクト比または最小高さを使用して範囲/柔軟性をシミュレートする */
+    min-height: 333px;
+    height: auto;
+    max-height: 480px;
+
+    background-color: var(--color-accents);
+    /* アクセントが青であると仮定して、要求どおりに「青いブロック」 */
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    position: relative;
+
+    /*　 画像とタイトルのフレックスコンテンツ */
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Area */
+figure {
+    flex-grow: 1;
+    background-color: #fff;
+    /* 青いカード内の画像領域の背景は白ですか? それとも透明ですか? */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+article:hover figure img {
+    transform: scale(1.05);
+}
+
+/* Title Area */
+.card-title {
+    height: auto;
+    min-height: 3rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.card-title h3 {
+    font-size: 1rem;
+    color: var(--color-main);
+    text-align: center;
+    margin: 0;
+}
+
+/* 320pxの最大幅をより厳密に適用する必要がある場合のレスポンシブ制限 */
+@media (min-width: 350px) {
+    /* グリッドアイテムが320pxを超えて伸びすぎる場合は、グリッドギャップに応じて上限を設定することをお勧めします。
+ただし、通常は「1fr」と自動入力の組み合わせで問題なく処理できます。
+カードごとにmax-width: 320pxが厳密に必要な場合
+   */
+    /*
+   article {
+       max-width: 320px;
+       margin: 0 auto;
+   }
+   */
+}

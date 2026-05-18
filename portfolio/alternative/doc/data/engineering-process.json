@@ -1,0 +1,11 @@
+[
+    {"key":"rd", "name":"要件定義"},
+    {"key":"bd", "name":"基本設計"},
+    {"key":"dd", "name":"詳細設計"},
+    {"key":"d", "name":"製造"},
+    {"key":"ut", "name":"単体試験"},
+    {"key":"it", "name":"結合試験"},
+    {"key":"rt", "name":"総合試験"},
+    {"key":"op", "name":"保守運用"},
+    {"key":"s", "name":"学習"}
+]
