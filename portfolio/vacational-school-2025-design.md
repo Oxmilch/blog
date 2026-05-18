@@ -5,7 +5,7 @@ title: "デザイン（職業訓練校） - ポートフォリオ"
 description: "デザイン（職業訓練校） - ポートフォリオ"
 tags: [Adobe Illustrator, Adobe Photoshop, Adobe PremierePro, figma, VSCode]
 date: 2025-11-21
-update: 2026-04-14
+update: 2026-05-18
 is-post-list: false
 ---
 <div class="no-print">
@@ -23,6 +23,9 @@ is-post-list: false
 
 
 ## 目次
+#### [**Web制作プロジェクト実習 2026年4月16日～5月15日 (15日間)**](#web制作プロジェクト実習)
+- 5月15日 [ランディングページ制作](#2026年4月16日5月15日-ランディングページ制作)
+
 #### [**Web制作総合 2026年3月18日～4月13日 (11日間)**](#web制作総合)
 - 3月24日 [ホームページ制作](#2026年3月24日4月13日授業課題-ホームページ制作)
 
@@ -42,6 +45,44 @@ is-post-list: false
 - 12月18日 [バナー広告作成](#2025年12月18日授業課題-バナー広告作成)
 - 12月17日 [A4チラシ作成1回目](#2025年12月17日12月18日授業課題-a4チラシ作成1回目)
 - 12月15日 [バナーのトレース](#2025年12月15日授業課題-バナーのトレース)
+
+
+<div class="next_page"></div>
+
+
+## Web制作プロジェクト実習
+#### 期間
+- 2026年4月16日～5月15日 (15日間)
+
+### 2026年4月16日～5月15日 ランディングページ制作
+#### 課題内容
+- 福岡青年会議所からの事業用ランディングページ制作依頼
+- ５人チームで協力し、ヒアリング、デザイン、LP制作、プレゼンまで行う
+- 主な担当
+  - プレゼン用スライドの作成（中間プレゼン用）
+  - コーディング
+
+#### 使用ソフトウェア
+- Google Slide
+- Affinity3
+- figma
+- VSCode
+
+#### 制作時間
+- 145時間
+
+#### 内容
+- [内容詳細](/blog/portfolio/assignment260515/)
+
+#### 制作物
+- <a href="/blog/portfolio/assignment260515/site/" target="_blank">制作したランディングページへ</a>
+
+<img
+  src="/blog/assets/images/2025/portfolio/design-260515-fukuoka-citizen-art-2026.webp"
+  alt="2026年5月15日作成PCレイアウトトップページ"
+  class="img-landscape"
+  loading="lazy">
+
 
 <div class="next_page"></div>
 

@@ -1,0 +1,528 @@
+@charset "UTF-8";
+/**** Index ****/
+/*** Variables ***/
+/** Responsive Layout **/
+/* Desktop Landscape Layout */
+@media(min-width:768px) and (min-aspect-ratio:4/3) {
+    :root {
+        /* Common Variables Override */
+        --header-height-min: 0px;
+        --header-height: 0px;
+        --header-height-max: 0px;
+        --header-display: none;
+        --wrapper-width: 133.33vh;
+        --wrapper-height: 100vh;
+        --wrapper-height-max: 1080px;
+
+        /* Index Variables */
+        /* Main */
+        --grid-col: repeat(8, 1fr);
+        --grid-row: repeat(6, 1fr);
+        --grid-gap: 12px;
+        --grid-tmp-area:
+            "p p p p p t t t"
+            "p p p p p d d d"
+            "g e e e e d d d"
+            "x e e e e d d d"
+            "r e e e e d d d"
+            "c e e e e d d d";
+        /* Title */
+        --title-display: inline-block;
+        --title-font-size: clamp(4.375rem, 12vh, 8.75rem);
+        /* Grid Content*/
+        --grid-title-font-size: clamp(4.375rem, 12vh, 8.125rem);
+        /* Grid Profile */
+        --profile-grid-tmp-col: 1fr 2fr 2fr;
+        --profile-grid-tmp-row: 1fr 1fr 2fr;
+        --profile-grid-tmp-area:
+            "nk nv im"
+            "jk jv im"
+            "tt tt im";
+        --profile-key-text: clamp(1.1rem, 3vh, 2.1875rem);
+        --profile-value-text: clamp(1.1rem, 3vh, 2.1875rem);
+        --profile-value-back-text: clamp(1.1rem, 3vh, 2.1875rem);
+        /* Grid Engineer */
+        --engineer-text-large: clamp(2.265rem, 7vh, 5.125rem);
+        --engineer-text-midium: clamp(1.8rem, 5vh, 3.5875rem);
+        --engineer-text-small: clamp(1.1rem, 3vh, 2.1875rem);
+        /* Grid Design */
+        --design-title-top: 75%;
+        --design-title-left: -7%;
+        /* Grid SNS */
+        --sns-display: block;
+    }
+}
+/* Desktop Portrait Layout*/
+@media(min-width:768px) and (max-aspect-ratio:4/3) {
+    :root {
+        /* Common Variables Override */
+        --header-height-min: 0px;
+        --header-height: 0px;
+        --header-height-max: 0px;
+        --header-display: none;
+        --wrapper-width: 100vw;
+        --wrapper-height: 75vw;
+        --wrapper-height-max: 1080px;
+
+        /* Index Variables */
+        /* Main */
+        --grid-col: repeat(8, 1fr);
+        --grid-row: repeat(6, 1fr);
+        --grid-gap: 12px;
+        --grid-tmp-area:
+            "p p p p p t t t"
+            "p p p p p d d d"
+            "g e e e e d d d"
+            "x e e e e d d d"
+            "r e e e e d d d"
+            "c e e e e d d d";
+        /* Title */
+        --title-display: inline-block;
+        --title-font-size: clamp(4.375rem, 9vw, 8.75rem);
+        /* Grid Content*/
+        --grid-title-font-size: clamp(4.375rem, 9vw, 8.75rem);
+        /* Grid Profile */
+        --profile-grid-tmp-col: 1fr 2fr 2fr;
+        --profile-grid-tmp-row: 1fr 1fr 2fr;
+        --profile-grid-tmp-area:
+            "nk nv im"
+            "jk jv im"
+            "tt tt im";
+        --profile-key-text: clamp(1.1rem, 2.25vw, 2.1875rem);
+        --profile-value-text: clamp(1.1rem, 2.25vw, 2.1875rem);
+        --profile-value-back-text: clamp(1.1rem, 2.25vw, 2.1875rem);
+        /* Grid Engineer */
+        --engineer-text-large: clamp(2.265rem, 5.25vw, 5.125rem);
+        --engineer-text-midium: clamp(1.8rem, 3.75vw, 3.6875rem);
+        --engineer-text-small: clamp(1.1rem, 2.25vw, 2.1875rem);
+        /* Grid Design */
+        --design-title-top: 75%;
+        --design-title-left: -7%;
+        /* Grid SNS */
+        --sns-display: block;
+    }
+}
+
+/* Mobile Landscape Layout */
+@media(max-width:767px) and (min-aspect-ratio:4/3) {
+    :root {
+        /* Common Variables Override */
+        --wrapper-height: 100vh;
+
+        /* Index Variables */
+        /* Main */
+        --grid-col: auto;
+        --grid-row: repeat(3, 1fr);
+        --grid-gap: 6px;
+        --grid-tmp-area:
+            "g"
+            "p"
+            "x"
+            "e"
+            "r"
+            "d"
+            "c";
+        /* Title */
+        --title-display: none;
+        --title-font-size: 0;
+        /* Grid Content*/
+        --grid-title-font-size: 12vh;
+        /* Grid Profile */
+        --profile-grid-tmp-col: repeat(3, 1fr);
+        --profile-grid-tmp-row: repeat(3, 1fr);
+        --profile-grid-tmp-area:
+            "tt tt im"
+            "nk nv nv"
+            "jk jv jv";
+        --profile-key-text: 3vh;
+        --profile-value-text: 3vh;
+        --profile-value-back-text: 3vh;
+        /* Grid Engineer */
+        --engineer-text-large: 7vh;
+        --engineer-text-midium: 5vh;
+        --engineer-text-small: 3vh;
+        /* Grid Design */
+        --design-title-top: 75%;
+        --design-title-left: -7%;
+        /* Grid SNS */
+        --sns-display: none;
+    }
+}
+
+/* Mobile Portrait Layout */
+@media(max-width:767px) and (max-aspect-ratio:4/3) {
+    :root {
+        /* Common Variables Override */
+        --wrapper-height: 100vh;
+
+        /* Index Variables */
+        /* Main */
+        --grid-col: auto;
+        --grid-row: repeat(8, minmax(auto, 1fr));
+        --grid-gap: 6px;
+        --grid-tmp-area:
+            "t"
+            "p"
+            "g"
+            "e"
+            "x"
+            "d"
+            "r"
+            "c";
+        /* Title */
+        --title-display: none;
+        --title-font-size: 0;
+        /* Grid Content*/
+        --grid-title-font-size: clamp(4.375rem, 9vw, 8.75rem);
+        /* Grid Profile */
+        --profile-grid-tmp-col: 1fr 2fr 1fr;
+        --profile-grid-tmp-row: 2fr 1fr 1fr;
+        --profile-grid-tmp-area:
+            "tt tt im"
+            "nk nv nv"
+            "jk jv jv";
+        --profile-key-text: clamp(1.1rem, 2.25vw, 2.1875rem);
+        --profile-value-text: clamp(1.1rem, 2.25vw, 2.1875rem);
+        --profile-value-back-text: clamp(1.1rem, 2.25vw, 2.1875rem);
+        /* Grid Engineer */
+        --engineer-text-large: clamp(2.265rem, 5.25vw, 5.125rem);
+        --engineer-text-midium: clamp(1.1rem, 2.25vw, 2.1875rem);
+        --engineer-text-small: clamp(1.1rem, 2.25vw, 2.1875rem);
+        /* Grid Design */
+        --design-title-top: 3%;
+        --design-title-left: -13%;
+        /* Grid SNS */
+        --sns-display: none;
+    }
+}
+
+
+/*** Styles ***/
+/** Main **/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* override */
+.wrapper-height{
+    height: calc(var(--wrapper-height) - var(--footer-height));
+    max-height: var(--wrapper-height-max);
+}
+
+/* Grid - Layout */
+.grid-title {
+    grid-area: t;
+    display: var(--title-display);
+}
+
+.grid-profile {
+    grid-area: p;
+}
+
+.grid-engineer {
+    grid-area: e;
+}
+
+.grid-design {
+    grid-area: d;
+}
+
+.grid-x {
+    grid-area: x;
+    display: var(--sns-display);
+}
+
+.grid-git {
+    grid-area: g;
+    display: var(--sns-display);
+}
+
+.grid-repository {
+    grid-area: r;
+    display: var(--sns-display);
+}
+
+.grid-comprehensive {
+    grid-area: c;
+    display: var(--sns-display);
+}
+
+
+/* Grid */
+main ul {
+    display: grid;
+    gap: var(--grid-gap);
+    grid-template-columns: var(--grid-col);
+    grid-template-rows: var(--grid-row);
+    grid-template-areas: var(--grid-tmp-area);
+}
+
+main li {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-background-main);
+    border: 1px solid var(--color-background-sub);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    backdrop-filter: var(--card-glass);
+    -webkit-backdrop-filter: var(--card-glass);
+    text-align: center;
+}
+
+main li a{
+    display: block;
+    height: 100%;
+    border: 1px solid transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    border-radius: var(--card-radius);
+    transition: opacity 0.3s, border 0.15s;
+}
+main li a:hover{
+    border: 1px solid var(--color-accents);
+    opacity: 0.5;
+}
+
+
+/* Grid - Title */
+.grid-title{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.grid-title h1{
+    font-size: var(--title-font-size);
+    text-shadow:
+        0.03em  0.00em 0 var(--color-background-sub),
+        0.03em  0.03em 0 var(--color-background-sub);
+}
+
+
+/* Grid - Profile */
+.grid-profile a{
+    display: grid;
+    grid-template-columns: var(--profile-grid-tmp-col);
+    grid-template-rows: var(--profile-grid-tmp-row);
+    grid-template-areas: var(--profile-grid-tmp-area);
+    padding: 1%;
+}
+
+/* Grid - Profile - Title */
+.grid-profile-title{
+    grid-area: tt;
+    position: relative;
+    margin: auto auto 0 0.5rem;
+    font-size: var(--grid-title-font-size);
+    text-shadow:
+        0.03em  0.00em 0 var(--color-background-sub),
+        0.03em  0.03em 0 var(--color-background-sub);
+    z-index: 1;
+}
+.grid-profile-title::before{
+    position: absolute;
+    content: "P";
+    color: var(--color-accents);
+    text-shadow:
+        0.01em  0.01em 0 var(--color-accents),
+       -0.01em  0.01em 0 var(--color-accents),
+        0.01em -0.01em 0 var(--color-accents),
+       -0.01em -0.01em 0 var(--color-accents);
+    z-index: 2;
+}
+
+/* Grid - Profile - Name, Job */
+.grid-profile-name-key,
+.grid-profile-job-key{
+    position: relative;
+    font-size: var(--profile-key-text);
+    text-align: left;
+    padding-left: 1rem;
+    z-index: 2;
+}
+
+.grid-profile-name-value,
+.grid-profile-job-value{
+    position: relative;
+    font-size: var(--profile-value-text);
+    text-align: left;
+    padding-left: 1rem;
+    z-index: 2;
+}
+
+.grid-profile-name-key::before,
+.grid-profile-job-key::before,
+.grid-profile-name-value::before,
+.grid-profile-job-value::before{
+    position: absolute;
+    pointer-events: none;
+    top: 0.9em;
+    left: 4em;
+    font-size: var(--profile-value-back-text);
+    color: var(--color-main);
+    opacity: 0.33;
+    white-space: nowrap;
+    z-index: 1;
+}
+.grid-profile-name-key::before,
+.grid-profile-job-key::before{
+    left: 2em;
+}
+
+/* Grid - Profile - Name */
+.grid-profile-name-key{
+    grid-area: nk;
+}
+.grid-profile-name-key::before{
+    content:"id";
+}
+
+.grid-profile-name-value{
+    grid-area: nv;
+}
+.grid-profile-name-value::before{
+    content:"@oxmilch";
+}
+
+/* Grid - Profile - Job */
+.grid-profile-job-key{
+    grid-area: jk;
+}
+.grid-profile-job-key::before{
+    content:"prev.";
+}
+
+.grid-profile-job-value{
+    grid-area: jv;
+}
+.grid-profile-job-value::before{
+    content:"backend dev.";
+}
+
+/* Grid - Profile - Image */
+.gird-profile-image{
+    grid-area: im;
+    height: 90%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+/* Grid - Engineer */
+.grid-engineer a{
+    text-align: right;
+    padding: 0 1% 1%;
+    line-height: 1.2;
+}
+
+.grid-engineer h2{
+    text-align: left;
+    margin-left: 0.5rem;
+}
+
+.grid-engineer p{
+    text-align: center;
+    margin: auto 0.5rem;
+    line-height: 1.15;
+    color: var(--color-main);
+    opacity: 0.5;
+}
+
+.grid-engineer span{
+    margin:auto 0.1em;
+}
+
+/* Grid - Engineer - Title */
+.grid-engineer-title{
+    position: relative;
+    margin: 0 auto 0 0;
+    font-size: var(--grid-title-font-size);
+    text-shadow:
+        0.03em  0.00em 0 var(--color-background-sub),
+        0.03em  0.03em 0 var(--color-background-sub);
+    z-index: 1;
+}
+.grid-engineer-title::before{
+    position: absolute;
+    content: "E";
+    color: var(--color-accents);
+    text-shadow:
+        0.01em  0.01em 0 var(--color-accents),
+       -0.01em  0.01em 0 var(--color-accents),
+        0.01em -0.01em 0 var(--color-accents),
+       -0.01em -0.01em 0 var(--color-accents);
+    z-index: 2;
+}
+
+/* Grid - Engineer - Midium */
+.grid-engineer-middle{
+    font-size: var(--engineer-text-midium);
+}
+
+/* Grid - Engineer - Small */
+.grid-engineer-small{
+    font-size: var(--engineer-text-small);
+}
+
+/* Grid - Engineer - And More.. */
+.grid-engineer-more{
+    margin: 0 0 0 auto;
+    line-height: 1;
+    font-size: var(--engineer-text-large);
+    text-shadow:
+        0.03em  0.00em 0 var(--color-background-sub),
+        0.03em  0.03em 0 var(--color-background-sub);
+}
+.grid-engineer-more::after{
+    content: ".";
+    color: var(--color-accents);
+    text-shadow:
+        0.03em  0.00em 0 var(--color-background-sub),
+        0.03em  0.03em 0 var(--color-background-sub);
+}
+
+
+/* Grid - Design */
+.grid-design a{
+    padding: 5%;
+    height: 100%;
+    background-image: var(--logo);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Grid - Design - Title */
+.grid-design-title{
+    position: relative;
+    top: var(--design-title-top);
+    left: var(--design-title-left);
+    font-size: var(--grid-title-font-size);
+    text-shadow:
+        0.03em  0.00em 0 var(--color-background-sub),
+        0.03em  0.03em 0 var(--color-background-sub);
+    z-index: 2;
+}
+.grid-design-title::before{
+    position: absolute;
+    content: "D";
+    color: var(--color-accents);
+    text-shadow:
+        0.01em  0.01em 0 var(--color-accents),
+       -0.01em  0.01em 0 var(--color-accents),
+        0.01em -0.01em 0 var(--color-accents),
+       -0.01em -0.01em 0 var(--color-accents);
+    z-index: 1;
+}
+
+/* Grid - SNS */
+.grid-sns,
+.logo-git,
+.logo-x,
+.logo-repository,
+.logo-comprehensive{
+    display: var(--sns-display);
+}

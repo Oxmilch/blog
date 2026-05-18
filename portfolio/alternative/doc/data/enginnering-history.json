@@ -1,0 +1,21 @@
+[
+    {
+        "date": "2025-12-01",
+        "period": 0,
+        "industry": "デザイン学生",
+        "title": "Web・デザイン・動画の勉強",
+        "skill": {
+            "os": ["mac"],
+            "virtualization": [],
+            "database": [],
+            "language": ["hls", "CSS3", "js"],
+            "framework-library": [],
+            "officesweet": [],
+            "ide": ["vsc"],
+            "versioning": [],
+            "design": ["ai", "ps", "pr"]
+        },
+        "process":["s"],
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem repellendus ipsum necessitatibus doloremque labore, adipisci alias reiciendis commodi, voluptate porro quo cupiditate expedita consequatur hic in, esse earum harum."
+    }
+]

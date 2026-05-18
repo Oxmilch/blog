@@ -1,7 +1,7 @@
 theme: null
 title: "ミルクせんせーのブログ"
 title-saffix: "Oxmilch's Blog by GitHub Pages"
-css-update: 20260414a
+css-update: 20260518
 baseurl: "/blog"
 timezone: "Asia/Tokyo"
 profile:

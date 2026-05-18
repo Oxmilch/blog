@@ -31,38 +31,42 @@
   }
 }
 
-#web260324::after{
+.web260515::after{
+  content:"制作時間 145h";
+}
+
+.web260324::after{
   content:"制作時間 24h";
 }
 
-#web260127::after{
+.web260127::after{
   content:"制作時間 4.5h";
 }
 
-#web260116::after{
+.web260116::after{
   content:"制作時間 1.5h";
 }
 
-#video260218::after{
+.video260218::after{
   content:"制作時間 30h";
 }
 
-#video260216::after{
+.video260216::after{
   content:"制作時間 3h";
 }
 
-#bunner251218::after{
-  content:"制作時間 3h";
+.bunner251218::after{
+  content:"制作時間 1.5h";
 }
 
-#bunner251215::after{
-  content:"制作時間 4h";
+.bunner251215::after{
+  content:"制作時間 1.5h";
 }
 
-#print251219::after{
+.print251219::after{
   content:"制作時間 6h";
 }
 
-#print251217::after{
+.print251217::after{
   content:"制作時間 9h";
 }

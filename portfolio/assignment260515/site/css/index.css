@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+/* ▼▼▼ 背景設定 ▼▼▼ */
+.layout-mobile{
+    background-image: url("../assets/img/background/geometric1.svg");
+}
+
+
+/* ▼▼▼ ファーストビュー ▼▼▼ */
+.firstview-character-style{
+    position: absolute;
+    width: calc(var(--layout-mobile-width-current) * 0.33);
+    transform: translate(200%, -30%);
+    z-index: 1;
+}
+
+.firstview-period-style{
+    position: relative;
+    background-color: var(--color-blue);
+    margin-top: var(--mlen4);
+    padding: var(--mlen2);
+    z-index: 0;
+}
+.firstview-period-style p:nth-child(2){
+    border-bottom: solid var(--mlen-h) var(--color-white);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 0;
+}
+.firstview-period-style::before{
+    position: absolute;
+    content:"参加無料";
+    top: -0.75em;
+    left: calc(var(--content-width-space) * 0.5);
+    color: var(--color-white-font);
+    font-family: var(--font-family-title-black);
+    font-size: var(--font-size-l3);
+    text-shadow:
+         0   -3px 0 var(--color-blue),
+        3px -3px 0 var(--color-blue),
+         3px  0   0 var(--color-blue),
+         3px  3px 0 var(--color-blue),
+        -3px  3px 0 var(--color-blue),
+        -3px  0   0 var(--color-blue),
+        -3px -3px 0 var(--color-blue);
+    z-index: 1;
+}
+
+/* アンカーリンク */
+.firstview-ankerlink-style{
+    grid-template-areas:
+        "main    main"
+        "advance public";
+    margin-top: var(--mlen4);
+    margin-bottom: var(--mlen8);
+    row-gap: var(--mlen4);
+    column-gap: var(--mlen2);
+}
+
+/* ▼▼ アンカーリンク：大アート展 ▼▼ */
+.firstview-ankerlink-main-style{
+    position: relative;
+    grid-area: main;
+    background-color: var(--color-red);
+    line-height: 1.3;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    border: solid var(--mlen-q) var(--color-black);
+}
+.firstview-ankerlink-main-style::before{
+    position: absolute;
+    content:"8.30";
+    top: -0.75em;
+    left: -0.1em;
+    color: var(--color-red-font);
+    font-family: var(--font-family-title-black);
+    font-size: var(--font-size-l3);
+    border: solid var(--mlen-q) var(--color-black);
+    background-color: var(--color-white);
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 0 var(--color-black);
+    z-index: 1;
+}
+
+/* after-internal-site-icon-white から継承 */
+.firstview-ankerlink-main-style::after{
+    top: auto;
+    left: auto;
+    /* 修正 */
+    bottom: 0.8em;
+    right: 1em;
+    /* 修正ここまで */
+    border:solid var(--mlen-q) var(--color-white);
+    border-radius: 50%;
+}
+
+
+/* ▼▼ アンカーリンク：ワークショップ ▼▼ */
+.firstview-ankerlink-advance-style{
+    position: relative;
+    grid-area: advance;
+    background-color: var(--color-green);
+    padding-top: 1.25em;
+    z-index: 0;
+    border: solid 2px var(--color-black);
+}
+.firstview-ankerlink-advance-style::before{
+    position: absolute;
+    content:" 7.26〜";
+    top: -1em;
+    left: -0.1em;
+    color: var(--color-green-font);
+    font-family: var(--font-family-title-black);
+    font-size: var(--font-size);
+    border: solid 2px var(--color-black);
+    background-color: var(--color-white);
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 0 var(--color-black);
+    z-index: 1;
+}
+
+/* after-internal-site-icon-white から継承 */
+.firstview-ankerlink-advance-style::after{
+    top: auto;
+    left: auto;
+    /* 修正 */
+    bottom: 0.8em;
+    right: 0.5em;
+    /* 修正ここまで */
+    border:solid var(--mlen-q) var(--color-white);
+    border-radius: 50%;
+}
+
+
+/* ▼▼ Tシャツ ▼▼ */
+.firstview-ankerlink-public-style{
+    position: relative;
+    grid-area: public;
+    background-color: var(--color-yellow);
+    padding-top: 1.25em;
+    z-index: 0;
+    border: solid var(--mlen-q) var(--color-black);
+}
+.firstview-ankerlink-public-style::before{
+    position: absolute;
+    content:"6.5〜8.21";
+    top: -1em;
+    left: -0.1em;
+    color: var(--color-yellow-font);
+    font-family: var(--font-family-title-black);
+    font-size: var(--font-size);
+    text-shadow:
+        1px -1px 0 var(--color-black-translucent),
+         1px  1px 0 var(--color-black-translucent),
+        -1px  1px 0 var(--color-black-translucent),
+        -1px -1px 0 var(--color-black-translucent);
+    border: solid 2px var(--color-black);
+    background-color: var(--color-white);
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 0 var(--color-black);
+    z-index: 1;
+}
+
+/* after-internal-site-icon から継承 */
+.firstview-ankerlink-public-style::after{
+    top: auto;
+    left: auto;
+    /* 修正 */
+    bottom: 0.8em;
+    right: 0.5em;
+    /* 修正ここまで */
+    border:solid var(--mlen-q) var(--color-black);
+    border-radius: 50%;
+}
+/* ▲▲▲ ファーストビュー ▲▲▲ */
+
+
+
+/* ▼▼▼ メインコンテンツ ▼▼▼ */
+.main-content-style{
+    margin-top: var(--mlen3);
+    padding-bottom: var(--mlen9);
+}
+
+.main-content-workshop-style{
+    position: relative;
+    top: var(--mlen6-n); /* 親要素のチェック柄が見えてしまうため、上にシフト */
+    padding-bottom: calc(var(--mlen) * 15);
+    background-color: var(--color-blue);
+    z-index: 10;
+}
+
+/* 表題 */
+.main-content-workshop-top-style{
+    margin-top: var(--mlen6);
+    width: 71%;
+}
+.main-content-workshop-top-style dd{
+    margin-top: calc(var(--mlen) * 1.5);
+}
+
+/* 大アート展 */
+.main-content-workshop-main-style{
+    margin-top: var(--mlen6);
+    border: solid var(--mlen-q) var(--color-black);
+}
+
+/* ホンダ追加 */
+.main-content-workshop-main-style{
+    position: relative;
+}
+
+.main-content-workshop-main-style::before{
+    content: "";
+    display: inline-block;
+    width: calc(var(--layout-mobile-width-current) * 0.2);
+    aspect-ratio: 82/66;
+    background-image: url("../assets/img/decoration/index-flag-0830.svg");
+    background-size: contain;
+    position: absolute;
+    top: var(--mlen-n);
+    left: var(--mlen2);
+}
+
+/* ワークショップ */
+.main-content-workshop-advance-style{
+    border: solid var(--mlen-q) var(--color-black);
+    margin-top: var(--mlen6);
+}
+
+.main-content-workshop-advance-style{
+    position: relative;
+}
+
+.main-content-workshop-advance-style::before{
+    content: "";
+    display: inline-block;
+    width: calc(var(--layout-mobile-width-current) * 0.2);
+    aspect-ratio: 82/66;
+    background-image: url("../assets/img/decoration/index-flag-0725.svg");
+    background-size: contain;
+    position: absolute;
+    top: var(--mlen-n);
+    left: var(--mlen2);
+}
+
+
+/* 共通：説明文の白背景 */
+.main-content-workshop-whiteback-style{
+    width: 100%;
+    padding: var(--mlen6) var(--mlen2) var(--mlen4);
+    background-color: var(--color-white);
+}
+
+
+.main-content-workshop-whiteback-style dd{
+    padding-top: var(--mlen);
+    padding-right: var(--mlen2);
+    padding-left: var(--mlen2);
+}
+
+.main-content-workshop-whiteback-style a{
+    margin-top: calc(var(--mlen) * 1.5);
+    width: fit-content;
+    border-bottom: solid 2px var(--color-black);
+}
+
+/* 共通：ボタン */
+.main-content-workshop-public-style{
+    border: solid var(--mlen-q) var(--color-black);
+    background-color: var(--color-yellow);
+    padding: 16.8% 16.8% 16.8% 9%;
+    margin-left: 0;
+    margin-right: auto;
+    width: 88.8%;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* ホンダ追加****************************** */
+.main-content-workshop-public-style{
+    position: relative;
+}
+.main-content-workshop-public-style::before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    aspect-ratio: 387/240;
+    background-image: url("../assets/img/decoration/t-shirt-2.svg");
+    background-size: contain;
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    translate: 0 40%;
+}
+
+.main-content-workshop-public-style::after{
+    content: "";
+    display: inline-block;
+    width: calc(var(--layout-mobile-width-current) * 0.2);
+    aspect-ratio: 82/66;
+    background-image: url("../assets/img/decoration/index-flag-0625.svg");
+    background-size: contain;
+    position: absolute;
+    top: var(--mlen-n);
+    left: var(--mlen2);
+}
+
+.main-content-workshop-public-style dd{
+    margin-top: calc(var(--mlen) * 1.5);
+}
+
+.main-content-workshop-public-style a{
+    margin-top: calc(var(--mlen) * 1.5);
+    width: fit-content;
+    border-bottom: solid 2px var(--color-black);
+}
+
+/* ▲▲▲ メインコンテンツ ▲▲▲ */
+
+
+
+/* ▼▼▼ スケジュール ▼▼▼ */
+.schedule-character-style{
+    position: absolute;
+    width: calc(var(--layout-mobile-width-current) * 0.22);
+    transform: translate(335%, -130%);
+    z-index: 1;
+}
+
+.schedule-list-style h3{
+    padding-top: var(--mlen4);
+    padding-bottom: var(--mlen);
+    margin: 0;
+    width: 100%;
+    border-bottom: solid var(--mlen-q) var(--color-black);
+}
+.schedule-list-style ol{
+    border-bottom-left-radius: var(--mlen2);
+    border-bottom-right-radius: var(--mlen2);
+    overflow: hidden;
+}
+.schedule-list-style ol li{
+    padding: 0.5em 0.5em 0.5em 1em;
+}
+.schedule-list-style ol li time{
+    display: inline-block;
+    min-width: 3em;
+}
+
+.schedule-detail-public-style,
+.schedule-detail-advance-style,
+.schedule-detail-main-style{
+    position: relative;
+    margin-top: var(--mlen6);
+    padding: 0;
+    z-index: 0;
+    border-color: var(--color-black);
+}
+.schedule-detail-public-style::before,
+.schedule-detail-advance-style::before,
+.schedule-detail-main-style::before{
+    position: absolute;
+    content: "";
+    top: var(--mlen-n);
+    left: 0;
+    right: 0;
+    background-image: url("../assets/img/decoration/ring.svg");
+    background-size: clamp(228px, calc(60.8vw * var(--layout-mobile-magnification)), 328.32px);
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.schedule-detail-public-style ol{
+    background-color: var(--color-yellow);
+}
+
+.schedule-detail-advance-style ol{
+    background-color: var(--color-green);
+}
+.schedule-detail-advance-style ol li{
+    display: flex;
+    background-color: var(--color-green);
+}
+
+.schedule-detail-main-style ol{
+    background-color: var(--color-red);
+}
+
+.schedule-detail-main-style ol li{
+    list-style-type: decimal;
+    list-style-position: inside;
+    /* 修正 */
+    padding: 0.5em 0.5em 0.5em 5em;
+    /* 修正ここまで */
+}
+/* ▲▲▲ スケジュール ▲▲▲ */
+
+
+
+/* ▼▼▼ アクセス ▼▼▼ */
+aside{
+    scroll-margin-top: calc(var(--mlen4) + var(--header-height));
+}
+
+.access-character-style{
+    position: absolute;
+    width: calc(var(--layout-mobile-width-current) * 0.25);
+    transform: translate(50%, -115%);
+    z-index: 2;
+}
+
+.access-style{
+    position: relative;
+    background-color: var(--color-blue);
+    margin-top: var(--mlen8);
+    z-index: 0;
+}
+.access-style::before{
+    position: absolute;
+    content:"アクセス";
+    top: -0.75em;
+    left: -0.1em;
+    color: var(--color-font-black);
+    font-family: var(--font-family-title-black);
+    font-size: var(--font-size-l3);
+    border: solid var(--mlen-q) var(--color-black);
+    background-color: var(--color-yellow);
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 0 var(--color-black);
+    z-index: 1;
+}
+
+.access-style a{
+    position: relative;
+    width: fit-content;
+    border-bottom: solid var(--mlen-e) var(--color-black);
+    margin: var(--mlen) auto;
+}
+
+.access-base-style{
+    position: relative;
+    width: 100%;
+    padding: var(--mlen3) var(--mlen) var(--mlen2);
+    background-color: var(--color-white);
+}
+
+.access-base-style h3{
+    margin-top: var(--mlen2);
+}
+
+/* ▲▲▲ アクセス ▲▲▲ */
