@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: page
 title: "Parallel Search について"
 date: 2022-07-23
