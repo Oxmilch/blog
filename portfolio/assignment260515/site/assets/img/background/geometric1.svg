@@ -1,0 +1,29 @@
+<svg width="375" height="667" viewBox="0 0 375 667" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_57_524" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="375" height="667">
+<rect width="375" height="667" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_57_524)" opacity="0.3">
+<rect x="264" y="615.219" width="138.517" height="11.8115" rx="5.90574" transform="rotate(-41.1896 264 615.219)" fill="#FFD700"/>
+<rect x="82" y="90.2205" width="138.517" height="11.8115" rx="5.90574" transform="rotate(-41.1896 82 90.2205)" fill="#FFD700"/>
+<rect x="191" y="652.219" width="138.517" height="11.8115" rx="5.90574" transform="rotate(-41.1896 191 652.219)" fill="#ED1818"/>
+<rect x="9" y="127.22" width="138.517" height="11.8115" rx="5.90574" transform="rotate(-41.1896 9 127.22)" fill="#ED1818"/>
+<path d="M346.455 70L359.839 93.8084H333.071L346.455 70Z" fill="#32CD32"/>
+<path d="M40.7277 555.447L29.4854 580.339L13.6192 558.779L40.7277 555.447Z" fill="#32CD32"/>
+<path d="M342.623 605.408L368.303 613.829L348.17 631.858L342.623 605.408Z" fill="#1F4E8C"/>
+<path d="M109.268 627.195L131.954 634.634L114.169 650.561L109.268 627.195Z" fill="#1F4E8C"/>
+<path d="M74.7544 9.10479L68.9689 35.503L49.0001 17.2935L74.7544 9.10479Z" fill="#1F4E8C"/>
+<circle cx="32.1892" cy="61.1892" r="9.18921" fill="#32CD32"/>
+<circle cx="302.583" cy="114.713" r="6.26537" fill="#ED1818"/>
+<circle cx="125.265" cy="30.2654" r="6.26537" fill="#ED1818"/>
+<circle cx="77.2659" cy="102.265" r="6.26537" fill="#FFD700"/>
+<circle cx="258.265" cy="629.265" r="6.26537" fill="#FFD700"/>
+<circle cx="308.265" cy="555.265" r="6.26537" fill="#ED1818"/>
+<circle cx="32.2261" cy="351.225" r="19.2261" stroke="#1F4E8C" stroke-width="10"/>
+<circle cx="46" cy="623" r="23" stroke="#FFD700" stroke-width="10"/>
+<circle cx="319.226" cy="36.2261" r="19.2261" stroke="#FFD700" stroke-width="10"/>
+<rect x="329" y="130" width="24" height="24" fill="#ED1818"/>
+<rect x="247" y="6" width="24" height="24" fill="#2DB82D"/>
+<path d="M291 625.5H315V649.5H291V625.5Z" fill="#FFD700"/>
+<rect x="20" y="290" width="24" height="24" fill="#ED1818"/>
+</g>
+</svg>

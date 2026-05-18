@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* ▼▼▼ 背景設定 ▼▼▼ */
+.layout-mobile{
+    background-image: url("../assets/img/background/geometric3.svg");
+}
+
+
+
+/* ▼▼▼ ファーストビュー ▼▼▼ */
+.firstview-character-style{
+    position: absolute;
+    width: calc(var(--layout-mobile-width-current) * 0.33);
+    transform: translateX(40%);
+    z-index: 1;
+}
+
+.firstview-style{
+    margin-top: var(--mlen4);
+    background-color: var(--color-red);
+}
+
+.firstview-top-style{
+    margin-top: var(--mlen4);
+}
+.firstview-top-style p:nth-last-child(1){
+    display: inline-block;
+    margin-top: var(--mlen2);
+    width: fit-content;
+    padding: 0 2em;
+    background-color: var(--color-black);
+}
+/* ▲▲▲ ファーストビュー ▲▲▲ */
+
+
+
+/* ▼▼▼ インフォメーション ▼▼▼ */
+.infomation-list-style{
+    margin-top: var(--mlen3);
+}
+
+.infomation-list-style li{
+    width: 10em;
+    padding: auto 1em;
+    margin: 0 auto;
+    background-color: var(--color-black);
+    border: solid var(--mlen-q) transparent;
+    border-radius: var(--mlen2);
+}
+
+
+
+/* ▼▼▼ ワークショップ ▼▼▼ */
+.workshop-accordion-backcolor-1-style{
+    background-color: var(--color-green-light);
+}
+.workshop-accordion-backcolor-2-style{
+    background-color: var(--color-yellow);
+}
+.workshop-accordion-backcolor-3-style{
+    background-color: var(--color-blue);
+}
+.workshop-accordion-backcolor-4-style{
+    background-color: var(--color-red);
+}
+
+.workshop-accordion-menu-collaborator-style{
+    border: none;
+}
+
+.workshop-accordion-menu-collaborator-style ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+    row-gap: var(--mlen3);
+    justify-content: center;
+    padding-top: var(--mlen2);
+    padding-left: calc(var(--content-width-space) * 0.5);
+    padding-right: calc(var(--content-width-space) * 0.5);
+    padding-bottom: var(--mlen2);
+}
+
+.workshop-accordion-menu-collaborator-style ul li{
+    width: 48%;
+}
+
+.accordion-menu-footer-text span{
+    margin: 0 var(--mlen);
+}
+
+/* ▲▲▲ ワークショップ ▲▲▲ */
