@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+/* ▼▼▼ 背景設定 ▼▼▼ */
+.layout-mobile{
+    background-image: url("../assets/img/background/geometric3.svg");
+}
+
+
+
+/* ▼▼▼ ファーストビュー ▼▼▼ */
+/* ▲▲▲ ファーストビュー ▲▲▲ */
+
+
+
+/* ▼▼▼ インフォメーション ▼▼▼ */
+main{
+    margin-top: var(--mlen3);
+}
+.infomation-style{
+    padding-top: var(--mlen3);
+    padding-bottom: calc(var(--mlen) * 12);
+    background-color: var(--color-yellow);
+}
+
+.infomation-top-style{
+    padding-top: var(--mlen8);
+}
+
+.infomation-top-style dd{
+    padding-top: var(--mlen3);
+}
+
+.infomation-top-detail-style{
+    padding: var(--mlen2) calc((100% - var(--layout-mobile-width-content)) * 0.5) 0;
+}
+
+.infomation-example-style{
+    position: relative;
+    margin: var(--mlen6) 0 0 auto;
+    padding: var(--mlen9) 0 var(--mlen3);
+    border: solid var(--mlen-q) var(--color-black);
+    border-top-right-radius:  0;
+    border-bottom-right-radius: 0;
+    border-right-color: transparent;
+    width: var(--layout-mobile-width-content);
+    z-index: 0;
+}
+.infomation-example-style::before{
+    content:"かんたん応募";
+    position: absolute;
+    top: var(--mlen3-n);
+    left: var(--mlen2);
+    font-family: var(--font-family-title-exbold);
+    font-size: var(--font-size-l3);
+    color: var(--color-white-font);
+    background-image: url("../assets/img/decoration/flag-holizontal.svg");
+    width: calc(var(--layout-mobile-width-current) * 0.6);
+    height: calc(var(--layout-mobile-width-current) * 0.6 * (63 / 216));
+    background-size: contain;
+    padding-top: calc(var(--layout-mobile-width-current) * 0.6 * (63 / 216) * 0.15);
+    padding-left: calc(var(--layout-mobile-width-current) * 0.6 * (63 / 216) * 0.45);
+}
+
+.infomation-example-style ul{
+    padding: var(--mlen6) calc(var(--content-width-space) * 0.5);
+    gap: var(--mlen8) 10%;
+}
+
+.infomation-example-style ul li{
+    position: relative;
+}
+
+.infomation-example-style ul li:before{
+    position: absolute;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: var(--font-family-title-exbold);
+    font-size: var(--font-size);
+}
+
+.infomation-example-style ul li:first-child{
+    z-index: 3;
+}
+.infomation-example-style ul li:first-child:before{
+    top: -1.25em;
+    left: -1.15em;
+    background-image: url("../assets/img/decoration/speech-balloon-blue.svg");
+    width: calc(var(--layout-mobile-width-current) * 0.45);
+    height: calc(var(--layout-mobile-width-current) * 0.45 * (101 / 171));
+    z-index: -1;
+}
+
+.infomation-example-style ul li:nth-child(2){
+    z-index: 2;
+}
+.infomation-example-style ul li:nth-child(2):before{
+    top:  -3.5em;
+    left: -2.75em;
+    background-image: url("../assets/img/decoration/speech-balloon-green-2.svg");
+    width: calc(var(--layout-mobile-width-current) * 0.55);
+    height: calc(var(--layout-mobile-width-current) * 0.55 * (189 / 160));
+    background-position: top;
+    z-index: -2;
+}
+
+.infomation-example-style ul li:nth-child(2){
+    z-index: 2;
+}
+.infomation-example-style ul li:nth-child(3):before{
+    top: -5.5em;
+    left: -3.25em;
+    background-image: url("../assets/img/decoration/speech-balloon-green-1.svg");
+    width: calc(var(--layout-mobile-width-current) * 0.7);
+    height: calc(var(--layout-mobile-width-current) * 0.7 * (215 / 228));
+    z-index: -2;
+}
+
+.infomation-example-style ul li:nth-child(4){
+    z-index: 1;
+}
+.infomation-example-style ul li:nth-child(4):before{
+    top: -4.25em;
+    left: -1.75em;
+    background-image: url("../assets/img/decoration/speech-balloon-flower.svg");
+    width: calc(var(--layout-mobile-width-current) * 0.5);
+    height: calc(var(--layout-mobile-width-current) * 0.5 * (174 / 167));
+    background-position: top;
+    z-index: -3;
+}
+
+.infomation-example-style ul li:nth-child(5){
+    z-index: 1;
+}
+.infomation-example-style ul li:nth-child(5):before{
+    top: -2.75em;
+    left: -1.25em;
+    background-image: url("../assets/img/decoration/speech-balloon-flower.svg");
+    width: calc(var(--layout-mobile-width-current) * 0.45);
+    height: calc(var(--layout-mobile-width-current) * 0.45 * (174 / 167));
+    background-position: top;
+    z-index: -3;
+}
+
+.infomation-example-style ul li:last-child{
+    z-index: 3;
+
+}
+.infomation-example-style ul li:last-child:before{
+    top: -0.75em;
+    left: -2.25em;
+    background-image: url("../assets/img/decoration/speech-balloon-blue.svg");
+    width: calc(var(--layout-mobile-width-current) * 0.55);
+    height: calc(var(--layout-mobile-width-current) * 0.55 * (101 / 171));
+    z-index: -1;
+}
+
+.infomation-caution-style{
+    position: relative;
+    top: var(--mlen6-n);
+    background-color: var(--color-green);
+    border: solid var(--mlen-q) var(--color-black);
+}
+
+.infomation-caution-base-style{
+    background-color: var(--color-white);
+}
+
+.infomation-caution-list-style{
+    padding: var(--mlen-h) var(--mlen) 0;
+}
+.infomation-caution-list-style li{
+    list-style-image: url("../assets/img/icon/check.svg");
+    list-style-position: outside;
+    margin-left: 1em;
+    border-bottom: dashed var(--mlen-e) var(--color-black);
+}
+
+/* ▲▲▲ インフォメーション ▲▲▲ */
+
+
+
+/* ▼▼▼ 募集期間と展示期間 ▼▼▼ */
+.period-recruitment-style{
+    position: relative;
+    width: 85%;
+    margin: 0 0 0 auto;
+    background-color: var(--color-yellow);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.period-recruitment-style::before{
+    position: absolute;
+    white-space: pre;
+    content:"応募\A期間";
+    font-family: var(--font-family-title-exbold);
+    font-size: var(--font-size-l2);
+    color: var(--color-white-font);
+    line-height: 1;
+    top: -1em;
+    left: -1.5em;
+    padding: 0.5em;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    box-shadow: var(--mlen-h) var(--mlen-h) 0 var(--color-black);
+}
+
+.period-exhibition-style{
+    position: relative;
+    width: 90%;
+    margin: var(--mlen4) auto 0 0;
+    background-color: var(--color-blue);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.period-exhibition-style::before{
+    position: absolute;
+    white-space: pre;
+    content:"展示\A期間";
+    font-family: var(--font-family-title-exbold);
+    font-size: var(--font-size-l2);
+    color: var(--color-white-font);
+    line-height: 1;
+    top: -1em;
+    right: -1.25em;
+    padding: 0.5em;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    box-shadow: var(--mlen-h) var(--mlen-h) 0 var(--color-black);
+}
+/* ▲▲▲ 募集期間と展示期間 ▲▲▲ */
+
+
+
+/* ▼▼▼ Tシャツデザインにお申し込み ▼▼▼ */
+.how-apply-style{
+    padding-top: var(--mlen6);
+}
+
+.how-apply-t-container-style{
+    scroll-snap-type: y mandatory;
+    height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.15);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.how-apply-t-container-style::-webkit-scrollbar{
+    display: none;
+}
+
+.how-apply-t-shirt-1-style,
+.how-apply-t-shirt-2-style,
+.how-apply-t-shirt-3-style{
+    scroll-snap-align: start;
+    position: relative;
+    margin-top: var(--mlen6);
+    width: var(--layout-mobile-width-current);
+    height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.1);
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--mlen4);
+    background-image: url("../assets/img/decoration/t-shirt.svg");
+    background-position: var(--mlen-h-n) var(--mlen3);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.how-apply-t-shirt-1-style::before,
+.how-apply-t-shirt-2-style::before{
+    position: absolute;
+    content: "";
+    width: var(--layout-mobile-width-current);
+    height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.1);
+    background-image: url("../assets/img/decoration/t-shirt.svg");
+    background-position: var(--mlen-h-n) calc(var(--mlen) * 1.5);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+}
+.how-apply-t-shirt-1-style::after{
+    position: absolute;
+    content: "";
+    width: var(--layout-mobile-width-current);
+    height: calc(var(--layout-mobile-width-current) * (293 / 375) * 1.1);
+    background-image: url("../assets/img/decoration/t-shirt.svg");
+    background-position: var(--mlen-h-n) 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+}
+
+.how-apply-t-container-style h3{
+    width: fit-content;
+    padding: 0 2em;
+    background-color: var(--color-red);
+}
+
+
+.how-apply-style div:last-child{
+    scroll-snap-align: end;
+    margin-top: var(--mlen3);
+}
+/* ▲▲▲ Tシャツデザインにお申し込み ▲▲▲ */
+
+
+
+/* ▼▼▼ 概要 ▼▼▼ */
+.how-detail-style{
+    margin-top: var(--mlen8);
+    padding-top: var(--mlen3);
+}
+
+.how-detail-recruitment-style,
+.how-detail-exhibition-style{
+    width: 100%;
+    margin-top: var(--mlen4);
+    border-collapse: collapse;
+    border: solid var(--mlen-q) var(--color-black);
+}
+
+.how-detail-recruitment-style tr td,
+.how-detail-exhibition-style tr td{
+    border: solid var(--mlen-e) var(--color-black);
+    padding: 0 1em;
+    background-color: var(--color-white);
+}
+
+.how-detail-recruitment-style tr th{
+    border: solid var(--mlen-e) var(--color-black);
+    padding: 0 1em;
+    background-color: var(--color-blue);
+}
+
+.how-detail-exhibition-style tr th{
+    border: solid var(--mlen-e) var(--color-black);
+    padding: 0 1em;
+    background-color: var(--color-yellow);
+}
+
+
+
+/* ▲▲▲ 概要 ▲▲▲ */

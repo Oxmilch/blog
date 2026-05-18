@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/* ▼▼▼ 背景設定 ▼▼▼ */
+.layout-mobile {
+    background-image: url("../assets/img/background/geometric3.svg");
+}
+
+
+
+/* ▼▼▼ ファーストビュー ▼▼▼ */
+/* ▲▲▲ ファーストビュー ▲▲▲ */
+
+
+
+/* ▼▼▼ インフォメーション ▼▼▼ */
+.infomation-style {
+    margin-top: var(--mlen9);
+    padding-top: var(--mlen9);
+    padding-bottom: var(--mlen3);
+    background-color: var(--color-green);
+}
+
+.infomation-list-style {
+    margin-top: var(--mlen3);
+}
+
+.infomation-list-style li {
+    width: 100%;
+    padding: auto 1em;
+    margin: 0 auto;
+    background-color: var(--color-black);
+    border: solid var(--mlen-q) transparent;
+    border-radius: var(--mlen2);
+}
+
+
+.infomation-daily-schedule-jyosei-style,
+.infomation-daily-schedule-artmuseum-style {
+    position: relative;
+    padding-top: var(--mlen3);
+    z-index: 0;
+}
+
+.infomation-daily-schedule-jyosei-style {
+    margin-top: var(--mlen7);
+}
+
+
+.infomation-daily-schedule-jyosei-style::before,
+.infomation-daily-schedule-artmuseum-style::before {
+    position: absolute;
+    top: -1em;
+    left: 0.5em;
+    font-family: var(--font-family-title-exbold);
+    font-size: var(--font-size);
+    background-color: var(--color-white);
+    border: solid var(--mlen-q) var(--color-black);
+    border-radius: var(--mlen2);
+    box-shadow: var(--mlen-q) var(--mlen-q) 0 var(--color-black);
+    padding: 0 1em;
+    z-index: 1;
+}
+
+.infomation-daily-schedule-jyosei-style::before {
+    content: "君のアートが街をジャック！？";
+}
+
+.infomation-daily-schedule-artmuseum-style::before {
+    content: "アーティストと大型アート作り";
+}
+
+
+
+/* ▼▼▼ ワークショップ ▼▼▼ */
+.workshop-accordion-backcolor-2-style{
+    background-color: var(--color-yellow);
+}
+
+.workshop-accordion-backcolor-3-style{
+    background-color: var(--color-blue);
+}
+
+.accordion-menu-detail ul{
+    padding-top: var(--mlen2);
+}
+
+.workshop-accordion-menu-collaborator-style{
+    border: none;
+}
+
+.workshop-accordion-menu-collaborator-style ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+    row-gap: var(--mlen3);
+    justify-content: space-between;
+    padding-top: var(--mlen2);
+    padding-left: calc(var(--content-width-space) * 0.5);
+    padding-right: calc(var(--content-width-space) * 0.5);
+}
+
+.workshop-accordion-menu-collaborator-style ul li {
+    width: 48%;
+}
+
+.workshop-accordion-menu-collaborator-button {
+    color: var(--color-white-font);
+    background-color: var(--color-red);
+    padding: .2em 1em;
+    border-radius: 2em;
+    border: solid var(--mlen-q) var(--color-black);
+    box-shadow: 3px 3px 0 var(--color-black);
+    margin-bottom: 3px;
+    margin-top: 3em;
+}
+
+.workshop-accordion-menu-collaborator-button::after {
+    content: "";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url(../assets/img/icon/up-right-form-square-white.svg);
+    vertical-align: top;
+}
+
+.accordion-summary:last-child .workshop-accordion-menu-collaborator-button{
+    color: var(--color-red-font);
+    background-color: var(--color-white);
+}
+
+.accordion-summary:last-child .workshop-accordion-menu-collaborator-button::after{
+    background-image: url(../assets/img/icon/up-right-form-square-red.svg);
+}
+
+/* ▲▲▲ ワークショップ ▲▲▲ */
