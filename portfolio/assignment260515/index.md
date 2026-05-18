@@ -8,7 +8,7 @@ date: 2026-04-21
 update: 2026-05-18
 is-post-list: false
 ---
-- [デザイン(職業訓練校) - ポートフォリオ に戻る](../vacational-school-2025-design.html)
+- [デザイン(職業訓練校) - ポートフォリオ に戻る](../vacational-school-2025-design.html#2026年4月16日5月15日-ランディングページ制作)
 
 ## 詳細
 - 制作ページ
