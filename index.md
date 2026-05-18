@@ -2,7 +2,7 @@
 layout: page
 title: "トップページ"
 date: 2026-02-08
-update: 2026-04-13
+update: 2026-05-18
 post-limit: 30
 ---
 ## Welcom to My Blog! 
@@ -46,9 +46,10 @@ post-limit: 30
 - iPhone 5s (iOS12, Apple A7, RAM 1GB, ROM 32GB)
 
 #### Android
-- Nothing CMF Phone(1) (NothingOS4, Dimensity7300, RAM 8GB, ROM 256GB)
-- Sony Xperia 5 III (Android13, Snapdragon888, RAM 8GB, ROM 128GB)
-- AYANEO Pocket Micro (Android13, Helio G99, RAM 8GB, ROM 256GB)
+- Nubia RedMagic 11 Air (REDMAGIC OS 11, Snapdragon 8 Elite, RAM 16GB, ROM 512GB)
+- Nothing CMF Phone(1) (NothingOS 4, Dimensity7300, RAM 8GB, ROM 256GB)
+- Sony Xperia 5 III (Android 13, Snapdragon888, RAM 8GB, ROM 128GB)
+- AYANEO Pocket Micro (Android 13, Helio G99, RAM 8GB, ROM 256GB)
 
 #### Game Console (Active)
 - Nintendo Switch2
