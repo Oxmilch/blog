@@ -1,11 +1,15 @@
 ---
+sitemap: false
 layout: page
 title: "福岡青年会議所主催 福岡市民がつくる大アート展(2026) コンペ作品 - ポートフォリオ"
 description: "福岡青年会議所主催 福岡市民がつくる大アート展(2026) コンペ作品 - ポートフォリオ"
 tags: [Affinity3, figma, VSCode]
 date: 2026-04-21
 update: 2026-05-18
+is-post-list: false
 ---
+- [デザイン(職業訓練校) - ポートフォリオ に戻る](../vacational-school-2025-design.html)
+
 ## 詳細
 - 制作ページ
   - <a href="./site/" target="_blank">制作したランディングページへ</a>
