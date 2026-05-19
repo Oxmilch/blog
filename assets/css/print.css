@@ -42,26 +42,26 @@
 
     .img-portrait-small{
         /* A4 1/12size */
-        max-width: 35mm;
         max-height: 49.5mm;
+        object-fit: contain;
     }
 
     .img-portrait{
         /* A4 1/8size */
-        max-width: 57.5mm;
         max-height: 74.25mm;
+        object-fit: contain;
     }
 
     .img-landscape{
         /* A4 1/4size */
         max-width: 148.5mm;
-        max-height: 105mm;
+        object-fit: contain;
     }
 
     .img-square{
         /* A4 短篇 1/9size */
         max-width: 70mm;
-        max-height: 70mm
+        object-fit: contain;
     }
 
     .no-print{
