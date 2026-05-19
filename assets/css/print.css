@@ -5,12 +5,6 @@
     @page{
         margin: 5mm 5mm 10mm 5mm;
         size: A4 portrait; /* 297mm x 210mm */
-
-        @bottom-right{
-            font-family: var(--font-family-mono);
-            font-size: 8pt;
-            content: counter(page) " / " counter(pages);
-        }
     }
 
     :root{
@@ -94,6 +88,11 @@
     #article_tags span{
       color: var(--color-accent-dark);
       border-color: var(--color-accent-dark);
+    }
+
+    article li{
+        margin-top: 0.25rem;
+        line-height: 1.3;
     }
 
     /* Aside */
