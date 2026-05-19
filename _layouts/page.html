@@ -18,9 +18,11 @@
     {% assign og-url = pages-url | append: "/" %}
   {% endif %}
 
-  {% comment %} OGP Image {% endcomment %}
+  {% comment %} OGP画像 {% endcomment %}
   {% if page.image %}
     {% assign og-image = pages-url | append: "/assets/images/" | append: page.image %}
+  {% else %}
+    {% assign og-image = pages-url | append: "/assets/images/ogp.webp" %}
   {% endif %}
 
   {% comment %} プロフィールテキスト {% endcomment %}
