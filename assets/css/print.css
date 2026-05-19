@@ -2,17 +2,28 @@
 
 /* 印刷用 */
 @media print{
+    @page{
+        margin: 5mm 5mm 10mm 5mm;
+        size: A4 portrait; /* 297mm x 210mm */
+
+        @bottom-right{
+            font-family: var(--font-family-mono);
+            font-size: 8pt;
+            content: counter(page) " / " counter(pages);
+        }
+    }
+
     :root{
-        /* Lauout*/
+        /* Lauout */
         --main-split-center: 100%;
         --main-split-right: 100%;
 
         /* Font */
-        --font-size-xl: 24px;
-        --font-size-l: 20px;
-        --font-size-m: 16px;
-        --font-size-s: 14px;
-        --font-size-xs: 12px;
+        --font-size-xl: 14pt;
+        --font-size-l: 12pt;
+        --font-size-m: 10pt;
+        --font-size-s: 8pt;
+        --font-size-xs: 6pt;
     }
 
     /* Base */
@@ -27,6 +38,30 @@
 
     video{
         display: none;
+    }
+
+    .img-portrait-small{
+        /* A4 1/12size */
+        max-width: 35mm;
+        max-height: 49.5mm;
+    }
+
+    .img-portrait{
+        /* A4 1/8size */
+        max-width: 57.5mm;
+        max-height: 74.25mm;
+    }
+
+    .img-landscape{
+        /* A4 1/4size */
+        max-width: 148.5mm;
+        max-height: 105mm;
+    }
+
+    .img-square{
+        /* A4 短篇 1/9size */
+        max-width: 70mm;
+        max-height: 70mm
     }
 
     .no-print{

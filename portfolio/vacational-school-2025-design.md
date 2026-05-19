@@ -5,7 +5,7 @@ title: "デザイン（職業訓練校） - ポートフォリオ"
 description: "デザイン（職業訓練校） - ポートフォリオ"
 tags: [Adobe Illustrator, Adobe Photoshop, Adobe PremierePro, figma, VSCode]
 date: 2025-11-21
-update: 2026-05-18
+update: 2026-05-19
 is-post-list: false
 ---
 <div class="no-print">
@@ -153,8 +153,6 @@ is-post-list: false
     loading="lazy">
 </div>
 
-<div class="next_page"></div>
-
 
 #### 縦動画（インスタグラム向け）
 - **フレームサイズ**：1080 x 1920px
@@ -290,8 +288,6 @@ is-post-list: false
   class="img-landscape"
   loading="lazy">
 
-<div class="next_page"></div>
-
 
 #### モバイルレイアウト
 <img
@@ -356,8 +352,6 @@ is-post-list: false
 
 #### 制作時間
 1.5時間
-
-<div class="next_page"></div>
 
 
 ## コンテンツ制作学習
