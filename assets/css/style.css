@@ -1,7 +1,32 @@
 @charset "UTF-8";
 
+/* モバイルレイアウト */
+@media(max-width:961px){
+    :root{
+        --layout-base: clamp(320px, 100vw, 960px);
+        --layout-article-magnification: 1.00;
+        --layout-aside-magnification: 1.00;
+        --layout-container-magnification: 0.94;
+    }
+}
+
+/* デスクトップレイアウト */
+@media(min-width:961px){
+    :root{
+        --layout-base: clamp(960px, 100vw, 2160px);
+        --layout-article-magnification: 0.66;
+        --layout-aside-magnification: 0.33;
+        --layout-container-magnification: 0.90;
+    }
+}
+
 /* Common */
 :root{
+    /* */
+    --layout-article: calc(var(--layout-base) * var(--layout-article-magnification));
+    --layout-aside: calc(var(--layout-base) * var(--layout-aside-magnification));
+    --container: calc(100% * var(--layout-container-magnification));
+
     /* Color */
     --color-print-light: #fff;
     --color-print-dark: #000;
