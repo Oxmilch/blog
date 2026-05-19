@@ -1,7 +1,28 @@
 @charset "UTF-8";
 
+.portfolio_grid{
+  padding-top: 1em;
+}
 .portfolio_grid a{
   position:relative;
+}
+
+.portfolio_grid a::before{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-base-light);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-regular);
+  border-radius: 1em;
+  background-color: var(--color-base-dark);
+  border: solid 1px var(--color-accent-light);
+  padding-left: 1em;
+  padding-right: 1em;
+  z-index:1;
 }
 
 .portfolio_grid a::after{
@@ -16,9 +37,7 @@
   font-size: var(--font-size-s);
   font-weight: var(--font-weight-regular);
   border-radius: 1em;
-  background-color: var(--color-accent-dark-trans);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: var(--color-accent-dark);
   padding-left: 1em;
   padding-right: 1em;
   z-index:1;
@@ -31,42 +50,68 @@
   }
 }
 
+/* 訓練校2025 Webサイト */
+.web260515::before,
+.web260324::before,
+.web260127::before,
+.web260116::before{
+  content:"Webサイト";
+}
+
 .web260515::after{
-  content:"制作時間 145h";
+  content:"制作145時間";
 }
 
 .web260324::after{
-  content:"制作時間 24h";
+  content:"制作 24時間";
 }
 
 .web260127::after{
-  content:"制作時間 4.5h";
+  content:"制作4.5時間";
 }
 
 .web260116::after{
-  content:"制作時間 1.5h";
+  content:"制作1.5時間";
+}
+
+/* 訓練校2025 動画 */
+.video260218::before,
+.video260216::before{
+  content:"動画";
 }
 
 .video260218::after{
-  content:"制作時間 30h";
+  content:"制作30時間";
 }
 
 .video260216::after{
-  content:"制作時間 3h";
+  content:"制作 3時間";
+}
+
+/* 訓練校2025 バナー */
+.bunner251218::before,
+.bunner251215::before{
+  content:"バナー";
 }
 
 .bunner251218::after{
-  content:"制作時間 1.5h";
+  content:"制作1.5時間";
 }
 
 .bunner251215::after{
-  content:"制作時間 1.5h";
+  content:"制作1.5時間";
+}
+
+/* 訓練校2025 印刷物 */
+.print251219::before,
+.print251217::before{
+  content:"印刷物";
 }
 
 .print251219::after{
-  content:"制作時間 6h";
+  content:"制作 6時間";
 }
 
 .print251217::after{
-  content:"制作時間 9h";
+  content:"制作 9時間";
 }
