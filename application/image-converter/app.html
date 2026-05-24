@@ -1,0 +1,77 @@
+---
+sitemap: false
+layout: page
+title: "Image Converter - 画像を変換"
+description: "Image Converter - 画像を変換"
+date: 2026-05-24
+---
+<h3>変換</h3>
+GIF, PNG, JPEG, WEBP, AVIF, SVG画像から変換します
+<section>
+    <div style="display: flex;">
+        <div style="width: 50%;">
+            <h4>変換したい画像</h4>
+            <input type="file" id="image-data" accept="image/*" style="width: 100%;"><br>
+            ファイル形式：<input type="text" id="source-extension" style="width: 7rem; text-align: right;" readonly><br>
+            元の幅　　　：<input type="number" id="source-width" style="width: 5rem; text-align: right;" readonly>px<br>
+            元の高さ　　：<input type="number" id="source-height" style="width: 5rem; text-align: right;" readonly>px<br>
+            変換前<br>
+            <img id="preview-image" src="" alt="プレビュー" style="min-width:90%; max-width:90%; aspect-ratio: 1;">
+        </div>
+        <div style="width: 50%;">
+            <h4>変換した画像</h4>
+            <button type="button">画像を保存</button><br>
+            ファイル形式：
+                <select id="extension">
+                    <option value="gif">GIF</option>
+                    <option value="png" selected>PNG</option>
+                    <option value="jpeg">JPEG</option>
+                    <option value="webp">WEBP</option>
+                    <option value="avif">AVIF</option>
+                </select><br>
+            品質　　　　：
+                <select id="quality-list">
+                    <option value="manual">手動</option>
+                    <option value="lossless">最高</option>
+                    <option value="high" selected>高</option>
+                    <option value="middle">中</option>
+                    <option value="low">低</option>
+                </select>
+                <input type="number" id="quality" min="0" max="100" style="width: 3rem; background-color: white;"><br>
+            変換後の幅　：<input type="number" id="convert-width" style="width: 5rem; background-color: white;">px<br>
+            変換後の高さ：<input type="number" id="convert-height" style="width: 5rem; background-color: white;">px<br>
+            変換後<br>
+            <canvas id="convert-image" style="min-width: 90%; max-width: 90%; background-color: white;"></canvas>
+        </div>
+    </div>
+</section>
+
+<script>
+    const preset = {
+        "png":  {"lossless": 0, "high": 0, "middle": 0, "low": 0},
+        "jepg": {"lossless": 1, "high": 0.95, "middle": 0.85, "low": 0.75},
+        "webp": {"lossless": 1, "high": 0.9, "middle": 0.8, "low": 0.7},
+        "avif": {"lossless": 1, "high": 0.8, "middle": 0.7, "low": 0.6}
+     };
+
+
+     function convertImage(extension, quality){
+
+     }
+
+    // 選択した画像をプレビュー
+    document.getElementById('image-data').addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (file) {
+        const reader = new FileReader();
+        reader.onload = function (event) {
+            const image = document.getElementById('preview-image');
+            image.src = event.target.result;
+            document.getElementById("source-extension").value = image.src.split(";")[0].split("/")[1].toUpperCase();
+            document.getElementById("source-width").value = image.width;
+            document.getElementById("source-height").value = image.height;
+        };
+        reader.readAsDataURL(file);
+        }
+    });
+</script>
