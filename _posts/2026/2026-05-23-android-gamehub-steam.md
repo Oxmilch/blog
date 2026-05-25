@@ -4,7 +4,7 @@ title: "GameHub Steamゲーム起動設定メモ"
 description: "GameHub Steamゲーム起動設定メモ"
 tags: [Android, GameHub]
 date: 2026-05-23
-update: 2026-05-24
+update: 2026-05-25
 ---
 
 ## 動作確認デバイス情報
@@ -13,6 +13,11 @@ update: 2026-05-24
   - RAM: 16GB
   - ROM: 512GB
   - OS: Red Magic OS 4.0.11 (Android 16)
+- 使用ゲームパッド：GameSir G8+
+  - Androidモード(黄色)：安定して接続可能
+  - DS4モード(青)：ゲーム中接続が切れることが多い
+  - G-Touchモード(シアン)：ライブラリ画面で操作ができない
+  - Switchモード(赤)：未確認
 - アプリバージョン：v5.3.5
   - Steam連携のみ
 
@@ -37,10 +42,9 @@ update: 2026-05-24
 | OK | 30~60fps | '26 5/21 | [The Witcher3 Wild Hunt -Complate Edition-](#the-witcher3-wild-hunt--complate-edition--v404) | v4.0.4 |
 
 ### 設定の傾向
-- Proton 9, 10 x64 はかなり安定
-- Proton 10 arm は初期化失敗が多い（CPU互換パラメータとトランスレーターの設定がシビアな感じ）
-- Proton 11 arm は起動処理が終わらない
-- 3D描画に問題はないが、2D描画に問題があるときは、変換パラメータを安定か互換モードにすると割と動くようになる感じがある
+- Proton 9, 10 x64 はかなり安定するが、パフォーマンスは低くなる
+  - 3D描画に問題はないが、2D描画に問題があるときは、変換パラメータを安定か互換モードにすると割と動くようになる感じがある
+- Proton 10, 11 arm は、CPU互換パラメータにMultiblockをオンにすると概ね起動する感じで、パフォーマンスはx64と比べると良い感じ
 
 
 ### Bloodstained: Ritual of the Night
@@ -110,7 +114,7 @@ update: 2026-05-24
 
 | タブ項目 | 設定項目 | 設定値 |
 | - | - | - |
-| 一般 | ゲーム解像度 | 2688 x 1216 |
+| 一般 | ゲーム解像度 | 2688 x 1216 (ネイティブ解像度) |
 | 互換性 | 互換レイヤー | proton9.0-x64-3 |
 | | 変換パラメータ | ゲームプリセット |
 | | DInputライブラリ | ネイティブ優先 |
@@ -200,17 +204,29 @@ update: 2026-05-24
 
 ### リトルノア (Little Noah)
 - **プレイ評価**
-  - プレイ可（40~60fps）
+  - 普通（45~60fps）時折フレームレートの低下が気になる
 - **スマホ設定**
   - バランスモード
   - GPU設定：高品質
 - **GameHub設定**
 
-| タブ項目 | 設定項目 | 設定値 |
-| - | - | - |
+| タブ項目 | 設定項目 | 詳細項目 | 設定値 |
+| - | - | - | - |
 | 一般 | ゲーム解像度 | 1280 x 720 |
-| 互換性 | 互換レイヤー | proton9.0-x64-3 |
-| | 変換パラメータ | ゲームプリセット |
+| 互換性 | 互換レイヤー | proton11.0-arm64x |
+| | 変換パラメータ | | カスタム |
+| | | TSOEnabled(TSOメモリ) | ON |
+| | | X87ReducedPrecision (X87精度低減) | ON |
+| | | Multiblock (マルチブロック) | ON |
+| | | MaxInst (最大命令数) | 5000 |
+| | | SmallTSCScale (小TSCスケール)| ON |
+| | | VectorTSOEnabled (ベクトルTSO) | OFF |
+| | | MemorySetTSOEnabled (メモリコピーTSO) | OFF |
+| | | HalfBarrierTSOEnabled (半バリア) | ON |
+| | | VolatileMetadata (揮発性MD) | ON |
+| | | HideHypervisorBit (HVビット非表示) | OFF |
+| | | MonoHacks (Mono最適化) | ON |
+| | | SMCChecks (SMCチェック) | mtrack: ページ追跡［デフォルト］|
 | | DInputライブラリ | ネイティブ優先 |
 | | 音声/動画デコードをスキップ | オフ |
 | | GPUドライバ | qcom-800.26 |
@@ -218,7 +234,7 @@ update: 2026-05-24
 | | オーディオドライバ | Pulse |
 | | DXVKバージョン | dxvk-2.6-1-async |
 | | VKD3Dバージョン | vkd3d-2.12 |
-| | CPUトランスレーター | Box64-0.37-b1 |
+| | CPUトランスレーター | Fex-20260103 |
 | Steam  | Steamクライアントバージョン | steam_9866233 |
 | | オフラインモード | オフ |
 | | クラウドセーブ自動同期 | オン |
@@ -457,7 +473,7 @@ update: 2026-05-24
       ***"fallback": "DirectX 12",*** を  ***"fallback": "DirectX 11",*** に変更する（やり方は[下記記載](#withcer3-コンテナ内ファイル編集)）
 
 | タブ項目 | 設定項目 | 詳細項目 | 設定値 | 
-| - | - | - |
+| - | - | - | - |
 | 一般 | ゲーム解像度 | | 1280 x 720 |
 | 互換性 | 互換レイヤー | | proton10.0-arm64x-2 |
 | | 変換パラメータ | | カスタム |
