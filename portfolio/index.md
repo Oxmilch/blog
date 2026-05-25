@@ -3,7 +3,7 @@ layout: page
 title: "トップ - ポートフォリオ"
 description: "トップ - ポートフォリオ"
 date: 2026-03-16
-update: 2026-05-19
+update: 2026-05-24
 ---
 <link rel="stylesheet" href="../assets/css/portfolio.css">
 
@@ -66,6 +66,3 @@ update: 2026-05-19
     <img src="/blog/assets/images/2025/portfolio/design-251215-trace3.webp">
   </a>
 </section>
-
-## Webツール
-- [Parallel Search - 色んなサイトで同じ検索ワードで検索するもの](/blog/parallel-search)

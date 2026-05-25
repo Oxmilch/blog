@@ -1,11 +1,11 @@
 ---
 sitemap: false
 layout: page
-title: "Parallel Search について"
+title: "Parallel Search について - Webアプリ・ツール"
 date: 2022-07-23
 update: 2026-04-06
 ---
-[← Parallel Search に戻る](./)
+[Parallel Search へ →](./app.html)
 
 ## 概要
 色んなサイトで同じ検索ワードで検索する！っていう簡単なHTMLとCSSとJS。  
