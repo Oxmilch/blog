@@ -4,7 +4,7 @@ title: "GameHub Steamゲーム起動設定メモ"
 description: "GameHub Steamゲーム起動設定メモ"
 tags: [Android, GameHub]
 date: 2026-05-23
-update: 2026-05-25
+update: 2026-05-26
 ---
 
 ## 動作確認デバイス情報
@@ -13,12 +13,22 @@ update: 2026-05-25
   - RAM: 16GB
   - ROM: 512GB
   - OS: Red Magic OS 4.0.11 (Android 16)
+  - ファン設定: オン（自動調整）
+- ゲームスペース設定
+  - パフォーマンス設定: バランスモード
+  - GPU設定: カスタム
+    - マルチサンプル・アンチエイジング: 4
+    - 異方性フィルタリング: 16
+    - テクスチャフィルタ品質: バランス
+    - Mipmap LOD: 0
+    - AutoVRS: ON
 - 使用ゲームパッド：GameSir G8+
   - Androidモード(黄色)：安定して接続可能
   - DS4モード(青)：ゲーム中接続が切れることが多い
   - G-Touchモード(シアン)：ライブラリ画面で操作ができない
   - Switchモード(赤)：未確認
-- アプリバージョン：v5.3.5
+- GameHub
+  - バージョン：v5.3.5
   - Steam連携のみ
 
 ## ゲーム別 GameHub設定メモ
@@ -26,6 +36,7 @@ update: 2026-05-25
 
 | 起動 | フレーム<br>レート | インストール日 | ゲームタイトル | 備考 |
 | :-: | :-: | :-: | - | - |
+| OK | 35~58fps | '26 5/25 | [Asterigos: Curse of the Stars](#asterigos-curse-of-the-stars) | GameHub側の解像度を制限するとかなり荒くなるので、ゲーム内設定で解像度を下げる方が良い |
 | OK | 35~60fps | '26 5/22 | [Bloodstained: Ritual of the Night](#bloodstained-ritual-of-the-night) |
 | OK | 60fps | '26 5/22 | [クロノ・トリガー](#クロノトリガー-chrono-trigger) |
 | OK | 60fps | '26 5/22 | [Crypt of the NecroDancer](#crypt-of-the-necrodancer) |
@@ -46,33 +57,98 @@ update: 2026-05-25
   - 3D描画に問題はないが、2D描画に問題があるときは、変換パラメータを安定か互換モードにすると割と動くようになる感じがある
 - Proton 10, 11 arm は、CPU互換パラメータにMultiblockをオンにすると概ね起動する感じで、パフォーマンスはx64と比べると良い感じ
 
+### Asterigos: Curse of the Stars
+- 動作フレームレート：35~58fps
+  - エリア切り替え時の読み込み時にガクっと下がる
+  - 画面に映している場所によっては、フレームレートが落ちやすい
+  - テクスチャ、描画の崩れ、音声の乱れもなく快適にプレイができる
+- **GameHub設定**
+  - **一般**
+    - ゲーム解像度: 1280 x 720
+  - **互換性**
+    - 互換レイヤー：proton11.0-arm64x
+    - 変換パラメータ：カスタム
+      - TSOEnabled(TSOメモリ)：有効
+      - X87ReducedPrecision (X87精度低減)：有効
+      - Multiblock (マルチブロック)：無効
+      - MaxInst (最大命令数)：5000
+      - SmallTSCScale (小TSCスケール)：有効
+      - VectorTSOEnabled (ベクトルTSO)：無効
+      - MemorySetTSOEnabled (メモリコピーTSO)：無効
+      - HalfBarrierTSOEnabled (半バリア)：有効
+      - VolatileMetadata (揮発性MD)：有効
+      - HideHypervisorBit (HVビット非表示)：無効
+      - MonoHacks (Mono最適化)：有効
+      - SMCChecks (SMCチェック)：mtrack: ページ追跡［デフォルト］
+    - DInputライブラリ：ネイティブ優先
+    - 音声/動画デコードをスキップ：無効
+    - GPUドライバ：turnip_v26.2.0_b3
+    - サーフェスフォーマット：RGBA8
+    - オーディオドライバ：Pulse
+    - DXVKバージョン：dxvk-2.6-1-async
+    - VKD3Dバージョン：vkd3d-2.12
+    - CPUトランスレーター：Fex-20260103
+    - CPUコア制限：なし
+    - VRAM制限：3GB
+  - **Steam**
+    - Steamクライアントバージョン：steam_9866233
+    - オフラインモード：無効
+    - クラウドセーブ自動同期：有効
+    - Steam Input(試験的)：無効
+  - **コンポーネント依存**（ゲーム起動時に自動でインストールされる）
+    - base：1.0.1
+    - vcredist2022：1.0.1
+- **ゲーム内設定**
+  - **動画**
+    - 解像度：960 x 540
+    - ディスプレイモード：ボーダーレスウィンドウ
+  - **グラフィック**
+    - レンダープリセット：カスタム
+      - 描画距離設定：バランス
+      - 影の品質：バランス
+      - テクスチャ品質：バランス
+      - ポストプロセス品質：バランス
+      - 植生品質：パフォーマンス
+      - AMD FSR2：有効
+      - AMD FSR2 品質：パフォーマンス
+      - TAA品質：パフォーマンス
+
 
 ### Bloodstained: Ritual of the Night
-- **プレイ評価**
-  - プレイ可能（35~60fps）
-- **スマホ設定**
-  - バランスモード
-  - GPU設定：高品質
+- 動作フレームレート：45~60fps
 - **GameHub設定**
-
-| タブ項目 | 設定項目 | 設定値 |
-| - | - | - |
-| 一般 | ゲーム解像度 | 960 x 540 |
-| 互換性 | 互換レイヤー | proton10.0-x64-1 |
-| | 変換パラメータ | 安定モード |
-| | DInputライブラリ | ネイティブ優先 |
-| | 音声/動画デコードをスキップ | オフ |
-| | GPUドライバ | qcom-800.26 |
-| | サーフェスフォーマット | BGRA8 |
-| | オーディオドライバ | Pulse |
-| | DXVKバージョン | dxvk-2.6-1-async |
-| | VKD3Dバージョン | vkd3d-2.12 |
-| | CPUトランスレーター | Box64-0.37-b2 |
-| Steam  | Steamクライアントバージョン | steam_9866233 |
-| | オフラインモード | オフ |
-| | クラウドセーブ自動同期 | オン |
-| | Steam Input(試験的) | オフ |
-| コンポーネント依存 | base | 1.0.1 |
+  - 一般
+    - ゲーム解像度: カスタム（960 x 540）
+  - 互換性
+    - 互換レイヤー：proton11.0-arm64x
+    - 変換パラメータ：カスタム
+      - TSOEnabled(TSOメモリ)：有効
+      - X87ReducedPrecision (X87精度低減)：有効
+      - Multiblock (マルチブロック)：オン
+      - MaxInst (最大命令数)：5000
+      - SmallTSCScale (小TSCスケール)：有効
+      - VectorTSOEnabled (ベクトルTSO)：無効
+      - MemorySetTSOEnabled (メモリコピーTSO)：無効
+      - HalfBarrierTSOEnabled (半バリア)：無効
+      - VolatileMetadata (揮発性MD)：有効
+      - HideHypervisorBit (HVビット非表示)：無効
+      - MonoHacks (Mono最適化)：有効
+      - SMCChecks (SMCチェック)：mtrack: ページ追跡［デフォルト］
+    - DInputライブラリ：ネイティブ優先
+    - 音声/動画デコードをスキップ：無効
+    - GPUドライバ：qcom-800.26
+    - サーフェスフォーマット：BGRA8
+    - オーディオドライバ：Pulse
+    - DXVKバージョン：dxvk-2.6-1-async
+    - VKD3Dバージョン：vkd3d-2.12
+    - CPUトランスレーター：
+  - Steam
+    - Steamクライアントバージョン：steam_9866233
+    - オフラインモード：無効
+    - クラウドセーブ自動同期：有効
+    - Steam Input(試験的)：無効
+  - コンポーネント依存
+    - base：1.0.1
 
 
 ### クロノ・トリガー (Chrono Trigger)
