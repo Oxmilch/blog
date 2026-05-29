@@ -15,7 +15,7 @@ update: 2026-05-26
   - OS: Red Magic OS 4.0.11 (Android 16)
   - ファン設定: オン（自動調整）
 - ゲームスペース設定
-  - パフォーマンス設定: バランスモード
+  - パフォーマンス設定: ライズモード
   - GPU設定: カスタム
     - マルチサンプル・アンチエイジング: 4
     - 異方性フィルタリング: 16
@@ -32,25 +32,26 @@ update: 2026-05-26
   - Steam連携のみ
 
 ## ゲーム別 GameHub設定メモ
-基本的にゲームのバージョンは最新を利用する
+- 基本的にゲームのバージョンは最新を利用する
+- 発熱と消費電力も考えて、GameHubのゲーム中設定でできる制限fpsも記載
 
-| 起動 | フレーム<br>レート | インストール日 | ゲームタイトル | 備考 |
-| :-: | :-: | :-: | - | - |
-| OK | 35~58fps | '26 5/25 | [Asterigos: Curse of the Stars](#asterigos-curse-of-the-stars) | GameHub側の解像度を制限するとかなり荒くなるので、ゲーム内設定で解像度を下げる方が良い |
-| OK | 35~60fps | '26 5/22 | [Bloodstained: Ritual of the Night](#bloodstained-ritual-of-the-night) |
-| OK | 60fps | '26 5/22 | [クロノ・トリガー](#クロノトリガー-chrono-trigger) |
-| OK | 60fps | '26 5/22 | [Crypt of the NecroDancer](#crypt-of-the-necrodancer) |
-| NG | 40~60fps | '26 5/21 | [Cult of the Ramb (Pilgrim Edition)](#cult-of-the-ramb) | 拠点でフリーズ<br>チュートリアルステージのみ動作を確認 |
-| ?? | ??fps | '26 5/21 | [Hollow Knight](#hollow-kinght) |
-| OK | 40~60fps | '26 5/21 | [リトルノア](#リトルノア-little-noah) |
-| OK | 50~60fps | '26 5/21 | [Little Witch Nobeta](#little-witch-nobeta) | 
-| OK | 60fps | '26 5/21 | [ロスト・ルーインズ](#ロストルーインズ-lost-ruins) |
-| OK | 55~60fps | '26 5/24 | [ロックマンX アニバーサリーコレクション](#ロックマンx-アニバーサリーコレクション-vol1-mega-man-x-legacy-collection) | X4のみ動作確認 |
-| OK | 40~60fps | '26 5/21 | [天穂のサクナヒメ](#天穂のサクナヒメ-sakuna-of-rice-and-ruin) |
-| OK | 20~30fps | '26 5/21 | [Stray](#stray) |
-| OK | 35~60ps | '26 5/22 | [イース セルセタの樹海](#イース-セルセタの樹海-ys-memories-of-celceta) | オブジェクトの読み込み等で落ち込みが激しい |
-| OK | 50~60fps | '26 5/22 | [イース VIII: Lacrimosa of Dana](#イースviii--lacrimosa-of-dana--ys-viii-lacrimosa-of-dana) |
-| OK | 30~60fps | '26 5/21 | [The Witcher3 Wild Hunt -Complate Edition-](#the-witcher3-wild-hunt--complate-edition--v404) | v4.0.4 |
+| 起動 | 解像度 | 制限なしfps<br>(制限fps) | 消費<br>電力 | インストール日 | ゲームタイトル | 備考 |
+| :-: | :-: | :-: | :-: | :-: | - | - |
+| OK | 544p | 30~58fps (35fps) | 5~6W | '26 5/25 | [Asterigos: Curse of the Stars](#asterigos-curse-of-the-stars) | GameHub側の解像度を制限するとかなり荒くなるので、ゲーム内設定で解像度を下げる方が良い |
+| OK | 720p | 35~60fps | | '26 5/22 | [Bloodstained: Ritual of the Night](#bloodstained-ritual-of-the-night) |
+| OK | 1080p | 60fps | | '26 5/22 | [クロノ・トリガー](#クロノトリガー-chrono-trigger) |
+| OK | 1080p | 60fps | | '26 5/22 | [Crypt of the NecroDancer](#crypt-of-the-necrodancer) |
+| NG | 720p | 40~60fps | | '26 5/21 | [Cult of the Ramb (Pilgrim Edition)](#cult-of-the-ramb) | 拠点でフリーズ<br>チュートリアルステージのみ動作を確認 |
+| ?? | 1080p | - | - | '26 5/21 | [Hollow Knight](#hollow-kinght) |
+| OK | 1080p | 40~60fps (45fps) | - | '26 5/21 | [リトルノア](#リトルノア-little-noah) |
+| OK | 720p | 50~60fps | - |'26 5/21 | [Little Witch Nobeta](#little-witch-nobeta) | 
+| OK | 1080p | 60fps | - | '26 5/21 | [ロスト・ルーインズ](#ロストルーインズ-lost-ruins) |
+| OK | - | 55~60fps | - | '26 5/24 | [ロックマンX アニバーサリーコレクション](#ロックマンx-アニバーサリーコレクション-vol1-mega-man-x-legacy-collection) | X4のみ動作確認 |
+| OK | 720p | 40~60fps | - | '26 5/21 | [天穂のサクナヒメ](#天穂のサクナヒメ-sakuna-of-rice-and-ruin) |
+| OK | 544p | 20~30fps | - | '26 5/21 | [Stray](#stray) |
+| OK | 1080p | 35~60ps | - | '26 5/22 | [イース セルセタの樹海](#イース-セルセタの樹海-ys-memories-of-celceta) | オブジェクトの読み込み等で落ち込みが激しい |
+| OK | 1080p | 50~60fps (40fps) | 3.5~4.5W | '26 5/22 | [イース VIII: Lacrimosa of Dana](#イースviii--lacrimosa-of-dana--ys-viii-lacrimosa-of-dana) |
+| OK | 544p | 30~60fps (35fps) | 5~6W | '26 5/21 | [The Witcher3 Wild Hunt -Complate Edition-](#the-witcher3-wild-hunt--complate-edition--v404) | v4.0.4 |
 
 ### 設定の傾向
 - Proton 9, 10 x64 はかなり安定するが、パフォーマンスは低くなる
@@ -536,13 +537,48 @@ update: 2026-05-26
 
 
 ### The Witcher3 Wild Hunt -Complate Edition- v4.0.4
-- **プレイ評価**
-  - 普通（30~60fps）
-  - 現設定ではテクスチャに乱れが発生
-- **スマホ設定**
-  - ライズモード
-  - GPU設定：高品質
+- **GameHub ゲーム内個別設定**
+  - フレームレート制限：35fps
+  - スーパーレゾリューション：オン - 0
+- **ゲームバージョン**
+  - v4.0.4
+- **ランチャー設定** *＊STEAMにログインできるPCから設定*
+  - CD PROJEKT REDアカウント：ログオフ状態
 - **ゲーム設定**
+  - ゲームプレイ
+    - クロスプログレッション：オフ
+  - ビデオ設定
+    - HUD設定
+      - 字幕のフォントサイズ：4
+      - 会話の選択肢のフォントサイズ：4
+      - NPCの会話のフォントサイズ：4
+    - グラフィック
+      - アンチエイリアス処理：なし
+      - 動的解像度スケーリング：オフ
+      - 鮮明化：オフ ＊GameHub側のスーパーレゾリューションと二重掛けにならないようにするためにオフ
+      - スクリーンスペース・アンビエントオートクルージョン：オフ
+      - スクリーンスペース反射：低
+      - モーションブラー：オン
+      - ぼかし：オン
+      - ブルーム：オン
+      - 被写界深度：オン
+      - 色収差：オン
+      - 口径食：オン
+      - ライトシャフト：オン
+      - カメラのレンズ効果：オン
+      - NVIDIA HairWorks：オフ
+      - モブキャラクターの数：低
+      - 影品質：低
+      - 地形品質：低
+      - 水品質：低
+      - 木葉視野品質：中
+      - 草の密度：低
+      - テクスチャー品質：中
+      - 詳細度：中
+    - ディスプレイ
+      - ディスプレイモード：ボーダーレスウィンドウ
+      - 垂直同期：オフ
+      - 最大FPS：60
 - **GameHub設定**
   - コンテナ内設定
     - MyComputer/X/launcher-cofiguration.json の  
@@ -550,7 +586,7 @@ update: 2026-05-26
 
 | タブ項目 | 設定項目 | 詳細項目 | 設定値 | 
 | - | - | - | - |
-| 一般 | ゲーム解像度 | | 1280 x 720 |
+| 一般 | ゲーム解像度 | | 960 x 544 |
 | 互換性 | 互換レイヤー | | proton10.0-arm64x-2 |
 | | 変換パラメータ | | カスタム |
 | | | TSOEnabled(TSOメモリ) | ON |
@@ -580,7 +616,6 @@ update: 2026-05-26
 | | Steam Input(試験的) | | オフ |
 | コンポーネント依存 | base | | 1.0.1 |
 | | physx | | 1.0.1 |
-| | goldberg | | 1.2 |
 | | vcredist2022 | | 1.0.1 |
 
 ### Withcer3 コンテナ内ファイル編集
